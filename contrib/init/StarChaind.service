@@ -1,0 +1,25 @@
+# It is not recommended to modify this file in-place, because it will
+# be overwritten during package upgrades. If you want to add further
+# options or overwrite existing ones then use
+# $ systemctl edit Starchaind.service
+# See "man systemd.service" for details.
+
+# Note that almost all daemon options could be specified in
+# /etc/Starchain/Starchain.conf
+
+[Unit]
+Description=Starchain daemon
+After=network.target
+
+[Service]
+ExecStart=/usr/bin/Starchaind -daemon -conf=/etc/Starchain/Starchain.conf -pid=/run/Starchaind/Starchaind.pid
+# Creates /run/Starchaind owned by Starchain
+RuntimeDirectory=Starchaind
+User=Starchain
+Type=forking
+PIDFile=/run/Starchaind/Starchaind.pid
+Restart=on-failure
+PrivateTmp=true
+
+[Install]
+WantedBy=multi-user.target

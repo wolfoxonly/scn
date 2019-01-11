@@ -1,0 +1,312 @@
+---- coingo Matches (52 in 13 files) ----
+CAddrMan::Good_ in addrman.cpp (src) :     printf("Moving %s to tried\n", addr.ToString().c_str());//coingo.vip,此处校验节点
+CAddrMan in addrman.h (src) :     bool Add(const std::vector<CAddress> &vAddr, const CNetAddr& source, int64 nTimePenalty = 0)//coingo.vip决定是否加成功
+Checkpoints in checkpoints.cpp (src) :        ( 0, hashGenesisBlockOfficial )//<coingo.vip>
+checkpointsync.cpp (src) line 72 : // const std::string CSyncCheckpoint::strMainPubKey = "04c0c707c28533fd5c9f79d2d3a2d80dff259ad8f915241cd14608fb9bc07c74830efe8438f2b272a866b4af5e0c2cc2a9909972aefbd976937e39f46bb38c277c";<coingo.vip>
+ClientModel::getLastBlockDate in clientmodel.cpp (src\qt) :         return QDateTime::fromTime_t(1231006505); // Genesis block's time<coingo.vip>
+clientversion.h (src) line 31 : //coingo.vip
+kernel.cpp (src) line 14 : unsigned int nProtocolV03SwitchTime     = 1545019186;// 1363800000;<coingo.vip>
+kernel.cpp (src) line 17 : unsigned int nProtocolV04SwitchTime     = 1546019186;//1399300000;<coingo.vip>
+kernel.cpp (src) line 20 : unsigned int nProtocolV05SwitchTime     = 1650504755;// 1461700000;<coingo.vip>
+CTxOut::IsDust in main.cpp (src) :     return ((nValue*1000.0)/(3*((int)GetSerializeSize(SER_DISK,0)+148)) < CTransaction::nMinRelayTxFee);//fixed coingo.vip
+GetProofOfWorkReward in main.cpp (src) :     return   0.0001*COIN;//<coingo.vip>定义pow奖励
+main.cpp (src) line 1235 : int64 GetProofOfStakeReward(int64 nCoinAge,int64 balance)//<coingo.vip>
+GetProofOfStakeReward in main.cpp (src) :     int year =  std::ceil(pindexBest->nHeight / (24 * 60 / 2 * 365));//coingo.vip利率衰减部分
+GetProofOfStakeReward in main.cpp (src) :     float rate = 12*pow(0.8,year);//coingo.vip
+GetProofOfStakeReward in main.cpp (src) :     int64 nSubsidy = ::ceill(( rate / 100.0 ) * nCoinAge / 365) * COIN;//coingo.vip
+CBlock::CheckBlock in main.cpp (src) :     // Check coinbase reward coingo.vip
+InitBlockIndex in main.cpp (src) :         txNew.nTime = 1545019100;//<coingo.vip>
+InitBlockIndex in main.cpp (src) :         block.nTime    = 1545019100;// <coingo.vip>
+InitBlockIndex in main.cpp (src) :         block.nNonce = ByteReverse(13550653);//<coingo.vip>校验
+InitBlockIndex in main.cpp (src) :          while(true)//<coingo.vip>校验
+InitBlockIndex in main.cpp (src) :                       printf("nNonceFound 11111111 coingo.vip:%d \n" ,nNonceFound);
+InitBlockIndex in main.cpp (src) :                       printf("GetHash 222222222 coingo.vip:%s\n" ,block.GetHash().ToString().c_str());
+InitBlockIndex in main.cpp (src) :         printf("block.nBits 2222222222222222222 coingo.vip:%d \n" ,block.nBits);
+InitBlockIndex in main.cpp (src) :         assert(block.hashMerkleRoot == uint256("0xcfdb867b287ada503837c15b1a4da12e0965ca58fa6c8c07b9abc86b76d93580"));//<coingo.vip>校验
+InitBlockIndex in main.cpp (src) :      //   assert(hash == hashGenesisBlock);//<coingo.vip>
+InitBlockIndex in main.cpp (src) :             assert(block.CheckBlock(state));//<coingo.vip>
+CreateNewBlock in main.cpp (src) :                 pblock->vtx[0].vout[0].nValue = 500000000 * COIN;//首块产量<coingo.vip>
+CreateNewBlock in main.cpp (src) :         //     pblock->vtx[0].vout[0].nValue = reward * pow(0.6,year);//<coingo.vip>
+CreateNewBlock in main.cpp (src) :         pblock->vtx[0].vout[0].nValue = reward//<coingo.vip>
+StarchainMiner in main.cpp (src) :         {//大于1000000000不让用pow了<coingo.vip>
+main.h (src) line 62 : // static const int64 MAX_MONEY = 2000000000 * COIN;<coingo.vip>
+main.h (src) line 63 : static const int64 MAX_MONEY = 1000000000 * COIN;//<coingo.vip>
+main.h (src) line 65 : static const int64 MIN_TX_FEE = 0 *COIN;//<coingo.vip>改最小转账限制
+main.h (src) line 66 : static const int64 MAX_TX_FEE = 100 *COIN;//<coingo.vip>改最小转账限制
+main.h (src) line 67 : static const int64 MIN_RELAY_TX_FEE = 0 *COIN;//<coingo.vip>改最小限制
+main.h (src) line 68 : static const int64 MAX_MINT_PROOF_OF_WORK = 1200000000 * COIN;//<coingo.vip>最大挖到的利息值
+main.h (src) line 69 : static const int64 MIN_TXOUT_AMOUNT = 0 *COIN;//<coingo.vip>改最小限制
+main.h (src) line 74 : static const int STAKE_MIN_AGE = 60 * 60 * 24 * 14; // minimum age for coin age<coingo.vip>
+main.h (src) line 76 : static const int STAKE_MAX_AGE = 60 * 60 * 24 * 365 * 4; // stake age of full weight 4年 <coingo.vip>
+main.h (src) line 86 : static const uint256 hashGenesisBlockOfficial("0x000000d80ec5afd2f398a352b8293093760acf14884a164be5b3b0a9995181ab");//<coingo.vip>校验
+net.cpp (src) line 352 : bool GetMyExternalIP(CNetAddr& ipRet)//<coingo.vip>
+ConnectNode in net.cpp (src) :         pszDest ? pszDest : addrConnect.ToString().c_str());//coingo.vip,ljn校验节点
+ConnectNode in net.cpp (src) : 			printf("IsLocal(addrConnect) judge fail");//coingo.vip,ljn
+ConnectNode in net.cpp (src) :     printf("trying connection %s lastseen=%.1fhrs\n",//coingo.vip,ljn校验节点
+net.cpp (src) line 1184 : //<coingo.vip>默认节点
+protocol.h (src) line 18 : #define PPCOIN_PORT  9966//<coingo.vip>端口号
+util.cpp (src) line 247 : int OutputDebugStringF(const char* pszFormat, ...)//<coingo.vip>
+util.cpp (src) line 322 : ///delete logo<coingo.vip>
+GetConfigFile in util.cpp (src) :               ///coingo.vip add below      
+GetConfigFile in util.cpp (src) :                     ///coingo.vip add above
+CWallet::CreateTransaction in wallet.cpp (src) :                 // Starchain: sub-cent change is moved to fee <coingo.vip>
+CWallet::CreateTransaction in wallet.cpp (src) :                     // add the dust to the fee.<coingo.vip>
+---- coingo Search Errors Encountered (257) ----
+The following 257 files could not be processed:
+D:\SI\scn\logo\images\about.png : File could not be opened.
+D:\SI\scn\src\qt\res\images\about.png : File could not be opened.
+D:\SI\scn\logo\icons\add.png : File could not be opened.
+D:\SI\scn\src\qt\res\icons\add.png : File could not be opened.
+D:\SI\scn\logo\icons\address-book.png : File could not be opened.
+D:\SI\scn\src\qt\res\icons\address-book.png : File could not be opened.
+D:\SI\scn\logo\images\controls\caret-down.png : File could not be opened.
+D:\SI\scn\src\qt\res\images\controls\caret-down.png : File could not be opened.
+D:\SI\scn\logo\images\controls\caret-up.png : File could not be opened.
+D:\SI\scn\src\qt\res\images\controls\caret-up.png : File could not be opened.
+D:\SI\scn\logo\icons\clock1.png : File could not be opened.
+D:\SI\scn\src\qt\res\icons\clock1.png : File could not be opened.
+D:\SI\scn\logo\icons\clock2.png : File could not be opened.
+D:\SI\scn\src\qt\res\icons\clock2.png : File could not be opened.
+D:\SI\scn\logo\icons\clock3.png : File could not be opened.
+D:\SI\scn\src\qt\res\icons\clock3.png : File could not be opened.
+D:\SI\scn\logo\icons\clock4.png : File could not be opened.
+D:\SI\scn\src\qt\res\icons\clock4.png : File could not be opened.
+D:\SI\scn\logo\icons\clock5.png : File could not be opened.
+D:\SI\scn\src\qt\res\icons\clock5.png : File could not be opened.
+D:\SI\scn\src\CloudComputingChain-cli-res.rc : File could not be opened.
+D:\SI\scn\doc\man\CloudComputingChain-cli.1 : File could not be opened.
+D:\SI\scn\contrib\CloudComputingChain-cli.bash-completion : File could not be opened.
+D:\SI\scn\src\CloudComputingChain-cli.cpp : File could not be opened.
+D:\SI\scn\src\CloudComputingChain-config.h.in : File could not be opened.
+D:\SI\scn\src\qt\res\CloudComputingChain-qt-res.rc : File could not be opened.
+D:\SI\scn\doc\man\CloudComputingChain-qt.1 : File could not be opened.
+D:\SI\scn\contrib\debian\CloudComputingChain-qt.desktop : File could not be opened.
+D:\SI\scn\contrib\debian\CloudComputingChain-qt.install : File could not be opened.
+D:\SI\scn\contrib\debian\CloudComputingChain-qt.lintian-overrides : File could not be opened.
+D:\SI\scn\contrib\debian\CloudComputingChain-qt.manpages : File could not be opened.
+D:\SI\scn\contrib\CloudComputingChain-qt.pro : File could not be opened.
+D:\SI\scn\contrib\debian\CloudComputingChain-qt.protocol : File could not be opened.
+D:\SI\scn\doc\man\CloudComputingChain-tx.1 : File could not be opened.
+D:\SI\scn\contrib\CloudComputingChain-tx.bash-completion : File could not be opened.
+D:\SI\scn\contrib\debian\CloudComputingChain-tx.bash-completion : File could not be opened.
+D:\SI\scn\contrib\debian\CloudComputingChain-tx.install : File could not be opened.
+D:\SI\scn\contrib\debian\CloudComputingChain-tx.manpages : File could not be opened.
+D:\SI\scn\test\util\data\CloudComputingChain-util-test.json : File could not be opened.
+D:\SI\scn\test\util\CloudComputingChain-util-test.py : File could not be opened.
+D:\SI\scn\contrib\debian\examples\CloudComputingChain.conf : File could not be opened.
+D:\SI\scn\src\qt\CloudComputingChain.cpp : File could not be opened.
+D:\SI\scn\contrib\rpm\CloudComputingChain.fc : File could not be opened.
+D:\SI\scn\logo\icons\CloudComputingChain.icns : File could not be opened.
+D:\SI\scn\src\qt\res\icons\CloudComputingChain.icns : File could not be opened.
+D:\SI\scn\logo\icons\CloudComputingChain.ico : File could not be opened.
+D:\SI\scn\logo\pixmaps\CloudComputingChain.ico : File could not be opened.
+D:\SI\scn\share\pixmaps\CloudComputingChain.ico : File could not be opened.
+D:\SI\scn\src\qt\res\icons\CloudComputingChain.ico : File could not be opened.
+D:\SI\scn\contrib\rpm\CloudComputingChain.if : File could not be opened.
+D:\SI\scn\logo\icons\CloudComputingChain.png : File could not be opened.
+D:\SI\scn\share\pixmaps\CloudComputingChain.png : File could not be opened.
+D:\SI\scn\src\qt\res\icons\CloudComputingChain.png : File could not be opened.
+D:\SI\scn\src\qt\CloudComputingChain.qrc : File could not be opened.
+D:\SI\scn\contrib\rpm\CloudComputingChain.spec : File could not be opened.
+D:\SI\scn\src\qt\res\src\CloudComputingChain.svg : File could not be opened.
+D:\SI\scn\contrib\rpm\CloudComputingChain.te : File could not be opened.
+D:\SI\scn\logo\pixmaps\CloudComputingChain128.png : File could not be opened.
+D:\SI\scn\share\pixmaps\CloudComputingChain128.png : File could not be opened.
+D:\SI\scn\logo\pixmaps\CloudComputingChain128.xpm : File could not be opened.
+D:\SI\scn\share\pixmaps\CloudComputingChain128.xpm : File could not be opened.
+D:\SI\scn\logo\pixmaps\CloudComputingChain16.png : File could not be opened.
+D:\SI\scn\share\pixmaps\CloudComputingChain16.png : File could not be opened.
+D:\SI\scn\logo\pixmaps\CloudComputingChain16.xpm : File could not be opened.
+D:\SI\scn\share\pixmaps\CloudComputingChain16.xpm : File could not be opened.
+D:\SI\scn\logo\pixmaps\CloudComputingChain256.png : File could not be opened.
+D:\SI\scn\share\pixmaps\CloudComputingChain256.png : File could not be opened.
+D:\SI\scn\logo\pixmaps\CloudComputingChain256.xpm : File could not be opened.
+D:\SI\scn\share\pixmaps\CloudComputingChain256.xpm : File could not be opened.
+D:\SI\scn\logo\pixmaps\CloudComputingChain32.png : File could not be opened.
+D:\SI\scn\share\pixmaps\CloudComputingChain32.png : File could not be opened.
+D:\SI\scn\logo\pixmaps\CloudComputingChain32.xpm : File could not be opened.
+D:\SI\scn\share\pixmaps\CloudComputingChain32.xpm : File could not be opened.
+D:\SI\scn\logo\pixmaps\CloudComputingChain64.png : File could not be opened.
+D:\SI\scn\share\pixmaps\CloudComputingChain64.png : File could not be opened.
+D:\SI\scn\logo\pixmaps\CloudComputingChain64.xpm : File could not be opened.
+D:\SI\scn\share\pixmaps\CloudComputingChain64.xpm : File could not be opened.
+D:\SI\scn\src\qt\CloudComputingChainaddressvalidator.cpp : File could not be opened.
+D:\SI\scn\src\qt\CloudComputingChainaddressvalidator.h : File could not be opened.
+D:\SI\scn\src\qt\CloudComputingChainamountfield.cpp : File could not be opened.
+D:\SI\scn\src\qt\CloudComputingChainamountfield.h : File could not be opened.
+D:\SI\scn\src\CloudComputingChaind-res.rc : File could not be opened.
+D:\SI\scn\doc\man\CloudComputingChaind.1 : File could not be opened.
+D:\SI\scn\contrib\CloudComputingChaind.bash-completion : File could not be opened.
+D:\SI\scn\contrib\debian\CloudComputingChaind.bash-completion : File could not be opened.
+D:\SI\scn\contrib\init\CloudComputingChaind.conf : File could not be opened.
+D:\SI\scn\src\CloudComputingChaind.cpp : File could not be opened.
+D:\SI\scn\contrib\debian\CloudComputingChaind.examples : File could not be opened.
+D:\SI\scn\contrib\init\CloudComputingChaind.init : File could not be opened.
+D:\SI\scn\contrib\debian\CloudComputingChaind.install : File could not be opened.
+D:\SI\scn\contrib\debian\CloudComputingChaind.lintian-overrides : File could not be opened.
+D:\SI\scn\contrib\debian\CloudComputingChaind.manpages : File could not be opened.
+D:\SI\scn\contrib\init\CloudComputingChaind.openrc : File could not be opened.
+D:\SI\scn\contrib\init\CloudComputingChaind.openrcconf : File could not be opened.
+D:\SI\scn\contrib\init\CloudComputingChaind.service : File could not be opened.
+D:\SI\scn\src\qt\CloudComputingChaingui.cpp : File could not be opened.
+D:\SI\scn\src\qt\CloudComputingChaingui.h : File could not be opened.
+D:\SI\scn\src\qt\CloudComputingChainstrings.cpp : File could not be opened.
+D:\SI\scn\src\qt\CloudComputingChainunits (2).cpp : File could not be opened.
+D:\SI\scn\src\qt\CloudComputingChainunits.cpp : File could not be opened.
+D:\SI\scn\src\qt\CloudComputingChainunits.h : File could not be opened.
+D:\SI\scn\src\qt\locale\CloudComputingChain_af_ZA.ts : File could not be opened.
+D:\SI\scn\src\qt\locale\CloudComputingChain_ar.ts : File could not be opened.
+D:\SI\scn\src\qt\locale\CloudComputingChain_bg.ts : File could not be opened.
+D:\SI\scn\src\qt\locale\CloudComputingChain_bs.ts : File could not be opened.
+D:\SI\scn\src\qt\locale\CloudComputingChain_ca.ts : File could not be opened.
+D:\SI\scn\src\qt\locale\CloudComputingChain_ca_ES.ts : File could not be opened.
+D:\SI\scn\test\functional\CloudComputingChain_cli.py : File could not be opened.
+D:\SI\scn\src\qt\locale\CloudComputingChain_cs.ts : File could not be opened.
+D:\SI\scn\src\qt\locale\CloudComputingChain_cy.ts : File could not be opened.
+D:\SI\scn\src\qt\locale\CloudComputingChain_da.ts : File could not be opened.
+D:\SI\scn\src\qt\locale\CloudComputingChain_de.ts : File could not be opened.
+D:\SI\scn\src\qt\locale\CloudComputingChain_el_GR.ts : File could not be opened.
+D:\SI\scn\src\qt\locale\CloudComputingChain_en.ts : File could not be opened.
+D:\SI\scn\src\qt\locale\CloudComputingChain_eo.ts : File could not be opened.
+D:\SI\scn\src\qt\locale\CloudComputingChain_es.ts : File could not be opened.
+D:\SI\scn\src\qt\locale\CloudComputingChain_es_CL.ts : File could not be opened.
+D:\SI\scn\src\qt\locale\CloudComputingChain_et.ts : File could not be opened.
+D:\SI\scn\src\qt\locale\CloudComputingChain_eu_ES.ts : File could not be opened.
+D:\SI\scn\src\qt\locale\CloudComputingChain_fa.ts : File could not be opened.
+D:\SI\scn\src\qt\locale\CloudComputingChain_fa_IR.ts : File could not be opened.
+D:\SI\scn\src\qt\locale\CloudComputingChain_fi.ts : File could not be opened.
+D:\SI\scn\build-aux\m4\CloudComputingChain_find_bdb48.m4 : File could not be opened.
+D:\SI\scn\src\qt\locale\CloudComputingChain_fr.ts : File could not be opened.
+D:\SI\scn\src\qt\locale\CloudComputingChain_fr_CA.ts : File could not be opened.
+D:\SI\scn\src\qt\locale\CloudComputingChain_gu_IN.ts : File could not be opened.
+D:\SI\scn\src\qt\locale\CloudComputingChain_he.ts : File could not be opened.
+D:\SI\scn\src\qt\locale\CloudComputingChain_hi_IN.ts : File could not be opened.
+D:\SI\scn\src\qt\locale\CloudComputingChain_hr.ts : File could not be opened.
+D:\SI\scn\src\qt\locale\CloudComputingChain_hu.ts : File could not be opened.
+D:\SI\scn\src\qt\locale\CloudComputingChain_it.ts : File could not be opened.
+D:\SI\scn\src\qt\locale\CloudComputingChain_ja.ts : File could not be opened.
+D:\SI\scn\src\qt\locale\CloudComputingChain_la.ts : File could not be opened.
+D:\SI\scn\doc\CloudComputingChain_logo_doxygen.png : File could not be opened.
+D:\SI\scn\logo\doc\CloudComputingChain_logo_doxygen.png : File could not be opened.
+D:\SI\scn\src\qt\locale\CloudComputingChain_lt.ts : File could not be opened.
+D:\SI\scn\src\qt\locale\CloudComputingChain_lv_LV.ts : File could not be opened.
+D:\SI\scn\src\qt\locale\CloudComputingChain_nb.ts : File could not be opened.
+D:\SI\scn\src\qt\locale\CloudComputingChain_nl.ts : File could not be opened.
+D:\SI\scn\src\qt\locale\CloudComputingChain_pl.ts : File could not be opened.
+D:\SI\scn\src\qt\locale\CloudComputingChain_pt_BR.ts : File could not be opened.
+D:\SI\scn\src\qt\locale\CloudComputingChain_pt_PT.ts : File could not be opened.
+D:\SI\scn\build-aux\m4\CloudComputingChain_qt.m4 : File could not be opened.
+D:\SI\scn\src\qt\locale\CloudComputingChain_ro_RO.ts : File could not be opened.
+D:\SI\scn\src\qt\locale\CloudComputingChain_ru.ts : File could not be opened.
+D:\SI\scn\src\qt\locale\CloudComputingChain_sk.ts : File could not be opened.
+D:\SI\scn\src\qt\locale\CloudComputingChain_sr.ts : File could not be opened.
+D:\SI\scn\build-aux\m4\CloudComputingChain_subdir_to_include.m4 : File could not be opened.
+D:\SI\scn\src\qt\locale\CloudComputingChain_sv.ts : File could not be opened.
+D:\SI\scn\logo\icons\CloudComputingChain_testnet.ico : File could not be opened.
+D:\SI\scn\logo\pixmaps\CloudComputingChain_testnet.ico : File could not be opened.
+D:\SI\scn\share\pixmaps\CloudComputingChain_testnet.ico : File could not be opened.
+D:\SI\scn\src\qt\res\icons\CloudComputingChain_testnet.ico : File could not be opened.
+D:\SI\scn\logo\icons\CloudComputingChain_testnet.png : File could not be opened.
+D:\SI\scn\src\qt\res\icons\CloudComputingChain_testnet.png : File could not be opened.
+D:\SI\scn\src\qt\locale\CloudComputingChain_th_TH.ts : File could not be opened.
+D:\SI\scn\src\qt\locale\CloudComputingChain_tr.ts : File could not be opened.
+D:\SI\scn\src\qt\locale\CloudComputingChain_uk.ts : File could not be opened.
+D:\SI\scn\src\qt\locale\CloudComputingChain_zh_CN.ts : File could not be opened.
+D:\SI\scn\src\qt\locale\CloudComputingChain_zh_TW.ts : File could not be opened.
+D:\SI\scn\logo\icons\configure.png : File could not be opened.
+D:\SI\scn\src\qt\res\icons\configure.png : File could not be opened.
+D:\SI\scn\logo\icons\connect0_16.png : File could not be opened.
+D:\SI\scn\src\qt\res\icons\connect0_16.png : File could not be opened.
+D:\SI\scn\logo\icons\connect1_16.png : File could not be opened.
+D:\SI\scn\src\qt\res\icons\connect1_16.png : File could not be opened.
+D:\SI\scn\logo\icons\connect2_16.png : File could not be opened.
+D:\SI\scn\src\qt\res\icons\connect2_16.png : File could not be opened.
+D:\SI\scn\logo\icons\connect3_16.png : File could not be opened.
+D:\SI\scn\src\qt\res\icons\connect3_16.png : File could not be opened.
+D:\SI\scn\logo\icons\connect4_16.png : File could not be opened.
+D:\SI\scn\src\qt\res\icons\connect4_16.png : File could not be opened.
+D:\SI\scn\logo\icons\debugwindow.png : File could not be opened.
+D:\SI\scn\src\qt\res\icons\debugwindow.png : File could not be opened.
+D:\SI\scn\logo\icons\edit.png : File could not be opened.
+D:\SI\scn\src\qt\res\icons\edit.png : File could not be opened.
+D:\SI\scn\logo\icons\editcopy.png : File could not be opened.
+D:\SI\scn\src\qt\res\icons\editcopy.png : File could not be opened.
+D:\SI\scn\logo\icons\editpaste.png : File could not be opened.
+D:\SI\scn\src\qt\res\icons\editpaste.png : File could not be opened.
+D:\SI\scn\logo\icons\export.png : File could not be opened.
+D:\SI\scn\src\qt\res\icons\export.png : File could not be opened.
+D:\SI\scn\logo\icons\filesave.png : File could not be opened.
+D:\SI\scn\src\qt\res\icons\filesave.png : File could not be opened.
+D:\SI\scn\logo\icons\history.png : File could not be opened.
+D:\SI\scn\src\qt\res\icons\history.png : File could not be opened.
+D:\SI\scn\logo\icons\key.png : File could not be opened.
+D:\SI\scn\src\qt\res\icons\key.png : File could not be opened.
+D:\SI\scn\libCloudComputingChainconsensus.pc.in : File could not be opened.
+D:\SI\scn\logo\icons\lock_closed.png : File could not be opened.
+D:\SI\scn\src\qt\res\icons\lock_closed.png : File could not be opened.
+D:\SI\scn\logo\icons\lock_open.png : File could not be opened.
+D:\SI\scn\src\qt\res\icons\lock_open.png : File could not be opened.
+D:\SI\scn\logo\images\logo.png : File could not be opened.
+D:\SI\scn\src\qt\res\images\logo.png : File could not be opened.
+D:\SI\scn\logo\images\logomask.png : File could not be opened.
+D:\SI\scn\src\qt\res\images\logomask.png : File could not be opened.
+D:\SI\scn\logo\icons\notsynced.png : File could not be opened.
+D:\SI\scn\src\qt\res\icons\notsynced.png : File could not be opened.
+D:\SI\scn\logo\pixmaps\nsis-header.bmp : File could not be opened.
+D:\SI\scn\share\pixmaps\nsis-header.bmp : File could not be opened.
+D:\SI\scn\logo\pixmaps\nsis-wizard.bmp : File could not be opened.
+D:\SI\scn\share\pixmaps\nsis-wizard.bmp : File could not be opened.
+D:\SI\scn\contrib\init\org.CloudComputingChain.CloudComputingChaind.plist : File could not be opened.
+D:\SI\scn\logo\icons\overview.png : File could not be opened.
+D:\SI\scn\src\qt\res\icons\overview.png : File could not be opened.
+D:\SI\scn\logo\icons\qrcode.png : File could not be opened.
+D:\SI\scn\src\qt\res\icons\qrcode.png : File could not be opened.
+D:\SI\scn\logo\icons\quit.png : File could not be opened.
+D:\SI\scn\src\qt\res\icons\quit.png : File could not be opened.
+D:\SI\scn\logo\icons\receive.png : File could not be opened.
+D:\SI\scn\src\qt\res\icons\receive.png : File could not be opened.
+D:\SI\scn\logo\icons\remove.png : File could not be opened.
+D:\SI\scn\src\qt\res\icons\remove.png : File could not be opened.
+D:\SI\scn\src\test\containers\remove_CloudComputingChain_containers : File could not be opened.
+D:\SI\scn\scn.si4project\scn.siproj : File could not be opened.
+D:\SI\scn\scn.si4project\scn.sip_sym : File could not be opened.
+D:\SI\scn\scn.si4project\scn.sip_xab : File could not be opened.
+D:\SI\scn\scn.si4project\scn.sip_xad : File could not be opened.
+D:\SI\scn\scn.si4project\scn.sip_xm : File could not be opened.
+D:\SI\scn\scn.si4project\scn.sip_xsb : File could not be opened.
+D:\SI\scn\scn.si4project\scn.sip_xsd : File could not be opened.
+D:\SI\scn\logo\images\controls\scroll-down.png : File could not be opened.
+D:\SI\scn\src\qt\res\images\controls\scroll-down.png : File could not be opened.
+D:\SI\scn\logo\images\controls\scroll-up.png : File could not be opened.
+D:\SI\scn\src\qt\res\images\controls\scroll-up.png : File could not be opened.
+D:\SI\scn\logo\icons\send.png : File could not be opened.
+D:\SI\scn\src\qt\res\icons\send.png : File could not be opened.
+D:\SI\scn\logo\icons\sign.png : File could not be opened.
+D:\SI\scn\src\qt\res\icons\sign.png : File could not be opened.
+D:\SI\scn\logo\images\splash.png : File could not be opened.
+D:\SI\scn\src\qt\res\images\splash.png : File could not be opened.
+D:\SI\scn\logo\images\splash_testnet.png : File could not be opened.
+D:\SI\scn\src\qt\res\images\splash_testnet.png : File could not be opened.
+D:\SI\scn\logo\icons\synced.png : File could not be opened.
+D:\SI\scn\src\qt\res\icons\synced.png : File could not be opened.
+D:\SI\scn\src\test\test_CloudComputingChain.cpp : File could not be opened.
+D:\SI\scn\logo\icons\toolbar.png : File could not be opened.
+D:\SI\scn\src\qt\res\icons\toolbar.png : File could not be opened.
+D:\SI\scn\logo\icons\toolbar_testnet.png : File could not be opened.
+D:\SI\scn\src\qt\res\icons\toolbar_testnet.png : File could not be opened.
+D:\SI\scn\logo\icons\transaction0.png : File could not be opened.
+D:\SI\scn\src\qt\res\icons\transaction0.png : File could not be opened.
+D:\SI\scn\logo\icons\transaction2.png : File could not be opened.
+D:\SI\scn\src\qt\res\icons\transaction2.png : File could not be opened.
+D:\SI\scn\logo\images\transparent-background.png : File could not be opened.
+D:\SI\scn\src\qt\res\images\transparent-background.png : File could not be opened.
+D:\SI\scn\logo\icons\tx_inout.png : File could not be opened.
+D:\SI\scn\src\qt\res\icons\tx_inout.png : File could not be opened.
+D:\SI\scn\logo\icons\tx_input.png : File could not be opened.
+D:\SI\scn\src\qt\res\icons\tx_input.png : File could not be opened.
+D:\SI\scn\logo\icons\tx_mined.png : File could not be opened.
+D:\SI\scn\src\qt\res\icons\tx_mined.png : File could not be opened.
+D:\SI\scn\logo\icons\tx_output.png : File could not be opened.
+D:\SI\scn\src\qt\res\icons\tx_output.png : File could not be opened.
+D:\SI\scn\logo\icons\verify.png : File could not be opened.
+D:\SI\scn\src\qt\res\icons\verify.png : File could not be opened.

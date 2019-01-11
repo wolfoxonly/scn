@@ -1,0 +1,8 @@
+/usr/bin/Starchain-cli		--	gen_context(system_u:object_r:Starchain_exec_t,s0)
+/usr/sbin/Starchaind		--	gen_context(system_u:object_r:Starchain_exec_t,s0)
+/usr/lib(64)?/Starchain/Starchaind		--	gen_context(system_u:object_r:Starchain_exec_t,s0)
+
+/etc/Starchain(/.*)?		gen_context(system_u:object_r:Starchain_conf_t,s0)
+/var/lib/Starchain(/.*)?		gen_context(system_u:object_r:Starchain_var_lib_t,s0)
+
+(/var)?/run/Starchaind(/.*)?   gen_context(system_u:object_r:Starchain_var_run_t,s0)
