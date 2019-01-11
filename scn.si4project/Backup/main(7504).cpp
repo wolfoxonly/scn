@@ -5192,7 +5192,7 @@ CBlockTemplate* CreateNewBlock(CReserveKey& reservekey, CWallet* pwallet, bool f
 		//int year =  std::ceil(pindexBest->nHeight / (24 * 60 / 2 * 365));//pow产量衰减部分,262800
 
         //     pblock->vtx[0].vout[0].nValue = reward * pow(0.6,year);//<coingo.vip>
-        pblock->vtx[0].vout[0].nValue = reward;//<coingo.vip>
+        pblock->vtx[0].vout[0].nValue = reward//<coingo.vip>
            }
           
           
