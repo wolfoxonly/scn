@@ -1,4 +1,4 @@
-Source: Starchain
+Source: StarChain
 Section: utils
 Priority: optional
 Maintainer: Matt Corallo <matt@mattcorallo.com>
@@ -27,44 +27,44 @@ Build-Depends: debhelper,
  libzmq3-dev
 Standards-Version: 3.9.2
 Homepage: https://bitcoincore.org/
-Vcs-Git: git://github.com/Starchain/Starchain.git
-Vcs-Browser: https://github.com/Starchain/Starchain
+Vcs-Git: git://github.com/StarChain/StarChain.git
+Vcs-Browser: https://github.com/StarChain/StarChain
 
-Package: Starchaind
+Package: StarChaind
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: peer-to-peer network based digital currency - daemon
- Starchain is a free open source peer-to-peer electronic cash system that
+ StarChain is a free open source peer-to-peer electronic cash system that
  is completely decentralized, without the need for a central server or
  trusted parties.  Users hold the crypto keys to their own money and
  transact directly with each other, with the help of a P2P network to
  check for double-spending.
  .
- This package provides the daemon, Starchaind, and the CLI tool
- Starchain-cli to interact with the daemon.
+ This package provides the daemon, StarChaind, and the CLI tool
+ StarChain-cli to interact with the daemon.
 
-Package: Starchain-qt
+Package: StarChain-qt
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: peer-to-peer network based digital currency - Qt GUI
- Starchain is a free open source peer-to-peer electronic cash system that
+ StarChain is a free open source peer-to-peer electronic cash system that
  is completely decentralized, without the need for a central server or
  trusted parties.  Users hold the crypto keys to their own money and
  transact directly with each other, with the help of a P2P network to
  check for double-spending.
  .
- This package provides Starchain-Qt, a GUI for Starchain based on Qt.
+ This package provides StarChain-Qt, a GUI for StarChain based on Qt.
 
-Package: Starchain-tx
+Package: StarChain-tx
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: peer-to-peer digital currency - standalone transaction tool
- Starchain is a free open source peer-to-peer electronic cash system that
+ StarChain is a free open source peer-to-peer electronic cash system that
  is completely decentralized, without the need for a central server or
  trusted parties.  Users hold the crypto keys to their own money and
  transact directly with each other, with the help of a P2P network to
  check for double-spending.
  .
- This package provides Starchain-tx, a command-line transaction creation
- tool which can be used without a Starchain daemon.  Some means of
+ This package provides StarChain-tx, a command-line transaction creation
+ tool which can be used without a StarChain daemon.  Some means of
  exchanging minimal transaction data with peers is still required.

@@ -1,13 +1,13 @@
 Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
-Upstream-Name: Starchain
+Upstream-Name: StarChain
 Upstream-Contact: Satoshi Nakamoto <satoshin@gmx.com>
- irc://#Starchain@freenode.net
-Source: https://github.com/Starchain/Starchain
+ irc://#StarChain@freenode.net
+Source: https://github.com/StarChain/StarChain
 
 Files: *
-Copyright: 2009-2018, Starchain Core Developers
+Copyright: 2009-2018, StarChain Core Developers
 License: Expat
-Comment: The Starchain Core Developers encompasses the current developers listed on Starchain.org,
+Comment: The StarChain Core Developers encompasses the current developers listed on StarChain.org,
          as well as the numerous contributors to the project.
 
 Files: debian/*
@@ -86,12 +86,12 @@ License: Expat
 Comment: Modifications of Stephan Hutchings Typicons
 
 Files: src/qt/res/icons/about.png
-       src/qt/res/icons/Starchain.*
-       share/pixmaps/Starchain*
-       src/qt/res/src/Starchain.svg
+       src/qt/res/icons/StarChain.*
+       share/pixmaps/StarChain*
+       src/qt/res/src/StarChain.svg
 Copyright: Bitboy, Jonas Schnelli
 License: public-domain
-Comment: Site: https://Starchaintalk.org/?topic=1756.0
+Comment: Site: https://StarChaintalk.org/?topic=1756.0
 
 
 License: Expat

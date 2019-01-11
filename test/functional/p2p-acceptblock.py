@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-# Copyright (c) 2015-2017 The Starchain Core developers
+# Copyright (c) 2015-2017 The StarChain Core developers
 # Distributed under the MIT software license, see the accompanying
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
 """Test processing of unrequested blocks.
@@ -52,16 +52,16 @@ Node1 is unused in tests 3-7:
 """
 
 from test_framework.mininode import *
-from test_framework.test_framework import StarchainTestFramework
+from test_framework.test_framework import StarChainTestFramework
 from test_framework.util import *
 import time
 from test_framework.blocktools import create_block, create_coinbase, create_transaction
 
-class AcceptBlockTest(StarchainTestFramework):
+class AcceptBlockTest(StarChainTestFramework):
     def add_options(self, parser):
         parser.add_option("--testbinary", dest="testbinary",
-                          default=os.getenv("BITCOIND", "Starchaind"),
-                          help="Starchaind binary to test")
+                          default=os.getenv("BITCOIND", "StarChaind"),
+                          help="StarChaind binary to test")
 
     def set_test_params(self):
         self.setup_clean_chain = True

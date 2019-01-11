@@ -1,11 +1,11 @@
 /*
- * Qt4 Starchain GUI.
+ * Qt4 StarChain GUI.
  *
  * W.J. van der Laan 2011-2012
- * The Starchain Developers 2011-2013
+ * The StarChain Developers 2011-2013
  */
 #include "walletframe.h"
-#include "Starchaingui.h"
+#include "StarChaingui.h"
 #include "walletstack.h"
 
 #include <QVBoxLayout>
@@ -13,7 +13,7 @@
 
 #include <stdio.h>
 
-WalletFrame::WalletFrame(StarchainGUI *_gui) :
+WalletFrame::WalletFrame(StarChainGUI *_gui) :
     QFrame(_gui),
     gui(_gui),
     clientModel(0)
@@ -22,7 +22,7 @@ WalletFrame::WalletFrame(StarchainGUI *_gui) :
     QHBoxLayout *walletFrameLayout = new QHBoxLayout(this);
     setContentsMargins(0,0,0,0);
     walletStack = new WalletStack(this);
-    walletStack->setStarchainGUI(gui);
+    walletStack->setStarChainGUI(gui);
     walletFrameLayout->setContentsMargins(0,0,0,0);
     walletFrameLayout->addWidget(walletStack);
 }

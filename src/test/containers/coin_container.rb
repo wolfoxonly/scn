@@ -4,7 +4,7 @@ require 'httparty'
 class CoinContainer
   def create(options = {})
     default_options = {
-      image: "Starchain/base",
+      image: "StarChain/base",
       shutdown_at_exit: true,
       delete_at_exit: false,
       remove_addr_after_shutdown: true,
@@ -73,14 +73,14 @@ class CoinContainer
       bash_cmd += "echo Environment:; env; "
     end
 
-    bash_cmd += "./Starchaind " + cmd_args.join(" ")
+    bash_cmd += "./StarChaind " + cmd_args.join(" ")
 
     if options[:remove_addr_after_shutdown]
-      bash_cmd += "; rm -f /root/.Starchain/testnet/peers.dat"
+      bash_cmd += "; rm -f /root/.StarChain/testnet/peers.dat"
     end
 
     if options[:remove_wallet_after_shutdown]
-      bash_cmd += "; rm /root/.Starchain/testnet/wallet.dat"
+      bash_cmd += "; rm /root/.StarChain/testnet/wallet.dat"
     end
 
     command = [

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-# Copyright (c) 2016-2017 The Starchain Core developers
+# Copyright (c) 2016-2017 The StarChain Core developers
 # Distributed under the MIT software license, see the accompanying
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
 """Test version bits warning system.
@@ -9,7 +9,7 @@ soft-forks, and test that warning alerts are generated.
 """
 
 from test_framework.mininode import *
-from test_framework.test_framework import StarchainTestFramework
+from test_framework.test_framework import StarChainTestFramework
 from test_framework.util import *
 import re
 from test_framework.blocktools import create_block, create_coinbase
@@ -27,7 +27,7 @@ class TestNode(P2PInterface):
     def on_inv(self, message):
         pass
 
-class VersionBitsWarningTest(StarchainTestFramework):
+class VersionBitsWarningTest(StarChainTestFramework):
     def set_test_params(self):
         self.setup_clean_chain = True
         self.num_nodes = 1

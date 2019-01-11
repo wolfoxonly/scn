@@ -1,15 +1,15 @@
 /*
- * Qt4 Starchain GUI.
+ * Qt4 StarChain GUI.
  *
  * W.J. van der Laan 2011-2012
- * The Starchain Developers 2011-2013
+ * The StarChain Developers 2011-2013
  */
 #ifndef WALLETVIEW_H
 #define WALLETVIEW_H
 
 #include <QStackedWidget>
 
-class StarchainGUI;
+class StarChainGUI;
 class ClientModel;
 class WalletModel;
 class TransactionView;
@@ -36,16 +36,16 @@ class WalletView : public QStackedWidget
     Q_OBJECT
 
 public:
-    explicit WalletView(QWidget *parent, StarchainGUI *_gui);
+    explicit WalletView(QWidget *parent, StarChainGUI *_gui);
     ~WalletView();
 
-    void setStarchainGUI(StarchainGUI *gui);
+    void setStarChainGUI(StarChainGUI *gui);
     /** Set the client model.
         The client model represents the part of the core that communicates with the P2P network, and is wallet-agnostic.
     */
     void setClientModel(ClientModel *clientModel);
     /** Set the wallet model.
-        The wallet model represents a Starchain wallet, and offers access to the list of transactions, address book and sending
+        The wallet model represents a StarChain wallet, and offers access to the list of transactions, address book and sending
         functionality.
     */
     void setWalletModel(WalletModel *walletModel);
@@ -55,7 +55,7 @@ public:
     void showOutOfSyncWarning(bool fShow);
 
 private:
-    StarchainGUI *gui;
+    StarChainGUI *gui;
     ClientModel *clientModel;
     WalletModel *walletModel;
 

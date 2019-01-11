@@ -1,23 +1,23 @@
 
-Starchain Official Development Repo
+StarChain Official Development Repo
 ==================================
 
 
 
 
 
-### What is Starchain?
-[Starchain](https://Starchain.net) (abbreviated PPC), also known as PPCoin and Peer-to-Peer Coin is the first [cryptocurrency](https://en.wikipedia.org/wiki/Cryptocurrency) design introducing [proof-of-stake consensus](https://Starchain.net/assets/paper/Starchain-paper.pdf) as a security model, with a combined [proof-of-stake](https://Starchain.net/assets/paper/Starchain-paper.pdf)/[proof-of-work](https://en.wikipedia.org/wiki/Proof-of-work_system) minting system. Starchain is based on [Starchain](https://Starchain.org), while introducing many important innovations to cryptocurrency field including new security model, energy efficiency, better minting model and more adaptive response to rapid change in network computation power.
+### What is StarChain?
+[StarChain](https://StarChain.net) (abbreviated PPC), also known as PPCoin and Peer-to-Peer Coin is the first [cryptocurrency](https://en.wikipedia.org/wiki/Cryptocurrency) design introducing [proof-of-stake consensus](https://StarChain.net/assets/paper/StarChain-paper.pdf) as a security model, with a combined [proof-of-stake](https://StarChain.net/assets/paper/StarChain-paper.pdf)/[proof-of-work](https://en.wikipedia.org/wiki/Proof-of-work_system) minting system. StarChain is based on [StarChain](https://StarChain.org), while introducing many important innovations to cryptocurrency field including new security model, energy efficiency, better minting model and more adaptive response to rapid change in network computation power.
 
-### Starchain Resources
+### StarChain Resources
 * Client and Source:
-[Client Binaries](https://Starchain.net/download),
-[Source Code](https://github.com/Starchain/Starchain)
-* Documentation: [Starchain Whitepaper](https://Starchain.net/whitepaper),
-[Starchain Wiki](https://github.com/Starchain/Starchain/wiki)
+[Client Binaries](https://StarChain.net/download),
+[Source Code](https://github.com/StarChain/StarChain)
+* Documentation: [StarChain Whitepaper](https://StarChain.net/whitepaper),
+[StarChain Wiki](https://github.com/StarChain/StarChain/wiki)
 * Help: 
-[Forum](https://talk.Starchain.net),
-[Intro & Important Links](https://talk.Starchain.net/t/what-is-Starchain-intro-important-links/2889)
+[Forum](https://talk.StarChain.net),
+[Intro & Important Links](https://talk.StarChain.net/t/what-is-StarChain-intro-important-links/2889)
 
 Testing
 -------
@@ -38,7 +38,7 @@ Unit tests can be compiled and run (assuming they weren't disabled in configure)
 Every pull request is built for both Windows and Linux on a dedicated server,
 and unit and sanity tests are automatically run. The binaries produced may be
 used for manual QA testing — a link to them will appear in a comment on the
-pull request posted by [StarchainPullTester](https://github.com/StarchainPullTester). See https://github.com/TheBlueMatt/test-scripts
+pull request posted by [StarChainPullTester](https://github.com/StarChainPullTester). See https://github.com/TheBlueMatt/test-scripts
 for the build/test scripts.
 
 ### Manual Quality Assurance (QA) Testing
@@ -48,10 +48,10 @@ than the developer who wrote the code.
 
 * Developers work in their own forks, then submit pull requests when they think their feature or bug fix is ready.
 * If it is a simple/trivial/non-controversial change, then one of the development team members simply pulls it.
-* If it is a more complicated or potentially controversial change, then the change may be discussed in the pull request, or the requester may be asked to start a discussion in the [Starchain Forum](https://talk.Starchain.net) for a broader community discussion. 
+* If it is a more complicated or potentially controversial change, then the change may be discussed in the pull request, or the requester may be asked to start a discussion in the [StarChain Forum](https://talk.StarChain.net) for a broader community discussion. 
 * The patch will be accepted if there is broad consensus that it is a good thing. Developers should expect to rework and resubmit patches if they don't match the project's coding conventions (see coding.txt) or are controversial.
 * From time to time a pull request will become outdated. If this occurs, and the pull is no longer automatically mergeable; a comment on the pull will be used to issue a warning of closure.  Pull requests closed in this manner will have their corresponding issue labeled 'stagnant'.
-* For development ideas and help see [here](https://talk.Starchain.net/c/protocol).
+* For development ideas and help see [here](https://talk.StarChain.net/c/protocol).
 
 ## Branches:
 

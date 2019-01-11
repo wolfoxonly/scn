@@ -2,7 +2,7 @@
 #include "ui_coincontroldialog.h"
 
 #include "init.h"
-#include "Starchainunits.h"
+#include "StarChainunits.h"
 #include "walletmodel.h"
 #include "addresstablemodel.h"
 #include "optionsmodel.h"
@@ -514,7 +514,7 @@ void CoinControlDialog::updateLabels(WalletModel *model, QDialog* dialog)
             QString address = payee.first;
             qint64 amount = payee.second;
             CScript scriptPubKey;
-            scriptPubKey.SetDestination(CStarchainAddress(address.toStdString()).Get());
+            scriptPubKey.SetDestination(CStarChainAddress(address.toStdString()).Get());
             CTxOut txout(amount, scriptPubKey);
             txDummy.vout.push_back(txout);
         }
@@ -575,7 +575,7 @@ void CoinControlDialog::updateLabels(WalletModel *model, QDialog* dialog)
     }
 
     // actually update labels
-    int nDisplayUnit = StarchainUnits::BTC;
+    int nDisplayUnit = StarChainUnits::BTC;
     if (model && model->getOptionsModel())
         nDisplayUnit = model->getOptionsModel()->getDisplayUnit();
 
@@ -596,13 +596,13 @@ void CoinControlDialog::updateLabels(WalletModel *model, QDialog* dialog)
 
     // stats
     l1->setText(QString::number(nQuantity));                                 // Quantity
-    l2->setText(StarchainUnits::formatWithUnit(nDisplayUnit, nAmount));        // Amount
-    l3->setText(StarchainUnits::formatWithUnit(nDisplayUnit, nPayFee));        // Fee
-    l4->setText(StarchainUnits::formatWithUnit(nDisplayUnit, nAfterFee));      // After Fee
+    l2->setText(StarChainUnits::formatWithUnit(nDisplayUnit, nAmount));        // Amount
+    l3->setText(StarChainUnits::formatWithUnit(nDisplayUnit, nPayFee));        // Fee
+    l4->setText(StarChainUnits::formatWithUnit(nDisplayUnit, nAfterFee));      // After Fee
     l5->setText(((nBytes > 0) ? "~" : "") + QString::number(nBytes));                                    // Bytes
     l6->setText(sPriorityLabel);                                             // Priority
     l7->setText((fLowOutput ? (fDust ? tr("DUST") : tr("yes")) : tr("no"))); // Low Output / Dust
-    l8->setText(StarchainUnits::formatWithUnit(nDisplayUnit, nChange));        // Change
+    l8->setText(StarChainUnits::formatWithUnit(nDisplayUnit, nChange));        // Change
 
     // turn labels "red"
     l5->setStyleSheet((nBytes >= 10000) ? "color:red;" : "");               // Bytes >= 10000
@@ -613,8 +613,8 @@ void CoinControlDialog::updateLabels(WalletModel *model, QDialog* dialog)
     // tool tips
     l5->setToolTip(tr("This label turns red, if the transaction size is bigger than 10000 bytes.\n\n Can vary +/- 1 Byte per input."));
     l6->setToolTip(tr("Transactions with higher priority get more likely into a block.\n\nThis label turns red, if the priority is smaller than \"medium\"."));
-    l7->setToolTip(tr("This label turns red, if any recipient receives an amount smaller than %1.\n\n This means the transaction will be rejected.").arg(StarchainUnits::formatWithUnit(nDisplayUnit, CENT)));
-    l8->setToolTip(tr("If the change is smaller than %1 it will be added to the fees.").arg(StarchainUnits::formatWithUnit(nDisplayUnit, CENT)));
+    l7->setToolTip(tr("This label turns red, if any recipient receives an amount smaller than %1.\n\n This means the transaction will be rejected.").arg(StarChainUnits::formatWithUnit(nDisplayUnit, CENT)));
+    l8->setToolTip(tr("If the change is smaller than %1 it will be added to the fees.").arg(StarChainUnits::formatWithUnit(nDisplayUnit, CENT)));
     dialog->findChild<QLabel *>("labelCoinControlFeeText")      ->setToolTip(l3->toolTip());
     dialog->findChild<QLabel *>("labelCoinControlBytesText")    ->setToolTip(l5->toolTip());
     dialog->findChild<QLabel *>("labelCoinControlPriorityText") ->setToolTip(l6->toolTip());
@@ -693,9 +693,9 @@ void CoinControlDialog::updateView()
             QString sAddress = "";
             if(ExtractDestination(out.tx->vout[out.i].scriptPubKey, outputAddress))
             {
-                sAddress = CStarchainAddress(outputAddress).ToString().c_str();
+                sAddress = CStarChainAddress(outputAddress).ToString().c_str();
 
-                // if listMode or change => show Starchain address. In tree mode, address is not shown again for direct wallet address outputs
+                // if listMode or change => show StarChain address. In tree mode, address is not shown again for direct wallet address outputs
                 if (!treeMode || (!(sAddress == sWalletAddress)))
                     itemOutput->setText(COLUMN_ADDRESS, sAddress);
 
@@ -721,7 +721,7 @@ void CoinControlDialog::updateView()
             }
 
             // amount
-            itemOutput->setText(COLUMN_AMOUNT, StarchainUnits::format(nDisplayUnit, out.tx->vout[out.i].nValue));
+            itemOutput->setText(COLUMN_AMOUNT, StarChainUnits::format(nDisplayUnit, out.tx->vout[out.i].nValue));
             itemOutput->setData(COLUMN_AMOUNT_INT64, Qt::DisplayRole, out.tx->vout[out.i].nValue);
 
             // date
@@ -775,7 +775,7 @@ void CoinControlDialog::updateView()
         {
             dPrioritySum = dPrioritySum / (nInputSum + 78);
             itemWalletAddress->setText(COLUMN_CHECKBOX, "(" + QString::number(nChildren) + ")");
-            itemWalletAddress->setText(COLUMN_AMOUNT, StarchainUnits::format(nDisplayUnit, nSum));
+            itemWalletAddress->setText(COLUMN_AMOUNT, StarChainUnits::format(nDisplayUnit, nSum));
             itemWalletAddress->setData(COLUMN_AMOUNT_INT64, Qt::DisplayRole, nSum);
             itemWalletAddress->setText(COLUMN_PRIORITY, CoinControlDialog::getPriorityLabel(dPrioritySum));
             itemWalletAddress->setData(COLUMN_PRIORITY_INT64, Qt::DisplayRole, (int64)dPrioritySum);

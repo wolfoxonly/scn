@@ -1,5 +1,5 @@
-// Copyright (c) 2009-2012 Starchain Developers
-// Copyright (c) 2012-2017 The Starchain developers
+// Copyright (c) 2009-2012 StarChain Developers
+// Copyright (c) 2012-2017 The StarChain developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -42,7 +42,7 @@ Value importprivkey(const Array& params, bool fHelp)
 {
     if (fHelp || params.size() < 1 || params.size() > 3)
         throw runtime_error(
-            "importprivkey <Starchainprivkey> [label] [rescan=true]\n"
+            "importprivkey <StarChainprivkey> [label] [rescan=true]\n"
             "Adds a private key (as returned by dumpprivkey) to your wallet.");
 
     string strSecret = params[0].get_str();
@@ -55,7 +55,7 @@ Value importprivkey(const Array& params, bool fHelp)
     if (params.size() > 2)
         fRescan = params[2].get_bool();
 
-    CStarchainSecret vchSecret;
+    CStarChainSecret vchSecret;
     bool fGood = vchSecret.SetString(strSecret);
 
     if (!fGood) throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Invalid private key");
@@ -91,13 +91,13 @@ Value dumpprivkey(const Array& params, bool fHelp)
 {
     if (fHelp || params.size() != 1)
         throw runtime_error(
-            "dumpprivkey <Starchainaddress>\n"
-            "Reveals the private key corresponding to <Starchainaddress>.");
+            "dumpprivkey <StarChainaddress>\n"
+            "Reveals the private key corresponding to <StarChainaddress>.");
 
     string strAddress = params[0].get_str();
-    CStarchainAddress address;
+    CStarChainAddress address;
     if (!address.SetString(strAddress))
-        throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Invalid Starchain address");
+        throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Invalid StarChain address");
     if (pwalletMain->IsLocked())
         throw JSONRPCError(RPC_WALLET_UNLOCK_NEEDED, "Error: Please enter the wallet passphrase with walletpassphrase first.");
     if (fWalletUnlockMintOnly) // ppcoin: no dumpprivkey in mint-only mode
@@ -110,5 +110,5 @@ Value dumpprivkey(const Array& params, bool fHelp)
     bool fCompressed;
     if (!pwalletMain->GetSecret(keyID, vchSecret, fCompressed))
         throw JSONRPCError(RPC_WALLET_ERROR, "Private key for address " + strAddress + " is not known");
-    return CStarchainSecret(vchSecret, fCompressed).ToString();
+    return CStarChainSecret(vchSecret, fCompressed).ToString();
 }

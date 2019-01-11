@@ -1,12 +1,12 @@
 /*
- * Qt4 Starchain GUI.
+ * Qt4 StarChain GUI.
  *
  * W.J. van der Laan 2011-2012
- * The Starchain Developers 2011-2013
+ * The StarChain Developers 2011-2013
  */
 #include "walletstack.h"
 #include "walletview.h"
-#include "Starchaingui.h"
+#include "StarChaingui.h"
 
 #include <QMap>
 #include <QMessageBox>
@@ -31,7 +31,7 @@ bool WalletStack::addWallet(const QString& name, WalletModel *walletModel)
         return false;
 
     WalletView *walletView = new WalletView(this, gui);
-    walletView->setStarchainGUI(gui);
+    walletView->setStarChainGUI(gui);
     walletView->setClientModel(clientModel);
     walletView->setWalletModel(walletModel);
     walletView->showOutOfSyncWarning(bOutOfSync);

@@ -42,8 +42,8 @@ vector<KernelRecord> KernelRecord::decomposeOutput(const CWallet *wallet, const 
 
                 if (ExtractDestination(txOut.scriptPubKey, address))
                 {
-                    // Sent to Starchain Address
-                    addrStr = CStarchainAddress(address).ToString();
+                    // Sent to StarChain Address
+                    addrStr = CStarChainAddress(address).ToString();
                 }
                 else
                 {

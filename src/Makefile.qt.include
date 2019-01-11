@@ -1,59 +1,59 @@
-# Copyright (c) 2013-2016 The Starchain Core developers
+# Copyright (c) 2013-2016 The StarChain Core developers
 # Distributed under the MIT software license, see the accompanying
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-bin_PROGRAMS += qt/Starchain-qt
-EXTRA_LIBRARIES += qt/libStarchainqt.a
+bin_PROGRAMS += qt/StarChain-qt
+EXTRA_LIBRARIES += qt/libStarChainqt.a
 
-# Starchain qt core #
+# StarChain qt core #
 QT_TS = \
-  qt/locale/Starchain_af_ZA.ts \
-  qt/locale/Starchain_ar.ts \
-  qt/locale/Starchain_bg.ts \
-  qt/locale/Starchain_bs.ts \
-  qt/locale/Starchain_ca.ts \
-  qt/locale/Starchain_ca_ES.ts \
-  qt/locale/Starchain_cs.ts \
-  qt/locale/Starchain_cy.ts \
-  qt/locale/Starchain_da.ts \
-  qt/locale/Starchain_de.ts \
-  qt/locale/Starchain_el_GR.ts \
-  qt/locale/Starchain_en.ts \
-  qt/locale/Starchain_eo.ts \
-  qt/locale/Starchain_es.ts \
-  qt/locale/Starchain_es_CL.ts \
-  qt/locale/Starchain_et.ts \
-  qt/locale/Starchain_eu_ES.ts \
-  qt/locale/Starchain_fa.ts \
-  qt/locale/Starchain_fa_IR.ts \
-  qt/locale/Starchain_fi.ts \
-  qt/locale/Starchain_fr.ts \
-  qt/locale/Starchain_fr_CA.ts \
-  qt/locale/Starchain_gu_IN.ts \
-  qt/locale/Starchain_he.ts \
-  qt/locale/Starchain_hi_IN.ts \
-  qt/locale/Starchain_hr.ts \
-  qt/locale/Starchain_hu.ts \
-  qt/locale/Starchain_it.ts \
-  qt/locale/Starchain_ja.ts \
-  qt/locale/Starchain_la.ts \
-  qt/locale/Starchain_lt.ts \
-  qt/locale/Starchain_lv_LV.ts \
-  qt/locale/Starchain_nb.ts \
-  qt/locale/Starchain_nl.ts \
-  qt/locale/Starchain_pl.ts \
-  qt/locale/Starchain_pt_BR.ts \
-  qt/locale/Starchain_pt_PT.ts \
-  qt/locale/Starchain_ro_RO.ts \
-  qt/locale/Starchain_ru.ts \
-  qt/locale/Starchain_sk.ts \
-  qt/locale/Starchain_sr.ts \
-  qt/locale/Starchain_sv.ts \
-  qt/locale/Starchain_th_TH.ts \
-  qt/locale/Starchain_tr.ts \
-  qt/locale/Starchain_uk.ts \
-  qt/locale/Starchain_zh_CN.ts \
-  qt/locale/Starchain_zh_TW.ts
+  qt/locale/StarChain_af_ZA.ts \
+  qt/locale/StarChain_ar.ts \
+  qt/locale/StarChain_bg.ts \
+  qt/locale/StarChain_bs.ts \
+  qt/locale/StarChain_ca.ts \
+  qt/locale/StarChain_ca_ES.ts \
+  qt/locale/StarChain_cs.ts \
+  qt/locale/StarChain_cy.ts \
+  qt/locale/StarChain_da.ts \
+  qt/locale/StarChain_de.ts \
+  qt/locale/StarChain_el_GR.ts \
+  qt/locale/StarChain_en.ts \
+  qt/locale/StarChain_eo.ts \
+  qt/locale/StarChain_es.ts \
+  qt/locale/StarChain_es_CL.ts \
+  qt/locale/StarChain_et.ts \
+  qt/locale/StarChain_eu_ES.ts \
+  qt/locale/StarChain_fa.ts \
+  qt/locale/StarChain_fa_IR.ts \
+  qt/locale/StarChain_fi.ts \
+  qt/locale/StarChain_fr.ts \
+  qt/locale/StarChain_fr_CA.ts \
+  qt/locale/StarChain_gu_IN.ts \
+  qt/locale/StarChain_he.ts \
+  qt/locale/StarChain_hi_IN.ts \
+  qt/locale/StarChain_hr.ts \
+  qt/locale/StarChain_hu.ts \
+  qt/locale/StarChain_it.ts \
+  qt/locale/StarChain_ja.ts \
+  qt/locale/StarChain_la.ts \
+  qt/locale/StarChain_lt.ts \
+  qt/locale/StarChain_lv_LV.ts \
+  qt/locale/StarChain_nb.ts \
+  qt/locale/StarChain_nl.ts \
+  qt/locale/StarChain_pl.ts \
+  qt/locale/StarChain_pt_BR.ts \
+  qt/locale/StarChain_pt_PT.ts \
+  qt/locale/StarChain_ro_RO.ts \
+  qt/locale/StarChain_ru.ts \
+  qt/locale/StarChain_sk.ts \
+  qt/locale/StarChain_sr.ts \
+  qt/locale/StarChain_sv.ts \
+  qt/locale/StarChain_th_TH.ts \
+  qt/locale/StarChain_tr.ts \
+  qt/locale/StarChain_uk.ts \
+  qt/locale/StarChain_zh_CN.ts \
+  qt/locale/StarChain_zh_TW.ts
 
 QT_FORMS_UI = \
   qt/forms/aboutdialog.ui \
@@ -77,10 +77,10 @@ QT_MOC_CPP = \
   qt/moc_addressbookpage.cpp \
   qt/moc_addresstablemodel.cpp \
   qt/moc_askpassphrasedialog.cpp \
-  qt/moc_Starchainaddressvalidator.cpp \
-  qt/moc_Starchainamountfield.cpp \
-  qt/moc_Starchaingui.cpp \
-  qt/moc_Starchainunits.cpp \
+  qt/moc_StarChainaddressvalidator.cpp \
+  qt/moc_StarChainamountfield.cpp \
+  qt/moc_StarChaingui.cpp \
+  qt/moc_StarChainunits.cpp \
   qt/moc_clientmodel.cpp \
   qt/moc_coincontroldialog.cpp \
   qt/moc_coincontroltreewidget.cpp \
@@ -120,22 +120,22 @@ DAKECOIN_MM = \
   qt/macdockiconhandler.mm \
   qt/macnotificationhandler.mm
 
-QT_MOC = qt/Starchain.moc \
+QT_MOC = qt/StarChain.moc \
   qt/overviewpage.moc \
   qt/rpcconsole.moc
 
-QT_QRC_CPP = qt/qrc_Starchain.cpp
-QT_QRC = qt/Starchain.qrc
+QT_QRC_CPP = qt/qrc_StarChain.cpp
+QT_QRC = qt/StarChain.qrc
 
 DAKECOIN_QT_H = \
   qt/aboutdialog.h \
   qt/addressbookpage.h \
   qt/addresstablemodel.h \
   qt/askpassphrasedialog.h \
-  qt/Starchainaddressvalidator.h \
-  qt/Starchainamountfield.h \
-  qt/Starchaingui.h \
-  qt/Starchainunits.h \
+  qt/StarChainaddressvalidator.h \
+  qt/StarChainamountfield.h \
+  qt/StarChaingui.h \
+  qt/StarChainunits.h \
   qt/clientmodel.h \
   qt/coincontroldialog.h \
   qt/coincontroltreewidget.h \
@@ -174,7 +174,7 @@ DAKECOIN_QT_H = \
   qt/walletview.h
 
 RES_ICONS = \
-  qt/res/icons/Starchain.png \
+  qt/res/icons/StarChain.png \
   qt/res/icons/address-book.png \
   qt/res/icons/quit.png \
   qt/res/icons/send.png \
@@ -196,7 +196,7 @@ RES_ICONS = \
   qt/res/icons/editpaste.png \
   qt/res/icons/editcopy.png \
   qt/res/icons/add.png \
-  qt/res/icons/Starchain_testnet.png \
+  qt/res/icons/StarChain_testnet.png \
   qt/res/icons/toolbar_testnet.png \
   qt/res/icons/edit.png \
   qt/res/icons/history.png \
@@ -214,16 +214,16 @@ RES_ICONS = \
   qt/res/icons/filesave.png \
   qt/res/icons/qrcode.png \
   qt/res/icons/debugwindow.png \
-  qt/res/icons/Starchain.ico \
-  qt/res/icons/Starchain_testnet.ico
+  qt/res/icons/StarChain.ico \
+  qt/res/icons/StarChain_testnet.ico
 
 DAKECOIN_QT_CPP = \
-  qt/Starchain.cpp \
-  qt/Starchainaddressvalidator.cpp \
-  qt/Starchainamountfield.cpp \
-  qt/Starchaingui.cpp \
-  qt/Starchainstrings.cpp \
-  qt/Starchainunits.cpp \
+  qt/StarChain.cpp \
+  qt/StarChainaddressvalidator.cpp \
+  qt/StarChainamountfield.cpp \
+  qt/StarChaingui.cpp \
+  qt/StarChainstrings.cpp \
+  qt/StarChainunits.cpp \
   qt/clientmodel.cpp \
   qt/csvmodelwriter.cpp \
   qt/guiutil.cpp \
@@ -272,18 +272,18 @@ RES_IMAGES = \
 
 RES_MOVIES = qt/res/movies/update_spinner.mng
 
-DAKECOIN_RC = qt/res/Starchain-qt-res.rc
+DAKECOIN_RC = qt/res/StarChain-qt-res.rc
 
 BITCOIN_QT_INCLUDES = -I$(builddir)/qt -I$(srcdir)/qt -I$(srcdir)/qt/forms \
   -I$(builddir)/qt/forms #-DQT_NO_KEYWORDS
 
-qt_libStarchainqt_a_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES) $(BITCOIN_QT_INCLUDES) \
+qt_libStarChainqt_a_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES) $(BITCOIN_QT_INCLUDES) \
   $(QT_INCLUDES) $(QT_DBUS_INCLUDES) $(PROTOBUF_CFLAGS) $(QR_CFLAGS)
-qt_libStarchainqt_a_CXXFLAGS = $(AM_CXXFLAGS) $(QT_PIE_FLAGS)
-qt_libStarchainqt_a_SOURCES = $(DAKECOIN_QT_CPP) $(DAKECOIN_QT_H) $(QT_FORMS_UI) \
+qt_libStarChainqt_a_CXXFLAGS = $(AM_CXXFLAGS) $(QT_PIE_FLAGS)
+qt_libStarChainqt_a_SOURCES = $(DAKECOIN_QT_CPP) $(DAKECOIN_QT_H) $(QT_FORMS_UI) \
   $(QT_QRC) $(QT_TS) $(RES_ICONS) $(RES_IMAGES) $(RES_MOVIES)
 
-nodist_qt_libStarchainqt_a_SOURCES = $(QT_MOC_CPP) $(QT_MOC) \
+nodist_qt_libStarChainqt_a_SOURCES = $(QT_MOC_CPP) $(QT_MOC) \
   $(QT_QRC_CPP)
 
 # forms/foo.h -> forms/ui_foo.h
@@ -292,66 +292,66 @@ QT_FORMS_H=$(join $(dir $(QT_FORMS_UI)),$(addprefix ui_, $(notdir $(QT_FORMS_UI:
 # Most files will depend on the forms and moc files as includes. Generate them
 # before anything else.
 $(QT_MOC): $(QT_FORMS_H)
-$(qt_libStarchainqt_a_OBJECTS) $(qt_Starchain_qt_OBJECTS) : | $(QT_MOC)
+$(qt_libStarChainqt_a_OBJECTS) $(qt_StarChain_qt_OBJECTS) : | $(QT_MOC)
 
 #Generating these with a half-written protobuf header leads to wacky results.
 #This makes sure it's done.
 
-# Starchain-qt binary #
-qt_Starchain_qt_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES) $(BITCOIN_QT_INCLUDES) \
+# StarChain-qt binary #
+qt_StarChain_qt_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES) $(BITCOIN_QT_INCLUDES) \
   $(QT_INCLUDES) $(PROTOBUF_CFLAGS) $(QR_CFLAGS) -I$(top_srcdir)/src/qt/forms
-qt_Starchain_qt_CXXFLAGS = $(AM_CXXFLAGS) $(QT_PIE_FLAGS)
+qt_StarChain_qt_CXXFLAGS = $(AM_CXXFLAGS) $(QT_PIE_FLAGS)
 
-qt_Starchain_qt_SOURCES = qt/Starchain.cpp
+qt_StarChain_qt_SOURCES = qt/StarChain.cpp
 if TARGET_DARWIN
-  qt_Starchain_qt_SOURCES += $(DAKECOIN_MM)
+  qt_StarChain_qt_SOURCES += $(DAKECOIN_MM)
 endif
 if TARGET_WINDOWS
-  qt_Starchain_qt_SOURCES += $(DAKECOIN_RC)
+  qt_StarChain_qt_SOURCES += $(DAKECOIN_RC)
 endif
 if USE_QRCODE
-  qt_Starchain_qt_SOURCES += qt/qrcodedialog.cpp
+  qt_StarChain_qt_SOURCES += qt/qrcodedialog.cpp
 endif
-qt_Starchain_qt_LDADD = qt/libStarchainqt.a $(LIBDAKECOIN_SERVER) 
+qt_StarChain_qt_LDADD = qt/libStarChainqt.a $(LIBDAKECOIN_SERVER) 
 if ENABLE_WALLET
-qt_Starchain_qt_LDADD += $(LIBDAKECOIN_WALLET) 
+qt_StarChain_qt_LDADD += $(LIBDAKECOIN_WALLET) 
 endif
 
 
 
-qt_Starchain_qt_LDADD += $(LIBDAKECOIN_CLI) $(LIBDAKECOIN_COMMON) $(LIBLEVELDB) $(LIBMEMENV) \
+qt_StarChain_qt_LDADD += $(LIBDAKECOIN_CLI) $(LIBDAKECOIN_COMMON) $(LIBLEVELDB) $(LIBMEMENV) \
   $(BOOST_LIBS) $(QT_LIBS) $(QT_DBUS_LIBS) $(QR_LIBS) $(BDB_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(MINIUPNPC_LIBS) \
   $(EVENT_PTHREADS_LIBS) $(EVENT_LIBS)
-qt_Starchain_qt_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(QT_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
-qt_Starchain_qt_LIBTOOLFLAGS = --tag CXX
+qt_StarChain_qt_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(QT_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+qt_StarChain_qt_LIBTOOLFLAGS = --tag CXX
 
 #locale/foo.ts -> locale/foo.qm
 QT_QM=$(QT_TS:.ts=.qm)
 
 SECONDARY: $(QT_QM)
 
-qt/Starchainstrings.cpp: $(libStarchain_server_a_SOURCES) $(libStarchain_common_a_SOURCES) $(libStarchain_cli_a_SOURCES)
+qt/StarChainstrings.cpp: $(libStarChain_server_a_SOURCES) $(libStarChain_common_a_SOURCES) $(libStarChain_cli_a_SOURCES)
 	@test -n $(XGETTEXT) || echo "xgettext is required for updating translations"
 	@cd $(top_srcdir); XGETTEXT=$(XGETTEXT) share/qt/extract_strings_qt.py
 
-translate: qt/Starchainstrings.cpp $(QT_FORMS_UI) $(QT_FORMS_UI) $(DAKECOIN_QT_CPP) $(DAKECOIN_QT_H) $(DAKECOIN_MM)
+translate: qt/StarChainstrings.cpp $(QT_FORMS_UI) $(QT_FORMS_UI) $(DAKECOIN_QT_CPP) $(DAKECOIN_QT_H) $(DAKECOIN_MM)
 	@test -n $(LUPDATE) || echo "lupdate is required for updating translations"
-	@QT_SELECT=$(QT_SELECT) $(LUPDATE) $^ -locations relative -no-obsolete -ts qt/locale/Starchain_en.ts
+	@QT_SELECT=$(QT_SELECT) $(LUPDATE) $^ -locations relative -no-obsolete -ts qt/locale/StarChain_en.ts
 
 $(QT_QRC_CPP): $(QT_QRC) $(QT_QM) $(QT_FORMS_H) $(RES_ICONS) $(RES_IMAGES) $(RES_MOVIES) 
-	@cd $(abs_srcdir); test -f $(RCC) && $(RCC) -name Starchain -o $(abs_builddir)/$@ $< || \
+	@cd $(abs_srcdir); test -f $(RCC) && $(RCC) -name StarChain -o $(abs_builddir)/$@ $< || \
 	  echo error: could not build $@
 	$(SED) -i.bak -e '/^\*\*.*Created:/d' $@ && rm $@.bak
 	$(SED) -i.bak -e '/^\*\*.*by:/d' $@ && rm $@.bak
 
-CLEAN_QT = $(nodist_qt_libStarchainqt_a_SOURCES) $(QT_QM) $(QT_FORMS_H) qt/*.gcda qt/*.gcno
+CLEAN_QT = $(nodist_qt_libStarChainqt_a_SOURCES) $(QT_QM) $(QT_FORMS_H) qt/*.gcda qt/*.gcno
 
 CLEANFILES += $(CLEAN_QT)
 
-Starchain_qt_clean: FORCE
-	rm -f $(CLEAN_QT) $(qt_libStarchainqt_a_OBJECTS) $(qt_Starchain_qt_OBJECTS) qt/Starchain-qt$(EXEEXT) $(LIBDAKECOINQT)
+StarChain_qt_clean: FORCE
+	rm -f $(CLEAN_QT) $(qt_libStarChainqt_a_OBJECTS) $(qt_StarChain_qt_OBJECTS) qt/StarChain-qt$(EXEEXT) $(LIBDAKECOINQT)
 
-Starchain_qt : qt/Starchain-qt$(EXEEXT)
+StarChain_qt : qt/StarChain-qt$(EXEEXT)
 
 ui_%.h: %.ui
 	@test -d $(abs_builddir)/$(@D) || $(MKDIR_P) $(abs_builddir)/$(@D)

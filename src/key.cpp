@@ -1,5 +1,5 @@
-// Copyright (c) 2009-2012 The Starchain developers
-// Copyright (c) 2011-2017 The Starchain developers
+// Copyright (c) 2009-2012 The StarChain developers
+// Copyright (c) 2011-2017 The StarChain developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -461,7 +461,7 @@ static std::vector<unsigned char> EncodeLength(size_t nLength)
 
 static bool NormalizeSignature(std::vector<unsigned char>& vchSig)
 {
-    // Prevent the problem described here: https://lists.linuxfoundation.org/pipermail/Starchain-dev/2015-July/009697.html
+    // Prevent the problem described here: https://lists.linuxfoundation.org/pipermail/StarChain-dev/2015-July/009697.html
     // by removing the extra length bytes
 
     if (vchSig.size() < 2 || vchSig[0] != 0x30)

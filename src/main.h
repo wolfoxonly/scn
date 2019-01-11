@@ -1,13 +1,13 @@
 // Copyright (c) 2009-2010 Satoshi Nakamoto
-// Copyright (c) 2009-2012 The Starchain developers
-// Copyright (c) 2011-2017 The Starchain developers
+// Copyright (c) 2009-2012 The StarChain developers
+// Copyright (c) 2011-2017 The StarChain developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 #ifndef BITCOIN_MAIN_H
 #define BITCOIN_MAIN_H
 
 #if defined(HAVE_CONFIG_H)
-#include "Starchain-config.h"
+#include "StarChain-config.h"
 #endif
 
 #include "bignum.h"
@@ -186,7 +186,7 @@ bool SendMessages(CNode* pto, bool fSendTrickle);
 /** Run an instance of the script checking thread */
 void ThreadScriptCheck();
 /** Run the miner threads */
-void GenerateStarchains(bool fGenerate, CWallet* pwallet);
+void GenerateStarChains(bool fGenerate, CWallet* pwallet);
 /** Run the stake minter thread */
 void MintStake(boost::thread_group& threadGroup, CWallet* pwallet);
 /** Generate a new block, without valid proof-of-work */
@@ -212,9 +212,9 @@ std::string GetWarnings(std::string strFor);
 uint256 WantedByOrphan(const CBlock* pblockOrphan);
 const CBlockIndex* GetLastBlockIndex(const CBlockIndex* pindex, bool fProofOfStake);
 #ifdef TESTING
-void StarchainMiner(CWallet *pwallet, bool fProofOfStake, bool fGenerateSingleBlock = false);
+void StarChainMiner(CWallet *pwallet, bool fProofOfStake, bool fGenerateSingleBlock = false);
 #else
-void StarchainMiner(CWallet *pwallet, bool fProofOfStake);
+void StarChainMiner(CWallet *pwallet, bool fProofOfStake);
 #endif
 /** Retrieve a transaction (from memory pool, or from disk, if possible) */
 bool GetTransaction(const uint256 &hash, CTransaction &tx, uint256 &hashBlock, bool fAllowSlow = false);
@@ -664,7 +664,7 @@ public:
      */
     unsigned int GetP2SHSigOpCount(CCoinsViewCache& mapInputs) const;
 
-    /** Amount of Starchains spent by this transaction.
+    /** Amount of StarChains spent by this transaction.
         @return sum of all outputs (note: does not include fees)
      */
     int64 GetValueOut() const
@@ -679,7 +679,7 @@ public:
         return nValueOut;
     }
 
-    /** Amount of Starchains coming in to this transaction
+    /** Amount of StarChains coming in to this transaction
         Note that lightweight clients may not know anything besides the hash of previous transactions,
         so may not be able to calculate this.
 
@@ -1938,7 +1938,7 @@ public:
     }
 
     /**
-     * Duplicate from Starchainrpc that originaly define this method.
+     * Duplicate from StarChainrpc that originaly define this method.
      * May require some cleanup since this method should be available both for rpc
      * and qt clients.
      */

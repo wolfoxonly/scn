@@ -1,5 +1,5 @@
 ---
-name: "Starchain-dmg-signer"
+name: "StarChain-dmg-signer"
 suites:
 - "trusty"
 architectures:
@@ -7,10 +7,10 @@ architectures:
 packages:
 - "faketime"
 remotes:
-- "url": "https://github.com/Starchain-core/Starchain-detached-sigs.git"
+- "url": "https://github.com/StarChain-core/StarChain-detached-sigs.git"
   "dir": "signature"
 files:
-- "Starchain-osx-unsigned.tar.gz"
+- "StarChain-osx-unsigned.tar.gz"
 script: |
   WRAP_DIR=$HOME/wrapped
   mkdir -p ${WRAP_DIR}
@@ -27,8 +27,8 @@ script: |
     chmod +x ${WRAP_DIR}/${prog}
   done
 
-  UNSIGNED=Starchain-osx-unsigned.tar.gz
-  SIGNED=Starchain-osx-signed.dmg
+  UNSIGNED=StarChain-osx-unsigned.tar.gz
+  SIGNED=StarChain-osx-signed.dmg
 
   tar -xf ${UNSIGNED}
   OSX_VOLNAME="$(cat osx_volname)"

@@ -3,9 +3,9 @@ Release Process
 
 Before every release candidate:
 
-* Update translations (ping wumpus on IRC) see [translation_process.md](https://github.com/Starchain/Starchain/blob/master/doc/translation_process.md#synchronising-translations).
+* Update translations (ping wumpus on IRC) see [translation_process.md](https://github.com/StarChain/StarChain/blob/master/doc/translation_process.md#synchronising-translations).
 
-* Update manpages, see [gen-manpages.sh](https://github.com/Starchain/Starchain/blob/master/contrib/devtools/README.md#gen-manpagessh).
+* Update manpages, see [gen-manpages.sh](https://github.com/StarChain/StarChain/blob/master/contrib/devtools/README.md#gen-manpagessh).
 
 Before every minor and major release:
 
@@ -21,7 +21,7 @@ Before every minor and major release:
 
 Before every major release:
 
-* Update hardcoded [seeds](/contrib/seeds/README.md), see [this pull request](https://github.com/Starchain/Starchain/pull/7415) for an example.
+* Update hardcoded [seeds](/contrib/seeds/README.md), see [this pull request](https://github.com/StarChain/StarChain/pull/7415) for an example.
 * Update [`BLOCK_CHAIN_SIZE`](/src/qt/intro.cpp) to the current size plus some overhead.
 * Update `src/chainparams.cpp` chainTxData with statistics about the transaction count and rate.
 * Update version of `contrib/gitian-descriptors/*.yml`: usually one'd want to do this on master after branching off the release - but be sure to at least do it before a new major release
@@ -33,12 +33,12 @@ If you're using the automated script (found in [contrib/gitian-build.sh](/contri
 Check out the source code in the following directory hierarchy.
 
     cd /path/to/your/toplevel/build
-    git clone https://github.com/Starchain-core/gitian.sigs.git
-    git clone https://github.com/Starchain-core/Starchain-detached-sigs.git
+    git clone https://github.com/StarChain-core/gitian.sigs.git
+    git clone https://github.com/StarChain-core/StarChain-detached-sigs.git
     git clone https://github.com/devrandom/gitian-builder.git
-    git clone https://github.com/Starchain/Starchain.git
+    git clone https://github.com/StarChain/StarChain.git
 
-### Starchain maintainers/release engineers, suggestion for writing release notes
+### StarChain maintainers/release engineers, suggestion for writing release notes
 
 Write release notes. git shortlog helps a lot, for example:
 
@@ -61,7 +61,7 @@ If you're using the automated script (found in [contrib/gitian-build.sh](/contri
 
 Setup Gitian descriptors:
 
-    pushd ./Starchain
+    pushd ./StarChain
     export SIGNER=(your Gitian key, ie bluematt, sipa, etc)
     export VERSION=(new version, e.g. 0.8.0)
     git fetch
@@ -95,7 +95,7 @@ Create the OS X SDK tarball, see the [OS X readme](README_osx.md) for details, a
 By default, Gitian will fetch source files as needed. To cache them ahead of time:
 
     pushd ./gitian-builder
-    make -C ../Starchain/depends download SOURCES_PATH=`pwd`/cache/common
+    make -C ../StarChain/depends download SOURCES_PATH=`pwd`/cache/common
     popd
 
 Only missing files will be fetched, so this is safe to re-run for each build.
@@ -103,50 +103,50 @@ Only missing files will be fetched, so this is safe to re-run for each build.
 NOTE: Offline builds must use the --url flag to ensure Gitian fetches only from local URLs. For example:
 
     pushd ./gitian-builder
-    ./bin/gbuild --url Starchain=/path/to/Starchain,signature=/path/to/sigs {rest of arguments}
+    ./bin/gbuild --url StarChain=/path/to/StarChain,signature=/path/to/sigs {rest of arguments}
     popd
 
 The gbuild invocations below <b>DO NOT DO THIS</b> by default.
 
-### Build and sign Starchain Core for Linux, Windows, and OS X:
+### Build and sign StarChain Core for Linux, Windows, and OS X:
 
     pushd ./gitian-builder
-    ./bin/gbuild --num-make 2 --memory 3000 --commit Starchain=v${VERSION} ../Starchain/contrib/gitian-descriptors/gitian-linux.yml
-    ./bin/gsign --signer $SIGNER --release ${VERSION}-linux --destination ../gitian.sigs/ ../Starchain/contrib/gitian-descriptors/gitian-linux.yml
-    mv build/out/Starchain-*.tar.gz build/out/src/Starchain-*.tar.gz ../
+    ./bin/gbuild --num-make 2 --memory 3000 --commit StarChain=v${VERSION} ../StarChain/contrib/gitian-descriptors/gitian-linux.yml
+    ./bin/gsign --signer $SIGNER --release ${VERSION}-linux --destination ../gitian.sigs/ ../StarChain/contrib/gitian-descriptors/gitian-linux.yml
+    mv build/out/StarChain-*.tar.gz build/out/src/StarChain-*.tar.gz ../
 
-    ./bin/gbuild --num-make 2 --memory 3000 --commit Starchain=v${VERSION} ../Starchain/contrib/gitian-descriptors/gitian-win.yml
-    ./bin/gsign --signer $SIGNER --release ${VERSION}-win-unsigned --destination ../gitian.sigs/ ../Starchain/contrib/gitian-descriptors/gitian-win.yml
-    mv build/out/Starchain-*-win-unsigned.tar.gz inputs/Starchain-win-unsigned.tar.gz
-    mv build/out/Starchain-*.zip build/out/Starchain-*.exe ../
+    ./bin/gbuild --num-make 2 --memory 3000 --commit StarChain=v${VERSION} ../StarChain/contrib/gitian-descriptors/gitian-win.yml
+    ./bin/gsign --signer $SIGNER --release ${VERSION}-win-unsigned --destination ../gitian.sigs/ ../StarChain/contrib/gitian-descriptors/gitian-win.yml
+    mv build/out/StarChain-*-win-unsigned.tar.gz inputs/StarChain-win-unsigned.tar.gz
+    mv build/out/StarChain-*.zip build/out/StarChain-*.exe ../
 
-    ./bin/gbuild --num-make 2 --memory 3000 --commit Starchain=v${VERSION} ../Starchain/contrib/gitian-descriptors/gitian-osx.yml
-    ./bin/gsign --signer $SIGNER --release ${VERSION}-osx-unsigned --destination ../gitian.sigs/ ../Starchain/contrib/gitian-descriptors/gitian-osx.yml
-    mv build/out/Starchain-*-osx-unsigned.tar.gz inputs/Starchain-osx-unsigned.tar.gz
-    mv build/out/Starchain-*.tar.gz build/out/Starchain-*.dmg ../
+    ./bin/gbuild --num-make 2 --memory 3000 --commit StarChain=v${VERSION} ../StarChain/contrib/gitian-descriptors/gitian-osx.yml
+    ./bin/gsign --signer $SIGNER --release ${VERSION}-osx-unsigned --destination ../gitian.sigs/ ../StarChain/contrib/gitian-descriptors/gitian-osx.yml
+    mv build/out/StarChain-*-osx-unsigned.tar.gz inputs/StarChain-osx-unsigned.tar.gz
+    mv build/out/StarChain-*.tar.gz build/out/StarChain-*.dmg ../
     popd
 
 Build output expected:
 
-  1. source tarball (`Starchain-${VERSION}.tar.gz`)
-  2. linux 32-bit and 64-bit dist tarballs (`Starchain-${VERSION}-linux[32|64].tar.gz`)
-  3. windows 32-bit and 64-bit unsigned installers and dist zips (`Starchain-${VERSION}-win[32|64]-setup-unsigned.exe`, `Starchain-${VERSION}-win[32|64].zip`)
-  4. OS X unsigned installer and dist tarball (`Starchain-${VERSION}-osx-unsigned.dmg`, `Starchain-${VERSION}-osx64.tar.gz`)
+  1. source tarball (`StarChain-${VERSION}.tar.gz`)
+  2. linux 32-bit and 64-bit dist tarballs (`StarChain-${VERSION}-linux[32|64].tar.gz`)
+  3. windows 32-bit and 64-bit unsigned installers and dist zips (`StarChain-${VERSION}-win[32|64]-setup-unsigned.exe`, `StarChain-${VERSION}-win[32|64].zip`)
+  4. OS X unsigned installer and dist tarball (`StarChain-${VERSION}-osx-unsigned.dmg`, `StarChain-${VERSION}-osx64.tar.gz`)
   5. Gitian signatures (in `gitian.sigs/${VERSION}-<linux|{win,osx}-unsigned>/(your Gitian key)/`)
 
 ### Verify other gitian builders signatures to your own. (Optional)
 
 Add other gitian builders keys to your gpg keyring, and/or refresh keys.
 
-    gpg --import Starchain/contrib/gitian-keys/*.pgp
+    gpg --import StarChain/contrib/gitian-keys/*.pgp
     gpg --refresh-keys
 
 Verify the signatures
 
     pushd ./gitian-builder
-    ./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-linux ../Starchain/contrib/gitian-descriptors/gitian-linux.yml
-    ./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-win-unsigned ../Starchain/contrib/gitian-descriptors/gitian-win.yml
-    ./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-osx-unsigned ../Starchain/contrib/gitian-descriptors/gitian-osx.yml
+    ./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-linux ../StarChain/contrib/gitian-descriptors/gitian-linux.yml
+    ./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-win-unsigned ../StarChain/contrib/gitian-descriptors/gitian-win.yml
+    ./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-osx-unsigned ../StarChain/contrib/gitian-descriptors/gitian-osx.yml
     popd
 
 ### Next steps:
@@ -167,22 +167,22 @@ Codesigner only: Create Windows/OS X detached signatures:
 
 Codesigner only: Sign the osx binary:
 
-    transfer Starchain-osx-unsigned.tar.gz to osx for signing
-    tar xf Starchain-osx-unsigned.tar.gz
+    transfer StarChain-osx-unsigned.tar.gz to osx for signing
+    tar xf StarChain-osx-unsigned.tar.gz
     ./detached-sig-create.sh -s "Key ID"
     Enter the keychain password and authorize the signature
     Move signature-osx.tar.gz back to the gitian host
 
 Codesigner only: Sign the windows binaries:
 
-    tar xf Starchain-win-unsigned.tar.gz
+    tar xf StarChain-win-unsigned.tar.gz
     ./detached-sig-create.sh -key /path/to/codesign.key
     Enter the passphrase for the key when prompted
     signature-win.tar.gz will be created
 
 Codesigner only: Commit the detached codesign payloads:
 
-    cd ~/Starchain-detached-sigs
+    cd ~/StarChain-detached-sigs
     checkout the appropriate branch for this release series
     rm -rf *
     tar xf signature-osx.tar.gz
@@ -195,25 +195,25 @@ Codesigner only: Commit the detached codesign payloads:
 Non-codesigners: wait for Windows/OS X detached signatures:
 
 - Once the Windows/OS X builds each have 3 matching signatures, they will be signed with their respective release keys.
-- Detached signatures will then be committed to the [Starchain-detached-sigs](https://github.com/Starchain-core/Starchain-detached-sigs) repository, which can be combined with the unsigned apps to create signed binaries.
+- Detached signatures will then be committed to the [StarChain-detached-sigs](https://github.com/StarChain-core/StarChain-detached-sigs) repository, which can be combined with the unsigned apps to create signed binaries.
 
 Create (and optionally verify) the signed OS X binary:
 
     pushd ./gitian-builder
-    ./bin/gbuild -i --commit signature=v${VERSION} ../Starchain/contrib/gitian-descriptors/gitian-osx-signer.yml
-    ./bin/gsign --signer $SIGNER --release ${VERSION}-osx-signed --destination ../gitian.sigs/ ../Starchain/contrib/gitian-descriptors/gitian-osx-signer.yml
-    ./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-osx-signed ../Starchain/contrib/gitian-descriptors/gitian-osx-signer.yml
-    mv build/out/Starchain-osx-signed.dmg ../Starchain-${VERSION}-osx.dmg
+    ./bin/gbuild -i --commit signature=v${VERSION} ../StarChain/contrib/gitian-descriptors/gitian-osx-signer.yml
+    ./bin/gsign --signer $SIGNER --release ${VERSION}-osx-signed --destination ../gitian.sigs/ ../StarChain/contrib/gitian-descriptors/gitian-osx-signer.yml
+    ./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-osx-signed ../StarChain/contrib/gitian-descriptors/gitian-osx-signer.yml
+    mv build/out/StarChain-osx-signed.dmg ../StarChain-${VERSION}-osx.dmg
     popd
 
 Create (and optionally verify) the signed Windows binaries:
 
     pushd ./gitian-builder
-    ./bin/gbuild -i --commit signature=v${VERSION} ../Starchain/contrib/gitian-descriptors/gitian-win-signer.yml
-    ./bin/gsign --signer $SIGNER --release ${VERSION}-win-signed --destination ../gitian.sigs/ ../Starchain/contrib/gitian-descriptors/gitian-win-signer.yml
-    ./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-win-signed ../Starchain/contrib/gitian-descriptors/gitian-win-signer.yml
-    mv build/out/Starchain-*win64-setup.exe ../Starchain-${VERSION}-win64-setup.exe
-    mv build/out/Starchain-*win32-setup.exe ../Starchain-${VERSION}-win32-setup.exe
+    ./bin/gbuild -i --commit signature=v${VERSION} ../StarChain/contrib/gitian-descriptors/gitian-win-signer.yml
+    ./bin/gsign --signer $SIGNER --release ${VERSION}-win-signed --destination ../gitian.sigs/ ../StarChain/contrib/gitian-descriptors/gitian-win-signer.yml
+    ./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-win-signed ../StarChain/contrib/gitian-descriptors/gitian-win-signer.yml
+    mv build/out/StarChain-*win64-setup.exe ../StarChain-${VERSION}-win64-setup.exe
+    mv build/out/StarChain-*win32-setup.exe ../StarChain-${VERSION}-win32-setup.exe
     popd
 
 Commit your signature for the signed OS X/Windows binaries:
@@ -235,23 +235,23 @@ sha256sum * > SHA256SUMS
 
 The list of files should be:
 ```
-Starchain-${VERSION}-aarch64-linux-gnu.tar.gz
-Starchain-${VERSION}-arm-linux-gnueabihf.tar.gz
-Starchain-${VERSION}-i686-pc-linux-gnu.tar.gz
-Starchain-${VERSION}-x86_64-linux-gnu.tar.gz
-Starchain-${VERSION}-osx64.tar.gz
-Starchain-${VERSION}-osx.dmg
-Starchain-${VERSION}.tar.gz
-Starchain-${VERSION}-win32-setup.exe
-Starchain-${VERSION}-win32.zip
-Starchain-${VERSION}-win64-setup.exe
-Starchain-${VERSION}-win64.zip
+StarChain-${VERSION}-aarch64-linux-gnu.tar.gz
+StarChain-${VERSION}-arm-linux-gnueabihf.tar.gz
+StarChain-${VERSION}-i686-pc-linux-gnu.tar.gz
+StarChain-${VERSION}-x86_64-linux-gnu.tar.gz
+StarChain-${VERSION}-osx64.tar.gz
+StarChain-${VERSION}-osx.dmg
+StarChain-${VERSION}.tar.gz
+StarChain-${VERSION}-win32-setup.exe
+StarChain-${VERSION}-win32.zip
+StarChain-${VERSION}-win64-setup.exe
+StarChain-${VERSION}-win64.zip
 ```
 The `*-debug*` files generated by the gitian build contain debug symbols
 for troubleshooting by developers. It is assumed that anyone that is interested
 in debugging can run gitian to generate the files for themselves. To avoid
 end-user confusion about which file to pick, as well as save storage
-space *do not upload these to the Starchain.org server, nor put them in the torrent*.
+space *do not upload these to the StarChain.org server, nor put them in the torrent*.
 
 - GPG-sign it, delete the unsigned file:
 ```
@@ -261,49 +261,49 @@ rm SHA256SUMS
 (the digest algorithm is forced to sha256 to avoid confusion of the `Hash:` header that GPG adds with the SHA256 used for the files)
 Note: check that SHA256SUMS itself doesn't end up in SHA256SUMS, which is a spurious/nonsensical entry.
 
-- Upload zips and installers, as well as `SHA256SUMS.asc` from last step, to the Starchain.org server
-  into `/var/www/bin/Starchain-core-${VERSION}`
+- Upload zips and installers, as well as `SHA256SUMS.asc` from last step, to the StarChain.org server
+  into `/var/www/bin/StarChain-core-${VERSION}`
 
 - A `.torrent` will appear in the directory after a few minutes. Optionally help seed this torrent. To get the `magnet:` URI use:
 ```bash
 transmission-show -m <torrent file>
 ```
 Insert the magnet URI into the announcement sent to mailing lists. This permits
-people without access to `Starchain.org` to download the binary distribution.
+people without access to `StarChain.org` to download the binary distribution.
 Also put it into the `optional_magnetlink:` slot in the YAML file for
-Starchain.org (see below for Starchain.org update instructions).
+StarChain.org (see below for StarChain.org update instructions).
 
-- Update Starchain.org version
+- Update StarChain.org version
 
-  - First, check to see if the Starchain.org maintainers have prepared a
-    release: https://github.com/Starchain-dot-org/Starchain.org/labels/Releases
+  - First, check to see if the StarChain.org maintainers have prepared a
+    release: https://github.com/StarChain-dot-org/StarChain.org/labels/Releases
 
       - If they have, it will have previously failed their Travis CI
         checks because the final release files weren't uploaded.
         Trigger a Travis CI rebuild---if it passes, merge.
 
-  - If they have not prepared a release, follow the Starchain.org release
-    instructions: https://github.com/Starchain-dot-org/Starchain.org#release-notes
+  - If they have not prepared a release, follow the StarChain.org release
+    instructions: https://github.com/StarChain-dot-org/StarChain.org#release-notes
 
   - After the pull request is merged, the website will automatically show the newest version within 15 minutes, as well
     as update the OS download links. Ping @saivann/@harding (saivann/harding on Freenode) in case anything goes wrong
 
 - Announce the release:
 
-  - Starchain-dev and Starchain-core-dev mailing list
+  - StarChain-dev and StarChain-core-dev mailing list
 
-  - Starchain Core announcements list https://bitcoincore.org/en/list/announcements/join/
+  - StarChain Core announcements list https://bitcoincore.org/en/list/announcements/join/
 
   - bitcoincore.org blog post
 
-  - Update title of #Starchain on Freenode IRC
+  - Update title of #StarChain on Freenode IRC
 
-  - Optionally twitter, reddit /r/Starchain, ... but this will usually sort out itself
+  - Optionally twitter, reddit /r/StarChain, ... but this will usually sort out itself
 
-  - Notify BlueMatt so that he can start building [the PPAs](https://launchpad.net/~Starchain/+archive/ubuntu/Starchain)
+  - Notify BlueMatt so that he can start building [the PPAs](https://launchpad.net/~StarChain/+archive/ubuntu/StarChain)
 
   - Archive release notes for the new version to `doc/release-notes/` (branch `master` and branch of the release)
 
-  - Create a [new GitHub release](https://github.com/Starchain/Starchain/releases/new) with a link to the archived release notes.
+  - Create a [new GitHub release](https://github.com/StarChain/StarChain/releases/new) with a link to the archived release notes.
 
   - Celebrate

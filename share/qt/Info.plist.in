@@ -11,7 +11,7 @@
   </array>
 
   <key>CFBundleIconFile</key>
-  <string>Starchain.icns</string>
+  <string>StarChain.icns</string>
 
   <key>CFBundlePackageType</key>
   <string>APPL</string>
@@ -29,16 +29,16 @@
   <string>????</string>
 
   <key>CFBundleExecutable</key>
-  <string>Starchain-Qt</string>
+  <string>StarChain-Qt</string>
   
   <key>CFBundleName</key>
-  <string>Starchain-Qt</string>
+  <string>StarChain-Qt</string>
 
   <key>LSHasLocalizedDisplayName</key>
   <true/>
 
   <key>CFBundleIdentifier</key>
-  <string>org.Starchainfoundation.Starchain-Qt</string>
+  <string>org.StarChainfoundation.StarChain-Qt</string>
 
   <key>CFBundleURLTypes</key>
   <array>
@@ -46,10 +46,10 @@
       <key>CFBundleTypeRole</key>
       <string>Editor</string>
       <key>CFBundleURLName</key>
-      <string>org.Starchain.StarchainPayment</string>
+      <string>org.StarChain.StarChainPayment</string>
       <key>CFBundleURLSchemes</key>
       <array>
-        <string>Starchain</string>
+        <string>StarChain</string>
       </array>
     </dict>
   </array>
@@ -58,9 +58,9 @@
   <array>
     <dict>
       <key>UTTypeIdentifier</key>
-      <string>org.Starchain.paymentrequest</string>
+      <string>org.StarChain.paymentrequest</string>
       <key>UTTypeDescription</key>
-      <string>Starchain payment request</string>
+      <string>StarChain payment request</string>
       <key>UTTypeConformsTo</key>
       <array>
         <string>public.data</string>
@@ -68,10 +68,10 @@
       <key>UTTypeTagSpecification</key>
       <dict>
         <key>public.mime-type</key>
-        <string>application/x-Starchain-payment-request</string>
+        <string>application/x-StarChain-payment-request</string>
         <key>public.filename-extension</key>
         <array>
-          <string>Starchainpaymentrequest</string>
+          <string>StarChainpaymentrequest</string>
         </array>
       </dict>
     </dict>
@@ -84,7 +84,7 @@
       <string>Editor</string>
       <key>LSItemContentTypes</key>
       <array>
-        <string>org.Starchain.paymentrequest</string>
+        <string>org.StarChain.paymentrequest</string>
       </array>
       <key>LSHandlerRank</key>
       <string>Owner</string>

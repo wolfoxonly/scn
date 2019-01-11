@@ -3,7 +3,7 @@
 set -e
 
 cd $(dirname $0)/base
-docker build -t Starchain/base .
+docker build -t StarChain/base .
 
 cd ../base_devel
-docker build -t Starchain/devel .
+docker build -t StarChain/devel .

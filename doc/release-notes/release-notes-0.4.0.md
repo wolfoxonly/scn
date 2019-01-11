@@ -1,24 +1,24 @@
-Starchain version 0.4.0 is now available for download at:
-http://sourceforge.net/projects/Starchain/files/Starchain/Starchain-0.4.0/
+StarChain version 0.4.0 is now available for download at:
+http://sourceforge.net/projects/StarChain/files/StarChain/StarChain-0.4.0/
 
 The main feature in this release is wallet private key encryption;
 you can set a passphrase that must be entered before sending coins.
 See below for more information; if you decide to encrypt your wallet,
 WRITE DOWN YOUR PASSPHRASE AND PUT IT IN A SECURE LOCATION. If you
-forget or lose your wallet passphrase, you lose your Starchains.
-Previous versions of Starchain are unable to read encrypted wallets,
+forget or lose your wallet passphrase, you lose your StarChains.
+Previous versions of StarChain are unable to read encrypted wallets,
 and will crash on startup if the wallet is encrypted.
 
-Also note: Starchain version 0.4 uses a newer version of Berkeley DB
+Also note: StarChain version 0.4 uses a newer version of Berkeley DB
 (bdb version 4.8) than previous versions (bdb 4.7). If you upgrade
-to version 0.4 and then revert back to an earlier version of Starchain
+to version 0.4 and then revert back to an earlier version of StarChain
 the it may be unable to start because bdb 4.7 cannot read bdb 4.8
 "log" files.
 
 
 Notable bug fixes from version 0.3.24:
 
-Fix several Starchain-becomes-unresponsive bugs due to multithreading
+Fix several StarChain-becomes-unresponsive bugs due to multithreading
 deadlocks.
 
 Optimize database writes for large (lots of inputs) transactions
@@ -27,44 +27,44 @@ Optimize database writes for large (lots of inputs) transactions
 
 Wallet Encryption
 
-Starchain supports native wallet encryption so that people who steal your
-wallet file don't automatically get access to all of your Starchains.
+StarChain supports native wallet encryption so that people who steal your
+wallet file don't automatically get access to all of your StarChains.
 In order to enable this feature, choose "Encrypt Wallet" from the
 Options menu.  You will be prompted to enter a passphrase, which
 will be used as the key to encrypt your wallet and will be needed
-every time you wish to send Starchains.  If you lose this passphrase,
-you will lose access to spend all of the Starchains in your wallet,
-no one, not even the Starchain developers can recover your Starchains.
+every time you wish to send StarChains.  If you lose this passphrase,
+you will lose access to spend all of the StarChains in your wallet,
+no one, not even the StarChain developers can recover your StarChains.
 This means you are responsible for your own security, store your
 passphrase in a secure location and do not forget it.
 
-Remember that the encryption built into Starchain only encrypts the
-actual keys which are required to send your Starchains, not the full
+Remember that the encryption built into StarChain only encrypts the
+actual keys which are required to send your StarChains, not the full
 wallet.  This means that someone who steals your wallet file will
 be able to see all the addresses which belong to you, as well as the
 relevant transactions, you are only protected from someone spending
 your coins.
 
 It is recommended that you backup your wallet file before you
-encrypt your wallet.  To do this, close the Starchain client and
-copy the wallet.dat file from ~/.Starchain/ on Linux, /Users/(user
-name)/Application Support/Starchain/ on Mac OSX, and %APPDATA%/Starchain/
-on Windows (that is /Users/(user name)/AppData/Roaming/Starchain on
+encrypt your wallet.  To do this, close the StarChain client and
+copy the wallet.dat file from ~/.StarChain/ on Linux, /Users/(user
+name)/Application Support/StarChain/ on Mac OSX, and %APPDATA%/StarChain/
+on Windows (that is /Users/(user name)/AppData/Roaming/StarChain on
 Windows Vista and 7 and /Documents and Settings/(user name)/Application
-Data/Starchain on Windows XP).  Once you have copied that file to a
-safe location, reopen the Starchain client and Encrypt your wallet.
+Data/StarChain on Windows XP).  Once you have copied that file to a
+safe location, reopen the StarChain client and Encrypt your wallet.
 If everything goes fine, delete the backup and enjoy your encrypted
 wallet.  Note that once you encrypt your wallet, you will never be
-able to go back to a version of the Starchain client older than 0.4.
+able to go back to a version of the StarChain client older than 0.4.
 
 Keep in mind that you are always responsible for your own security.
 All it takes is a slightly more advanced wallet-stealing trojan which
 installs a keylogger to steal your wallet passphrase as you enter it
-in addition to your wallet file and you have lost all your Starchains.
+in addition to your wallet file and you have lost all your StarChains.
 Wallet encryption cannot keep you safe if you do not practice
 good security, such as running up-to-date antivirus software, only
-entering your wallet passphrase in the Starchain client and using the
+entering your wallet passphrase in the StarChain client and using the
 same passphrase only as your wallet passphrase.
 
-See the doc/README file in the Starchain source for technical details
+See the doc/README file in the StarChain source for technical details
 of wallet encryption.

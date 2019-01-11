@@ -1,11 +1,11 @@
 // Copyright (c) 2009-2010 Satoshi Nakamoto
-// Copyright (c) 2009-2012 The Starchain Core developers
-// Copyright (c) 2011-2015 The Starchain developers
+// Copyright (c) 2009-2012 The StarChain Core developers
+// Copyright (c) 2011-2015 The StarChain developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #if defined(HAVE_CONFIG_H)
-#include "Starchain-config.h"
+#include "StarChain-config.h"
 #endif
 
 #include "db.h"
@@ -382,7 +382,7 @@ bool GetMyExternalIP(CNetAddr& ipRet)//<coingo.vip>
 void ThreadGetMyExternalIP(void* parg)
 {
     // Make this thread recognisable as the external IP detection thread
-    RenameThread("Starchain-ext-ip");
+    RenameThread("StarChain-ext-ip");
 
     CNetAddr addrLocalHost;
     if (GetMyExternalIP(addrLocalHost))
@@ -1102,7 +1102,7 @@ void ThreadMapPort()
             }
         }
 
-        string strDesc = "Starchain " + FormatFullVersion();
+        string strDesc = "StarChain " + FormatFullVersion();
 
         try {
             loop {
@@ -1739,7 +1739,7 @@ bool BindListenPort(const CService &addrBind, string& strError)
     {
         int nErr = WSAGetLastError();
         if (nErr == WSAEADDRINUSE)
-            strError = strprintf(_("Unable to bind to %s on this computer. Starchain is probably already running."), addrBind.ToString().c_str());
+            strError = strprintf(_("Unable to bind to %s on this computer. StarChain is probably already running."), addrBind.ToString().c_str());
         else
             strError = strprintf(_("Unable to bind to %s on this computer (bind returned error %d, %s)"), addrBind.ToString().c_str(), nErr, strerror(nErr));
         printf("%s\n", strError.c_str());
@@ -1865,7 +1865,7 @@ void StartNode(boost::thread_group& threadGroup)
 bool StopNode()
 {
     printf("StopNode()\n");
-    GenerateStarchains(false, NULL);
+    GenerateStarChains(false, NULL);
     MapPort(false);
     nTransactionsUpdated++;
     if (semOutbound)

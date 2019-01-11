@@ -1,4 +1,4 @@
-# Copyright (c) 2016 The Starchain Core developers
+# Copyright (c) 2016 The StarChain Core developers
 # Distributed under the MIT software license, see the accompanying
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -16,7 +16,7 @@ osx=true
 SIGNER=
 VERSION=
 commit=false
-url=https://github.com/Starchain/Starchain
+url=https://github.com/StarChain/StarChain
 proc=2
 mem=2000
 lxc=true
@@ -30,7 +30,7 @@ commitFiles=true
 read -d '' usage <<- EOF
 Usage: $scriptName [-c|u|v|b|s|B|o|h|j|m|] signer version
 
-Run this script from the directory containing the Starchain, gitian-builder, gitian.sigs, and Starchain-detached-sigs.
+Run this script from the directory containing the StarChain, gitian-builder, gitian.sigs, and StarChain-detached-sigs.
 
 Arguments:
 signer          GPG signer to sign each build assert file
@@ -38,7 +38,7 @@ version		Version number, commit, or branch to build. If building a commit or bra
 
 Options:
 -c|--commit	Indicate that the version argument is for a commit or branch
--u|--url	Specify the URL of the repository. Default is https://github.com/Starchain/Starchain
+-u|--url	Specify the URL of the repository. Default is https://github.com/StarChain/StarChain
 -v|--verify 	Verify the Gitian build
 -b|--build	Do a Gitian build
 -s|--sign	Make signed binaries for Windows and Mac OSX
@@ -229,8 +229,8 @@ echo ${COMMIT}
 if [[ $setup = true ]]
 then
     sudo apt-get install ruby apache2 git apt-cacher-ng python-vm-builder qemu-kvm qemu-utils
-    git clone https://github.com/Starchain-core/gitian.sigs.git
-    git clone https://github.com/Starchain-core/Starchain-detached-sigs.git
+    git clone https://github.com/StarChain-core/gitian.sigs.git
+    git clone https://github.com/StarChain-core/StarChain-detached-sigs.git
     git clone https://github.com/devrandom/gitian-builder.git
     pushd ./gitian-builder
     if [[ -n "$USE_LXC" ]]
@@ -244,7 +244,7 @@ then
 fi
 
 # Set up build
-pushd ./Starchain
+pushd ./StarChain
 git fetch
 git checkout ${COMMIT}
 popd
@@ -253,7 +253,7 @@ popd
 if [[ $build = true ]]
 then
 	# Make output folder
-	mkdir -p ./Starchain-binaries/${VERSION}
+	mkdir -p ./StarChain-binaries/${VERSION}
 	
 	# Build Dependencies
 	echo ""
@@ -263,7 +263,7 @@ then
 	mkdir -p inputs
 	wget -N -P inputs $osslPatchUrl
 	wget -N -P inputs $osslTarUrl
-	make -C ../Starchain/depends download SOURCES_PATH=`pwd`/cache/common
+	make -C ../StarChain/depends download SOURCES_PATH=`pwd`/cache/common
 
 	# Linux
 	if [[ $linux = true ]]
@@ -271,9 +271,9 @@ then
             echo ""
 	    echo "Compiling ${VERSION} Linux"
 	    echo ""
-	    ./bin/gbuild -j ${proc} -m ${mem} --commit Starchain=${COMMIT} --url Starchain=${url} ../Starchain/contrib/gitian-descriptors/gitian-linux.yml
-	    ./bin/gsign -p $signProg --signer $SIGNER --release ${VERSION}-linux --destination ../gitian.sigs/ ../Starchain/contrib/gitian-descriptors/gitian-linux.yml
-	    mv build/out/Starchain-*.tar.gz build/out/src/Starchain-*.tar.gz ../Starchain-binaries/${VERSION}
+	    ./bin/gbuild -j ${proc} -m ${mem} --commit StarChain=${COMMIT} --url StarChain=${url} ../StarChain/contrib/gitian-descriptors/gitian-linux.yml
+	    ./bin/gsign -p $signProg --signer $SIGNER --release ${VERSION}-linux --destination ../gitian.sigs/ ../StarChain/contrib/gitian-descriptors/gitian-linux.yml
+	    mv build/out/StarChain-*.tar.gz build/out/src/StarChain-*.tar.gz ../StarChain-binaries/${VERSION}
 	fi
 	# Windows
 	if [[ $windows = true ]]
@@ -281,10 +281,10 @@ then
 	    echo ""
 	    echo "Compiling ${VERSION} Windows"
 	    echo ""
-	    ./bin/gbuild -j ${proc} -m ${mem} --commit Starchain=${COMMIT} --url Starchain=${url} ../Starchain/contrib/gitian-descriptors/gitian-win.yml
-	    ./bin/gsign -p $signProg --signer $SIGNER --release ${VERSION}-win-unsigned --destination ../gitian.sigs/ ../Starchain/contrib/gitian-descriptors/gitian-win.yml
-	    mv build/out/Starchain-*-win-unsigned.tar.gz inputs/Starchain-win-unsigned.tar.gz
-	    mv build/out/Starchain-*.zip build/out/Starchain-*.exe ../Starchain-binaries/${VERSION}
+	    ./bin/gbuild -j ${proc} -m ${mem} --commit StarChain=${COMMIT} --url StarChain=${url} ../StarChain/contrib/gitian-descriptors/gitian-win.yml
+	    ./bin/gsign -p $signProg --signer $SIGNER --release ${VERSION}-win-unsigned --destination ../gitian.sigs/ ../StarChain/contrib/gitian-descriptors/gitian-win.yml
+	    mv build/out/StarChain-*-win-unsigned.tar.gz inputs/StarChain-win-unsigned.tar.gz
+	    mv build/out/StarChain-*.zip build/out/StarChain-*.exe ../StarChain-binaries/${VERSION}
 	fi
 	# Mac OSX
 	if [[ $osx = true ]]
@@ -292,10 +292,10 @@ then
 	    echo ""
 	    echo "Compiling ${VERSION} Mac OSX"
 	    echo ""
-	    ./bin/gbuild -j ${proc} -m ${mem} --commit Starchain=${COMMIT} --url Starchain=${url} ../Starchain/contrib/gitian-descriptors/gitian-osx.yml
-	    ./bin/gsign -p $signProg --signer $SIGNER --release ${VERSION}-osx-unsigned --destination ../gitian.sigs/ ../Starchain/contrib/gitian-descriptors/gitian-osx.yml
-	    mv build/out/Starchain-*-osx-unsigned.tar.gz inputs/Starchain-osx-unsigned.tar.gz
-	    mv build/out/Starchain-*.tar.gz build/out/Starchain-*.dmg ../Starchain-binaries/${VERSION}
+	    ./bin/gbuild -j ${proc} -m ${mem} --commit StarChain=${COMMIT} --url StarChain=${url} ../StarChain/contrib/gitian-descriptors/gitian-osx.yml
+	    ./bin/gsign -p $signProg --signer $SIGNER --release ${VERSION}-osx-unsigned --destination ../gitian.sigs/ ../StarChain/contrib/gitian-descriptors/gitian-osx.yml
+	    mv build/out/StarChain-*-osx-unsigned.tar.gz inputs/StarChain-osx-unsigned.tar.gz
+	    mv build/out/StarChain-*.tar.gz build/out/StarChain-*.dmg ../StarChain-binaries/${VERSION}
 	fi
 	popd
 
@@ -322,27 +322,27 @@ then
 	echo ""
 	echo "Verifying v${VERSION} Linux"
 	echo ""
-	./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-linux ../Starchain/contrib/gitian-descriptors/gitian-linux.yml
+	./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-linux ../StarChain/contrib/gitian-descriptors/gitian-linux.yml
 	# Windows
 	echo ""
 	echo "Verifying v${VERSION} Windows"
 	echo ""
-	./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-win-unsigned ../Starchain/contrib/gitian-descriptors/gitian-win.yml
+	./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-win-unsigned ../StarChain/contrib/gitian-descriptors/gitian-win.yml
 	# Mac OSX	
 	echo ""
 	echo "Verifying v${VERSION} Mac OSX"
 	echo ""	
-	./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-osx-unsigned ../Starchain/contrib/gitian-descriptors/gitian-osx.yml
+	./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-osx-unsigned ../StarChain/contrib/gitian-descriptors/gitian-osx.yml
 	# Signed Windows
 	echo ""
 	echo "Verifying v${VERSION} Signed Windows"
 	echo ""
-	./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-osx-signed ../Starchain/contrib/gitian-descriptors/gitian-osx-signer.yml
+	./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-osx-signed ../StarChain/contrib/gitian-descriptors/gitian-osx-signer.yml
 	# Signed Mac OSX
 	echo ""
 	echo "Verifying v${VERSION} Signed Mac OSX"
 	echo ""
-	./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-osx-signed ../Starchain/contrib/gitian-descriptors/gitian-osx-signer.yml	
+	./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-osx-signed ../StarChain/contrib/gitian-descriptors/gitian-osx-signer.yml	
 	popd
 fi
 
@@ -357,10 +357,10 @@ then
 	    echo ""
 	    echo "Signing ${VERSION} Windows"
 	    echo ""
-	    ./bin/gbuild -i --commit signature=${COMMIT} ../Starchain/contrib/gitian-descriptors/gitian-win-signer.yml
-	    ./bin/gsign -p $signProg --signer $SIGNER --release ${VERSION}-win-signed --destination ../gitian.sigs/ ../Starchain/contrib/gitian-descriptors/gitian-win-signer.yml
-	    mv build/out/Starchain-*win64-setup.exe ../Starchain-binaries/${VERSION}
-	    mv build/out/Starchain-*win32-setup.exe ../Starchain-binaries/${VERSION}
+	    ./bin/gbuild -i --commit signature=${COMMIT} ../StarChain/contrib/gitian-descriptors/gitian-win-signer.yml
+	    ./bin/gsign -p $signProg --signer $SIGNER --release ${VERSION}-win-signed --destination ../gitian.sigs/ ../StarChain/contrib/gitian-descriptors/gitian-win-signer.yml
+	    mv build/out/StarChain-*win64-setup.exe ../StarChain-binaries/${VERSION}
+	    mv build/out/StarChain-*win32-setup.exe ../StarChain-binaries/${VERSION}
 	fi
 	# Sign Mac OSX
 	if [[ $osx = true ]]
@@ -368,9 +368,9 @@ then
 	    echo ""
 	    echo "Signing ${VERSION} Mac OSX"
 	    echo ""
-	    ./bin/gbuild -i --commit signature=${COMMIT} ../Starchain/contrib/gitian-descriptors/gitian-osx-signer.yml
-	    ./bin/gsign -p $signProg --signer $SIGNER --release ${VERSION}-osx-signed --destination ../gitian.sigs/ ../Starchain/contrib/gitian-descriptors/gitian-osx-signer.yml
-	    mv build/out/Starchain-osx-signed.dmg ../Starchain-binaries/${VERSION}/Starchain-${VERSION}-osx.dmg
+	    ./bin/gbuild -i --commit signature=${COMMIT} ../StarChain/contrib/gitian-descriptors/gitian-osx-signer.yml
+	    ./bin/gsign -p $signProg --signer $SIGNER --release ${VERSION}-osx-signed --destination ../gitian.sigs/ ../StarChain/contrib/gitian-descriptors/gitian-osx-signer.yml
+	    mv build/out/StarChain-osx-signed.dmg ../StarChain-binaries/${VERSION}/StarChain-${VERSION}-osx.dmg
 	fi
 	popd
 
