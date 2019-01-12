@@ -1,6 +1,6 @@
 // Copyright (c) 2009-2010 Satoshi Nakamoto
-// Copyright (c) 2009-2012 The Starchain developers
-// Copyright (c) 2012-2017 The Starchain developers
+// Copyright (c) 2009-2012 The StarChain developers
+// Copyright (c) 2012-2017 The StarChain developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 #ifndef BITCOIN_NET_H

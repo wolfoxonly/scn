@@ -8,16 +8,16 @@ class QDoubleSpinBox;
 class QValueComboBox;
 QT_END_NAMESPACE
 
-/** Widget for entering Starchain amounts.
+/** Widget for entering StarChain amounts.
   */
-class StarchainAmountField: public QWidget
+class StarChainAmountField: public QWidget
 {
     Q_OBJECT
 
     Q_PROPERTY(qint64 value READ value WRITE setValue NOTIFY textChanged USER true)
 
 public:
-    explicit StarchainAmountField(QWidget *parent = 0);
+    explicit StarChainAmountField(QWidget *parent = 0);
 
     qint64 value(bool *valid=0) const;
     void setValue(qint64 value);

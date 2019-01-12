@@ -1,23 +1,23 @@
-Starchain version 0.7.1 is now available from:
-  http://sourceforge.net/projects/Starchain/files/Starchain/Starchain-0.7.1/
+StarChain version 0.7.1 is now available from:
+  http://sourceforge.net/projects/StarChain/files/StarChain/StarChain-0.7.1/
 
 This is a bug-fix minor release.
 
 Please report bugs using the issue tracker at github:
-  https://github.com/Starchain/Starchain/issues
+  https://github.com/StarChain/StarChain/issues
 
 Project source code is hosted at github; you can get
 source-only tarballs/zipballs directly from there:
-  https://github.com/Starchain/Starchain/tarball/v0.7.1  # .tar.gz
-  https://github.com/Starchain/Starchain/zipball/v0.7.1  # .zip
+  https://github.com/StarChain/StarChain/tarball/v0.7.1  # .tar.gz
+  https://github.com/StarChain/StarChain/zipball/v0.7.1  # .zip
 
 Ubuntu Linux users can use the "Personal Package Archive" (PPA)
 maintained by Matt Corallo to automatically keep 
 up-to-date.  Just type:
-  sudo apt-add-repository ppa:Starchain/Starchain
+  sudo apt-add-repository ppa:StarChain/StarChain
   sudo apt-get update
-in your terminal, then install the Starchain-qt package:
-  sudo apt-get install Starchain-qt
+in your terminal, then install the StarChain-qt package:
+  sudo apt-get install StarChain-qt
 
 KNOWN ISSUES
 ------------
@@ -30,7 +30,7 @@ How to Upgrade
 If you are running an older version, shut it down. Wait
 until it has completely shut down (which might take a few minutes for older
 versions), then run the installer (on Windows) or just copy over
-/Applications/Starchain-Qt (on Mac) or Starchaind/Starchain-qt (on Linux).
+/Applications/StarChain-Qt (on Mac) or StarChaind/StarChain-qt (on Linux).
 
 If you were running on Linux with a version that might have been compiled
 with a different version of Berkeley DB (for example, if you were using an
@@ -75,7 +75,7 @@ Dependency changes
 Bug fixes
 ---------
 
-* Clicking on a Starchain: URI on Windows should now launch Starchain-Qt properly.
+* Clicking on a StarChain: URI on Windows should now launch StarChain-Qt properly.
 
 * When running -testnet, use RPC port 18332 by default.
 

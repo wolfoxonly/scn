@@ -1,6 +1,6 @@
 // Copyright (c) 2009-2010 Satoshi Nakamoto
-// Copyright (c) 2009-2012 The Starchain developers
-// Copyright (c) 2012-2017 The Starchain developers
+// Copyright (c) 2009-2012 The StarChain developers
+// Copyright (c) 2012-2017 The StarChain developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -197,7 +197,7 @@ ReadKeyValue(CWallet* pwallet, CDataStream& ssKey, CDataStream& ssValue,
         {
             string strAddress;
             ssKey >> strAddress;
-            ssValue >> pwallet->mapAddressBook[CStarchainAddress(strAddress).Get()];
+            ssValue >> pwallet->mapAddressBook[CStarChainAddress(strAddress).Get()];
         }
         else if (strType == "tx")
         {
@@ -568,7 +568,7 @@ DBErrors CWalletDB::ZapWalletTx(CWallet* pwallet)
 void ThreadFlushWalletDB(const string& strFile)
 {
     // Make this thread recognisable as the wallet flushing thread
-    RenameThread("Starchain-wallet");
+    RenameThread("StarChain-wallet");
 
     static bool fOneThread;
     if (fOneThread)

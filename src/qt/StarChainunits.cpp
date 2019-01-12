@@ -1,23 +1,23 @@
-#include "Starchainunits.h"
+#include "StarChainunits.h"
 
 #include <QStringList>
 
-StarchainUnits::StarchainUnits(QObject *parent):
+StarChainUnits::StarChainUnits(QObject *parent):
         QAbstractListModel(parent),
         unitlist(availableUnits())
 {
 }
 
-QList<StarchainUnits::Unit> StarchainUnits::availableUnits()
+QList<StarChainUnits::Unit> StarChainUnits::availableUnits()
 {
-    QList<StarchainUnits::Unit> unitlist;
+    QList<StarChainUnits::Unit> unitlist;
     unitlist.append(BTC);
     unitlist.append(mBTC);
     unitlist.append(uBTC);
     return unitlist;
 }
 
-bool StarchainUnits::valid(int unit)
+bool StarChainUnits::valid(int unit)
 {
     switch(unit)
     {
@@ -30,7 +30,7 @@ bool StarchainUnits::valid(int unit)
     }
 }
 
-QString StarchainUnits::name(int unit)
+QString StarChainUnits::name(int unit)
 {
     switch(unit)
     {
@@ -41,18 +41,18 @@ QString StarchainUnits::name(int unit)
     }
 }
 
-QString StarchainUnits::description(int unit)
+QString StarChainUnits::description(int unit)
 {
     switch(unit)
     {
-    case BTC: return QString("Starchains");
-    case mBTC: return QString("Milli-Starchains (1 / 1,000)");
-    case uBTC: return QString("Micro-Starchains (1 / 1,000,000)");
+    case BTC: return QString("StarChains");
+    case mBTC: return QString("Milli-StarChains (1 / 1,000)");
+    case uBTC: return QString("Micro-StarChains (1 / 1,000,000)");
     default: return QString("???");
     }
 }
 
-qint64 StarchainUnits::factor(int unit)
+qint64 StarChainUnits::factor(int unit)
 {
     switch(unit)
     {
@@ -63,7 +63,7 @@ qint64 StarchainUnits::factor(int unit)
     }
 }
 
-int StarchainUnits::amountDigits(int unit)
+int StarChainUnits::amountDigits(int unit)
 {
     switch(unit)
     {
@@ -74,7 +74,7 @@ int StarchainUnits::amountDigits(int unit)
     }
 }
 
-int StarchainUnits::decimals(int unit)
+int StarChainUnits::decimals(int unit)
 {
     switch(unit)
     {
@@ -85,7 +85,7 @@ int StarchainUnits::decimals(int unit)
     }
 }
 
-QString StarchainUnits::format(int unit, qint64 n, bool fPlus, bool trimzeros)
+QString StarChainUnits::format(int unit, qint64 n, bool fPlus, bool trimzeros)
 {
     // Note: not using straight sprintf here because we do NOT want
     // localized number formatting.
@@ -115,12 +115,12 @@ QString StarchainUnits::format(int unit, qint64 n, bool fPlus, bool trimzeros)
     return quotient_str + QString(".") + remainder_str;
 }
 
-QString StarchainUnits::formatWithUnit(int unit, qint64 amount, bool plussign, bool trimzeros)
+QString StarChainUnits::formatWithUnit(int unit, qint64 amount, bool plussign, bool trimzeros)
 {
     return format(unit, amount, plussign, trimzeros) + QString(" ") + name(unit);
 }
 
-bool StarchainUnits::parse(int unit, const QString &value, qint64 *val_out)
+bool StarChainUnits::parse(int unit, const QString &value, qint64 *val_out)
 {
     if(!valid(unit) || value.isEmpty())
         return false; // Refuse to parse invalid unit or empty string
@@ -157,13 +157,13 @@ bool StarchainUnits::parse(int unit, const QString &value, qint64 *val_out)
     return ok;
 }
 
-int StarchainUnits::rowCount(const QModelIndex &parent) const
+int StarChainUnits::rowCount(const QModelIndex &parent) const
 {
     Q_UNUSED(parent);
     return unitlist.size();
 }
 
-QVariant StarchainUnits::data(const QModelIndex &index, int role) const
+QVariant StarChainUnits::data(const QModelIndex &index, int role) const
 {
     int row = index.row();
     if(row >= 0 && row < unitlist.size())

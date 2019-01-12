@@ -4,13 +4,13 @@
     <name>AboutDialog</name>
     <message>
         <location filename="../forms/aboutdialog.ui" line="+14"/>
-        <source>About Starchain</source>
-        <translation>Om Starchain</translation>
+        <source>About StarChain</source>
+        <translation>Om StarChain</translation>
     </message>
     <message>
         <location line="+39"/>
-        <source>&lt;b&gt;Starchain&lt;/b&gt; version</source>
-        <translation>&lt;b&gt;Starchain&lt;/b&gt; versjon</translation>
+        <source>&lt;b&gt;StarChain&lt;/b&gt; version</source>
+        <translation>&lt;b&gt;StarChain&lt;/b&gt; versjon</translation>
     </message>
     <message>
         <location line="+57"/>
@@ -34,7 +34,7 @@ Dette produktet inneholder programvare utviklet av OpenSSL prosjektet for bruk i
     </message>
     <message>
         <location line="+0"/>
-        <source>The Starchain developers</source>
+        <source>The StarChain developers</source>
         <translation type="unfinished"/>
     </message>
 </context>
@@ -67,8 +67,8 @@ Dette produktet inneholder programvare utviklet av OpenSSL prosjektet for bruk i
     </message>
     <message>
         <location filename="../addressbookpage.cpp" line="+63"/>
-        <source>These are your Starchain addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
-        <translation>Dette er dine Starchain-adresser for mottak av betalinger. Du kan gi forskjellige adresser til alle som skal betale deg for å holde bedre oversikt.</translation>
+        <source>These are your StarChain addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
+        <translation>Dette er dine StarChain-adresser for mottak av betalinger. Du kan gi forskjellige adresser til alle som skal betale deg for å holde bedre oversikt.</translation>
     </message>
     <message>
         <location filename="../forms/addressbookpage.ui" line="+14"/>
@@ -82,8 +82,8 @@ Dette produktet inneholder programvare utviklet av OpenSSL prosjektet for bruk i
     </message>
     <message>
         <location line="+11"/>
-        <source>Sign a message to prove you own a Starchain address</source>
-        <translation>Signer en melding for å bevise at du eier en Starchain-adresse</translation>
+        <source>Sign a message to prove you own a StarChain address</source>
+        <translation>Signer en melding for å bevise at du eier en StarChain-adresse</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -107,8 +107,8 @@ Dette produktet inneholder programvare utviklet av OpenSSL prosjektet for bruk i
     </message>
     <message>
         <location line="-44"/>
-        <source>Verify a message to ensure it was signed with a specified Starchain address</source>
-        <translation>Verifiser en melding for å være sikker på at den ble signert av en angitt Starchain-adresse</translation>
+        <source>Verify a message to ensure it was signed with a specified StarChain address</source>
+        <translation>Verifiser en melding for å være sikker på at den ble signert av en angitt StarChain-adresse</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -122,7 +122,7 @@ Dette produktet inneholder programvare utviklet av OpenSSL prosjektet for bruk i
     </message>
     <message>
         <location filename="../addressbookpage.cpp" line="-5"/>
-        <source>These are your Starchain addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <source>These are your StarChain addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -275,8 +275,8 @@ Dette produktet inneholder programvare utviklet av OpenSSL prosjektet for bruk i
     </message>
     <message>
         <location line="-56"/>
-        <source>Starchain will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your Starchains from being stolen by malware infecting your computer.</source>
-        <translation>Starchain vil nå lukkes for å fullføre krypteringsprosessen. Husk at kryptering av lommeboken ikke fullt ut kan beskytte dine Starchains fra å bli stjålet om skadevare infiserer datamaskinen.</translation>
+        <source>StarChain will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your StarChains from being stolen by malware infecting your computer.</source>
+        <translation>StarChain vil nå lukkes for å fullføre krypteringsprosessen. Husk at kryptering av lommeboken ikke fullt ut kan beskytte dine StarChains fra å bli stjålet om skadevare infiserer datamaskinen.</translation>
     </message>
     <message>
         <location line="+13"/>
@@ -321,9 +321,9 @@ Dette produktet inneholder programvare utviklet av OpenSSL prosjektet for bruk i
     </message>
 </context>
 <context>
-    <name>StarchainGUI</name>
+    <name>StarChainGUI</name>
     <message>
-        <location filename="../Starchaingui.cpp" line="+233"/>
+        <location filename="../StarChaingui.cpp" line="+233"/>
         <source>Sign &amp;message...</source>
         <translation>Signer &amp;melding...</translation>
     </message>
@@ -374,8 +374,8 @@ Dette produktet inneholder programvare utviklet av OpenSSL prosjektet for bruk i
     </message>
     <message>
         <location line="+4"/>
-        <source>Show information about Starchain</source>
-        <translation>Vis informasjon om Starchain</translation>
+        <source>Show information about StarChain</source>
+        <translation>Vis informasjon om StarChain</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -419,13 +419,13 @@ Dette produktet inneholder programvare utviklet av OpenSSL prosjektet for bruk i
     </message>
     <message>
         <location line="-347"/>
-        <source>Send coins to a Starchain address</source>
-        <translation>Send til en Starchain-adresse</translation>
+        <source>Send coins to a StarChain address</source>
+        <translation>Send til en StarChain-adresse</translation>
     </message>
     <message>
         <location line="+49"/>
-        <source>Modify configuration options for Starchain</source>
-        <translation>Endre oppsett for Starchain</translation>
+        <source>Modify configuration options for StarChain</source>
+        <translation>Endre oppsett for StarChain</translation>
     </message>
     <message>
         <location line="+9"/>
@@ -455,8 +455,8 @@ Dette produktet inneholder programvare utviklet av OpenSSL prosjektet for bruk i
     <message>
         <location line="-165"/>
         <location line="+530"/>
-        <source>Starchain</source>
-        <translation>Starchain</translation>
+        <source>StarChain</source>
+        <translation>StarChain</translation>
     </message>
     <message>
         <location line="-530"/>
@@ -480,8 +480,8 @@ Dette produktet inneholder programvare utviklet av OpenSSL prosjektet for bruk i
     </message>
     <message>
         <location line="+22"/>
-        <source>&amp;About Starchain</source>
-        <translation>&amp;Om Starchain</translation>
+        <source>&amp;About StarChain</source>
+        <translation>&amp;Om StarChain</translation>
     </message>
     <message>
         <location line="+9"/>
@@ -500,13 +500,13 @@ Dette produktet inneholder programvare utviklet av OpenSSL prosjektet for bruk i
     </message>
     <message>
         <location line="+7"/>
-        <source>Sign messages with your Starchain addresses to prove you own them</source>
+        <source>Sign messages with your StarChain addresses to prove you own them</source>
         <translation>Signér en melding for å bevise at du eier denne adressen</translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>Verify messages to ensure they were signed with specified Starchain addresses</source>
-        <translation>Bekreft meldinger for å være sikker på at de ble signert av en angitt Starchain-adresse</translation>
+        <source>Verify messages to ensure they were signed with specified StarChain addresses</source>
+        <translation>Bekreft meldinger for å være sikker på at de ble signert av en angitt StarChain-adresse</translation>
     </message>
     <message>
         <location line="+28"/>
@@ -536,13 +536,13 @@ Dette produktet inneholder programvare utviklet av OpenSSL prosjektet for bruk i
     </message>
     <message>
         <location line="+47"/>
-        <source>Starchain client</source>
-        <translation>Starchainklient</translation>
+        <source>StarChain client</source>
+        <translation>StarChainklient</translation>
     </message>
     <message numerus="yes">
         <location line="+141"/>
-        <source>%n active connection(s) to Starchain network</source>
-        <translation><numerusform>%n aktiv forbindelse til Starchain-nettverket</numerusform><numerusform>%n aktive forbindelser til Starchain-nettverket</numerusform></translation>
+        <source>%n active connection(s) to StarChain network</source>
+        <translation><numerusform>%n aktiv forbindelse til StarChain-nettverket</numerusform><numerusform>%n aktive forbindelser til StarChain-nettverket</numerusform></translation>
     </message>
     <message>
         <location line="+22"/>
@@ -656,8 +656,8 @@ Adresse: %4
     <message>
         <location line="-23"/>
         <location line="+23"/>
-        <source>URI can not be parsed! This can be caused by an invalid Starchain address or malformed URI parameters.</source>
-        <translation>URI kunne ikke tolkes! Dette kan forårsakes av en ugyldig Starchain-adresse eller feil i URI-parametere.</translation>
+        <source>URI can not be parsed! This can be caused by an invalid StarChain address or malformed URI parameters.</source>
+        <translation>URI kunne ikke tolkes! Dette kan forårsakes av en ugyldig StarChain-adresse eller feil i URI-parametere.</translation>
     </message>
     <message>
         <location line="+17"/>
@@ -670,9 +670,9 @@ Adresse: %4
         <translation>Lommeboken er &lt;b&gt;kryptert&lt;/b&gt; og for tiden &lt;b&gt;låst&lt;/b&gt;</translation>
     </message>
     <message>
-        <location filename="../Starchain.cpp" line="+111"/>
-        <source>A fatal error occurred. Starchain can no longer continue safely and will quit.</source>
-        <translation>En fatal feil har inntruffet. Det er ikke trygt å fortsette og Starchain må derfor avslutte.</translation>
+        <location filename="../StarChain.cpp" line="+111"/>
+        <source>A fatal error occurred. StarChain can no longer continue safely and will quit.</source>
+        <translation>En fatal feil har inntruffet. Det er ikke trygt å fortsette og StarChain må derfor avslutte.</translation>
     </message>
 </context>
 <context>
@@ -737,8 +737,8 @@ Adresse: %4
     </message>
     <message>
         <location line="-5"/>
-        <source>The entered address &quot;%1&quot; is not a valid Starchain address.</source>
-        <translation>Den angitte adressed &quot;%1&quot; er ikke en gyldig Starchain-adresse.</translation>
+        <source>The entered address &quot;%1&quot; is not a valid StarChain address.</source>
+        <translation>Den angitte adressed &quot;%1&quot; er ikke en gyldig StarChain-adresse.</translation>
     </message>
     <message>
         <location line="+10"/>
@@ -756,8 +756,8 @@ Adresse: %4
     <message>
         <location filename="../guiutil.cpp" line="+424"/>
         <location line="+12"/>
-        <source>Starchain-Qt</source>
-        <translation>Starchain-Qt</translation>
+        <source>StarChain-Qt</source>
+        <translation>StarChain-Qt</translation>
     </message>
     <message>
         <location line="-12"/>
@@ -820,8 +820,8 @@ Adresse: %4
     </message>
     <message>
         <location line="+31"/>
-        <source>Automatically start Starchain after logging in to the system.</source>
-        <translation>Start Starchain automatisk etter innlogging.</translation>
+        <source>Automatically start StarChain after logging in to the system.</source>
+        <translation>Start StarChain automatisk etter innlogging.</translation>
     </message>
     <message>
         <location line="+46"/>
@@ -830,8 +830,8 @@ Adresse: %4
     </message>
     <message>
         <location line="+3"/>
-        <source>&amp;Start Starchain on system login</source>
-        <translation>&amp;Start Starchain ved systeminnlogging</translation>
+        <source>&amp;Start StarChain on system login</source>
+        <translation>&amp;Start StarChain ved systeminnlogging</translation>
     </message>
     <message>
         <location line="+35"/>
@@ -850,8 +850,8 @@ Adresse: %4
     </message>
     <message>
         <location line="+6"/>
-        <source>Automatically open the Starchain client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Åpne automatisk Starchain klientporten på ruteren. Dette virker kun om din ruter støtter UPnP og dette er påslått.</translation>
+        <source>Automatically open the StarChain client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Åpne automatisk StarChain klientporten på ruteren. Dette virker kun om din ruter støtter UPnP og dette er påslått.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -860,8 +860,8 @@ Adresse: %4
     </message>
     <message>
         <location line="+7"/>
-        <source>Connect to the Starchain network through a SOCKS proxy (e.g. when connecting through Tor).</source>
-        <translation>Koble til Starchain-nettverket gjennom en SOCKS proxy (f.eks. ved tilkobling gjennom Tor).</translation>
+        <source>Connect to the StarChain network through a SOCKS proxy (e.g. when connecting through Tor).</source>
+        <translation>Koble til StarChain-nettverket gjennom en SOCKS proxy (f.eks. ved tilkobling gjennom Tor).</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -935,8 +935,8 @@ Adresse: %4
     </message>
     <message>
         <location line="+13"/>
-        <source>The user interface language can be set here. This setting will take effect after restarting Starchain.</source>
-        <translation>Språket for brukergrensesnittet kan settes her. Innstillingen trer i kraft ved omstart av Starchain.</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting StarChain.</source>
+        <translation>Språket for brukergrensesnittet kan settes her. Innstillingen trer i kraft ved omstart av StarChain.</translation>
     </message>
     <message>
         <location line="+11"/>
@@ -946,12 +946,12 @@ Adresse: %4
     <message>
         <location line="+13"/>
         <source>Choose the default subdivision unit to show in the interface and when sending coins.</source>
-        <translation>Velg standard delt enhet for visning i grensesnittet og for sending av Starchains.</translation>
+        <translation>Velg standard delt enhet for visning i grensesnittet og for sending av StarChains.</translation>
     </message>
     <message>
         <location line="+9"/>
-        <source>Whether to show Starchain addresses in the transaction list or not.</source>
-        <translation>Om Starchain-adresser skal vises i transaksjonslisten eller ikke.</translation>
+        <source>Whether to show StarChain addresses in the transaction list or not.</source>
+        <translation>Om StarChain-adresser skal vises i transaksjonslisten eller ikke.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1002,8 +1002,8 @@ Adresse: %4
     <message>
         <location line="-9"/>
         <location line="+9"/>
-        <source>This setting will take effect after restarting Starchain.</source>
-        <translation>Denne innstillingen trer i kraft etter omstart av Starchain.</translation>
+        <source>This setting will take effect after restarting StarChain.</source>
+        <translation>Denne innstillingen trer i kraft etter omstart av StarChain.</translation>
     </message>
     <message>
         <location line="+29"/>
@@ -1021,8 +1021,8 @@ Adresse: %4
     <message>
         <location line="+50"/>
         <location line="+166"/>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Starchain network after a connection is established, but this process has not completed yet.</source>
-        <translation>Informasjonen som vises kan være foreldet. Din lommebok synkroniseres automatisk med Starchain-nettverket etter at tilkobling er opprettet, men denne prosessen er ikke ferdig enda.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the StarChain network after a connection is established, but this process has not completed yet.</source>
+        <translation>Informasjonen som vises kan være foreldet. Din lommebok synkroniseres automatisk med StarChain-nettverket etter at tilkobling er opprettet, men denne prosessen er ikke ferdig enda.</translation>
     </message>
     <message>
         <location line="-124"/>
@@ -1075,7 +1075,7 @@ Adresse: %4
     <name>PaymentServer</name>
     <message>
         <location filename="../paymentserver.cpp" line="+107"/>
-        <source>Cannot start Starchain: click-to-pay handler</source>
+        <source>Cannot start StarChain: click-to-pay handler</source>
         <translation>Kan ikke starte Bit-coin: klikk-og-betal håndterer</translation>
     </message>
 </context>
@@ -1225,8 +1225,8 @@ Adresse: %4
     </message>
     <message>
         <location line="+7"/>
-        <source>Show the Starchain-Qt help message to get a list with possible Starchain command-line options.</source>
-        <translation>Vis Starchain-Qt hjelpemelding for å få en liste med mulige kommandolinjevalg.</translation>
+        <source>Show the StarChain-Qt help message to get a list with possible StarChain command-line options.</source>
+        <translation>Vis StarChain-Qt hjelpemelding for å få en liste med mulige kommandolinjevalg.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1245,13 +1245,13 @@ Adresse: %4
     </message>
     <message>
         <location line="-104"/>
-        <source>Starchain - Debug window</source>
-        <translation>Starchain - vindu for feilsøk</translation>
+        <source>StarChain - Debug window</source>
+        <translation>StarChain - vindu for feilsøk</translation>
     </message>
     <message>
         <location line="+25"/>
-        <source>Starchain Core</source>
-        <translation>Starchain Kjerne</translation>
+        <source>StarChain Core</source>
+        <translation>StarChain Kjerne</translation>
     </message>
     <message>
         <location line="+279"/>
@@ -1260,8 +1260,8 @@ Adresse: %4
     </message>
     <message>
         <location line="+7"/>
-        <source>Open the Starchain debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>Åpne Starchain loggfil for feilsøk fra datamappen. Dette kan ta noen sekunder for store loggfiler.</translation>
+        <source>Open the StarChain debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <translation>Åpne StarChain loggfil for feilsøk fra datamappen. Dette kan ta noen sekunder for store loggfiler.</translation>
     </message>
     <message>
         <location line="+102"/>
@@ -1270,8 +1270,8 @@ Adresse: %4
     </message>
     <message>
         <location filename="../rpcconsole.cpp" line="-30"/>
-        <source>Welcome to the Starchain RPC console.</source>
-        <translation>Velkommen til Starchain RPC konsoll.</translation>
+        <source>Welcome to the StarChain RPC console.</source>
+        <translation>Velkommen til StarChain RPC konsoll.</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -1296,7 +1296,7 @@ Adresse: %4
         <location line="+5"/>
         <location line="+5"/>
         <source>Send Coins</source>
-        <translation>Send Starchains</translation>
+        <translation>Send StarChains</translation>
     </message>
     <message>
         <location line="+50"/>
@@ -1346,7 +1346,7 @@ Adresse: %4
     <message>
         <location line="+5"/>
         <source>Confirm send coins</source>
-        <translation>Bekreft sending av Starchains</translation>
+        <translation>Bekreft sending av StarChains</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -1391,7 +1391,7 @@ Adresse: %4
     <message>
         <location line="+5"/>
         <source>Error: The transaction was rejected. This might happen if some of the coins in your wallet were already spent, such as if you used a copy of wallet.dat and coins were spent in the copy but not marked as spent here.</source>
-        <translation>Feil: Transaksjonen ble avvist. Dette kan skje om noe av beløpet allerede var brukt, f.eks. hvis du kopierte wallet.dat og noen Starchains ble brukt i kopien men ikke ble markert som brukt her.</translation>
+        <translation>Feil: Transaksjonen ble avvist. Dette kan skje om noe av beløpet allerede var brukt, f.eks. hvis du kopierte wallet.dat og noen StarChains ble brukt i kopien men ikke ble markert som brukt her.</translation>
     </message>
 </context>
 <context>
@@ -1454,8 +1454,8 @@ Adresse: %4
     </message>
     <message>
         <location filename="../sendcoinsentry.cpp" line="+1"/>
-        <source>Enter a Starchain address</source>
-        <translation>Skriv inn en Starchain adresse (f.eks. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</translation>
+        <source>Enter a StarChain address</source>
+        <translation>Skriv inn en StarChain adresse (f.eks. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</translation>
     </message>
 </context>
 <context>
@@ -1519,8 +1519,8 @@ Adresse: %4
     </message>
     <message>
         <location line="+21"/>
-        <source>Sign the message to prove you own this Starchain address</source>
-        <translation>Signer meldingen for å bevise at du eier denne Starchain-adressen</translation>
+        <source>Sign the message to prove you own this StarChain address</source>
+        <translation>Signer meldingen for å bevise at du eier denne StarChain-adressen</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1555,8 +1555,8 @@ Adresse: %4
     </message>
     <message>
         <location line="+40"/>
-        <source>Verify the message to ensure it was signed with the specified Starchain address</source>
-        <translation>Verifiser meldingen for å være sikker på at den ble signert av den angitte Starchain-adressen</translation>
+        <source>Verify the message to ensure it was signed with the specified StarChain address</source>
+        <translation>Verifiser meldingen for å være sikker på at den ble signert av den angitte StarChain-adressen</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1571,8 +1571,8 @@ Adresse: %4
     <message>
         <location filename="../signverifymessagedialog.cpp" line="+27"/>
         <location line="+3"/>
-        <source>Enter a Starchain address</source>
-        <translation>Skriv inn en Starchain adresse (f.eks. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</translation>
+        <source>Enter a StarChain address</source>
+        <translation>Skriv inn en StarChain adresse (f.eks. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</translation>
     </message>
     <message>
         <location line="-2"/>
@@ -1581,8 +1581,8 @@ Adresse: %4
     </message>
     <message>
         <location line="+3"/>
-        <source>Enter Starchain signature</source>
-        <translation>Angi Starchain signatur</translation>
+        <source>Enter StarChain signature</source>
+        <translation>Angi StarChain signatur</translation>
     </message>
     <message>
         <location line="+82"/>
@@ -1655,7 +1655,7 @@ Adresse: %4
     <name>SplashScreen</name>
     <message>
         <location filename="../splashscreen.cpp" line="+22"/>
-        <source>The Starchain developers</source>
+        <source>The StarChain developers</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1790,7 +1790,7 @@ Adresse: %4
     <message>
         <location line="+3"/>
         <source>Generated coins must mature 120 blocks before they can be spent. When you generated this block, it was broadcast to the network to be added to the block chain. If it fails to get into the chain, its state will change to &quot;not accepted&quot; and it won&apos;t be spendable. This may occasionally happen if another node generates a block within a few seconds of yours.</source>
-        <translation>Genererte Starchains må modnes 120 blokker før de kan brukes. Da du genererte denne blokken ble den kringkastet til nettverket for å legges til i blokkjeden. Hvis den ikke kommer inn i kjeden får den tilstanden &quot;ikke akseptert&quot; og vil ikke kunne brukes. Dette skjer noen ganger hvis en annen node genererer en blokk noen sekunder fra din.</translation>
+        <translation>Genererte StarChains må modnes 120 blokker før de kan brukes. Da du genererte denne blokken ble den kringkastet til nettverket for å legges til i blokkjeden. Hvis den ikke kommer inn i kjeden får den tilstanden &quot;ikke akseptert&quot; og vil ikke kunne brukes. Dette skjer noen ganger hvis en annen node genererer en blokk noen sekunder fra din.</translation>
     </message>
     <message>
         <location line="+7"/>
@@ -2143,7 +2143,7 @@ Adresse: %4
     <message>
         <location filename="../walletmodel.cpp" line="+193"/>
         <source>Send Coins</source>
-        <translation>Send Starchains</translation>
+        <translation>Send StarChains</translation>
     </message>
 </context>
 <context>
@@ -2190,11 +2190,11 @@ Adresse: %4
     </message>
 </context>
 <context>
-    <name>Starchain-core</name>
+    <name>StarChain-core</name>
     <message>
-        <location filename="../Starchainstrings.cpp" line="+94"/>
-        <source>Starchain version</source>
-        <translation>Starchain versjon</translation>
+        <location filename="../StarChainstrings.cpp" line="+94"/>
+        <source>StarChain version</source>
+        <translation>StarChain versjon</translation>
     </message>
     <message>
         <location line="+102"/>
@@ -2203,8 +2203,8 @@ Adresse: %4
     </message>
     <message>
         <location line="-29"/>
-        <source>Send command to -server or Starchaind</source>
-        <translation>Send kommando til -server eller Starchaind</translation>
+        <source>Send command to -server or StarChaind</source>
+        <translation>Send kommando til -server eller StarChaind</translation>
     </message>
     <message>
         <location line="-23"/>
@@ -2223,13 +2223,13 @@ Adresse: %4
     </message>
     <message>
         <location line="+24"/>
-        <source>Specify configuration file (default: Starchain.conf)</source>
-        <translation>Angi konfigurasjonsfil (standardverdi: Starchain.conf)</translation>
+        <source>Specify configuration file (default: StarChain.conf)</source>
+        <translation>Angi konfigurasjonsfil (standardverdi: StarChain.conf)</translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>Specify pid file (default: Starchaind.pid)</source>
-        <translation>Angi pid-fil (standardverdi: Starchaind.pid)</translation>
+        <source>Specify pid file (default: StarChaind.pid)</source>
+        <translation>Angi pid-fil (standardverdi: StarChaind.pid)</translation>
     </message>
     <message>
         <location line="-1"/>
@@ -2306,24 +2306,24 @@ Adresse: %4
         <source>%s, you must set a rpcpassword in the configuration file:
 %s
 It is recommended you use the following random password:
-rpcuser=Starchainrpc
+rpcuser=StarChainrpc
 rpcpassword=%s
 (you do not need to remember this password)
 The username and password MUST NOT be the same.
 If the file does not exist, create it with owner-readable-only file permissions.
 It is also recommended to set alertnotify so you are notified of problems;
-for example: alertnotify=echo %%s | mail -s &quot;Starchain Alert&quot; admin@foo.com
+for example: alertnotify=echo %%s | mail -s &quot;StarChain Alert&quot; admin@foo.com
 </source>
         <translation>%s, du må angi rpcpassord i konfigurasjonsfilen.
 %s
 Det anbefales at du bruker det følgende tilfeldige passordet:
-rpcbruker=Starchainrpc
+rpcbruker=StarChainrpc
 rpcpassord=%s
 (du behøver ikke å huske passordet)
 Brukernavnet og passordet MÅ IKKE være like.
 Om filen ikke eksisterer, opprett den nå med eier-kun-les filrettigheter.
 Det er også anbefalt at å sette varselsmelding slik du får melding om problemer.
-For eksempel: varselmelding=echo %%s | mail -s &quot;Starchain varsel&quot; admin@foo.com</translation>
+For eksempel: varselmelding=echo %%s | mail -s &quot;StarChain varsel&quot; admin@foo.com</translation>
     </message>
     <message>
         <location line="+17"/>
@@ -2337,7 +2337,7 @@ For eksempel: varselmelding=echo %%s | mail -s &quot;Starchain varsel&quot; admi
     </message>
     <message>
         <location line="+3"/>
-        <source>Cannot obtain a lock on data directory %s. Starchain is probably already running.</source>
+        <source>Cannot obtain a lock on data directory %s. StarChain is probably already running.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -2382,8 +2382,8 @@ For eksempel: varselmelding=echo %%s | mail -s &quot;Starchain varsel&quot; admi
     </message>
     <message>
         <location line="+3"/>
-        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong Starchain will not work properly.</source>
-        <translation>Advarsel: Vennligst undersøk at din datamaskin har riktig dato og klokkeslett! Hvis klokken er stilt feil vil ikke Starchain fungere riktig.</translation>
+        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong StarChain will not work properly.</source>
+        <translation>Advarsel: Vennligst undersøk at din datamaskin har riktig dato og klokkeslett! Hvis klokken er stilt feil vil ikke StarChain fungere riktig.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -2632,8 +2632,8 @@ For eksempel: varselmelding=echo %%s | mail -s &quot;Starchain varsel&quot; admi
     </message>
     <message>
         <location line="+5"/>
-        <source>SSL options: (see the Starchain Wiki for SSL setup instructions)</source>
-        <translation>SSL valg: (se Starchain Wiki for instruksjoner for oppsett av SSL)</translation>
+        <source>SSL options: (see the StarChain Wiki for SSL setup instructions)</source>
+        <translation>SSL valg: (se StarChain Wiki for instruksjoner for oppsett av SSL)</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -2822,13 +2822,13 @@ For eksempel: varselmelding=echo %%s | mail -s &quot;Starchain varsel&quot; admi
     </message>
     <message>
         <location line="+1"/>
-        <source>Error loading wallet.dat: Wallet requires newer version of Starchain</source>
-        <translation>Feil ved lasting av wallet.dat: Lommeboken krever en nyere versjon av Starchain</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of StarChain</source>
+        <translation>Feil ved lasting av wallet.dat: Lommeboken krever en nyere versjon av StarChain</translation>
     </message>
     <message>
         <location line="+93"/>
-        <source>Wallet needed to be rewritten: restart Starchain to complete</source>
-        <translation>Lommeboken måtte skrives om: start Starchain på nytt for å fullføre</translation>
+        <source>Wallet needed to be rewritten: restart StarChain to complete</source>
+        <translation>Lommeboken måtte skrives om: start StarChain på nytt for å fullføre</translation>
     </message>
     <message>
         <location line="-95"/>
@@ -2887,8 +2887,8 @@ For eksempel: varselmelding=echo %%s | mail -s &quot;Starchain varsel&quot; admi
     </message>
     <message>
         <location line="-25"/>
-        <source>Unable to bind to %s on this computer. Starchain is probably already running.</source>
-        <translation>Kan ikke binde til %s på denne datamaskinen. Sannsynligvis kjører Starchain allerede.</translation>
+        <source>Unable to bind to %s on this computer. StarChain is probably already running.</source>
+        <translation>Kan ikke binde til %s på denne datamaskinen. Sannsynligvis kjører StarChain allerede.</translation>
     </message>
     <message>
         <location line="+64"/>

@@ -1,7 +1,7 @@
-#include "Starchainamountfield.h"
+#include "StarChainamountfield.h"
 
 #include "qvaluecombobox.h"
-#include "Starchainunits.h"
+#include "StarChainunits.h"
 #include "guiconstants.h"
 
 #include <QHBoxLayout>
@@ -10,7 +10,7 @@
 #include <QApplication>
 #include <qmath.h> // for qPow()
 
-StarchainAmountField::StarchainAmountField(QWidget *parent):
+StarChainAmountField::StarChainAmountField(QWidget *parent):
         QWidget(parent), amount(0), currentUnit(-1)
 {
     amount = new QDoubleSpinBox(this);
@@ -23,7 +23,7 @@ StarchainAmountField::StarchainAmountField(QWidget *parent):
     QHBoxLayout *layout = new QHBoxLayout(this);
     layout->addWidget(amount);
     unit = new QValueComboBox(this);
-    unit->setModel(new StarchainUnits(this));
+    unit->setModel(new StarChainUnits(this));
     layout->addWidget(unit);
     layout->addStretch(1);
     layout->setContentsMargins(0,0,0,0);
@@ -41,7 +41,7 @@ StarchainAmountField::StarchainAmountField(QWidget *parent):
     unitChanged(unit->currentIndex());
 }
 
-void StarchainAmountField::setText(const QString &text)
+void StarChainAmountField::setText(const QString &text)
 {
     if (text.isEmpty())
         amount->clear();
@@ -49,18 +49,18 @@ void StarchainAmountField::setText(const QString &text)
         amount->setValue(text.toDouble());
 }
 
-void StarchainAmountField::clear()
+void StarChainAmountField::clear()
 {
     amount->clear();
     unit->setCurrentIndex(0);
 }
 
-bool StarchainAmountField::validate()
+bool StarChainAmountField::validate()
 {
     bool valid = true;
     if (amount->value() == 0.0)
         valid = false;
-    if (valid && !StarchainUnits::parse(currentUnit, text(), 0))
+    if (valid && !StarChainUnits::parse(currentUnit, text(), 0))
         valid = false;
 
     setValid(valid);
@@ -68,7 +68,7 @@ bool StarchainAmountField::validate()
     return valid;
 }
 
-void StarchainAmountField::setValid(bool valid)
+void StarChainAmountField::setValid(bool valid)
 {
     if (valid)
         amount->setStyleSheet("");
@@ -76,7 +76,7 @@ void StarchainAmountField::setValid(bool valid)
         amount->setStyleSheet(STYLE_INVALID);
 }
 
-QString StarchainAmountField::text() const
+QString StarChainAmountField::text() const
 {
     if (amount->text().isEmpty())
         return QString();
@@ -84,7 +84,7 @@ QString StarchainAmountField::text() const
         return amount->text();
 }
 
-bool StarchainAmountField::eventFilter(QObject *object, QEvent *event)
+bool StarChainAmountField::eventFilter(QObject *object, QEvent *event)
 {
     if (event->type() == QEvent::FocusIn)
     {
@@ -105,16 +105,16 @@ bool StarchainAmountField::eventFilter(QObject *object, QEvent *event)
     return QWidget::eventFilter(object, event);
 }
 
-QWidget *StarchainAmountField::setupTabChain(QWidget *prev)
+QWidget *StarChainAmountField::setupTabChain(QWidget *prev)
 {
     QWidget::setTabOrder(prev, amount);
     return amount;
 }
 
-qint64 StarchainAmountField::value(bool *valid_out) const
+qint64 StarChainAmountField::value(bool *valid_out) const
 {
     qint64 val_out = 0;
-    bool valid = StarchainUnits::parse(currentUnit, text(), &val_out);
+    bool valid = StarChainUnits::parse(currentUnit, text(), &val_out);
     if(valid_out)
     {
         *valid_out = valid;
@@ -122,18 +122,18 @@ qint64 StarchainAmountField::value(bool *valid_out) const
     return val_out;
 }
 
-void StarchainAmountField::setValue(qint64 value)
+void StarChainAmountField::setValue(qint64 value)
 {
-    setText(StarchainUnits::format(currentUnit, value));
+    setText(StarChainUnits::format(currentUnit, value));
 }
 
-void StarchainAmountField::unitChanged(int idx)
+void StarChainAmountField::unitChanged(int idx)
 {
     // Use description tooltip for current unit for the combobox
     unit->setToolTip(unit->itemData(idx, Qt::ToolTipRole).toString());
 
     // Determine new unit ID
-    int newUnit = unit->itemData(idx, StarchainUnits::UnitRole).toInt();
+    int newUnit = unit->itemData(idx, StarChainUnits::UnitRole).toInt();
 
     // Parse current value and convert to new unit
     bool valid = false;
@@ -142,10 +142,10 @@ void StarchainAmountField::unitChanged(int idx)
     currentUnit = newUnit;
 
     // Set max length after retrieving the value, to prevent truncation
-    amount->setDecimals(StarchainUnits::decimals(currentUnit));
-    amount->setMaximum(qPow(10, StarchainUnits::amountDigits(currentUnit)) - qPow(10, -amount->decimals()));
+    amount->setDecimals(StarChainUnits::decimals(currentUnit));
+    amount->setMaximum(qPow(10, StarChainUnits::amountDigits(currentUnit)) - qPow(10, -amount->decimals()));
 
-    if(currentUnit == StarchainUnits::uBTC)
+    if(currentUnit == StarChainUnits::uBTC)
         amount->setSingleStep(0.01);
     else
         amount->setSingleStep(0.001);
@@ -163,7 +163,7 @@ void StarchainAmountField::unitChanged(int idx)
     setValid(true);
 }
 
-void StarchainAmountField::setDisplayUnit(int newUnit)
+void StarChainAmountField::setDisplayUnit(int newUnit)
 {
     unit->setValue(newUnit);
 }

@@ -11,7 +11,7 @@ AboutDialog::AboutDialog(QWidget *parent) :
     ui->setupUi(this);
 
     // Set current copyright year
-    ui->StarchainCopyrightLabel->setText(tr("Copyright") + QString(" &copy; 2018-%1 ").arg(COPYRIGHT_YEAR) + tr("Starchain Developers"));
+    ui->StarChainCopyrightLabel->setText(tr("Copyright") + QString(" &copy; 2018-%1 ").arg(COPYRIGHT_YEAR) + tr("StarChain Developers"));
 }
 
 void AboutDialog::setModel(ClientModel *model)

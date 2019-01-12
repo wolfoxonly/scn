@@ -4,18 +4,18 @@
 #include <QString>
 #include <QAbstractListModel>
 
-/** Starchain unit definitions. Encapsulates parsing and formatting
+/** StarChain unit definitions. Encapsulates parsing and formatting
    and serves as list model for drop-down selection boxes.
 */
-class StarchainUnits: public QAbstractListModel
+class StarChainUnits: public QAbstractListModel
 {
     Q_OBJECT
 
 public:
-    explicit StarchainUnits(QObject *parent);
+    explicit StarChainUnits(QObject *parent);
 
-    /** Starchain units.
-      @note Source: https://en.Starchain.it/wiki/Units . Please add only sensible ones
+    /** StarChain units.
+      @note Source: https://en.StarChain.it/wiki/Units . Please add only sensible ones
      */
     enum Unit
     {
@@ -62,8 +62,8 @@ public:
     ///@}
 
 private:
-    QList<StarchainUnits::Unit> unitlist;
+    QList<StarChainUnits::Unit> unitlist;
 };
-typedef StarchainUnits::Unit StarchainUnit;
+typedef StarChainUnits::Unit StarChainUnit;
 
 #endif // BITCOINUNITS_H

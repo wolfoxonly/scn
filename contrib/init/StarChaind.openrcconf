@@ -1,31 +1,31 @@
-# /etc/conf.d/Starchaind: config file for /etc/init.d/Starchaind
+# /etc/conf.d/StarChaind: config file for /etc/init.d/StarChaind
 
 # Config file location
-#BITCOIND_CONFIGFILE="/etc/Starchain/Starchain.conf"
+#BITCOIND_CONFIGFILE="/etc/StarChain/StarChain.conf"
 
 # What directory to write pidfile to?  (created and owned by $BITCOIND_USER)
-#BITCOIND_PIDDIR="/var/run/Starchaind"
+#BITCOIND_PIDDIR="/var/run/StarChaind"
 
 # What filename to give the pidfile
-#BITCOIND_PIDFILE="${BITCOIND_PIDDIR}/Starchaind.pid"
+#BITCOIND_PIDFILE="${BITCOIND_PIDDIR}/StarChaind.pid"
 
-# Where to write Starchaind data (be mindful that the blockchain is large)
-#BITCOIND_DATADIR="/var/lib/Starchaind"
+# Where to write StarChaind data (be mindful that the blockchain is large)
+#BITCOIND_DATADIR="/var/lib/StarChaind"
 
-# User and group to own Starchaind process
-#BITCOIND_USER="Starchain"
-#BITCOIND_GROUP="Starchain"
+# User and group to own StarChaind process
+#BITCOIND_USER="StarChain"
+#BITCOIND_GROUP="StarChain"
 
-# Path to Starchaind executable
-#BITCOIND_BIN="/usr/bin/Starchaind"
+# Path to StarChaind executable
+#BITCOIND_BIN="/usr/bin/StarChaind"
 
-# Nice value to run Starchaind under
+# Nice value to run StarChaind under
 #BITCOIND_NICE=0
 
 # Additional options (avoid -conf and -datadir, use flags above)
 #BITCOIND_OPTS=""
 
-# The timeout in seconds OpenRC will wait for Starchaind to terminate
+# The timeout in seconds OpenRC will wait for StarChaind to terminate
 # after a SIGTERM has been raised.
 # Note that this will be mapped as argument to start-stop-daemon's
 # '--retry' option, which means you can specify a retry schedule

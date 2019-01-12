@@ -1,15 +1,15 @@
 /*
- * Qt4 Starchain GUI.
+ * Qt4 StarChain GUI.
  *
  * W.J. van der Laan 2011-2012
- * The Starchain Developers 2011-2013
+ * The StarChain Developers 2011-2013
  */
 #ifndef WALLETFRAME_H
 #define WALLETFRAME_H
 
 #include <QFrame>
 
-class StarchainGUI;
+class StarChainGUI;
 class ClientModel;
 class WalletModel;
 class WalletStack;
@@ -18,7 +18,7 @@ class WalletFrame : public QFrame
 {
     Q_OBJECT
 public:
-    explicit WalletFrame(StarchainGUI *_gui);
+    explicit WalletFrame(StarChainGUI *_gui);
     ~WalletFrame();
 
     void setClientModel(ClientModel *clientModel);
@@ -33,7 +33,7 @@ public:
     void showOutOfSyncWarning(bool fShow);
 
 private:
-    StarchainGUI *gui;
+    StarChainGUI *gui;
     ClientModel *clientModel;
     WalletStack *walletStack;
 

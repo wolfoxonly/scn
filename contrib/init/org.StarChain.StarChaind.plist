@@ -3,10 +3,10 @@
 <plist version="1.0">
 <dict>
 	<key>Label</key>
-	<string>org.Starchain.Starchaind</string>
+	<string>org.StarChain.StarChaind</string>
 	<key>ProgramArguments</key>
 	<array>
-		<string>/usr/local/bin/Starchaind</string>
+		<string>/usr/local/bin/StarChaind</string>
 	</array>
 	<key>RunAtLoad</key>
 	<true/>

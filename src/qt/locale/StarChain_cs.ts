@@ -4,13 +4,13 @@
     <name>AboutDialog</name>
     <message>
         <location filename="../forms/aboutdialog.ui" line="+14"/>
-        <source>About Starchain</source>
-        <translation>O Starchainu</translation>
+        <source>About StarChain</source>
+        <translation>O StarChainu</translation>
     </message>
     <message>
         <location line="+39"/>
-        <source>&lt;b&gt;Starchain&lt;/b&gt; version</source>
-        <translation>&lt;b&gt;Starchain&lt;/b&gt; verze</translation>
+        <source>&lt;b&gt;StarChain&lt;/b&gt; version</source>
+        <translation>&lt;b&gt;StarChain&lt;/b&gt; verze</translation>
     </message>
     <message>
         <location line="+57"/>
@@ -34,8 +34,8 @@ Tento produkt zahrnuje programy vyvinuté OpenSSL Projektem pro použití v Open
     </message>
     <message>
         <location line="+0"/>
-        <source>The Starchain developers</source>
-        <translation>Vývojáři Starchainu</translation>
+        <source>The StarChain developers</source>
+        <translation>Vývojáři StarChainu</translation>
     </message>
 </context>
 <context>
@@ -67,8 +67,8 @@ Tento produkt zahrnuje programy vyvinuté OpenSSL Projektem pro použití v Open
     </message>
     <message>
         <location filename="../addressbookpage.cpp" line="+63"/>
-        <source>These are your Starchain addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
-        <translation>Tohle jsou tvé Starchainové adresy pro příjem plateb. Můžeš dát pokaždé každému plátci novou adresu, abys věděl, kdo ti kdy kolik platil.</translation>
+        <source>These are your StarChain addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
+        <translation>Tohle jsou tvé StarChainové adresy pro příjem plateb. Můžeš dát pokaždé každému plátci novou adresu, abys věděl, kdo ti kdy kolik platil.</translation>
     </message>
     <message>
         <location filename="../forms/addressbookpage.ui" line="+14"/>
@@ -82,8 +82,8 @@ Tento produkt zahrnuje programy vyvinuté OpenSSL Projektem pro použití v Open
     </message>
     <message>
         <location line="+11"/>
-        <source>Sign a message to prove you own a Starchain address</source>
-        <translation>Podepiš zprávu, čímž prokážeš, že jsi vlastníkem Starchainové adresy</translation>
+        <source>Sign a message to prove you own a StarChain address</source>
+        <translation>Podepiš zprávu, čímž prokážeš, že jsi vlastníkem StarChainové adresy</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -107,8 +107,8 @@ Tento produkt zahrnuje programy vyvinuté OpenSSL Projektem pro použití v Open
     </message>
     <message>
         <location line="-44"/>
-        <source>Verify a message to ensure it was signed with a specified Starchain address</source>
-        <translation>Ověř zprávu, aby ses ujistil, že byla podepsána danou Starchainovou adresou</translation>
+        <source>Verify a message to ensure it was signed with a specified StarChain address</source>
+        <translation>Ověř zprávu, aby ses ujistil, že byla podepsána danou StarChainovou adresou</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -122,8 +122,8 @@ Tento produkt zahrnuje programy vyvinuté OpenSSL Projektem pro použití v Open
     </message>
     <message>
         <location filename="../addressbookpage.cpp" line="-5"/>
-        <source>These are your Starchain addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Tohle jsou tvé Starchainové adresy pro posílání plateb. Před odesláním mincí si vždy zkontroluj částku a cílovou adresu.</translation>
+        <source>These are your StarChain addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Tohle jsou tvé StarChainové adresy pro posílání plateb. Před odesláním mincí si vždy zkontroluj částku a cílovou adresu.</translation>
     </message>
     <message>
         <location line="+13"/>
@@ -275,8 +275,8 @@ Tento produkt zahrnuje programy vyvinuté OpenSSL Projektem pro použití v Open
     </message>
     <message>
         <location line="-56"/>
-        <source>Starchain will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your Starchains from being stolen by malware infecting your computer.</source>
-        <translation>Starchain se teď ukončí, aby dokončil zašifrování. Pamatuj však, že pouhé zašifrování peněženky úplně nezabraňuje krádeži tvých Starchainů malwarem, kterým se může počítač nakazit.</translation>
+        <source>StarChain will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your StarChains from being stolen by malware infecting your computer.</source>
+        <translation>StarChain se teď ukončí, aby dokončil zašifrování. Pamatuj však, že pouhé zašifrování peněženky úplně nezabraňuje krádeži tvých StarChainů malwarem, kterým se může počítač nakazit.</translation>
     </message>
     <message>
         <location line="+13"/>
@@ -321,9 +321,9 @@ Tento produkt zahrnuje programy vyvinuté OpenSSL Projektem pro použití v Open
     </message>
 </context>
 <context>
-    <name>StarchainGUI</name>
+    <name>StarChainGUI</name>
     <message>
-        <location filename="../Starchaingui.cpp" line="+233"/>
+        <location filename="../StarChaingui.cpp" line="+233"/>
         <source>Sign &amp;message...</source>
         <translation>Po&amp;depiš zprávu...</translation>
     </message>
@@ -374,8 +374,8 @@ Tento produkt zahrnuje programy vyvinuté OpenSSL Projektem pro použití v Open
     </message>
     <message>
         <location line="+4"/>
-        <source>Show information about Starchain</source>
-        <translation>Zobraz informace o Starchainu</translation>
+        <source>Show information about StarChain</source>
+        <translation>Zobraz informace o StarChainu</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -419,13 +419,13 @@ Tento produkt zahrnuje programy vyvinuté OpenSSL Projektem pro použití v Open
     </message>
     <message>
         <location line="-347"/>
-        <source>Send coins to a Starchain address</source>
-        <translation>Pošli mince na Starchainovou adresu</translation>
+        <source>Send coins to a StarChain address</source>
+        <translation>Pošli mince na StarChainovou adresu</translation>
     </message>
     <message>
         <location line="+49"/>
-        <source>Modify configuration options for Starchain</source>
-        <translation>Uprav nastavení Starchainu</translation>
+        <source>Modify configuration options for StarChain</source>
+        <translation>Uprav nastavení StarChainu</translation>
     </message>
     <message>
         <location line="+9"/>
@@ -455,8 +455,8 @@ Tento produkt zahrnuje programy vyvinuté OpenSSL Projektem pro použití v Open
     <message>
         <location line="-165"/>
         <location line="+530"/>
-        <source>Starchain</source>
-        <translation>Starchain</translation>
+        <source>StarChain</source>
+        <translation>StarChain</translation>
     </message>
     <message>
         <location line="-530"/>
@@ -480,8 +480,8 @@ Tento produkt zahrnuje programy vyvinuté OpenSSL Projektem pro použití v Open
     </message>
     <message>
         <location line="+22"/>
-        <source>&amp;About Starchain</source>
-        <translation>O &amp;Starchainu</translation>
+        <source>&amp;About StarChain</source>
+        <translation>O &amp;StarChainu</translation>
     </message>
     <message>
         <location line="+9"/>
@@ -500,13 +500,13 @@ Tento produkt zahrnuje programy vyvinuté OpenSSL Projektem pro použití v Open
     </message>
     <message>
         <location line="+7"/>
-        <source>Sign messages with your Starchain addresses to prove you own them</source>
-        <translation>Podepiš zprávy svými Starchainovými adresami, čímž prokážeš, že jsi jejich vlastníkem</translation>
+        <source>Sign messages with your StarChain addresses to prove you own them</source>
+        <translation>Podepiš zprávy svými StarChainovými adresami, čímž prokážeš, že jsi jejich vlastníkem</translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>Verify messages to ensure they were signed with specified Starchain addresses</source>
-        <translation>Ověř zprávy, aby ses ujistil, že byly podepsány danými Starchainovými adresami</translation>
+        <source>Verify messages to ensure they were signed with specified StarChain addresses</source>
+        <translation>Ověř zprávy, aby ses ujistil, že byly podepsány danými StarChainovými adresami</translation>
     </message>
     <message>
         <location line="+28"/>
@@ -536,13 +536,13 @@ Tento produkt zahrnuje programy vyvinuté OpenSSL Projektem pro použití v Open
     </message>
     <message>
         <location line="+47"/>
-        <source>Starchain client</source>
-        <translation>Starchain klient</translation>
+        <source>StarChain client</source>
+        <translation>StarChain klient</translation>
     </message>
     <message numerus="yes">
         <location line="+141"/>
-        <source>%n active connection(s) to Starchain network</source>
-        <translation><numerusform>%n aktivní spojení do Starchainové sítě</numerusform><numerusform>%n aktivní spojení do Starchainové sítě</numerusform><numerusform>%n aktivních spojení do Starchainové sítě</numerusform></translation>
+        <source>%n active connection(s) to StarChain network</source>
+        <translation><numerusform>%n aktivní spojení do StarChainové sítě</numerusform><numerusform>%n aktivní spojení do StarChainové sítě</numerusform><numerusform>%n aktivních spojení do StarChainové sítě</numerusform></translation>
     </message>
     <message>
         <location line="+22"/>
@@ -656,8 +656,8 @@ Adresa: %4
     <message>
         <location line="-23"/>
         <location line="+23"/>
-        <source>URI can not be parsed! This can be caused by an invalid Starchain address or malformed URI parameters.</source>
-        <translation>Nepodařilo se analyzovat URI! Důvodem může být neplatná Starchainová adresa nebo poškozené parametry URI.</translation>
+        <source>URI can not be parsed! This can be caused by an invalid StarChain address or malformed URI parameters.</source>
+        <translation>Nepodařilo se analyzovat URI! Důvodem může být neplatná StarChainová adresa nebo poškozené parametry URI.</translation>
     </message>
     <message>
         <location line="+17"/>
@@ -670,9 +670,9 @@ Adresa: %4
         <translation>Peněženka je &lt;b&gt;zašifrovaná&lt;/b&gt; a momentálně &lt;b&gt;zamčená&lt;/b&gt;</translation>
     </message>
     <message>
-        <location filename="../Starchain.cpp" line="+111"/>
-        <source>A fatal error occurred. Starchain can no longer continue safely and will quit.</source>
-        <translation>Stala se fatální chyba. Starchain nemůže bezpečně pokračovat v činnosti, a proto skončí.</translation>
+        <location filename="../StarChain.cpp" line="+111"/>
+        <source>A fatal error occurred. StarChain can no longer continue safely and will quit.</source>
+        <translation>Stala se fatální chyba. StarChain nemůže bezpečně pokračovat v činnosti, a proto skončí.</translation>
     </message>
 </context>
 <context>
@@ -737,8 +737,8 @@ Adresa: %4
     </message>
     <message>
         <location line="-5"/>
-        <source>The entered address &quot;%1&quot; is not a valid Starchain address.</source>
-        <translation>Zadaná adresa &quot;%1&quot; není platná Starchainová adresa.</translation>
+        <source>The entered address &quot;%1&quot; is not a valid StarChain address.</source>
+        <translation>Zadaná adresa &quot;%1&quot; není platná StarChainová adresa.</translation>
     </message>
     <message>
         <location line="+10"/>
@@ -756,8 +756,8 @@ Adresa: %4
     <message>
         <location filename="../guiutil.cpp" line="+424"/>
         <location line="+12"/>
-        <source>Starchain-Qt</source>
-        <translation>Starchain-Qt</translation>
+        <source>StarChain-Qt</source>
+        <translation>StarChain-Qt</translation>
     </message>
     <message>
         <location line="-12"/>
@@ -819,8 +819,8 @@ Adresa: %4
     </message>
     <message>
         <location line="+31"/>
-        <source>Automatically start Starchain after logging in to the system.</source>
-        <translation>Automaticky spustí Starchain po přihlášení do systému.</translation>
+        <source>Automatically start StarChain after logging in to the system.</source>
+        <translation>Automaticky spustí StarChain po přihlášení do systému.</translation>
     </message>
     <message>
         <location line="+46"/>
@@ -829,8 +829,8 @@ Adresa: %4
     </message>
     <message>
         <location line="+3"/>
-        <source>&amp;Start Starchain on system login</source>
-        <translation>S&amp;pustit Starchain po přihlášení do systému</translation>
+        <source>&amp;Start StarChain on system login</source>
+        <translation>S&amp;pustit StarChain po přihlášení do systému</translation>
     </message>
     <message>
         <location line="+35"/>
@@ -849,7 +849,7 @@ Adresa: %4
     </message>
     <message>
         <location line="+6"/>
-        <source>Automatically open the Starchain client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <source>Automatically open the StarChain client port on the router. This only works when your router supports UPnP and it is enabled.</source>
         <translation>Automaticky otevře potřebný port na routeru. Tohle funguje jen za předpokladu, že tvůj router podporuje UPnP a že je UPnP povolené.</translation>
     </message>
     <message>
@@ -859,8 +859,8 @@ Adresa: %4
     </message>
     <message>
         <location line="+7"/>
-        <source>Connect to the Starchain network through a SOCKS proxy (e.g. when connecting through Tor).</source>
-        <translation>Připojí se do Starchainové sítě přes SOCKS proxy (např. když se připojuje přes Tor).</translation>
+        <source>Connect to the StarChain network through a SOCKS proxy (e.g. when connecting through Tor).</source>
+        <translation>Připojí se do StarChainové sítě přes SOCKS proxy (např. když se připojuje přes Tor).</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -934,8 +934,8 @@ Adresa: %4
     </message>
     <message>
         <location line="+13"/>
-        <source>The user interface language can be set here. This setting will take effect after restarting Starchain.</source>
-        <translation>Tady lze nastavit jazyk uživatelského rozhraní. Nastavení se projeví až po restartování Starchainu.</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting StarChain.</source>
+        <translation>Tady lze nastavit jazyk uživatelského rozhraní. Nastavení se projeví až po restartování StarChainu.</translation>
     </message>
     <message>
         <location line="+11"/>
@@ -949,8 +949,8 @@ Adresa: %4
     </message>
     <message>
         <location line="+9"/>
-        <source>Whether to show Starchain addresses in the transaction list or not.</source>
-        <translation>Zda ukazovat Starchainové adresy ve výpisu transakcí nebo ne.</translation>
+        <source>Whether to show StarChain addresses in the transaction list or not.</source>
+        <translation>Zda ukazovat StarChainové adresy ve výpisu transakcí nebo ne.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1001,8 +1001,8 @@ Adresa: %4
     <message>
         <location line="-9"/>
         <location line="+9"/>
-        <source>This setting will take effect after restarting Starchain.</source>
-        <translation>Nastavení se projeví až po restartování Starchainu.</translation>
+        <source>This setting will take effect after restarting StarChain.</source>
+        <translation>Nastavení se projeví až po restartování StarChainu.</translation>
     </message>
     <message>
         <location line="+29"/>
@@ -1020,8 +1020,8 @@ Adresa: %4
     <message>
         <location line="+50"/>
         <location line="+166"/>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Starchain network after a connection is established, but this process has not completed yet.</source>
-        <translation>Zobrazené informace nemusí být aktuální. Tvá peněženka se automaticky sesynchronizuje s Starchainovou sítí, jakmile se s ní spojí. Zatím ale ještě není synchronizace dokončena.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the StarChain network after a connection is established, but this process has not completed yet.</source>
+        <translation>Zobrazené informace nemusí být aktuální. Tvá peněženka se automaticky sesynchronizuje s StarChainovou sítí, jakmile se s ní spojí. Zatím ale ještě není synchronizace dokončena.</translation>
     </message>
     <message>
         <location line="-124"/>
@@ -1074,8 +1074,8 @@ Adresa: %4
     <name>PaymentServer</name>
     <message>
         <location filename="../paymentserver.cpp" line="+107"/>
-        <source>Cannot start Starchain: click-to-pay handler</source>
-        <translation>Nemůžu spustit Starchain: obsluha click-to-pay</translation>
+        <source>Cannot start StarChain: click-to-pay handler</source>
+        <translation>Nemůžu spustit StarChain: obsluha click-to-pay</translation>
     </message>
 </context>
 <context>
@@ -1224,8 +1224,8 @@ Adresa: %4
     </message>
     <message>
         <location line="+7"/>
-        <source>Show the Starchain-Qt help message to get a list with possible Starchain command-line options.</source>
-        <translation>Seznam parametrů Starchainu pro příkazovou řádku získáš v nápovědě Starchainu Qt.</translation>
+        <source>Show the StarChain-Qt help message to get a list with possible StarChain command-line options.</source>
+        <translation>Seznam parametrů StarChainu pro příkazovou řádku získáš v nápovědě StarChainu Qt.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1244,13 +1244,13 @@ Adresa: %4
     </message>
     <message>
         <location line="-104"/>
-        <source>Starchain - Debug window</source>
-        <translation>Starchain - ladicí okno</translation>
+        <source>StarChain - Debug window</source>
+        <translation>StarChain - ladicí okno</translation>
     </message>
     <message>
         <location line="+25"/>
-        <source>Starchain Core</source>
-        <translation>Jádro Starchainu</translation>
+        <source>StarChain Core</source>
+        <translation>Jádro StarChainu</translation>
     </message>
     <message>
         <location line="+279"/>
@@ -1259,8 +1259,8 @@ Adresa: %4
     </message>
     <message>
         <location line="+7"/>
-        <source>Open the Starchain debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>Otevři soubor s ladicími záznamy Starchainu z aktuálního datového adresáře. U velkých logů to může pár vteřin zabrat.</translation>
+        <source>Open the StarChain debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <translation>Otevři soubor s ladicími záznamy StarChainu z aktuálního datového adresáře. U velkých logů to může pár vteřin zabrat.</translation>
     </message>
     <message>
         <location line="+102"/>
@@ -1269,8 +1269,8 @@ Adresa: %4
     </message>
     <message>
         <location filename="../rpcconsole.cpp" line="-30"/>
-        <source>Welcome to the Starchain RPC console.</source>
-        <translation>Vítej v Starchainové RPC konzoli.</translation>
+        <source>Welcome to the StarChain RPC console.</source>
+        <translation>Vítej v StarChainové RPC konzoli.</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -1453,8 +1453,8 @@ Adresa: %4
     </message>
     <message>
         <location filename="../sendcoinsentry.cpp" line="+1"/>
-        <source>Enter a Starchain address</source>
-        <translation>Zadej Starchainovou adresu</translation>
+        <source>Enter a StarChain address</source>
+        <translation>Zadej StarChainovou adresu</translation>
     </message>
 </context>
 <context>
@@ -1518,8 +1518,8 @@ Adresa: %4
     </message>
     <message>
         <location line="+21"/>
-        <source>Sign the message to prove you own this Starchain address</source>
-        <translation>Podepiš zprávu, čímž prokážeš, že jsi vlastníkem této Starchainové adresy</translation>
+        <source>Sign the message to prove you own this StarChain address</source>
+        <translation>Podepiš zprávu, čímž prokážeš, že jsi vlastníkem této StarChainové adresy</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1554,8 +1554,8 @@ Adresa: %4
     </message>
     <message>
         <location line="+40"/>
-        <source>Verify the message to ensure it was signed with the specified Starchain address</source>
-        <translation>Ověř zprávu, aby ses ujistil, že byla podepsána danou Starchainovou adresou</translation>
+        <source>Verify the message to ensure it was signed with the specified StarChain address</source>
+        <translation>Ověř zprávu, aby ses ujistil, že byla podepsána danou StarChainovou adresou</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1570,8 +1570,8 @@ Adresa: %4
     <message>
         <location filename="../signverifymessagedialog.cpp" line="+27"/>
         <location line="+3"/>
-        <source>Enter a Starchain address</source>
-        <translation>Zadej Starchainovou adresu (např. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</translation>
+        <source>Enter a StarChain address</source>
+        <translation>Zadej StarChainovou adresu (např. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</translation>
     </message>
     <message>
         <location line="-2"/>
@@ -1580,8 +1580,8 @@ Adresa: %4
     </message>
     <message>
         <location line="+3"/>
-        <source>Enter Starchain signature</source>
-        <translation>Vlož Starchainový podpis</translation>
+        <source>Enter StarChain signature</source>
+        <translation>Vlož StarChainový podpis</translation>
     </message>
     <message>
         <location line="+82"/>
@@ -1654,8 +1654,8 @@ Adresa: %4
     <name>SplashScreen</name>
     <message>
         <location filename="../splashscreen.cpp" line="+22"/>
-        <source>The Starchain developers</source>
-        <translation>Vývojáři Starchainu</translation>
+        <source>The StarChain developers</source>
+        <translation>Vývojáři StarChainu</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -2189,11 +2189,11 @@ Adresa: %4
     </message>
 </context>
 <context>
-    <name>Starchain-core</name>
+    <name>StarChain-core</name>
     <message>
-        <location filename="../Starchainstrings.cpp" line="+94"/>
-        <source>Starchain version</source>
-        <translation>Verze Starchainu</translation>
+        <location filename="../StarChainstrings.cpp" line="+94"/>
+        <source>StarChain version</source>
+        <translation>Verze StarChainu</translation>
     </message>
     <message>
         <location line="+102"/>
@@ -2202,8 +2202,8 @@ Adresa: %4
     </message>
     <message>
         <location line="-29"/>
-        <source>Send command to -server or Starchaind</source>
-        <translation>Poslat příkaz pro -server nebo Starchaind</translation>
+        <source>Send command to -server or StarChaind</source>
+        <translation>Poslat příkaz pro -server nebo StarChaind</translation>
     </message>
     <message>
         <location line="-23"/>
@@ -2222,13 +2222,13 @@ Adresa: %4
     </message>
     <message>
         <location line="+24"/>
-        <source>Specify configuration file (default: Starchain.conf)</source>
-        <translation>Konfigurační soubor (výchozí: Starchain.conf)</translation>
+        <source>Specify configuration file (default: StarChain.conf)</source>
+        <translation>Konfigurační soubor (výchozí: StarChain.conf)</translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>Specify pid file (default: Starchaind.pid)</source>
-        <translation>PID soubor (výchozí: Starchaind.pid)</translation>
+        <source>Specify pid file (default: StarChaind.pid)</source>
+        <translation>PID soubor (výchozí: StarChaind.pid)</translation>
     </message>
     <message>
         <location line="-1"/>
@@ -2305,24 +2305,24 @@ Adresa: %4
         <source>%s, you must set a rpcpassword in the configuration file:
 %s
 It is recommended you use the following random password:
-rpcuser=Starchainrpc
+rpcuser=StarChainrpc
 rpcpassword=%s
 (you do not need to remember this password)
 The username and password MUST NOT be the same.
 If the file does not exist, create it with owner-readable-only file permissions.
 It is also recommended to set alertnotify so you are notified of problems;
-for example: alertnotify=echo %%s | mail -s &quot;Starchain Alert&quot; admin@foo.com
+for example: alertnotify=echo %%s | mail -s &quot;StarChain Alert&quot; admin@foo.com
 </source>
         <translation>%s, musíš nastavit rpcpassword v konfiguračním souboru:
 %s
 Je vhodné použít následující náhodné heslo:
-rpcuser=Starchainrpc
+rpcuser=StarChainrpc
 rpcpassword=%s
 (není potřeba si ho pamatovat)
 rpcuser a rpcpassword NESMÍ být stejné.
 Pokud konfigurační soubor ještě neexistuje, vytvoř ho tak, aby ho mohl číst pouze vlastník.
 Je také doporučeno si nastavit alertnotify, abys byl upozorněn na případné problémy;
-například: alertnotify=echo %%s | mail -s &quot;Starchain Alert&quot; admin@foo.com
+například: alertnotify=echo %%s | mail -s &quot;StarChain Alert&quot; admin@foo.com
 </translation>
     </message>
     <message>
@@ -2337,8 +2337,8 @@ například: alertnotify=echo %%s | mail -s &quot;Starchain Alert&quot; admin@fo
     </message>
     <message>
         <location line="+3"/>
-        <source>Cannot obtain a lock on data directory %s. Starchain is probably already running.</source>
-        <translation>Nedaří se mi získat zámek na datový adresář %s. Starchain pravděpodobně už jednou běží.</translation>
+        <source>Cannot obtain a lock on data directory %s. StarChain is probably already running.</source>
+        <translation>Nedaří se mi získat zámek na datový adresář %s. StarChain pravděpodobně už jednou běží.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -2382,8 +2382,8 @@ například: alertnotify=echo %%s | mail -s &quot;Starchain Alert&quot; admin@fo
     </message>
     <message>
         <location line="+3"/>
-        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong Starchain will not work properly.</source>
-        <translation>Upozornění: Zkontroluj, že máš v počítači správně nastavený datum a čas! Pokud jsou nastaveny špatně, Starchain nebude fungovat správně.</translation>
+        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong StarChain will not work properly.</source>
+        <translation>Upozornění: Zkontroluj, že máš v počítači správně nastavený datum a čas! Pokud jsou nastaveny špatně, StarChain nebude fungovat správně.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -2632,8 +2632,8 @@ například: alertnotify=echo %%s | mail -s &quot;Starchain Alert&quot; admin@fo
     </message>
     <message>
         <location line="+5"/>
-        <source>SSL options: (see the Starchain Wiki for SSL setup instructions)</source>
-        <translation>Možnosti SSL: (viz instrukce nastavení SSL v Starchain Wiki)</translation>
+        <source>SSL options: (see the StarChain Wiki for SSL setup instructions)</source>
+        <translation>Možnosti SSL: (viz instrukce nastavení SSL v StarChain Wiki)</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -2822,13 +2822,13 @@ například: alertnotify=echo %%s | mail -s &quot;Starchain Alert&quot; admin@fo
     </message>
     <message>
         <location line="+1"/>
-        <source>Error loading wallet.dat: Wallet requires newer version of Starchain</source>
-        <translation>Chyba při načítání wallet.dat: peněženka vyžaduje novější verzi Starchainu</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of StarChain</source>
+        <translation>Chyba při načítání wallet.dat: peněženka vyžaduje novější verzi StarChainu</translation>
     </message>
     <message>
         <location line="+93"/>
-        <source>Wallet needed to be rewritten: restart Starchain to complete</source>
-        <translation>Soubor s peněženkou potřeboval přepsat: restartuj Starchain, aby se operace dokončila</translation>
+        <source>Wallet needed to be rewritten: restart StarChain to complete</source>
+        <translation>Soubor s peněženkou potřeboval přepsat: restartuj StarChain, aby se operace dokončila</translation>
     </message>
     <message>
         <location line="-95"/>
@@ -2887,8 +2887,8 @@ například: alertnotify=echo %%s | mail -s &quot;Starchain Alert&quot; admin@fo
     </message>
     <message>
         <location line="-25"/>
-        <source>Unable to bind to %s on this computer. Starchain is probably already running.</source>
-        <translation>Nedaří se mi připojit na %s na tomhle počítači. Starchain už pravděpodobně jednou běží.</translation>
+        <source>Unable to bind to %s on this computer. StarChain is probably already running.</source>
+        <translation>Nedaří se mi připojit na %s na tomhle počítači. StarChain už pravděpodobně jednou běží.</translation>
     </message>
     <message>
         <location line="+64"/>

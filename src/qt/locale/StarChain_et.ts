@@ -4,13 +4,13 @@
     <name>AboutDialog</name>
     <message>
         <location filename="../forms/aboutdialog.ui" line="+14"/>
-        <source>About Starchain</source>
-        <translation>Starchainist</translation>
+        <source>About StarChain</source>
+        <translation>StarChainist</translation>
     </message>
     <message>
         <location line="+39"/>
-        <source>&lt;b&gt;Starchain&lt;/b&gt; version</source>
-        <translation>&lt;b&gt;Starchaini&lt;/b&gt; versioon</translation>
+        <source>&lt;b&gt;StarChain&lt;/b&gt; version</source>
+        <translation>&lt;b&gt;StarChaini&lt;/b&gt; versioon</translation>
     </message>
     <message>
         <location line="+57"/>
@@ -34,7 +34,7 @@ Toode sisaldab OpenSSL Projekti all toodetud tarkvara, mis on kasutamiseks OpenS
     </message>
     <message>
         <location line="+0"/>
-        <source>The Starchain developers</source>
+        <source>The StarChain developers</source>
         <translation type="unfinished"/>
     </message>
 </context>
@@ -67,8 +67,8 @@ Toode sisaldab OpenSSL Projekti all toodetud tarkvara, mis on kasutamiseks OpenS
     </message>
     <message>
         <location filename="../addressbookpage.cpp" line="+63"/>
-        <source>These are your Starchain addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
-        <translation>Maksete saamiseks kasutatavad Starchaini aadressid. Maksjate paremaks jälgimiseks võib igaühele anda erineva.</translation>
+        <source>These are your StarChain addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
+        <translation>Maksete saamiseks kasutatavad StarChaini aadressid. Maksjate paremaks jälgimiseks võib igaühele anda erineva.</translation>
     </message>
     <message>
         <location filename="../forms/addressbookpage.ui" line="+14"/>
@@ -82,7 +82,7 @@ Toode sisaldab OpenSSL Projekti all toodetud tarkvara, mis on kasutamiseks OpenS
     </message>
     <message>
         <location line="+11"/>
-        <source>Sign a message to prove you own a Starchain address</source>
+        <source>Sign a message to prove you own a StarChain address</source>
         <translation>Allkirjasta sõnum, et tõestada Bitconi aadressi olemasolu.</translation>
     </message>
     <message>
@@ -107,8 +107,8 @@ Toode sisaldab OpenSSL Projekti all toodetud tarkvara, mis on kasutamiseks OpenS
     </message>
     <message>
         <location line="-44"/>
-        <source>Verify a message to ensure it was signed with a specified Starchain address</source>
-        <translation>Kinnita sõnum tõestamaks selle allkirjastatust määratud Starchaini aadressiga.</translation>
+        <source>Verify a message to ensure it was signed with a specified StarChain address</source>
+        <translation>Kinnita sõnum tõestamaks selle allkirjastatust määratud StarChaini aadressiga.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -122,8 +122,8 @@ Toode sisaldab OpenSSL Projekti all toodetud tarkvara, mis on kasutamiseks OpenS
     </message>
     <message>
         <location filename="../addressbookpage.cpp" line="-5"/>
-        <source>These are your Starchain addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Need on sinu Starchaini aadressid maksete saatmiseks. Müntide saatmisel kontrolli alati summat ning saaja aadressi.</translation>
+        <source>These are your StarChain addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Need on sinu StarChaini aadressid maksete saatmiseks. Müntide saatmisel kontrolli alati summat ning saaja aadressi.</translation>
     </message>
     <message>
         <location line="+13"/>
@@ -275,8 +275,8 @@ Toode sisaldab OpenSSL Projekti all toodetud tarkvara, mis on kasutamiseks OpenS
     </message>
     <message>
         <location line="-56"/>
-        <source>Starchain will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your Starchains from being stolen by malware infecting your computer.</source>
-        <translation>Starchain sulgub krüpteeringu lõpetamiseks. Pea meeles, et rahakoti krüpteerimine ei välista Starchainide vargust, kui sinu arvuti on nakatunud pahavaraga.</translation>
+        <source>StarChain will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your StarChains from being stolen by malware infecting your computer.</source>
+        <translation>StarChain sulgub krüpteeringu lõpetamiseks. Pea meeles, et rahakoti krüpteerimine ei välista StarChainide vargust, kui sinu arvuti on nakatunud pahavaraga.</translation>
     </message>
     <message>
         <location line="+13"/>
@@ -321,9 +321,9 @@ Toode sisaldab OpenSSL Projekti all toodetud tarkvara, mis on kasutamiseks OpenS
     </message>
 </context>
 <context>
-    <name>StarchainGUI</name>
+    <name>StarChainGUI</name>
     <message>
-        <location filename="../Starchaingui.cpp" line="+233"/>
+        <location filename="../StarChaingui.cpp" line="+233"/>
         <source>Sign &amp;message...</source>
         <translation>Signeeri &amp;sõnum</translation>
     </message>
@@ -374,8 +374,8 @@ Toode sisaldab OpenSSL Projekti all toodetud tarkvara, mis on kasutamiseks OpenS
     </message>
     <message>
         <location line="+4"/>
-        <source>Show information about Starchain</source>
-        <translation>Kuva info Starchaini kohta</translation>
+        <source>Show information about StarChain</source>
+        <translation>Kuva info StarChaini kohta</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -419,13 +419,13 @@ Toode sisaldab OpenSSL Projekti all toodetud tarkvara, mis on kasutamiseks OpenS
     </message>
     <message>
         <location line="-347"/>
-        <source>Send coins to a Starchain address</source>
-        <translation>Saada münte Starchaini aadressile</translation>
+        <source>Send coins to a StarChain address</source>
+        <translation>Saada münte StarChaini aadressile</translation>
     </message>
     <message>
         <location line="+49"/>
-        <source>Modify configuration options for Starchain</source>
-        <translation>Muuda Starchaini seadeid</translation>
+        <source>Modify configuration options for StarChain</source>
+        <translation>Muuda StarChaini seadeid</translation>
     </message>
     <message>
         <location line="+9"/>
@@ -455,8 +455,8 @@ Toode sisaldab OpenSSL Projekti all toodetud tarkvara, mis on kasutamiseks OpenS
     <message>
         <location line="-165"/>
         <location line="+530"/>
-        <source>Starchain</source>
-        <translation>Starchain</translation>
+        <source>StarChain</source>
+        <translation>StarChain</translation>
     </message>
     <message>
         <location line="-530"/>
@@ -480,8 +480,8 @@ Toode sisaldab OpenSSL Projekti all toodetud tarkvara, mis on kasutamiseks OpenS
     </message>
     <message>
         <location line="+22"/>
-        <source>&amp;About Starchain</source>
-        <translation>%Starchainist</translation>
+        <source>&amp;About StarChain</source>
+        <translation>%StarChainist</translation>
     </message>
     <message>
         <location line="+9"/>
@@ -500,13 +500,13 @@ Toode sisaldab OpenSSL Projekti all toodetud tarkvara, mis on kasutamiseks OpenS
     </message>
     <message>
         <location line="+7"/>
-        <source>Sign messages with your Starchain addresses to prove you own them</source>
-        <translation>Omandi tõestamiseks allkirjasta sõnumid oma Starchaini aadressiga</translation>
+        <source>Sign messages with your StarChain addresses to prove you own them</source>
+        <translation>Omandi tõestamiseks allkirjasta sõnumid oma StarChaini aadressiga</translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>Verify messages to ensure they were signed with specified Starchain addresses</source>
-        <translation>Kinnita sõnumid kindlustamaks et need allkirjastati määratud Starchaini aadressiga</translation>
+        <source>Verify messages to ensure they were signed with specified StarChain addresses</source>
+        <translation>Kinnita sõnumid kindlustamaks et need allkirjastati määratud StarChaini aadressiga</translation>
     </message>
     <message>
         <location line="+28"/>
@@ -536,13 +536,13 @@ Toode sisaldab OpenSSL Projekti all toodetud tarkvara, mis on kasutamiseks OpenS
     </message>
     <message>
         <location line="+47"/>
-        <source>Starchain client</source>
-        <translation>Starchaini klient</translation>
+        <source>StarChain client</source>
+        <translation>StarChaini klient</translation>
     </message>
     <message numerus="yes">
         <location line="+141"/>
-        <source>%n active connection(s) to Starchain network</source>
-        <translation><numerusform>%n aktiivne ühendus Starchaini võrku</numerusform><numerusform>%n aktiivset ühendust Starchaini võrku</numerusform></translation>
+        <source>%n active connection(s) to StarChain network</source>
+        <translation><numerusform>%n aktiivne ühendus StarChaini võrku</numerusform><numerusform>%n aktiivset ühendust StarChaini võrku</numerusform></translation>
     </message>
     <message>
         <location line="+22"/>
@@ -655,8 +655,8 @@ Aadress: %4⏎</translation>
     <message>
         <location line="-23"/>
         <location line="+23"/>
-        <source>URI can not be parsed! This can be caused by an invalid Starchain address or malformed URI parameters.</source>
-        <translation>URI ei suudeta parsida. Põhjuseks võib olla kehtetu Starchaini aadress või vigased URI parameetrid.</translation>
+        <source>URI can not be parsed! This can be caused by an invalid StarChain address or malformed URI parameters.</source>
+        <translation>URI ei suudeta parsida. Põhjuseks võib olla kehtetu StarChaini aadress või vigased URI parameetrid.</translation>
     </message>
     <message>
         <location line="+17"/>
@@ -669,9 +669,9 @@ Aadress: %4⏎</translation>
         <translation>Rahakott on &lt;b&gt;krüpteeritud&lt;/b&gt; ning hetkel &lt;b&gt;suletud&lt;/b&gt;</translation>
     </message>
     <message>
-        <location filename="../Starchain.cpp" line="+111"/>
-        <source>A fatal error occurred. Starchain can no longer continue safely and will quit.</source>
-        <translation>Ilmnes kriitiline tõrge. Starchain suletakse turvakaalutluste tõttu.</translation>
+        <location filename="../StarChain.cpp" line="+111"/>
+        <source>A fatal error occurred. StarChain can no longer continue safely and will quit.</source>
+        <translation>Ilmnes kriitiline tõrge. StarChain suletakse turvakaalutluste tõttu.</translation>
     </message>
 </context>
 <context>
@@ -736,8 +736,8 @@ Aadress: %4⏎</translation>
     </message>
     <message>
         <location line="-5"/>
-        <source>The entered address &quot;%1&quot; is not a valid Starchain address.</source>
-        <translation>Sisestatud aadress &quot;%1&quot; ei ole Starchainis kehtiv.</translation>
+        <source>The entered address &quot;%1&quot; is not a valid StarChain address.</source>
+        <translation>Sisestatud aadress &quot;%1&quot; ei ole StarChainis kehtiv.</translation>
     </message>
     <message>
         <location line="+10"/>
@@ -755,8 +755,8 @@ Aadress: %4⏎</translation>
     <message>
         <location filename="../guiutil.cpp" line="+424"/>
         <location line="+12"/>
-        <source>Starchain-Qt</source>
-        <translation>Starchaini-Qt</translation>
+        <source>StarChain-Qt</source>
+        <translation>StarChaini-Qt</translation>
     </message>
     <message>
         <location line="-12"/>
@@ -818,8 +818,8 @@ Aadress: %4⏎</translation>
     </message>
     <message>
         <location line="+31"/>
-        <source>Automatically start Starchain after logging in to the system.</source>
-        <translation>Käivita Starchain süsteemi logimisel.</translation>
+        <source>Automatically start StarChain after logging in to the system.</source>
+        <translation>Käivita StarChain süsteemi logimisel.</translation>
     </message>
     <message>
         <location line="+46"/>
@@ -828,8 +828,8 @@ Aadress: %4⏎</translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>&amp;Start Starchain on system login</source>
-        <translation>&amp;Start Starchain sisselogimisel</translation>
+        <source>&amp;Start StarChain on system login</source>
+        <translation>&amp;Start StarChain sisselogimisel</translation>
     </message>
     <message>
         <location line="+35"/>
@@ -848,8 +848,8 @@ Aadress: %4⏎</translation>
     </message>
     <message>
         <location line="+6"/>
-        <source>Automatically open the Starchain client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Starchaini kliendi pordi automaatne avamine ruuteris. Toimib, kui sinu ruuter aktsepteerib UPnP ühendust.</translation>
+        <source>Automatically open the StarChain client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>StarChaini kliendi pordi automaatne avamine ruuteris. Toimib, kui sinu ruuter aktsepteerib UPnP ühendust.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -858,8 +858,8 @@ Aadress: %4⏎</translation>
     </message>
     <message>
         <location line="+7"/>
-        <source>Connect to the Starchain network through a SOCKS proxy (e.g. when connecting through Tor).</source>
-        <translation>Kasuta Starchaini võrgustikku ühendumiseks SOCKS turva proxy&apos;t (nt Tor&apos;i kasutamisel).</translation>
+        <source>Connect to the StarChain network through a SOCKS proxy (e.g. when connecting through Tor).</source>
+        <translation>Kasuta StarChaini võrgustikku ühendumiseks SOCKS turva proxy&apos;t (nt Tor&apos;i kasutamisel).</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -933,8 +933,8 @@ Aadress: %4⏎</translation>
     </message>
     <message>
         <location line="+13"/>
-        <source>The user interface language can be set here. This setting will take effect after restarting Starchain.</source>
-        <translation>Kasutajaliidese keele valimise koht. Valik rakendub Starchaini käivitamisel.</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting StarChain.</source>
+        <translation>Kasutajaliidese keele valimise koht. Valik rakendub StarChaini käivitamisel.</translation>
     </message>
     <message>
         <location line="+11"/>
@@ -948,8 +948,8 @@ Aadress: %4⏎</translation>
     </message>
     <message>
         <location line="+9"/>
-        <source>Whether to show Starchain addresses in the transaction list or not.</source>
-        <translation>Kuvada Starchaini aadress tehingute loetelus või mitte.</translation>
+        <source>Whether to show StarChain addresses in the transaction list or not.</source>
+        <translation>Kuvada StarChaini aadress tehingute loetelus või mitte.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1000,8 +1000,8 @@ Aadress: %4⏎</translation>
     <message>
         <location line="-9"/>
         <location line="+9"/>
-        <source>This setting will take effect after restarting Starchain.</source>
-        <translation>Tehtud valik rakendub Starchaini käivitamisel.</translation>
+        <source>This setting will take effect after restarting StarChain.</source>
+        <translation>Tehtud valik rakendub StarChaini käivitamisel.</translation>
     </message>
     <message>
         <location line="+29"/>
@@ -1019,7 +1019,7 @@ Aadress: %4⏎</translation>
     <message>
         <location line="+50"/>
         <location line="+166"/>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Starchain network after a connection is established, but this process has not completed yet.</source>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the StarChain network after a connection is established, but this process has not completed yet.</source>
         <translation>Kuvatav info ei pruugi olla ajakohane. Ühenduse loomisel süngitakse sinu rahakott automaatselt Bitconi võrgustikuga, kuid see toiming on hetkel lõpetamata.</translation>
     </message>
     <message>
@@ -1073,8 +1073,8 @@ Aadress: %4⏎</translation>
     <name>PaymentServer</name>
     <message>
         <location filename="../paymentserver.cpp" line="+107"/>
-        <source>Cannot start Starchain: click-to-pay handler</source>
-        <translation>Starchain ei käivitu: vajuta-maksa toiming</translation>
+        <source>Cannot start StarChain: click-to-pay handler</source>
+        <translation>StarChain ei käivitu: vajuta-maksa toiming</translation>
     </message>
 </context>
 <context>
@@ -1223,8 +1223,8 @@ Aadress: %4⏎</translation>
     </message>
     <message>
         <location line="+7"/>
-        <source>Show the Starchain-Qt help message to get a list with possible Starchain command-line options.</source>
-        <translation>Näita kehtivate käsurea valikute kuvamiseks Starchaini-Qt abiteksti</translation>
+        <source>Show the StarChain-Qt help message to get a list with possible StarChain command-line options.</source>
+        <translation>Näita kehtivate käsurea valikute kuvamiseks StarChaini-Qt abiteksti</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1243,13 +1243,13 @@ Aadress: %4⏎</translation>
     </message>
     <message>
         <location line="-104"/>
-        <source>Starchain - Debug window</source>
-        <translation>Starchain - debugimise aken</translation>
+        <source>StarChain - Debug window</source>
+        <translation>StarChain - debugimise aken</translation>
     </message>
     <message>
         <location line="+25"/>
-        <source>Starchain Core</source>
-        <translation>Starchaini tuumik</translation>
+        <source>StarChain Core</source>
+        <translation>StarChaini tuumik</translation>
     </message>
     <message>
         <location line="+279"/>
@@ -1258,8 +1258,8 @@ Aadress: %4⏎</translation>
     </message>
     <message>
         <location line="+7"/>
-        <source>Open the Starchain debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>Ava Starchaini logifail praegusest andmekaustast. Toiminguks võib kuluda kuni mõni sekund.</translation>
+        <source>Open the StarChain debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <translation>Ava StarChaini logifail praegusest andmekaustast. Toiminguks võib kuluda kuni mõni sekund.</translation>
     </message>
     <message>
         <location line="+102"/>
@@ -1268,8 +1268,8 @@ Aadress: %4⏎</translation>
     </message>
     <message>
         <location filename="../rpcconsole.cpp" line="-30"/>
-        <source>Welcome to the Starchain RPC console.</source>
-        <translation>Teretulemast Starchaini RPC konsooli.</translation>
+        <source>Welcome to the StarChain RPC console.</source>
+        <translation>Teretulemast StarChaini RPC konsooli.</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -1452,8 +1452,8 @@ Aadress: %4⏎</translation>
     </message>
     <message>
         <location filename="../sendcoinsentry.cpp" line="+1"/>
-        <source>Enter a Starchain address</source>
-        <translation>Sisesta Starchaini aadress</translation>
+        <source>Enter a StarChain address</source>
+        <translation>Sisesta StarChaini aadress</translation>
     </message>
 </context>
 <context>
@@ -1517,8 +1517,8 @@ Aadress: %4⏎</translation>
     </message>
     <message>
         <location line="+21"/>
-        <source>Sign the message to prove you own this Starchain address</source>
-        <translation>Allkirjasta sõnum Starchaini aadressi sulle kuulumise tõestamiseks</translation>
+        <source>Sign the message to prove you own this StarChain address</source>
+        <translation>Allkirjasta sõnum StarChaini aadressi sulle kuulumise tõestamiseks</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1553,8 +1553,8 @@ Aadress: %4⏎</translation>
     </message>
     <message>
         <location line="+40"/>
-        <source>Verify the message to ensure it was signed with the specified Starchain address</source>
-        <translation>Kinnita sõnum tõestamaks selle allkirjastatust määratud Starchaini aadressiga.</translation>
+        <source>Verify the message to ensure it was signed with the specified StarChain address</source>
+        <translation>Kinnita sõnum tõestamaks selle allkirjastatust määratud StarChaini aadressiga.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1569,8 +1569,8 @@ Aadress: %4⏎</translation>
     <message>
         <location filename="../signverifymessagedialog.cpp" line="+27"/>
         <location line="+3"/>
-        <source>Enter a Starchain address</source>
-        <translation>Sisesta Starchaini aadress (nt: 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</translation>
+        <source>Enter a StarChain address</source>
+        <translation>Sisesta StarChaini aadress (nt: 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</translation>
     </message>
     <message>
         <location line="-2"/>
@@ -1579,8 +1579,8 @@ Aadress: %4⏎</translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>Enter Starchain signature</source>
-        <translation>Sisesta Starchaini allkiri</translation>
+        <source>Enter StarChain signature</source>
+        <translation>Sisesta StarChaini allkiri</translation>
     </message>
     <message>
         <location line="+82"/>
@@ -1653,7 +1653,7 @@ Aadress: %4⏎</translation>
     <name>SplashScreen</name>
     <message>
         <location filename="../splashscreen.cpp" line="+22"/>
-        <source>The Starchain developers</source>
+        <source>The StarChain developers</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -2188,11 +2188,11 @@ Aadress: %4⏎</translation>
     </message>
 </context>
 <context>
-    <name>Starchain-core</name>
+    <name>StarChain-core</name>
     <message>
-        <location filename="../Starchainstrings.cpp" line="+94"/>
-        <source>Starchain version</source>
-        <translation>Starchaini versioon</translation>
+        <location filename="../StarChainstrings.cpp" line="+94"/>
+        <source>StarChain version</source>
+        <translation>StarChaini versioon</translation>
     </message>
     <message>
         <location line="+102"/>
@@ -2201,8 +2201,8 @@ Aadress: %4⏎</translation>
     </message>
     <message>
         <location line="-29"/>
-        <source>Send command to -server or Starchaind</source>
-        <translation>Saada käsklus -serverile või Starchaindile</translation>
+        <source>Send command to -server or StarChaind</source>
+        <translation>Saada käsklus -serverile või StarChaindile</translation>
     </message>
     <message>
         <location line="-23"/>
@@ -2221,13 +2221,13 @@ Aadress: %4⏎</translation>
     </message>
     <message>
         <location line="+24"/>
-        <source>Specify configuration file (default: Starchain.conf)</source>
-        <translation>Täpsusta sätete fail (vaikimisi: Starchain.conf)</translation>
+        <source>Specify configuration file (default: StarChain.conf)</source>
+        <translation>Täpsusta sätete fail (vaikimisi: StarChain.conf)</translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>Specify pid file (default: Starchaind.pid)</source>
-        <translation>Täpsusta PID fail (vaikimisi: Starchain.pid)</translation>
+        <source>Specify pid file (default: StarChaind.pid)</source>
+        <translation>Täpsusta PID fail (vaikimisi: StarChain.pid)</translation>
     </message>
     <message>
         <location line="-1"/>
@@ -2304,24 +2304,24 @@ Aadress: %4⏎</translation>
         <source>%s, you must set a rpcpassword in the configuration file:
 %s
 It is recommended you use the following random password:
-rpcuser=Starchainrpc
+rpcuser=StarChainrpc
 rpcpassword=%s
 (you do not need to remember this password)
 The username and password MUST NOT be the same.
 If the file does not exist, create it with owner-readable-only file permissions.
 It is also recommended to set alertnotify so you are notified of problems;
-for example: alertnotify=echo %%s | mail -s &quot;Starchain Alert&quot; admin@foo.com
+for example: alertnotify=echo %%s | mail -s &quot;StarChain Alert&quot; admin@foo.com
 </source>
         <translation>%s, sul tuleb rpcpassword määrata seadete failis:
 %s
 Soovitatav on kasutada järgmist juhuslikku parooli:
-rpcuser=Starchainrpc
+rpcuser=StarChainrpc
 rpcpassword=%s
 (seda parooli ei pea meeles pidama)
 Kasutajanimi ning parool EI TOHI kattuda.
 Kui faili ei leita, loo see ainult-omaniku-loetavas failiõigustes .
 Soovitatav on seadistada tõrgete puhul teavitus;
-nt: alertnotify=echo %%s | email -s &quot;Starchain Alert&quot; admin@foo.com
+nt: alertnotify=echo %%s | email -s &quot;StarChain Alert&quot; admin@foo.com
 </translation>
     </message>
     <message>
@@ -2336,8 +2336,8 @@ nt: alertnotify=echo %%s | email -s &quot;Starchain Alert&quot; admin@foo.com
     </message>
     <message>
         <location line="+3"/>
-        <source>Cannot obtain a lock on data directory %s. Starchain is probably already running.</source>
-        <translation>Ei suuda määrata ainuõigust andmekaustale %s. Tõenäolisel on Starchain juba avatud.</translation>
+        <source>Cannot obtain a lock on data directory %s. StarChain is probably already running.</source>
+        <translation>Ei suuda määrata ainuõigust andmekaustale %s. Tõenäolisel on StarChain juba avatud.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -2381,8 +2381,8 @@ nt: alertnotify=echo %%s | email -s &quot;Starchain Alert&quot; admin@foo.com
     </message>
     <message>
         <location line="+3"/>
-        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong Starchain will not work properly.</source>
-        <translation>Hoiatus: Palun kontrolli oma arvuti kuupäeva/kellaaega! Kui arvuti kell on vale, siis Starchain ei tööta korralikult</translation>
+        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong StarChain will not work properly.</source>
+        <translation>Hoiatus: Palun kontrolli oma arvuti kuupäeva/kellaaega! Kui arvuti kell on vale, siis StarChain ei tööta korralikult</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -2631,8 +2631,8 @@ nt: alertnotify=echo %%s | email -s &quot;Starchain Alert&quot; admin@foo.com
     </message>
     <message>
         <location line="+5"/>
-        <source>SSL options: (see the Starchain Wiki for SSL setup instructions)</source>
-        <translation>SSL valikud: (vaata Starchaini Wikist või SSL sätete juhendist)</translation>
+        <source>SSL options: (see the StarChain Wiki for SSL setup instructions)</source>
+        <translation>SSL valikud: (vaata StarChaini Wikist või SSL sätete juhendist)</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -2821,13 +2821,13 @@ nt: alertnotify=echo %%s | email -s &quot;Starchain Alert&quot; admin@foo.com
     </message>
     <message>
         <location line="+1"/>
-        <source>Error loading wallet.dat: Wallet requires newer version of Starchain</source>
-        <translation>Viga wallet.dat käivitamisel: Rahakott nõuab Starchaini uusimat versiooni</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of StarChain</source>
+        <translation>Viga wallet.dat käivitamisel: Rahakott nõuab StarChaini uusimat versiooni</translation>
     </message>
     <message>
         <location line="+93"/>
-        <source>Wallet needed to be rewritten: restart Starchain to complete</source>
-        <translation>Rahakott tuli ümberkirjutada: toimingu lõpetamiseks taaskäivita Starchain</translation>
+        <source>Wallet needed to be rewritten: restart StarChain to complete</source>
+        <translation>Rahakott tuli ümberkirjutada: toimingu lõpetamiseks taaskäivita StarChain</translation>
     </message>
     <message>
         <location line="-95"/>
@@ -2886,8 +2886,8 @@ nt: alertnotify=echo %%s | email -s &quot;Starchain Alert&quot; admin@foo.com
     </message>
     <message>
         <location line="-25"/>
-        <source>Unable to bind to %s on this computer. Starchain is probably already running.</source>
-        <translation>%s&apos;ga ei ole võimalik sellest arvutist siduda. Starchain juba töötab.</translation>
+        <source>Unable to bind to %s on this computer. StarChain is probably already running.</source>
+        <translation>%s&apos;ga ei ole võimalik sellest arvutist siduda. StarChain juba töötab.</translation>
     </message>
     <message>
         <location line="+64"/>

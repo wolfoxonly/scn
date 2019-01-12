@@ -1,11 +1,11 @@
 /*
  * W.J. van der Laan 2011-2012
- * The Starchain developers 2013-2017
+ * The StarChain developers 2013-2017
  */
 
 #include <QApplication>
 
-#include "Starchaingui.h"
+#include "StarChaingui.h"
 #include "clientmodel.h"
 #include "walletmodel.h"
 #include "optionsmodel.h"
@@ -69,7 +69,7 @@ Q_IMPORT_PLUGIN(qtaccessiblewidgets)
 Q_DECLARE_METATYPE(bool*)
 
 // Need a global reference for the notifications to find the GUI
-static StarchainGUI *guiref;
+static StarChainGUI *guiref;
 static SplashScreen *splashref;
 
 static bool ThreadSafeMessageBox(const std::string& message, const std::string& caption, unsigned int style)
@@ -127,7 +127,7 @@ static void InitMessage(const std::string &message)
  */
 static std::string Translate(const char* psz)
 {
-    return QCoreApplication::translate("Starchain-core", psz).toStdString();
+    return QCoreApplication::translate("StarChain-core", psz).toStdString();
 }
 
 /* Handle runaway exceptions. Shows a message box with the problem and quits the program.
@@ -135,7 +135,7 @@ static std::string Translate(const char* psz)
 static void handleRunawayException(std::exception *e)
 {
     PrintExceptionContinue(e, "Runaway exception");
-    QMessageBox::critical(0, "Runaway exception", StarchainGUI::tr("A fatal error occurred. Starchain can no longer continue safely and will quit.") + QString("\n\n") + QString::fromStdString(strMiscWarning));
+    QMessageBox::critical(0, "Runaway exception", StarChainGUI::tr("A fatal error occurred. StarChain can no longer continue safely and will quit.") + QString("\n\n") + QString::fromStdString(strMiscWarning));
     exit(1);
 }
 
@@ -151,7 +151,7 @@ int main(int argc, char *argv[])
     QTextCodec::setCodecForCStrings(QTextCodec::codecForTr());
 #endif
 
-    Q_INIT_RESOURCE(Starchain);
+    Q_INIT_RESOURCE(StarChain);
     QApplication app(argc, argv);
 
     // Register meta types used for QMetaObject::invokeMethod
@@ -166,12 +166,12 @@ int main(int argc, char *argv[])
     // Install global event filter that makes sure that long tooltips can be word-wrapped
     app.installEventFilter(new GUIUtil::ToolTipToRichTextFilter(TOOLTIP_WRAP_THRESHOLD, &app));
 
-    // ... then Starchain.conf:
+    // ... then StarChain.conf:
     if (!boost::filesystem::is_directory(GetDataDir(false)))
     {
         // This message can not be translated, as translation is not initialized yet
-        // (which not yet possible because lang=XX can be overridden in Starchain.conf in the data directory)
-        QMessageBox::critical(0, "Starchain",
+        // (which not yet possible because lang=XX can be overridden in StarChain.conf in the data directory)
+        QMessageBox::critical(0, "StarChain",
                               QString("Error: Specified data directory \"%1\" does not exist.").arg(QString::fromStdString(mapArgs["-datadir"])));
         return 1;
     }
@@ -179,12 +179,12 @@ int main(int argc, char *argv[])
 
     // Application identification (must be set before OptionsModel is initialized,
     // as it is used to locate QSettings)
-    QApplication::setOrganizationName("Starchain");
-    QApplication::setOrganizationDomain("Starchain.net");
+    QApplication::setOrganizationName("StarChain");
+    QApplication::setOrganizationDomain("StarChain.net");
     if(GetBoolArg("-testnet")) // Separate UI settings for testnet
-        QApplication::setApplicationName("Starchain-Testnet");
+        QApplication::setApplicationName("StarChain-Testnet");
     else
-        QApplication::setApplicationName("Starchain");
+        QApplication::setApplicationName("StarChain");
 
     // ... then GUI settings:
     OptionsModel optionsModel;
@@ -208,11 +208,11 @@ int main(int argc, char *argv[])
     if (qtTranslator.load("qt_" + lang_territory, QLibraryInfo::location(QLibraryInfo::TranslationsPath)))
         app.installTranslator(&qtTranslator);
 
-    // Load e.g. Starchain_de.qm (shortcut "de" needs to be defined in Starchain.qrc)
+    // Load e.g. StarChain_de.qm (shortcut "de" needs to be defined in StarChain.qrc)
     if (translatorBase.load(lang, ":/translations/"))
         app.installTranslator(&translatorBase);
 
-    // Load e.g. Starchain_de_DE.qm (shortcut "de_DE" needs to be defined in Starchain.qrc)
+    // Load e.g. StarChain_de_DE.qm (shortcut "de_DE" needs to be defined in StarChain.qrc)
     if (translator.load(lang_territory, ":/translations/"))
         app.installTranslator(&translator);
 
@@ -234,7 +234,7 @@ int main(int argc, char *argv[])
 #ifdef Q_OS_MAC
     // on mac, also change the icon now because it would look strange to have a testnet splash (green) and a std app icon (orange)
     if(GetBoolArg("-testnet")) {
-        MacDockIconHandler::instance()->setIcon(QIcon(":icons/Starchain_testnet"));
+        MacDockIconHandler::instance()->setIcon(QIcon(":icons/StarChain_testnet"));
     }
 #endif
 
@@ -257,7 +257,7 @@ int main(int argc, char *argv[])
 
         boost::thread_group threadGroup;
 
-        StarchainGUI window;
+        StarChainGUI window;
         guiref = &window;
 
         QTimer* pollShutdownTimer = new QTimer(guiref);
@@ -293,7 +293,7 @@ int main(int argc, char *argv[])
                 }
 
                 // Now that initialization/startup is done, process any command-line
-                // Starchain: URIs
+                // StarChain: URIs
                 QObject::connect(paymentServer, SIGNAL(receivedURI(QString)), &window, SLOT(handleURI(QString)));
                 QTimer::singleShot(100, paymentServer, SLOT(uiReady()));
 
@@ -304,7 +304,7 @@ int main(int argc, char *argv[])
                 window.removeAllWallets();
                 guiref = 0;
             }
-            // Shutdown the core and its threads, but don't exit Starchain-Qt here
+            // Shutdown the core and its threads, but don't exit StarChain-Qt here
             threadGroup.interrupt_all();
             threadGroup.join_all();
             Shutdown();

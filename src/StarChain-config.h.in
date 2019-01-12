@@ -1,4 +1,4 @@
-/* src/Starchain-config.h.in.  Generated from configure.ac by autoheader.  */
+/* src/StarChain-config.h.in.  Generated from configure.ac by autoheader.  */
 
 #ifndef BITCOIN_CONFIG_H
 

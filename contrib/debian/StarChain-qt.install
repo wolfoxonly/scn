@@ -1,6 +1,6 @@
-usr/local/bin/Starchain-qt usr/bin
-share/pixmaps/Starchain32.xpm usr/share/pixmaps
-share/pixmaps/Starchain16.xpm usr/share/pixmaps
-share/pixmaps/Starchain128.png usr/share/pixmaps
-debian/Starchain-qt.desktop usr/share/applications
-debian/Starchain-qt.protocol usr/share/kde4/services/
+usr/local/bin/StarChain-qt usr/bin
+share/pixmaps/StarChain32.xpm usr/share/pixmaps
+share/pixmaps/StarChain16.xpm usr/share/pixmaps
+share/pixmaps/StarChain128.png usr/share/pixmaps
+debian/StarChain-qt.desktop usr/share/applications
+debian/StarChain-qt.protocol usr/share/kde4/services/

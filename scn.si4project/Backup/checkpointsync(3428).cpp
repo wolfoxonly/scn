@@ -1,4 +1,4 @@
-// Copyright (c) 2012-2017 The Starchain developers
+// Copyright (c) 2012-2017 The StarChain developers
 // Distributed under conditional MIT/X11 software license,
 // see the accompanying file COPYING
 //
@@ -316,7 +316,7 @@ bool SetCheckpointPrivKey(std::string strPrivKey)
     sMsg << (CUnsignedSyncCheckpoint)checkpoint;
     checkpoint.vchMsg = std::vector<unsigned char>(sMsg.begin(), sMsg.end());
 
-    CStarchainSecret vchSecret;
+    CStarChainSecret vchSecret;
     if (!vchSecret.SetString(strPrivKey))
         return error("SendSyncCheckpoint: Checkpoint master key invalid");
     CKey key;
@@ -341,7 +341,7 @@ bool SendSyncCheckpoint(uint256 hashCheckpoint)
 
     if (CSyncCheckpoint::strMasterPrivKey.empty())
         return error("SendSyncCheckpoint: Checkpoint master key unavailable.");
-    CStarchainSecret vchSecret;
+    CStarChainSecret vchSecret;
     if (!vchSecret.SetString(CSyncCheckpoint::strMasterPrivKey))
         return error("SendSyncCheckpoint: Checkpoint master key invalid");
     CKey key;

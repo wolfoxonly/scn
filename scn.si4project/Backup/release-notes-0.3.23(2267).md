@@ -1,7 +1,7 @@
-Win32, Linux, MacOSX and source releases for Starchain v0.3.23 have been uploaded to
-https://sourceforge.net/projects/Starchain/files/Starchain/Starchain-0.3.23/
+Win32, Linux, MacOSX and source releases for StarChain v0.3.23 have been uploaded to
+https://sourceforge.net/projects/StarChain/files/StarChain/StarChain-0.3.23/
 
-This is another quick bugfix release, trying to deal with the influx of new Starchain users.
+This is another quick bugfix release, trying to deal with the influx of new StarChain users.
 
 Main items of note:
 

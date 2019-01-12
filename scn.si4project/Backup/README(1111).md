@@ -1,6 +1,6 @@
 ### TestGen ###
 
-Utilities to generate test vectors for the data-driven Starchain tests.
+Utilities to generate test vectors for the data-driven StarChain tests.
 
 Usage: 
 

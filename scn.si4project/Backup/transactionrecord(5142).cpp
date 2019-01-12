@@ -50,7 +50,7 @@ QList<TransactionRecord> TransactionRecord::decomposeTransaction(const CWallet *
             CTxOut txout = wtx.vout[1];
 
             if(ExtractDestination(txout.scriptPubKey, address) && IsMine(*wallet, address))
-                sub.address = CStarchainAddress(address).ToString();
+                sub.address = CStarChainAddress(address).ToString();
 
             parts.append(sub);
         }
@@ -70,9 +70,9 @@ QList<TransactionRecord> TransactionRecord::decomposeTransaction(const CWallet *
 
                     if (ExtractDestination(txout.scriptPubKey, address) && IsMine(*wallet, address))
                     {
-                        // Received by Starchain Address
+                        // Received by StarChain Address
                         sub.type = TransactionRecord::RecvWithAddress;
-                        sub.address = CStarchainAddress(address).ToString();
+                        sub.address = CStarChainAddress(address).ToString();
                     }
                     else
                     {
@@ -131,9 +131,9 @@ QList<TransactionRecord> TransactionRecord::decomposeTransaction(const CWallet *
                     CTxDestination address;
                     if (ExtractDestination(txout.scriptPubKey, address))
                     {
-                        // Sent to Starchain Address
+                        // Sent to StarChain Address
                         sub.type = TransactionRecord::SendToAddress;
-                        sub.address = CStarchainAddress(address).ToString();
+                        sub.address = CStarChainAddress(address).ToString();
                     }
                     else
                     {

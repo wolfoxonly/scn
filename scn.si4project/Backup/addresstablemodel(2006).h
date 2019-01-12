@@ -21,7 +21,7 @@ public:
 
     enum ColumnIndex {
         Label = 0,   /**< User specified label */
-        Address = 1  /**< Starchain address */
+        Address = 1  /**< StarChain address */
     };
 
     enum RoleIndex {

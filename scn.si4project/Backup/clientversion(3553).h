@@ -2,13 +2,13 @@
 #define CLIENTVERSION_H
 
 #if defined(HAVE_CONFIG_H)
-#include "Starchain-config.h"
+#include "StarChain-config.h"
 #else
 //
 // client versioning and copyright year
 //
 
-// These need to be macros, as version.cpp's and Starchain-qt.rc's voodoo requires it
+// These need to be macros, as version.cpp's and StarChain-qt.rc's voodoo requires it
 #define CLIENT_VERSION_MAJOR       1
 #define CLIENT_VERSION_MINOR       0
 #define CLIENT_VERSION_REVISION    0

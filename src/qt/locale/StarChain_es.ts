@@ -4,13 +4,13 @@
     <name>AboutDialog</name>
     <message>
         <location filename="../forms/aboutdialog.ui" line="+14"/>
-        <source>About Starchain</source>
-        <translation>Acerca de Starchain</translation>
+        <source>About StarChain</source>
+        <translation>Acerca de StarChain</translation>
     </message>
     <message>
         <location line="+39"/>
-        <source>&lt;b&gt;Starchain&lt;/b&gt; version</source>
-        <translation>Versión de &lt;b&gt;Starchain&lt;/b&gt;</translation>
+        <source>&lt;b&gt;StarChain&lt;/b&gt; version</source>
+        <translation>Versión de &lt;b&gt;StarChain&lt;/b&gt;</translation>
     </message>
     <message>
         <location line="+57"/>
@@ -37,8 +37,8 @@ Eric Young (eay@cryptsoft.com) y el software UPnP escrito por Thomas Bernard.</t
     </message>
     <message>
         <location line="+0"/>
-        <source>The Starchain developers</source>
-        <translation>Los programadores Starchain</translation>
+        <source>The StarChain developers</source>
+        <translation>Los programadores StarChain</translation>
     </message>
 </context>
 <context>
@@ -70,8 +70,8 @@ Eric Young (eay@cryptsoft.com) y el software UPnP escrito por Thomas Bernard.</t
     </message>
     <message>
         <location filename="../addressbookpage.cpp" line="+63"/>
-        <source>These are your Starchain addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
-        <translation>Estas son sus direcciones Starchain para recibir pagos. Puede utilizar una diferente por cada persona emisora para saber quién le está pagando.</translation>
+        <source>These are your StarChain addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
+        <translation>Estas son sus direcciones StarChain para recibir pagos. Puede utilizar una diferente por cada persona emisora para saber quién le está pagando.</translation>
     </message>
     <message>
         <location filename="../forms/addressbookpage.ui" line="+14"/>
@@ -85,8 +85,8 @@ Eric Young (eay@cryptsoft.com) y el software UPnP escrito por Thomas Bernard.</t
     </message>
     <message>
         <location line="+11"/>
-        <source>Sign a message to prove you own a Starchain address</source>
-        <translation>Firmar un mensaje para demostrar que se posee una dirección Starchain</translation>
+        <source>Sign a message to prove you own a StarChain address</source>
+        <translation>Firmar un mensaje para demostrar que se posee una dirección StarChain</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -110,8 +110,8 @@ Eric Young (eay@cryptsoft.com) y el software UPnP escrito por Thomas Bernard.</t
     </message>
     <message>
         <location line="-44"/>
-        <source>Verify a message to ensure it was signed with a specified Starchain address</source>
-        <translation>Verificar un mensaje para comprobar que fue firmado con la dirección Starchain indicada</translation>
+        <source>Verify a message to ensure it was signed with a specified StarChain address</source>
+        <translation>Verificar un mensaje para comprobar que fue firmado con la dirección StarChain indicada</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -125,8 +125,8 @@ Eric Young (eay@cryptsoft.com) y el software UPnP escrito por Thomas Bernard.</t
     </message>
     <message>
         <location filename="../addressbookpage.cpp" line="-5"/>
-        <source>These are your Starchain addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Estas son sus direcciones Starchain para enviar pagos. Compruebe siempre la cantidad y la dirección receptora antes de transferir monedas.</translation>
+        <source>These are your StarChain addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Estas son sus direcciones StarChain para enviar pagos. Compruebe siempre la cantidad y la dirección receptora antes de transferir monedas.</translation>
     </message>
     <message>
         <location line="+13"/>
@@ -278,8 +278,8 @@ Eric Young (eay@cryptsoft.com) y el software UPnP escrito por Thomas Bernard.</t
     </message>
     <message>
         <location line="-56"/>
-        <source>Starchain will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your Starchains from being stolen by malware infecting your computer.</source>
-        <translation>Starchain se cerrará para finalizar el proceso de cifrado. Recuerde que el cifrado de su monedero no puede proteger totalmente sus Starchains de robo por malware que infecte su sistema.</translation>
+        <source>StarChain will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your StarChains from being stolen by malware infecting your computer.</source>
+        <translation>StarChain se cerrará para finalizar el proceso de cifrado. Recuerde que el cifrado de su monedero no puede proteger totalmente sus StarChains de robo por malware que infecte su sistema.</translation>
     </message>
     <message>
         <location line="+13"/>
@@ -324,9 +324,9 @@ Eric Young (eay@cryptsoft.com) y el software UPnP escrito por Thomas Bernard.</t
     </message>
 </context>
 <context>
-    <name>StarchainGUI</name>
+    <name>StarChainGUI</name>
     <message>
-        <location filename="../Starchaingui.cpp" line="+233"/>
+        <location filename="../StarChaingui.cpp" line="+233"/>
         <source>Sign &amp;message...</source>
         <translation>Firmar &amp;mensaje...</translation>
     </message>
@@ -377,8 +377,8 @@ Eric Young (eay@cryptsoft.com) y el software UPnP escrito por Thomas Bernard.</t
     </message>
     <message>
         <location line="+4"/>
-        <source>Show information about Starchain</source>
-        <translation>Mostrar información acerca de Starchain</translation>
+        <source>Show information about StarChain</source>
+        <translation>Mostrar información acerca de StarChain</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -422,13 +422,13 @@ Eric Young (eay@cryptsoft.com) y el software UPnP escrito por Thomas Bernard.</t
     </message>
     <message>
         <location line="-347"/>
-        <source>Send coins to a Starchain address</source>
-        <translation>Enviar monedas a una dirección Starchain</translation>
+        <source>Send coins to a StarChain address</source>
+        <translation>Enviar monedas a una dirección StarChain</translation>
     </message>
     <message>
         <location line="+49"/>
-        <source>Modify configuration options for Starchain</source>
-        <translation>Modificar las opciones de configuración de Starchain</translation>
+        <source>Modify configuration options for StarChain</source>
+        <translation>Modificar las opciones de configuración de StarChain</translation>
     </message>
     <message>
         <location line="+9"/>
@@ -458,8 +458,8 @@ Eric Young (eay@cryptsoft.com) y el software UPnP escrito por Thomas Bernard.</t
     <message>
         <location line="-165"/>
         <location line="+530"/>
-        <source>Starchain</source>
-        <translation>Starchain</translation>
+        <source>StarChain</source>
+        <translation>StarChain</translation>
     </message>
     <message>
         <location line="-530"/>
@@ -483,8 +483,8 @@ Eric Young (eay@cryptsoft.com) y el software UPnP escrito por Thomas Bernard.</t
     </message>
     <message>
         <location line="+22"/>
-        <source>&amp;About Starchain</source>
-        <translation>&amp;Acerca de Starchain</translation>
+        <source>&amp;About StarChain</source>
+        <translation>&amp;Acerca de StarChain</translation>
     </message>
     <message>
         <location line="+9"/>
@@ -503,13 +503,13 @@ Eric Young (eay@cryptsoft.com) y el software UPnP escrito por Thomas Bernard.</t
     </message>
     <message>
         <location line="+7"/>
-        <source>Sign messages with your Starchain addresses to prove you own them</source>
-        <translation>Firmar mensajes con sus direcciones Starchain para demostrar la propiedad</translation>
+        <source>Sign messages with your StarChain addresses to prove you own them</source>
+        <translation>Firmar mensajes con sus direcciones StarChain para demostrar la propiedad</translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>Verify messages to ensure they were signed with specified Starchain addresses</source>
-        <translation>Verificar mensajes comprobando que están firmados con direcciones Starchain concretas</translation>
+        <source>Verify messages to ensure they were signed with specified StarChain addresses</source>
+        <translation>Verificar mensajes comprobando que están firmados con direcciones StarChain concretas</translation>
     </message>
     <message>
         <location line="+28"/>
@@ -539,13 +539,13 @@ Eric Young (eay@cryptsoft.com) y el software UPnP escrito por Thomas Bernard.</t
     </message>
     <message>
         <location line="+47"/>
-        <source>Starchain client</source>
-        <translation>Cliente Starchain</translation>
+        <source>StarChain client</source>
+        <translation>Cliente StarChain</translation>
     </message>
     <message numerus="yes">
         <location line="+141"/>
-        <source>%n active connection(s) to Starchain network</source>
-        <translation><numerusform>%n conexión activa hacia la red Starchain</numerusform><numerusform>%n conexiones activas hacia la red Starchain</numerusform></translation>
+        <source>%n active connection(s) to StarChain network</source>
+        <translation><numerusform>%n conexión activa hacia la red StarChain</numerusform><numerusform>%n conexiones activas hacia la red StarChain</numerusform></translation>
     </message>
     <message>
         <location line="+22"/>
@@ -659,8 +659,8 @@ Dirección: %4
     <message>
         <location line="-23"/>
         <location line="+23"/>
-        <source>URI can not be parsed! This can be caused by an invalid Starchain address or malformed URI parameters.</source>
-        <translation>¡No se puede interpretar la URI! Esto puede deberse a una dirección Starchain inválida o a parámetros de URI mal formados.</translation>
+        <source>URI can not be parsed! This can be caused by an invalid StarChain address or malformed URI parameters.</source>
+        <translation>¡No se puede interpretar la URI! Esto puede deberse a una dirección StarChain inválida o a parámetros de URI mal formados.</translation>
     </message>
     <message>
         <location line="+17"/>
@@ -673,9 +673,9 @@ Dirección: %4
         <translation>El monedero está &lt;b&gt;cifrado&lt;/b&gt; y actualmente &lt;b&gt;bloqueado&lt;/b&gt;</translation>
     </message>
     <message>
-        <location filename="../Starchain.cpp" line="+111"/>
-        <source>A fatal error occurred. Starchain can no longer continue safely and will quit.</source>
-        <translation>Ha ocurrido un error crítico. Starchain ya no puede continuar con seguridad y se cerrará.</translation>
+        <location filename="../StarChain.cpp" line="+111"/>
+        <source>A fatal error occurred. StarChain can no longer continue safely and will quit.</source>
+        <translation>Ha ocurrido un error crítico. StarChain ya no puede continuar con seguridad y se cerrará.</translation>
     </message>
 </context>
 <context>
@@ -740,8 +740,8 @@ Dirección: %4
     </message>
     <message>
         <location line="-5"/>
-        <source>The entered address &quot;%1&quot; is not a valid Starchain address.</source>
-        <translation>La dirección introducida &quot;%1&quot; no es una dirección Starchain válida.</translation>
+        <source>The entered address &quot;%1&quot; is not a valid StarChain address.</source>
+        <translation>La dirección introducida &quot;%1&quot; no es una dirección StarChain válida.</translation>
     </message>
     <message>
         <location line="+10"/>
@@ -759,8 +759,8 @@ Dirección: %4
     <message>
         <location filename="../guiutil.cpp" line="+424"/>
         <location line="+12"/>
-        <source>Starchain-Qt</source>
-        <translation>Starchain-Qt</translation>
+        <source>StarChain-Qt</source>
+        <translation>StarChain-Qt</translation>
     </message>
     <message>
         <location line="-12"/>
@@ -822,8 +822,8 @@ Dirección: %4
     </message>
     <message>
         <location line="+31"/>
-        <source>Automatically start Starchain after logging in to the system.</source>
-        <translation>Iniciar Starchain automáticamente al encender el sistema.</translation>
+        <source>Automatically start StarChain after logging in to the system.</source>
+        <translation>Iniciar StarChain automáticamente al encender el sistema.</translation>
     </message>
     <message>
         <location line="+46"/>
@@ -832,8 +832,8 @@ Dirección: %4
     </message>
     <message>
         <location line="+3"/>
-        <source>&amp;Start Starchain on system login</source>
-        <translation>&amp;Iniciar Starchain al iniciar el sistema</translation>
+        <source>&amp;Start StarChain on system login</source>
+        <translation>&amp;Iniciar StarChain al iniciar el sistema</translation>
     </message>
     <message>
         <location line="+35"/>
@@ -852,8 +852,8 @@ Dirección: %4
     </message>
     <message>
         <location line="+6"/>
-        <source>Automatically open the Starchain client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Abrir automáticamente el puerto del cliente Starchain en el router. Esta opción solo funciona si el router admite UPnP y está activado.</translation>
+        <source>Automatically open the StarChain client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Abrir automáticamente el puerto del cliente StarChain en el router. Esta opción solo funciona si el router admite UPnP y está activado.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -862,8 +862,8 @@ Dirección: %4
     </message>
     <message>
         <location line="+7"/>
-        <source>Connect to the Starchain network through a SOCKS proxy (e.g. when connecting through Tor).</source>
-        <translation>Conectar a la red Starchain a través de un proxy SOCKS (ej. para conectar con la red Tor)</translation>
+        <source>Connect to the StarChain network through a SOCKS proxy (e.g. when connecting through Tor).</source>
+        <translation>Conectar a la red StarChain a través de un proxy SOCKS (ej. para conectar con la red Tor)</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -937,8 +937,8 @@ Dirección: %4
     </message>
     <message>
         <location line="+13"/>
-        <source>The user interface language can be set here. This setting will take effect after restarting Starchain.</source>
-        <translation>El idioma de la interfaz de usuario puede establecerse aquí. Este ajuste se aplicará cuando se reinicie Starchain.</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting StarChain.</source>
+        <translation>El idioma de la interfaz de usuario puede establecerse aquí. Este ajuste se aplicará cuando se reinicie StarChain.</translation>
     </message>
     <message>
         <location line="+11"/>
@@ -952,8 +952,8 @@ Dirección: %4
     </message>
     <message>
         <location line="+9"/>
-        <source>Whether to show Starchain addresses in the transaction list or not.</source>
-        <translation>Mostrar o no las direcciones Starchain en la lista de transacciones.</translation>
+        <source>Whether to show StarChain addresses in the transaction list or not.</source>
+        <translation>Mostrar o no las direcciones StarChain en la lista de transacciones.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1004,8 +1004,8 @@ Dirección: %4
     <message>
         <location line="-9"/>
         <location line="+9"/>
-        <source>This setting will take effect after restarting Starchain.</source>
-        <translation>Esta configuración tendrá efecto tras reiniciar Starchain.</translation>
+        <source>This setting will take effect after restarting StarChain.</source>
+        <translation>Esta configuración tendrá efecto tras reiniciar StarChain.</translation>
     </message>
     <message>
         <location line="+29"/>
@@ -1023,8 +1023,8 @@ Dirección: %4
     <message>
         <location line="+50"/>
         <location line="+166"/>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Starchain network after a connection is established, but this process has not completed yet.</source>
-        <translation>La información mostrada puede estar desactualizada. Su monedero se sincroniza automáticamente con la red Starchain después de que se haya establecido una conexión , pero este proceso aún no se ha completado.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the StarChain network after a connection is established, but this process has not completed yet.</source>
+        <translation>La información mostrada puede estar desactualizada. Su monedero se sincroniza automáticamente con la red StarChain después de que se haya establecido una conexión , pero este proceso aún no se ha completado.</translation>
     </message>
     <message>
         <location line="-124"/>
@@ -1077,8 +1077,8 @@ Dirección: %4
     <name>PaymentServer</name>
     <message>
         <location filename="../paymentserver.cpp" line="+107"/>
-        <source>Cannot start Starchain: click-to-pay handler</source>
-        <translation>No se pudo iniciar Starchain: manejador de pago-al-clic</translation>
+        <source>Cannot start StarChain: click-to-pay handler</source>
+        <translation>No se pudo iniciar StarChain: manejador de pago-al-clic</translation>
     </message>
 </context>
 <context>
@@ -1227,8 +1227,8 @@ Dirección: %4
     </message>
     <message>
         <location line="+7"/>
-        <source>Show the Starchain-Qt help message to get a list with possible Starchain command-line options.</source>
-        <translation>Mostrar el mensaje de ayuda de Starchain-Qt que enumera las opciones disponibles de línea de órdenes para Starchain.</translation>
+        <source>Show the StarChain-Qt help message to get a list with possible StarChain command-line options.</source>
+        <translation>Mostrar el mensaje de ayuda de StarChain-Qt que enumera las opciones disponibles de línea de órdenes para StarChain.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1247,13 +1247,13 @@ Dirección: %4
     </message>
     <message>
         <location line="-104"/>
-        <source>Starchain - Debug window</source>
-        <translation>Starchain - Ventana de depuración</translation>
+        <source>StarChain - Debug window</source>
+        <translation>StarChain - Ventana de depuración</translation>
     </message>
     <message>
         <location line="+25"/>
-        <source>Starchain Core</source>
-        <translation>Núcleo de Starchain</translation>
+        <source>StarChain Core</source>
+        <translation>Núcleo de StarChain</translation>
     </message>
     <message>
         <location line="+279"/>
@@ -1262,7 +1262,7 @@ Dirección: %4
     </message>
     <message>
         <location line="+7"/>
-        <source>Open the Starchain debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <source>Open the StarChain debug log file from the current data directory. This can take a few seconds for large log files.</source>
         <translation>Abrir el archivo de registro de depuración en el directorio actual de datos. Esto puede llevar varios segundos para archivos de registro grandes.</translation>
     </message>
     <message>
@@ -1272,8 +1272,8 @@ Dirección: %4
     </message>
     <message>
         <location filename="../rpcconsole.cpp" line="-30"/>
-        <source>Welcome to the Starchain RPC console.</source>
-        <translation>Bienvenido a la consola RPC de Starchain</translation>
+        <source>Welcome to the StarChain RPC console.</source>
+        <translation>Bienvenido a la consola RPC de StarChain</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -1456,8 +1456,8 @@ Dirección: %4
     </message>
     <message>
         <location filename="../sendcoinsentry.cpp" line="+1"/>
-        <source>Enter a Starchain address</source>
-        <translation>Introduzca una dirección Starchain (ej. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</translation>
+        <source>Enter a StarChain address</source>
+        <translation>Introduzca una dirección StarChain (ej. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</translation>
     </message>
 </context>
 <context>
@@ -1521,8 +1521,8 @@ Dirección: %4
     </message>
     <message>
         <location line="+21"/>
-        <source>Sign the message to prove you own this Starchain address</source>
-        <translation>Firmar el mensaje para demostrar que se posee esta dirección Starchain</translation>
+        <source>Sign the message to prove you own this StarChain address</source>
+        <translation>Firmar el mensaje para demostrar que se posee esta dirección StarChain</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1557,8 +1557,8 @@ Dirección: %4
     </message>
     <message>
         <location line="+40"/>
-        <source>Verify the message to ensure it was signed with the specified Starchain address</source>
-        <translation>Verificar el mensaje para comprobar que fue firmado con la dirección Starchain indicada</translation>
+        <source>Verify the message to ensure it was signed with the specified StarChain address</source>
+        <translation>Verificar el mensaje para comprobar que fue firmado con la dirección StarChain indicada</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1573,8 +1573,8 @@ Dirección: %4
     <message>
         <location filename="../signverifymessagedialog.cpp" line="+27"/>
         <location line="+3"/>
-        <source>Enter a Starchain address</source>
-        <translation>Introduzca una dirección Starchain (ej. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</translation>
+        <source>Enter a StarChain address</source>
+        <translation>Introduzca una dirección StarChain (ej. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</translation>
     </message>
     <message>
         <location line="-2"/>
@@ -1583,8 +1583,8 @@ Dirección: %4
     </message>
     <message>
         <location line="+3"/>
-        <source>Enter Starchain signature</source>
-        <translation>Introduzca una firma Starchain</translation>
+        <source>Enter StarChain signature</source>
+        <translation>Introduzca una firma StarChain</translation>
     </message>
     <message>
         <location line="+82"/>
@@ -1657,8 +1657,8 @@ Dirección: %4
     <name>SplashScreen</name>
     <message>
         <location filename="../splashscreen.cpp" line="+22"/>
-        <source>The Starchain developers</source>
-        <translation>Los programadores Starchain</translation>
+        <source>The StarChain developers</source>
+        <translation>Los programadores StarChain</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -2192,11 +2192,11 @@ Dirección: %4
     </message>
 </context>
 <context>
-    <name>Starchain-core</name>
+    <name>StarChain-core</name>
     <message>
-        <location filename="../Starchainstrings.cpp" line="+94"/>
-        <source>Starchain version</source>
-        <translation>Versión de Starchain</translation>
+        <location filename="../StarChainstrings.cpp" line="+94"/>
+        <source>StarChain version</source>
+        <translation>Versión de StarChain</translation>
     </message>
     <message>
         <location line="+102"/>
@@ -2205,8 +2205,8 @@ Dirección: %4
     </message>
     <message>
         <location line="-29"/>
-        <source>Send command to -server or Starchaind</source>
-        <translation>Envíar comando a -server o Starchaind</translation>
+        <source>Send command to -server or StarChaind</source>
+        <translation>Envíar comando a -server o StarChaind</translation>
     </message>
     <message>
         <location line="-23"/>
@@ -2228,14 +2228,14 @@ Dirección: %4
     </message>
     <message>
         <location line="+24"/>
-        <source>Specify configuration file (default: Starchain.conf)</source>
-        <translation>Especificar archivo de configuración (predeterminado: Starchain.conf)
+        <source>Specify configuration file (default: StarChain.conf)</source>
+        <translation>Especificar archivo de configuración (predeterminado: StarChain.conf)
 </translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>Specify pid file (default: Starchaind.pid)</source>
-        <translation>Especificar archivo pid (predeterminado: Starchain.pid)
+        <source>Specify pid file (default: StarChaind.pid)</source>
+        <translation>Especificar archivo pid (predeterminado: StarChain.pid)
 </translation>
     </message>
     <message>
@@ -2316,24 +2316,24 @@ Dirección: %4
         <source>%s, you must set a rpcpassword in the configuration file:
 %s
 It is recommended you use the following random password:
-rpcuser=Starchainrpc
+rpcuser=StarChainrpc
 rpcpassword=%s
 (you do not need to remember this password)
 The username and password MUST NOT be the same.
 If the file does not exist, create it with owner-readable-only file permissions.
 It is also recommended to set alertnotify so you are notified of problems;
-for example: alertnotify=echo %%s | mail -s &quot;Starchain Alert&quot; admin@foo.com
+for example: alertnotify=echo %%s | mail -s &quot;StarChain Alert&quot; admin@foo.com
 </source>
         <translation>%s, debe establecer un valor rpcpassword en el archivo de configuración:
 %s
 Se recomienda utilizar la siguiente contraseña aleatoria:
-rpcuser=Starchainrpc
+rpcuser=StarChainrpc
 rpcpassword=%s
 (no es necesario recordar esta contraseña)
 El nombre de usuario y la contraseña DEBEN NO ser iguales.
 Si el archivo no existe, créelo con permisos de archivo de solo lectura.
 Se recomienda también establecer alertnotify para recibir notificaciones de problemas.
-Por ejemplo: alertnotify=echo %%s | mail -s &quot;Starchain Alert&quot; admin@foo.com
+Por ejemplo: alertnotify=echo %%s | mail -s &quot;StarChain Alert&quot; admin@foo.com
 </translation>
     </message>
     <message>
@@ -2348,8 +2348,8 @@ Por ejemplo: alertnotify=echo %%s | mail -s &quot;Starchain Alert&quot; admin@fo
     </message>
     <message>
         <location line="+3"/>
-        <source>Cannot obtain a lock on data directory %s. Starchain is probably already running.</source>
-        <translation>No se puede bloquear el directorio de datos %s. Probablemente Starchain ya se está ejecutando.</translation>
+        <source>Cannot obtain a lock on data directory %s. StarChain is probably already running.</source>
+        <translation>No se puede bloquear el directorio de datos %s. Probablemente StarChain ya se está ejecutando.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -2393,8 +2393,8 @@ Por ejemplo: alertnotify=echo %%s | mail -s &quot;Starchain Alert&quot; admin@fo
     </message>
     <message>
         <location line="+3"/>
-        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong Starchain will not work properly.</source>
-        <translation>Precaución: Por favor, ¡revise que la fecha y hora de su ordenador son correctas! Si su reloj está mal, Starchain no funcionará correctamente.</translation>
+        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong StarChain will not work properly.</source>
+        <translation>Precaución: Por favor, ¡revise que la fecha y hora de su ordenador son correctas! Si su reloj está mal, StarChain no funcionará correctamente.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -2643,8 +2643,8 @@ Por ejemplo: alertnotify=echo %%s | mail -s &quot;Starchain Alert&quot; admin@fo
     </message>
     <message>
         <location line="+5"/>
-        <source>SSL options: (see the Starchain Wiki for SSL setup instructions)</source>
-        <translation>Opciones SSL: (ver la Starchain Wiki para instrucciones de configuración SSL)</translation>
+        <source>SSL options: (see the StarChain Wiki for SSL setup instructions)</source>
+        <translation>Opciones SSL: (ver la StarChain Wiki para instrucciones de configuración SSL)</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -2843,13 +2843,13 @@ Por ejemplo: alertnotify=echo %%s | mail -s &quot;Starchain Alert&quot; admin@fo
     </message>
     <message>
         <location line="+1"/>
-        <source>Error loading wallet.dat: Wallet requires newer version of Starchain</source>
-        <translation>Error al cargar wallet.dat: El monedero requiere una versión más reciente de Starchain</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of StarChain</source>
+        <translation>Error al cargar wallet.dat: El monedero requiere una versión más reciente de StarChain</translation>
     </message>
     <message>
         <location line="+93"/>
-        <source>Wallet needed to be rewritten: restart Starchain to complete</source>
-        <translation>El monedero ha necesitado ser reescrito. Reinicie Starchain para completar el proceso</translation>
+        <source>Wallet needed to be rewritten: restart StarChain to complete</source>
+        <translation>El monedero ha necesitado ser reescrito. Reinicie StarChain para completar el proceso</translation>
     </message>
     <message>
         <location line="-95"/>
@@ -2908,8 +2908,8 @@ Por ejemplo: alertnotify=echo %%s | mail -s &quot;Starchain Alert&quot; admin@fo
     </message>
     <message>
         <location line="-25"/>
-        <source>Unable to bind to %s on this computer. Starchain is probably already running.</source>
-        <translation>No es posible conectar con %s en este sistema. Probablemente Starchain ya está ejecutándose.</translation>
+        <source>Unable to bind to %s on this computer. StarChain is probably already running.</source>
+        <translation>No es posible conectar con %s en este sistema. Probablemente StarChain ya está ejecutándose.</translation>
     </message>
     <message>
         <location line="+64"/>

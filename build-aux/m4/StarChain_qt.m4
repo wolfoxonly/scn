@@ -1,23 +1,23 @@
-dnl Copyright (c) 2013-2016 The Starchain Core developers
+dnl Copyright (c) 2013-2016 The StarChain Core developers
 dnl Distributed under the MIT software license, see the accompanying
 dnl file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 dnl Helper for cases where a qt dependency is not met.
-dnl Output: If qt version is auto, set Starchain_enable_qt to false. Else, exit.
+dnl Output: If qt version is auto, set StarChain_enable_qt to false. Else, exit.
 AC_DEFUN([BITCOIN_QT_FAIL],[
-  if test "x$Starchain_qt_want_version" = "xauto" && test x$Starchain_qt_force != xyes; then
-    if test x$Starchain_enable_qt != xno; then
-      AC_MSG_WARN([$1; Starchain-qt frontend will not be built])
+  if test "x$StarChain_qt_want_version" = "xauto" && test x$StarChain_qt_force != xyes; then
+    if test x$StarChain_enable_qt != xno; then
+      AC_MSG_WARN([$1; StarChain-qt frontend will not be built])
     fi
-    Starchain_enable_qt=no
-    Starchain_enable_qt_test=no
+    StarChain_enable_qt=no
+    StarChain_enable_qt_test=no
   else
     AC_MSG_ERROR([$1])
   fi
 ])
 
 AC_DEFUN([BITCOIN_QT_CHECK],[
-  if test "x$Starchain_enable_qt" != "xno" && test x$Starchain_qt_want_version != xno; then
+  if test "x$StarChain_enable_qt" != "xno" && test x$StarChain_qt_want_version != xno; then
     true
     $1
   else
@@ -54,15 +54,15 @@ AC_DEFUN([BITCOIN_QT_INIT],[
   dnl enable qt support
   AC_ARG_WITH([gui],
     [AS_HELP_STRING([--with-gui@<:@=no|qt4|qt5|auto@:>@],
-    [build Starchain-qt GUI (default=auto, qt5 tried first)])],
+    [build StarChain-qt GUI (default=auto, qt5 tried first)])],
     [
-     Starchain_qt_want_version=$withval
-     if test x$Starchain_qt_want_version = xyes; then
-       Starchain_qt_force=yes
-       Starchain_qt_want_version=auto
+     StarChain_qt_want_version=$withval
+     if test x$StarChain_qt_want_version = xyes; then
+       StarChain_qt_force=yes
+       StarChain_qt_want_version=auto
      fi
     ],
-    [Starchain_qt_want_version=auto])
+    [StarChain_qt_want_version=auto])
 
   AC_ARG_WITH([qt-incdir],[AS_HELP_STRING([--with-qt-incdir=INC_DIR],[specify qt include path (overridden by pkgconfig)])], [qt_include_path=$withval], [])
   AC_ARG_WITH([qt-libdir],[AS_HELP_STRING([--with-qt-libdir=LIB_DIR],[specify qt lib path (overridden by pkgconfig)])], [qt_lib_path=$withval], [])
@@ -85,7 +85,7 @@ dnl Inputs: $2: If $1 is "yes" and --with-gui=auto, which qt version should be
 dnl         tried first.
 dnl Outputs: See _BITCOIN_QT_FIND_LIBS_*
 dnl Outputs: Sets variables for all qt-related tools.
-dnl Outputs: Starchain_enable_qt, Starchain_enable_qt_dbus, Starchain_enable_qt_test
+dnl Outputs: StarChain_enable_qt, StarChain_enable_qt_dbus, StarChain_enable_qt_test
 AC_DEFUN([BITCOIN_QT_CONFIGURE],[
   use_pkgconfig=$1
 
@@ -113,21 +113,21 @@ AC_DEFUN([BITCOIN_QT_CONFIGURE],[
   TEMP_CXXFLAGS=$CXXFLAGS
   CPPFLAGS="$QT_INCLUDES $CPPFLAGS"
   CXXFLAGS="$PIC_FLAGS $CXXFLAGS"
-  if test x$Starchain_qt_got_major_vers = x5; then
+  if test x$StarChain_qt_got_major_vers = x5; then
     _BITCOIN_QT_IS_STATIC
-    if test x$Starchain_cv_static_qt = xyes; then
+    if test x$StarChain_cv_static_qt = xyes; then
       _BITCOIN_QT_FIND_STATIC_PLUGINS
       AC_DEFINE(QT_STATICPLUGIN, 1, [Define this symbol if qt plugins are static])
-      AC_CACHE_CHECK(for Qt < 5.4, Starchain_cv_need_acc_widget,[AC_COMPILE_IFELSE([AC_LANG_PROGRAM(
+      AC_CACHE_CHECK(for Qt < 5.4, StarChain_cv_need_acc_widget,[AC_COMPILE_IFELSE([AC_LANG_PROGRAM(
           [[#include <QtCore>]],[[
           #if QT_VERSION >= 0x050400
           choke;
           #endif
           ]])],
-        [Starchain_cv_need_acc_widget=yes],
-        [Starchain_cv_need_acc_widget=no])
+        [StarChain_cv_need_acc_widget=yes],
+        [StarChain_cv_need_acc_widget=no])
       ])
-      if test "x$Starchain_cv_need_acc_widget" = "xyes"; then
+      if test "x$StarChain_cv_need_acc_widget" = "xyes"; then
         _BITCOIN_QT_CHECK_STATIC_PLUGINS([Q_IMPORT_PLUGIN(AccessibleFactory)], [-lqtaccessiblewidgets])
       fi
       _BITCOIN_QT_CHECK_STATIC_PLUGINS([Q_IMPORT_PLUGIN(QMinimalIntegrationPlugin)],[-lqminimal])
@@ -161,7 +161,7 @@ AC_DEFUN([BITCOIN_QT_CONFIGURE],[
   ])
 
   if test x$use_pkgconfig$qt_bin_path = xyes; then
-    if test x$Starchain_qt_got_major_vers = x5; then
+    if test x$StarChain_qt_got_major_vers = x5; then
       qt_bin_path="`$PKG_CONFIG --variable=host_bins Qt5Core 2>/dev/null`"
     fi
   fi
@@ -203,11 +203,11 @@ AC_DEFUN([BITCOIN_QT_CONFIGURE],[
     ])
   fi
 
-  BITCOIN_QT_PATH_PROGS([MOC], [moc-qt${Starchain_qt_got_major_vers} moc${Starchain_qt_got_major_vers} moc], $qt_bin_path)
-  BITCOIN_QT_PATH_PROGS([UIC], [uic-qt${Starchain_qt_got_major_vers} uic${Starchain_qt_got_major_vers} uic], $qt_bin_path)
-  BITCOIN_QT_PATH_PROGS([RCC], [rcc-qt${Starchain_qt_got_major_vers} rcc${Starchain_qt_got_major_vers} rcc], $qt_bin_path)
-  BITCOIN_QT_PATH_PROGS([LRELEASE], [lrelease-qt${Starchain_qt_got_major_vers} lrelease${Starchain_qt_got_major_vers} lrelease], $qt_bin_path)
-  BITCOIN_QT_PATH_PROGS([LUPDATE], [lupdate-qt${Starchain_qt_got_major_vers} lupdate${Starchain_qt_got_major_vers} lupdate],$qt_bin_path, yes)
+  BITCOIN_QT_PATH_PROGS([MOC], [moc-qt${StarChain_qt_got_major_vers} moc${StarChain_qt_got_major_vers} moc], $qt_bin_path)
+  BITCOIN_QT_PATH_PROGS([UIC], [uic-qt${StarChain_qt_got_major_vers} uic${StarChain_qt_got_major_vers} uic], $qt_bin_path)
+  BITCOIN_QT_PATH_PROGS([RCC], [rcc-qt${StarChain_qt_got_major_vers} rcc${StarChain_qt_got_major_vers} rcc], $qt_bin_path)
+  BITCOIN_QT_PATH_PROGS([LRELEASE], [lrelease-qt${StarChain_qt_got_major_vers} lrelease${StarChain_qt_got_major_vers} lrelease], $qt_bin_path)
+  BITCOIN_QT_PATH_PROGS([LUPDATE], [lupdate-qt${StarChain_qt_got_major_vers} lupdate${StarChain_qt_got_major_vers} lupdate],$qt_bin_path, yes)
 
   MOC_DEFS='-DHAVE_CONFIG_H -I$(srcdir)'
   case $host in
@@ -228,14 +228,14 @@ AC_DEFUN([BITCOIN_QT_CONFIGURE],[
   dnl enable qt support
   AC_MSG_CHECKING(whether to build ]AC_PACKAGE_NAME[ GUI)
   BITCOIN_QT_CHECK([
-    Starchain_enable_qt=yes
-    Starchain_enable_qt_test=yes
+    StarChain_enable_qt=yes
+    StarChain_enable_qt_test=yes
     if test x$have_qt_test = xno; then
-      Starchain_enable_qt_test=no
+      StarChain_enable_qt_test=no
     fi
-    Starchain_enable_qt_dbus=no
+    StarChain_enable_qt_dbus=no
     if test x$use_dbus != xno && test x$have_qt_dbus = xyes; then
-      Starchain_enable_qt_dbus=yes
+      StarChain_enable_qt_dbus=yes
     fi
     if test x$use_dbus = xyes && test x$have_qt_dbus = xno; then
       AC_MSG_ERROR("libQtDBus not found. Install libQtDBus or remove --with-qtdbus.")
@@ -244,9 +244,9 @@ AC_DEFUN([BITCOIN_QT_CONFIGURE],[
       AC_MSG_WARN("lupdate is required to update qt translations")
     fi
   ],[
-    Starchain_enable_qt=no
+    StarChain_enable_qt=no
   ])
-  AC_MSG_RESULT([$Starchain_enable_qt (Qt${Starchain_qt_got_major_vers})])
+  AC_MSG_RESULT([$StarChain_enable_qt (Qt${StarChain_qt_got_major_vers})])
 
   AC_SUBST(QT_PIE_FLAGS)
   AC_SUBST(QT_INCLUDES)
@@ -256,7 +256,7 @@ AC_DEFUN([BITCOIN_QT_CONFIGURE],[
   AC_SUBST(QT_DBUS_LIBS)
   AC_SUBST(QT_TEST_INCLUDES)
   AC_SUBST(QT_TEST_LIBS)
-  AC_SUBST(QT_SELECT, qt${Starchain_qt_got_major_vers})
+  AC_SUBST(QT_SELECT, qt${StarChain_qt_got_major_vers})
   AC_SUBST(MOC_DEFS)
 ])
 
@@ -266,9 +266,9 @@ dnl ----
 
 dnl Internal. Check if the included version of Qt is Qt5.
 dnl Requires: INCLUDES must be populated as necessary.
-dnl Output: Starchain_cv_qt5=yes|no
+dnl Output: StarChain_cv_qt5=yes|no
 AC_DEFUN([_BITCOIN_QT_CHECK_QT5],[
-  AC_CACHE_CHECK(for Qt 5, Starchain_cv_qt5,[
+  AC_CACHE_CHECK(for Qt 5, StarChain_cv_qt5,[
   AC_COMPILE_IFELSE([AC_LANG_PROGRAM(
     [[#include <QtCore>]],
     [[
@@ -278,17 +278,17 @@ AC_DEFUN([_BITCOIN_QT_CHECK_QT5],[
       return 0;
       #endif
     ]])],
-    [Starchain_cv_qt5=yes],
-    [Starchain_cv_qt5=no])
+    [StarChain_cv_qt5=yes],
+    [StarChain_cv_qt5=no])
 ])])
 
 dnl Internal. Check if the linked version of Qt was built as static libs.
 dnl Requires: Qt5. This check cannot determine if Qt4 is static.
 dnl Requires: INCLUDES and LIBS must be populated as necessary.
-dnl Output: Starchain_cv_static_qt=yes|no
+dnl Output: StarChain_cv_static_qt=yes|no
 dnl Output: Defines QT_STATICPLUGIN if plugins are static.
 AC_DEFUN([_BITCOIN_QT_IS_STATIC],[
-  AC_CACHE_CHECK(for static Qt, Starchain_cv_static_qt,[
+  AC_CACHE_CHECK(for static Qt, StarChain_cv_static_qt,[
   AC_COMPILE_IFELSE([AC_LANG_PROGRAM(
     [[#include <QtCore>]],
     [[
@@ -298,10 +298,10 @@ AC_DEFUN([_BITCOIN_QT_IS_STATIC],[
       choke me
       #endif
     ]])],
-    [Starchain_cv_static_qt=yes],
-    [Starchain_cv_static_qt=no])
+    [StarChain_cv_static_qt=yes],
+    [StarChain_cv_static_qt=no])
   ])
-  if test xStarchain_cv_static_qt = xyes; then
+  if test xStarChain_cv_static_qt = xyes; then
     AC_DEFINE(QT_STATICPLUGIN, 1, [Define this symbol for static Qt plugins])
   fi
 ])
@@ -326,11 +326,11 @@ AC_DEFUN([_BITCOIN_QT_CHECK_STATIC_PLUGINS],[
 ])
 
 dnl Internal. Find paths necessary for linking qt static plugins
-dnl Inputs: Starchain_qt_got_major_vers. 4 or 5.
+dnl Inputs: StarChain_qt_got_major_vers. 4 or 5.
 dnl Inputs: qt_plugin_path. optional.
 dnl Outputs: QT_LIBS is appended
 AC_DEFUN([_BITCOIN_QT_FIND_STATIC_PLUGINS],[
-  if test x$Starchain_qt_got_major_vers = x5; then
+  if test x$StarChain_qt_got_major_vers = x5; then
       if test x$qt_plugin_path != x; then
         QT_LIBS="$QT_LIBS -L$qt_plugin_path/platforms"
         if test -d "$qt_plugin_path/accessible"; then
@@ -352,16 +352,16 @@ AC_DEFUN([_BITCOIN_QT_FIND_STATIC_PLUGINS],[
      ])
      else
        if test x$TARGET_OS = xwindows; then
-         AC_CACHE_CHECK(for Qt >= 5.6, Starchain_cv_need_platformsupport,[AC_COMPILE_IFELSE([AC_LANG_PROGRAM(
+         AC_CACHE_CHECK(for Qt >= 5.6, StarChain_cv_need_platformsupport,[AC_COMPILE_IFELSE([AC_LANG_PROGRAM(
              [[#include <QtCore>]],[[
              #if QT_VERSION < 0x050600
              choke;
              #endif
              ]])],
-           [Starchain_cv_need_platformsupport=yes],
-           [Starchain_cv_need_platformsupport=no])
+           [StarChain_cv_need_platformsupport=yes],
+           [StarChain_cv_need_platformsupport=no])
          ])
-         if test x$Starchain_cv_need_platformsupport = xyes; then
+         if test x$StarChain_cv_need_platformsupport = xyes; then
            BITCOIN_QT_CHECK(AC_CHECK_LIB([${QT_LIB_PREFIX}PlatformSupport],[main],,BITCOIN_QT_FAIL(lib$QT_LIB_PREFIXPlatformSupport not found)))
          fi
        fi
@@ -375,12 +375,12 @@ AC_DEFUN([_BITCOIN_QT_FIND_STATIC_PLUGINS],[
 ])
 
 dnl Internal. Find Qt libraries using pkg-config.
-dnl Inputs: Starchain_qt_want_version (from --with-gui=). The version to check
+dnl Inputs: StarChain_qt_want_version (from --with-gui=). The version to check
 dnl         first.
-dnl Inputs: $1: If Starchain_qt_want_version is "auto", check for this version
+dnl Inputs: $1: If StarChain_qt_want_version is "auto", check for this version
 dnl         first.
 dnl Outputs: All necessary QT_* variables are set.
-dnl Outputs: Starchain_qt_got_major_vers is set to "4" or "5".
+dnl Outputs: StarChain_qt_got_major_vers is set to "4" or "5".
 dnl Outputs: have_qt_test and have_qt_dbus are set (if applicable) to yes|no.
 AC_DEFUN([_BITCOIN_QT_FIND_LIBS_WITH_PKGCONFIG],[
   m4_ifdef([PKG_CHECK_MODULES],[
@@ -388,28 +388,28 @@ AC_DEFUN([_BITCOIN_QT_FIND_LIBS_WITH_PKGCONFIG],[
   if test x$auto_priority_version = x; then
     auto_priority_version=qt5
   fi
-    if test x$Starchain_qt_want_version = xqt5 ||  ( test x$Starchain_qt_want_version = xauto && test x$auto_priority_version = xqt5 ); then
+    if test x$StarChain_qt_want_version = xqt5 ||  ( test x$StarChain_qt_want_version = xauto && test x$auto_priority_version = xqt5 ); then
       QT_LIB_PREFIX=Qt5
-      Starchain_qt_got_major_vers=5
+      StarChain_qt_got_major_vers=5
     else
       QT_LIB_PREFIX=Qt
-      Starchain_qt_got_major_vers=4
+      StarChain_qt_got_major_vers=4
     fi
     qt5_modules="Qt5Core Qt5Gui Qt5Network Qt5Widgets"
     qt4_modules="QtCore QtGui QtNetwork"
     BITCOIN_QT_CHECK([
-      if test x$Starchain_qt_want_version = xqt5 || ( test x$Starchain_qt_want_version = xauto && test x$auto_priority_version = xqt5 ); then
+      if test x$StarChain_qt_want_version = xqt5 || ( test x$StarChain_qt_want_version = xauto && test x$auto_priority_version = xqt5 ); then
         PKG_CHECK_MODULES([QT5], [$qt5_modules], [QT_INCLUDES="$QT5_CFLAGS"; QT_LIBS="$QT5_LIBS" have_qt=yes],[have_qt=no])
-      elif test x$Starchain_qt_want_version = xqt4 || ( test x$Starchain_qt_want_version = xauto && test x$auto_priority_version = xqt4 ); then
+      elif test x$StarChain_qt_want_version = xqt4 || ( test x$StarChain_qt_want_version = xauto && test x$auto_priority_version = xqt4 ); then
         PKG_CHECK_MODULES([QT4], [$qt4_modules], [QT_INCLUDES="$QT4_CFLAGS"; QT_LIBS="$QT4_LIBS" ; have_qt=yes], [have_qt=no])
       fi
 
       dnl qt version is set to 'auto' and the preferred version wasn't found. Now try the other.
-      if test x$have_qt = xno && test x$Starchain_qt_want_version = xauto; then
+      if test x$have_qt = xno && test x$StarChain_qt_want_version = xauto; then
         if test x$auto_priority_version = xqt5; then
-          PKG_CHECK_MODULES([QT4], [$qt4_modules], [QT_INCLUDES="$QT4_CFLAGS"; QT_LIBS="$QT4_LIBS" ; have_qt=yes; QT_LIB_PREFIX=Qt; Starchain_qt_got_major_vers=4], [have_qt=no])
+          PKG_CHECK_MODULES([QT4], [$qt4_modules], [QT_INCLUDES="$QT4_CFLAGS"; QT_LIBS="$QT4_LIBS" ; have_qt=yes; QT_LIB_PREFIX=Qt; StarChain_qt_got_major_vers=4], [have_qt=no])
         else
-          PKG_CHECK_MODULES([QT5], [$qt5_modules], [QT_INCLUDES="$QT5_CFLAGS"; QT_LIBS="$QT5_LIBS" ; have_qt=yes; QT_LIB_PREFIX=Qt5; Starchain_qt_got_major_vers=5], [have_qt=no])
+          PKG_CHECK_MODULES([QT5], [$qt5_modules], [QT_INCLUDES="$QT5_CFLAGS"; QT_LIBS="$QT5_LIBS" ; have_qt=yes; QT_LIB_PREFIX=Qt5; StarChain_qt_got_major_vers=5], [have_qt=no])
         fi
       fi
       if test x$have_qt != xyes; then
@@ -429,10 +429,10 @@ AC_DEFUN([_BITCOIN_QT_FIND_LIBS_WITH_PKGCONFIG],[
 
 dnl Internal. Find Qt libraries without using pkg-config. Version is deduced
 dnl from the discovered headers.
-dnl Inputs: Starchain_qt_want_version (from --with-gui=). The version to use.
+dnl Inputs: StarChain_qt_want_version (from --with-gui=). The version to use.
 dnl         If "auto", the version will be discovered by _BITCOIN_QT_CHECK_QT5.
 dnl Outputs: All necessary QT_* variables are set.
-dnl Outputs: Starchain_qt_got_major_vers is set to "4" or "5".
+dnl Outputs: StarChain_qt_got_major_vers is set to "4" or "5".
 dnl Outputs: have_qt_test and have_qt_dbus are set (if applicable) to yes|no.
 AC_DEFUN([_BITCOIN_QT_FIND_LIBS_WITHOUT_PKGCONFIG],[
   TEMP_CPPFLAGS="$CPPFLAGS"
@@ -451,15 +451,15 @@ AC_DEFUN([_BITCOIN_QT_FIND_LIBS_WITHOUT_PKGCONFIG],[
   BITCOIN_QT_CHECK([AC_CHECK_HEADER([QLocalSocket],, BITCOIN_QT_FAIL(QtNetwork headers missing))])
 
   BITCOIN_QT_CHECK([
-    if test x$Starchain_qt_want_version = xauto; then
+    if test x$StarChain_qt_want_version = xauto; then
       _BITCOIN_QT_CHECK_QT5
     fi
-    if test x$Starchain_cv_qt5 = xyes || test x$Starchain_qt_want_version = xqt5; then
+    if test x$StarChain_cv_qt5 = xyes || test x$StarChain_qt_want_version = xqt5; then
       QT_LIB_PREFIX=Qt5
-      Starchain_qt_got_major_vers=5
+      StarChain_qt_got_major_vers=5
     else
       QT_LIB_PREFIX=Qt
-      Starchain_qt_got_major_vers=4
+      StarChain_qt_got_major_vers=4
     fi
   ])
 
@@ -482,7 +482,7 @@ AC_DEFUN([_BITCOIN_QT_FIND_LIBS_WITHOUT_PKGCONFIG],[
   BITCOIN_QT_CHECK(AC_CHECK_LIB([${QT_LIB_PREFIX}Core]   ,[main],,BITCOIN_QT_FAIL(lib$QT_LIB_PREFIXCore not found)))
   BITCOIN_QT_CHECK(AC_CHECK_LIB([${QT_LIB_PREFIX}Gui]    ,[main],,BITCOIN_QT_FAIL(lib$QT_LIB_PREFIXGui not found)))
   BITCOIN_QT_CHECK(AC_CHECK_LIB([${QT_LIB_PREFIX}Network],[main],,BITCOIN_QT_FAIL(lib$QT_LIB_PREFIXNetwork not found)))
-  if test x$Starchain_qt_got_major_vers = x5; then
+  if test x$StarChain_qt_got_major_vers = x5; then
     BITCOIN_QT_CHECK(AC_CHECK_LIB([${QT_LIB_PREFIX}Widgets],[main],,BITCOIN_QT_FAIL(lib$QT_LIB_PREFIXWidgets not found)))
   fi
   QT_LIBS="$LIBS"

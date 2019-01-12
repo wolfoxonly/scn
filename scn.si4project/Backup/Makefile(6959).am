@@ -1,4 +1,4 @@
-# Copyright (c) 2013-2016 The Starchain Core developers
+# Copyright (c) 2013-2016 The StarChain Core developers
 # Distributed under the MIT software license, see the accompanying
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -19,12 +19,12 @@ endif
 BITCOIN_CONFIG_INCLUDES=-I$(builddir)/config
 BITCOIN_INCLUDES=-I$(builddir) -I$(builddir)/obj $(BDB_CPPFLAGS) $(BOOST_CPPFLAGS) $(LEVELDB_CPPFLAGS) $(CRYPTO_CFLAGS) $(SSL_CFLAGS)
 
-LIBDAKECOIN_SERVER=libStarchain_server.a
-LIBDAKECOIN_COMMON=libStarchain_common.a
-LIBDAKECOIN_CLI=libStarchain_cli.a
-LIBDAKECOINQT=qt/libStarchainqt.a
+LIBDAKECOIN_SERVER=libStarChain_server.a
+LIBDAKECOIN_COMMON=libStarChain_common.a
+LIBDAKECOIN_CLI=libStarChain_cli.a
+LIBDAKECOINQT=qt/libStarChainqt.a
 if ENABLE_WALLET
-LIBDAKECOIN_WALLET=libStarchain_wallet.a
+LIBDAKECOIN_WALLET=libStarChain_wallet.a
 endif
 
 # Make is not made aware of per-object dependencies to avoid limiting building parallelization
@@ -42,15 +42,15 @@ TESTS =
 BENCHMARKS =
 
 if BUILD_BITCOIND
-  bin_PROGRAMS += Starchaind
+  bin_PROGRAMS += StarChaind
 endif
 
 if BUILD_BITCOIN_UTILS
-  bin_PROGRAMS += Starchain-cli
+  bin_PROGRAMS += StarChain-cli
 endif
 
 .PHONY: FORCE
-# Starchain core #
+# StarChain core #
 BITCOIN_CORE_H = \
   addrman.h \
   alert.h \
@@ -107,12 +107,12 @@ obj/build.h: FORCE
 	@$(MKDIR_P) $(abs_top_builddir)/src/obj
 	@$(top_srcdir)/share/genbuild.sh $(abs_top_builddir)/src/obj/build.h \
 	  $(abs_top_srcdir)
-libStarchain_common_a-version.$(OBJEXT): obj/build.h
+libStarChain_common_a-version.$(OBJEXT): obj/build.h
 
-# server: shared between Starchaind and Starchain-qt
-libStarchain_server_a_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES) $(MINIUPNPC_CPPFLAGS) $(EVENT_CFLAGS) $(EVENT_PTHREADS_CFLAGS)
-libStarchain_server_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
-libStarchain_server_a_SOURCES = \
+# server: shared between StarChaind and StarChain-qt
+libStarChain_server_a_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES) $(MINIUPNPC_CPPFLAGS) $(EVENT_CFLAGS) $(EVENT_PTHREADS_CFLAGS)
+libStarChain_server_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
+libStarChain_server_a_SOURCES = \
   addrman.cpp \
   alert.cpp \
   rpcserver.cpp \
@@ -135,11 +135,11 @@ libStarchain_server_a_SOURCES = \
   $(JSON_H) \
   $(BITCOIN_CORE_H)
 
-# wallet: shared between Starchaind and Starchain-qt, but only linked
+# wallet: shared between StarChaind and StarChain-qt, but only linked
 # when wallet enabled  
-libStarchain_wallet_a_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
-libStarchain_wallet_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)  
-libStarchain_wallet_a_SOURCES = \
+libStarChain_wallet_a_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
+libStarChain_wallet_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)  
+libStarChain_wallet_a_SOURCES = \
   db.cpp \
   rpcdump.cpp \
   rpcmining.cpp \
@@ -152,10 +152,10 @@ libStarchain_wallet_a_SOURCES = \
   $(BITCOIN_CORE_H)
 
 
-# common: shared between Starchaind, and Starchain-qt and non-server tools
-libStarchain_common_a_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
-libStarchain_common_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)  
-libStarchain_common_a_SOURCES = \
+# common: shared between StarChaind, and StarChain-qt and non-server tools
+libStarChain_common_a_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
+libStarChain_common_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)  
+libStarChain_common_a_SOURCES = \
   hash.cpp \
   key.cpp \
   netbase.cpp \
@@ -167,27 +167,27 @@ libStarchain_common_a_SOURCES = \
   $(BITCOIN_CORE_H)
 
 
-# cli: shared between Starchain-cli and Starchain-qt
-libStarchain_cli_a_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
-libStarchain_cli_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)  
-libStarchain_cli_a_SOURCES = \
+# cli: shared between StarChain-cli and StarChain-qt
+libStarChain_cli_a_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
+libStarChain_cli_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)  
+libStarChain_cli_a_SOURCES = \
   rpcclient.cpp \
   $(BITCOIN_CORE_H)
 
-nodist_libStarchain_common_a_SOURCES = $(top_srcdir)/src/obj/build.h
+nodist_libStarChain_common_a_SOURCES = $(top_srcdir)/src/obj/build.h
 #
 
-# Starchaind binary #
-Starchaind_SOURCES = Starchaind.cpp
-Starchaind_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
-Starchaind_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
-Starchaind_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+# StarChaind binary #
+StarChaind_SOURCES = StarChaind.cpp
+StarChaind_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
+StarChaind_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
+StarChaind_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
 
 if TARGET_WINDOWS
-Starchaind_SOURCES += Starchaind-res.rc
+StarChaind_SOURCES += StarChaind-res.rc
 endif
 
-Starchaind_LDADD = \
+StarChaind_LDADD = \
   $(LIBDAKECOIN_SERVER) \
   $(LIBDAKECOIN_COMMON) \
   $(LIBDAKECOIN_WALLET) \
@@ -195,23 +195,23 @@ Starchaind_LDADD = \
   $(LIBLEVELDB) \
   $(LIBMEMENV) 
 
-Starchaind_LDADD += $(BOOST_LIBS) $(BDB_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(MINIUPNPC_LIBS) $(EVENT_PTHREADS_LIBS) $(EVENT_LIBS) $(ZMQ_LIBS)
+StarChaind_LDADD += $(BOOST_LIBS) $(BDB_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(MINIUPNPC_LIBS) $(EVENT_PTHREADS_LIBS) $(EVENT_LIBS) $(ZMQ_LIBS)
 
-# Starchain-cli binary #
-Starchain_cli_SOURCES = Starchain-cli.cpp
-Starchain_cli_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES) $(EVENT_CFLAGS)
-Starchain_cli_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
-Starchain_cli_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+# StarChain-cli binary #
+StarChain_cli_SOURCES = StarChain-cli.cpp
+StarChain_cli_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES) $(EVENT_CFLAGS)
+StarChain_cli_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
+StarChain_cli_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
 
 if TARGET_WINDOWS
-Starchain_cli_SOURCES += Starchain-cli-res.rc
+StarChain_cli_SOURCES += StarChain-cli-res.rc
 endif
 
-Starchain_cli_LDADD = \
+StarChain_cli_LDADD = \
   $(LIBDAKECOIN_CLI) \
   $(LIBDAKECOIN_COMMON)
 
-Starchain_cli_LDADD += $(BOOST_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(EVENT_LIBS)
+StarChain_cli_LDADD += $(BOOST_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(EVENT_LIBS)
 
 
 CLEANFILES = $(EXTRA_LIBRARIES)
@@ -221,12 +221,12 @@ DISTCLEANFILES = obj/build.h
 EXTRA_DIST = leveldb
 
 
-config/Starchain-config.h: config/stamp-h1
+config/StarChain-config.h: config/stamp-h1
 	@$(MAKE) -C $(top_builddir) $(subdir)/$(@)
-config/stamp-h1: $(top_srcdir)/$(subdir)/config/Starchain-config.h.in $(top_builddir)/config.status
+config/stamp-h1: $(top_srcdir)/$(subdir)/config/StarChain-config.h.in $(top_builddir)/config.status
 	$(AM_V_at)$(MAKE) -C $(top_builddir) $(subdir)/$(@)
-$(top_srcdir)/$(subdir)/config/Starchain-config.h.in:  $(am__configure_deps)
-	$(AM_V_at)$(MAKE) -C $(top_srcdir) $(subdir)/config/Starchain-config.h.in
+$(top_srcdir)/$(subdir)/config/StarChain-config.h.in:  $(am__configure_deps)
+	$(AM_V_at)$(MAKE) -C $(top_srcdir) $(subdir)/config/StarChain-config.h.in
 
 clean-local:
 	-$(MAKE) -C leveldb clean

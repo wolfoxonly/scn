@@ -1,12 +1,12 @@
 UNIX BUILD NOTES
 ====================
-Some notes on how to build Starchain Core in Unix.
+Some notes on how to build StarChain Core in Unix.
 
 (for OpenBSD specific instructions, see [build-openbsd.md](build-openbsd.md))
 
 Note
 ---------------------
-Always use absolute paths to configure and compile Starchain and the dependencies,
+Always use absolute paths to configure and compile StarChain and the dependencies,
 for example, when specifying the path of the dependency:
 
 	../dist/configure --enable-cxx --disable-shared --with-pic --prefix=$BDB_PREFIX
@@ -24,7 +24,7 @@ make
 make install # optional
 ```
 
-This will build Starchain-qt as well if the dependencies are met.
+This will build StarChain-qt as well if the dependencies are met.
 
 Dependencies
 ---------------------
@@ -55,7 +55,7 @@ Memory Requirements
 --------------------
 
 C++ compilers are memory-hungry. It is recommended to have at least 1.5 GB of
-memory available when compiling Starchain Core. On systems with less, gcc can be
+memory available when compiling StarChain Core. On systems with less, gcc can be
 tuned to conserve memory with additional CXXFLAGS:
 
 
@@ -81,11 +81,11 @@ install necessary parts of boost:
 
 BerkeleyDB is required for the wallet.
 
-**For Ubuntu only:** db4.8 packages are available [here](https://launchpad.net/~Starchain/+archive/Starchain).
+**For Ubuntu only:** db4.8 packages are available [here](https://launchpad.net/~StarChain/+archive/StarChain).
 You can add the repository and install using the following commands:
 
     sudo apt-get install software-properties-common
-    sudo add-apt-repository ppa:Starchain/Starchain
+    sudo add-apt-repository ppa:StarChain/StarChain
     sudo apt-get update
     sudo apt-get install libdb4.8-dev libdb4.8++-dev
 
@@ -94,7 +94,7 @@ BerkeleyDB 5.1 or later, which break binary wallet compatibility with the distri
 are based on BerkeleyDB 4.8. If you do not care about wallet compatibility,
 pass `--with-incompatible-bdb` to configure.
 
-See the section "Disable-wallet mode" to build Starchain Core without wallet.
+See the section "Disable-wallet mode" to build StarChain Core without wallet.
 
 Optional (see --with-miniupnpc and --enable-upnp-default):
 
@@ -107,7 +107,7 @@ ZMQ dependencies (provides ZMQ API 4.x):
 Dependencies for the GUI: Ubuntu & Debian
 -----------------------------------------
 
-If you want to build Starchain-Qt, make sure that the required packages for Qt development
+If you want to build StarChain-Qt, make sure that the required packages for Qt development
 are installed. Either Qt 5 or Qt 4 are necessary to build the GUI.
 If both Qt 4 and Qt 5 are installed, Qt 5 will be used. Pass `--with-gui=qt4` to configure to choose Qt4.
 To build without GUI pass `--without-gui`.
@@ -124,7 +124,7 @@ libqrencode (optional) can be installed with:
 
     sudo apt-get install libqrencode-dev
 
-Once these are installed, they will be found by configure and a Starchain-qt executable will be
+Once these are installed, they will be found by configure and a StarChain-qt executable will be
 built by default.
 
 Dependency Build Instructions: Fedora
@@ -147,7 +147,7 @@ libqrencode (optional) can be installed with:
 
 Notes
 -----
-The release is built with GCC and then "strip Starchaind" to strip the debug
+The release is built with GCC and then "strip StarChaind" to strip the debug
 symbols, which reduces the executable size by about 90%.
 
 
@@ -188,7 +188,7 @@ If you need to build Boost yourself:
 
 Security
 --------
-To help make your Starchain installation more secure by making certain attacks impossible to
+To help make your StarChain installation more secure by making certain attacks impossible to
 exploit even if a vulnerability is found, binaries are hardened by default.
 This can be disabled with:
 
@@ -212,7 +212,7 @@ Hardening enables the following features:
 
     To test that you have built PIE executable, install scanelf, part of paxutils, and use:
 
-    	scanelf -e ./Starchain
+    	scanelf -e ./StarChain
 
     The output should contain:
 
@@ -221,13 +221,13 @@ Hardening enables the following features:
 
 * Non-executable Stack
     If the stack is executable then trivial stack based buffer overflow exploits are possible if
-    vulnerable buffers are found. By default, Starchain should be built with a non-executable stack
+    vulnerable buffers are found. By default, StarChain should be built with a non-executable stack
     but if one of the libraries it uses asks for an executable stack or someone makes a mistake
     and uses a compiler extension which requires an executable stack, it will silently build an
     executable without the non-executable stack protection.
 
     To verify that the stack is non-executable after compiling use:
-    `scanelf -e ./Starchain`
+    `scanelf -e ./StarChain`
 
     the output should contain:
 	STK/REL/PTL
@@ -237,7 +237,7 @@ Hardening enables the following features:
 
 Disable-wallet mode
 --------------------
-When the intention is to run only a P2P node without a wallet, Starchain may be compiled in
+When the intention is to run only a P2P node without a wallet, StarChain may be compiled in
 disable-wallet mode with:
 
     ./configure --disable-wallet
@@ -259,8 +259,8 @@ Setup and Build Example: Arch Linux
 This example lists the steps necessary to setup and build a command line only, non-wallet distribution of the latest changes on Arch Linux:
 
     pacman -S git base-devel boost libevent python
-    git clone https://github.com/Starchain/Starchain.git
-    cd Starchain/
+    git clone https://github.com/StarChain/StarChain.git
+    cd StarChain/
     ./autogen.sh
     ./configure --disable-wallet --without-gui --without-miniupnpc
     make check
@@ -268,8 +268,8 @@ This example lists the steps necessary to setup and build a command line only, n
 Note:
 Enabling wallet support requires either compiling against a Berkeley DB newer than 4.8 (package `db`) using `--with-incompatible-bdb`,
 or building and depending on a local version of Berkeley DB 4.8. The readily available Arch Linux packages are currently built using
-`--with-incompatible-bdb` according to the [PKGBUILD](https://projects.archlinux.org/svntogit/community.git/tree/Starchain/trunk/PKGBUILD).
-As mentioned above, when maintaining portability of the wallet between the standard Starchain Core distributions and independently built
+`--with-incompatible-bdb` according to the [PKGBUILD](https://projects.archlinux.org/svntogit/community.git/tree/StarChain/trunk/PKGBUILD).
+As mentioned above, when maintaining portability of the wallet between the standard StarChain Core distributions and independently built
 node software is desired, Berkeley DB 4.8 must be used.
 
 

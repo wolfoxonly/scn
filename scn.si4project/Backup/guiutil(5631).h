@@ -16,7 +16,7 @@ class QUrl;
 class QAbstractItemView;
 QT_END_NAMESPACE
 
-/** Utility functions used by the Starchain Qt UI.
+/** Utility functions used by the StarChain Qt UI.
  */
 namespace GUIUtil
 {
@@ -24,17 +24,17 @@ namespace GUIUtil
     QString dateTimeStr(const QDateTime &datetime);
     QString dateTimeStr(qint64 nTime);
 
-    // Render Starchain addresses in monospace font
-    QFont StarchainAddressFont();
+    // Render StarChain addresses in monospace font
+    QFont StarChainAddressFont();
 
     // Set up widgets for address and amounts
     void setupAddressWidget(QLineEdit *widget, QWidget *parent);
     void setupAmountWidget(QLineEdit *widget, QWidget *parent);
 
-    // Parse "Starchain:" URI into recipient object, return true on successful parsing
-    // See Starchain URI definition discussion here: https://Starchaintalk.org/index.php?topic=33490.0
-    bool parseStarchainURI(const QUrl &uri, SendCoinsRecipient *out);
-    bool parseStarchainURI(QString uri, SendCoinsRecipient *out);
+    // Parse "StarChain:" URI into recipient object, return true on successful parsing
+    // See StarChain URI definition discussion here: https://StarChaintalk.org/index.php?topic=33490.0
+    bool parseStarChainURI(const QUrl &uri, SendCoinsRecipient *out);
+    bool parseStarChainURI(QString uri, SendCoinsRecipient *out);
 
     // HTML escaping for rich text controls
     QString HtmlEscape(const QString& str, bool fMultiLine=false);
@@ -96,7 +96,7 @@ namespace GUIUtil
     bool GetStartOnSystemStartup();
     bool SetStartOnSystemStartup(bool fAutoStart);
 
-    /** Help message for Starchain-Qt, shown with --help. */
+    /** Help message for StarChain-Qt, shown with --help. */
     class HelpMessageBox : public QMessageBox
     {
         Q_OBJECT

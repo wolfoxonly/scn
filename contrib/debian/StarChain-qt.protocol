@@ -1,6 +1,6 @@
 [Protocol]
-exec=Starchain-qt '%u'
-protocol=Starchain
+exec=StarChain-qt '%u'
+protocol=StarChain
 input=none
 output=none
 helper=true

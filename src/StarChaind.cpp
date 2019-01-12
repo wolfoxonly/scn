@@ -1,5 +1,5 @@
 // Copyright (c) 2009-2010 Satoshi Nakamoto
-// Copyright (c) 2009-2012 The Starchain developers
+// Copyright (c) 2009-2012 The StarChain developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -36,7 +36,7 @@ bool AppInit(int argc, char* argv[])
         //
         // Parameters
         //
-        // If Qt is used, parameters/Starchain.conf are parsed in qt/Starchain.cpp's main()
+        // If Qt is used, parameters/StarChain.conf are parsed in qt/StarChain.cpp's main()
         ParseParameters(argc, argv);
         if (!boost::filesystem::is_directory(GetDataDir(false)))
         {
@@ -47,13 +47,13 @@ bool AppInit(int argc, char* argv[])
 
         if (mapArgs.count("-?") || mapArgs.count("--help"))
         {
-            // First part of help message is specific to Starchaind / RPC client
-            std::string strUsage = _("Starchain version") + " " + FormatFullVersion() + "\n\n" +
+            // First part of help message is specific to StarChaind / RPC client
+            std::string strUsage = _("StarChain version") + " " + FormatFullVersion() + "\n\n" +
                 _("Usage:") + "\n" +
-                  "  Starchaind [options]                     " + "\n" +
-                  "  Starchaind [options] <command> [params]  " + _("Send command to -server or Starchaind") + "\n" +
-                  "  Starchaind [options] help                " + _("List commands") + "\n" +
-                  "  Starchaind [options] help <command>      " + _("Get help for a command") + "\n";
+                  "  StarChaind [options]                     " + "\n" +
+                  "  StarChaind [options] <command> [params]  " + _("Send command to -server or StarChaind") + "\n" +
+                  "  StarChaind [options] help                " + _("List commands") + "\n" +
+                  "  StarChaind [options] help <command>      " + _("Get help for a command") + "\n";
 
             strUsage += "\n" + HelpMessage(HMM_BITCOIND);
             strUsage += "\n" + HelpMessageCli(false);
@@ -64,7 +64,7 @@ bool AppInit(int argc, char* argv[])
 
         // Command-line RPC
         for (int i = 1; i < argc; i++)
-            if (!IsSwitchChar(argv[i][0]) && !boost::algorithm::istarts_with(argv[i], "Starchain:") && !boost::algorithm::istarts_with(argv[i], "ppcoin:"))
+            if (!IsSwitchChar(argv[i][0]) && !boost::algorithm::istarts_with(argv[i], "StarChain:") && !boost::algorithm::istarts_with(argv[i], "ppcoin:"))
                 fCommandLine = true;
 
         if (fCommandLine)
@@ -126,7 +126,7 @@ int main(int argc, char* argv[])
 {
     bool fRet = false;
 
-    // Connect Starchaind signal handlers
+    // Connect StarChaind signal handlers
     noui_connect();
 
     fRet = AppInit(argc, argv);

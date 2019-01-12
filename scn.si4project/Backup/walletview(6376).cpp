@@ -1,11 +1,11 @@
 /*
- * Qt4 Starchain GUI.
+ * Qt4 StarChain GUI.
  *
  * W.J. van der Laan 2011-2012
- * The Starchain Developers 2011-2013
+ * The StarChain Developers 2011-2013
  */
 #include "walletview.h"
-#include "Starchaingui.h"
+#include "StarChaingui.h"
 #include "transactiontablemodel.h"
 #include "addressbookpage.h"
 #include "sendcoinsdialog.h"
@@ -27,7 +27,7 @@
 #include <QFileDialog>
 #include <QPushButton>
 
-WalletView::WalletView(QWidget *parent, StarchainGUI *_gui):
+WalletView::WalletView(QWidget *parent, StarChainGUI *_gui):
     QStackedWidget(parent),
     gui(_gui),
     clientModel(0),
@@ -95,7 +95,7 @@ WalletView::~WalletView()
 {
 }
 
-void WalletView::setStarchainGUI(StarchainGUI *gui)
+void WalletView::setStarChainGUI(StarChainGUI *gui)
 {
     this->gui = gui;
 }

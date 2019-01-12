@@ -2,7 +2,7 @@
 #define NOTIFICATOR_H
 
 #if defined(HAVE_CONFIG_H)
-#include "Starchain-config.h"
+#include "StarChain-config.h"
 #endif
 
 #include <QObject>

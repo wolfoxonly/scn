@@ -1,39 +1,39 @@
-Starchain Core version 0.9.4 is now available from:
+StarChain Core version 0.9.4 is now available from:
 
-  https://Starchain.org/bin/0.9.4/
+  https://StarChain.org/bin/0.9.4/
 
 This is a new minor version release, bringing only bug fixes and updated
 translations. Upgrading to this release is recommended.
 
 Please report bugs using the issue tracker at github:
 
-  https://github.com/Starchain/Starchain/issues
+  https://github.com/StarChain/StarChain/issues
 
 How to Upgrade
 ===============
 
 If you are running an older version, shut it down. Wait until it has completely
 shut down (which might take a few minutes for older versions), then run the
-installer (on Windows) or just copy over /Applications/Starchain-Qt (on Mac) or
-Starchaind/Starchain-qt (on Linux).
+installer (on Windows) or just copy over /Applications/StarChain-Qt (on Mac) or
+StarChaind/StarChain-qt (on Linux).
 
 OpenSSL Warning
 ================
 
 OpenSSL 1.0.0p / 1.0.1k was recently released and is being pushed out by
 various operating system maintainers. Review by Gregory Maxwell determined that
-this update is incompatible with the Starchain system and could lead to consensus
+this update is incompatible with the StarChain system and could lead to consensus
 forks.
 
-Starchain Core released binaries from https://Starchain.org are unaffected,
+StarChain Core released binaries from https://StarChain.org are unaffected,
 as are any built with the gitian deterministic build system.
 
 However, if you are running either
 
-- The Ubuntu PPA from https://launchpad.net/~Starchain/+archive/ubuntu/Starchain
-- A third-party or self-compiled Starchain Core
+- The Ubuntu PPA from https://launchpad.net/~StarChain/+archive/ubuntu/StarChain
+- A third-party or self-compiled StarChain Core
 
-upgrade to Starchain Core 0.9.4, which includes a workaround, **before** updating
+upgrade to StarChain Core 0.9.4, which includes a workaround, **before** updating
 OpenSSL.
 
 The incompatibility is due to the OpenSSL update changing the
@@ -92,4 +92,4 @@ Thanks to who contributed to this release, at least:
 - Sergio Demian Lerner
 - Wladimir J. van der Laan
 
-As well as everyone that helped translating on [Transifex](https://www.transifex.com/projects/p/Starchain/).
+As well as everyone that helped translating on [Transifex](https://www.transifex.com/projects/p/StarChain/).

@@ -1,4 +1,4 @@
-#include "Starchainaddressvalidator.h"
+#include "StarChainaddressvalidator.h"
 
 /* Base58 characters are:
      "123456789ABCDEFGHJKLMNPQRSTUVWXYZabcdefghijkmnopqrstuvwxyz"
@@ -13,12 +13,12 @@
   - '0' and 'O' to 'o'
 */
 
-StarchainAddressValidator::StarchainAddressValidator(QObject *parent) :
+StarChainAddressValidator::StarChainAddressValidator(QObject *parent) :
     QValidator(parent)
 {
 }
 
-QValidator::State StarchainAddressValidator::validate(QString &input, int &pos) const
+QValidator::State StarChainAddressValidator::validate(QString &input, int &pos) const
 {
     // Correction
     for(int idx=0; idx<input.size();)

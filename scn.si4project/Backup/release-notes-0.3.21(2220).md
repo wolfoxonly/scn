@@ -1,19 +1,19 @@
-Binaries for Starchain version 0.3.21 are available at:
-  https://sourceforge.net/projects/Starchain/files/Starchain/Starchain-0.3.21/
+Binaries for StarChain version 0.3.21 are available at:
+  https://sourceforge.net/projects/StarChain/files/StarChain/StarChain-0.3.21/
 
 Changes and new features from the 0.3.20 release include:
 
-* Universal Plug and Play support.  Enable automatic opening of a port for incoming connections by running Starchain or Starchaind with the - -upnp=1 command line switch or using the Options dialog box.
+* Universal Plug and Play support.  Enable automatic opening of a port for incoming connections by running StarChain or StarChaind with the - -upnp=1 command line switch or using the Options dialog box.
 
-* Support for full-precision Starchain amounts.  You can now send, and Starchain will display, Starchain amounts smaller than 0.01.  However, sending fewer than 0.01 Starchains still requires a 0.01 Starchain fee (so you can send 1.0001 Starchains without a fee, but you will be asked to pay a fee if you try to send 0.0001).
+* Support for full-precision StarChain amounts.  You can now send, and StarChain will display, StarChain amounts smaller than 0.01.  However, sending fewer than 0.01 StarChains still requires a 0.01 StarChain fee (so you can send 1.0001 StarChains without a fee, but you will be asked to pay a fee if you try to send 0.0001).
 
-* A new method of finding Starchain nodes to connect with, via DNS A records. Use the -dnsseed option to enable.
+* A new method of finding StarChain nodes to connect with, via DNS A records. Use the -dnsseed option to enable.
 
-For developers, changes to Starchain's remote-procedure-call API:
+For developers, changes to StarChain's remote-procedure-call API:
 
-* New rpc command "sendmany" to send Starchains to more than one address in a single transaction.
+* New rpc command "sendmany" to send StarChains to more than one address in a single transaction.
 
-* Several bug fixes, including a serious intermittent bug that would sometimes cause Starchaind to stop accepting rpc requests. 
+* Several bug fixes, including a serious intermittent bug that would sometimes cause StarChaind to stop accepting rpc requests. 
 
 * -logtimestamps option, to add a timestamp to each line in debug.log.
 

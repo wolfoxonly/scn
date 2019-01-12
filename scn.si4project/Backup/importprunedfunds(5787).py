@@ -1,12 +1,12 @@
 #!/usr/bin/env python3
-# Copyright (c) 2014-2017 The Starchain Core developers
+# Copyright (c) 2014-2017 The StarChain Core developers
 # Distributed under the MIT software license, see the accompanying
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
 """Test the importprunedfunds and removeprunedfunds RPCs."""
-from test_framework.test_framework import StarchainTestFramework
+from test_framework.test_framework import StarChainTestFramework
 from test_framework.util import *
 
-class ImportPrunedFundsTest(StarchainTestFramework):
+class ImportPrunedFundsTest(StarChainTestFramework):
     def set_test_params(self):
         self.setup_clean_chain = True
         self.num_nodes = 2

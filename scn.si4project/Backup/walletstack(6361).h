@@ -1,8 +1,8 @@
 /*
- * Qt4 Starchain GUI.
+ * Qt4 StarChain GUI.
  *
  * W.J. van der Laan 2011-2012
- * The Starchain Developers 2011-2013
+ * The StarChain Developers 2011-2013
  */
 #ifndef WALLETSTACK_H
 #define WALLETSTACK_H
@@ -11,7 +11,7 @@
 #include <QMap>
 #include <boost/shared_ptr.hpp>
 
-class StarchainGUI;
+class StarChainGUI;
 class TransactionTableModel;
 class ClientModel;
 class WalletModel;
@@ -44,7 +44,7 @@ public:
     explicit WalletStack(QWidget *parent = 0);
     ~WalletStack();
 
-    void setStarchainGUI(StarchainGUI *gui) { this->gui = gui; }
+    void setStarChainGUI(StarChainGUI *gui) { this->gui = gui; }
 
     void setClientModel(ClientModel *clientModel) { this->clientModel = clientModel; }
 
@@ -58,7 +58,7 @@ public:
     void showOutOfSyncWarning(bool fShow);
 
 private:
-    StarchainGUI *gui;
+    StarChainGUI *gui;
     ClientModel *clientModel;
     QMap<QString, WalletView*> mapWalletViews;
 

@@ -1,14 +1,14 @@
 [Desktop Entry]
 Version=1.0
-Name=Starchain Core
-Comment=Connect to the Starchain P2P Network
-Comment[de]=Verbinde mit dem Starchain peer-to-peer Netzwerk
-Comment[fr]=Starchain, monnaie virtuelle cryptographique pair à pair
-Comment[tr]=Starchain, eşten eşe kriptografik sanal para birimi
-Exec=Starchain-qt %u
+Name=StarChain Core
+Comment=Connect to the StarChain P2P Network
+Comment[de]=Verbinde mit dem StarChain peer-to-peer Netzwerk
+Comment[fr]=StarChain, monnaie virtuelle cryptographique pair à pair
+Comment[tr]=StarChain, eşten eşe kriptografik sanal para birimi
+Exec=StarChain-qt %u
 Terminal=false
 Type=Application
-Icon=Starchain128
-MimeType=x-scheme-handler/Starchain;
+Icon=StarChain128
+MimeType=x-scheme-handler/StarChain;
 Categories=Office;Finance;
-StartupWMClass=Starchain-qt
+StartupWMClass=StarChain-qt

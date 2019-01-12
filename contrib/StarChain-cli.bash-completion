@@ -1,10 +1,10 @@
-# bash programmable completion for Starchain-cli(1)
-# Copyright (c) 2012-2016 The Starchain Core developers
+# bash programmable completion for StarChain-cli(1)
+# Copyright (c) 2012-2016 The StarChain Core developers
 # Distributed under the MIT software license, see the accompanying
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-# call $Starchain-cli for RPC
-_Starchain_rpc() {
+# call $StarChain-cli for RPC
+_StarChain_rpc() {
     # determine already specified args necessary for RPC
     local rpcargs=()
     for i in ${COMP_LINE}; do
@@ -14,23 +14,23 @@ _Starchain_rpc() {
                 ;;
         esac
     done
-    $Starchain_cli "${rpcargs[@]}" "$@"
+    $StarChain_cli "${rpcargs[@]}" "$@"
 }
 
 # Add wallet accounts to COMPREPLY
-_Starchain_accounts() {
+_StarChain_accounts() {
     local accounts
-    accounts=$(_Starchain_rpc listaccounts | awk -F '"' '{ print $2 }')
+    accounts=$(_StarChain_rpc listaccounts | awk -F '"' '{ print $2 }')
     COMPREPLY=( "${COMPREPLY[@]}" $( compgen -W "$accounts" -- "$cur" ) )
 }
 
-_Starchain_cli() {
+_StarChain_cli() {
     local cur prev words=() cword
-    local Starchain_cli
+    local StarChain_cli
 
-    # save and use original argument to invoke Starchain-cli for -help, help and RPC
-    # as Starchain-cli might not be in $PATH
-    Starchain_cli="$1"
+    # save and use original argument to invoke StarChain-cli for -help, help and RPC
+    # as StarChain-cli might not be in $PATH
+    StarChain_cli="$1"
 
     COMPREPLY=()
     _get_comp_words_by_ref -n = cur prev words cword
@@ -60,7 +60,7 @@ _Starchain_cli() {
     if ((cword > 3)); then
         case ${words[cword-3]} in
             addmultisigaddress)
-                _Starchain_accounts
+                _StarChain_accounts
                 return 0
                 ;;
             getbalance|gettxout|importaddress|importpubkey|importprivkey|listreceivedbyaccount|listreceivedbyaddress|listsinceblock)
@@ -85,7 +85,7 @@ _Starchain_cli() {
                 return 0
                 ;;
             move|setaccount)
-                _Starchain_accounts
+                _StarChain_accounts
                 return 0
                 ;;
         esac
@@ -101,7 +101,7 @@ _Starchain_cli() {
             return 0
             ;;
         getaccountaddress|getaddressesbyaccount|getbalance|getnewaddress|getreceivedbyaccount|listtransactions|move|sendfrom|sendmany)
-            _Starchain_accounts
+            _StarChain_accounts
             return 0
             ;;
     esac
@@ -125,12 +125,12 @@ _Starchain_cli() {
 
             # only parse -help if senseful
             if [[ -z "$cur" || "$cur" =~ ^- ]]; then
-                helpopts=$($Starchain_cli -help 2>&1 | awk '$1 ~ /^-/ { sub(/=.*/, "="); print $1 }' )
+                helpopts=$($StarChain_cli -help 2>&1 | awk '$1 ~ /^-/ { sub(/=.*/, "="); print $1 }' )
             fi
 
             # only parse help if senseful
             if [[ -z "$cur" || "$cur" =~ ^[a-z] ]]; then
-                commands=$(_Starchain_rpc help 2>/dev/null | awk '$1 ~ /^[a-z]/ { print $1; }')
+                commands=$(_StarChain_rpc help 2>/dev/null | awk '$1 ~ /^[a-z]/ { print $1; }')
             fi
 
             COMPREPLY=( $( compgen -W "$helpopts $commands" -- "$cur" ) )
@@ -143,7 +143,7 @@ _Starchain_cli() {
             ;;
     esac
 } &&
-complete -F _Starchain_cli Starchain-cli
+complete -F _StarChain_cli StarChain-cli
 
 # Local variables:
 # mode: shell-script

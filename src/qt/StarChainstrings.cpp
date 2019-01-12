@@ -8,7 +8,7 @@
 #else
 #define UNUSED
 #endif
-static const char UNUSED *Starchain_strings[] = {
-QT_TRANSLATE_NOOP("Starchain-core", "None"),
-QT_TRANSLATE_NOOP("Starchain-core", "None"),
+static const char UNUSED *StarChain_strings[] = {
+QT_TRANSLATE_NOOP("StarChain-core", "None"),
+QT_TRANSLATE_NOOP("StarChain-core", "None"),
 };

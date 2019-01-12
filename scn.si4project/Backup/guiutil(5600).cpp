@@ -2,9 +2,9 @@
 
 #include "guiutil.h"
 
-#include "Starchainaddressvalidator.h"
+#include "StarChainaddressvalidator.h"
 #include "walletmodel.h"
-#include "Starchainunits.h"
+#include "StarChainunits.h"
 
 #include "util.h"
 #include "init.h"
@@ -58,7 +58,7 @@ QString dateTimeStr(qint64 nTime)
     return dateTimeStr(QDateTime::fromTime_t((qint32)nTime));
 }
 
-QFont StarchainAddressFont()
+QFont StarChainAddressFont()
 {
     QFont font("Monospace");
     font.setStyleHint(QFont::TypeWriter);
@@ -67,9 +67,9 @@ QFont StarchainAddressFont()
 
 void setupAddressWidget(QLineEdit *widget, QWidget *parent)
 {
-    widget->setMaxLength(StarchainAddressValidator::MaxAddressLength);
-    widget->setValidator(new StarchainAddressValidator(parent));
-    widget->setFont(StarchainAddressFont());
+    widget->setMaxLength(StarChainAddressValidator::MaxAddressLength);
+    widget->setValidator(new StarChainAddressValidator(parent));
+    widget->setFont(StarChainAddressFont());
 }
 
 void setupAmountWidget(QLineEdit *widget, QWidget *parent)
@@ -81,10 +81,10 @@ void setupAmountWidget(QLineEdit *widget, QWidget *parent)
     widget->setAlignment(Qt::AlignRight|Qt::AlignVCenter);
 }
 
-bool parseStarchainURI(const QUrl &uri, SendCoinsRecipient *out)
+bool parseStarChainURI(const QUrl &uri, SendCoinsRecipient *out)
 {
-    // return if URI is not valid or is no Starchain URI
-    if(!uri.isValid() || (uri.scheme() != QString("Starchain") && uri.scheme() != QString("ppcoin")))
+    // return if URI is not valid or is no StarChain URI
+    if(!uri.isValid() || (uri.scheme() != QString("StarChain") && uri.scheme() != QString("ppcoin")))
         return false;
 
     SendCoinsRecipient rv;
@@ -114,7 +114,7 @@ bool parseStarchainURI(const QUrl &uri, SendCoinsRecipient *out)
         {
             if(!i->second.isEmpty())
             {
-                if(!StarchainUnits::parse(StarchainUnits::BTC, i->second, &rv.amount))
+                if(!StarChainUnits::parse(StarChainUnits::BTC, i->second, &rv.amount))
                 {
                     return false;
                 }
@@ -132,22 +132,22 @@ bool parseStarchainURI(const QUrl &uri, SendCoinsRecipient *out)
     return true;
 }
 
-bool parseStarchainURI(QString uri, SendCoinsRecipient *out)
+bool parseStarChainURI(QString uri, SendCoinsRecipient *out)
 {
-    // Convert Starchain:// to Starchain:
+    // Convert StarChain:// to StarChain:
     //
-    //    Cannot handle this later, because Starchain:// will cause Qt to see the part after // as host,
+    //    Cannot handle this later, because StarChain:// will cause Qt to see the part after // as host,
     //    which will lower-case it (and thus invalidate the address).
-    if(uri.startsWith("Starchain://"))
+    if(uri.startsWith("StarChain://"))
     {
-        uri.replace(0, 11, "Starchain:");
+        uri.replace(0, 11, "StarChain:");
     }
     if(uri.startsWith("ppcoin://"))
     {
         uri.replace(0, 9, "ppcoin:");
     }
     QUrl uriInstance(uri);
-    return parseStarchainURI(uriInstance, out);
+    return parseStarChainURI(uriInstance, out);
 }
 
 QString HtmlEscape(const QString& str, bool fMultiLine)
@@ -298,12 +298,12 @@ bool ToolTipToRichTextFilter::eventFilter(QObject *obj, QEvent *evt)
 #ifdef WIN32
 boost::filesystem::path static StartupShortcutPath()
 {
-    return GetSpecialFolderPath(CSIDL_STARTUP) / "Starchain.lnk";
+    return GetSpecialFolderPath(CSIDL_STARTUP) / "StarChain.lnk";
 }
 
 bool GetStartOnSystemStartup()
 {
-    // check for Starchain.lnk
+    // check for StarChain.lnk
     return boost::filesystem::exists(StartupShortcutPath());
 }
 
@@ -380,7 +380,7 @@ boost::filesystem::path static GetAutostartDir()
 
 boost::filesystem::path static GetAutostartFilePath()
 {
-    return GetAutostartDir() / "Starchain.desktop";
+    return GetAutostartDir() / "StarChain.desktop";
 }
 
 bool GetStartOnSystemStartup()
@@ -418,10 +418,10 @@ bool SetStartOnSystemStartup(bool fAutoStart)
         boost::filesystem::ofstream optionFile(GetAutostartFilePath(), std::ios_base::out|std::ios_base::trunc);
         if (!optionFile.good())
             return false;
-        // Write a Starchain.desktop file to the autostart directory:
+        // Write a StarChain.desktop file to the autostart directory:
         optionFile << "[Desktop Entry]\n";
         optionFile << "Type=Application\n";
-        optionFile << "Name=Starchain\n";
+        optionFile << "Name=StarChain\n";
         optionFile << "Exec=" << pszExePath << " -min\n";
         optionFile << "Terminal=false\n";
         optionFile << "Hidden=false\n";
@@ -442,10 +442,10 @@ bool SetStartOnSystemStartup(bool fAutoStart) { return false; }
 HelpMessageBox::HelpMessageBox(QWidget *parent) :
     QMessageBox(parent)
 {
-    header = tr("Starchain-Qt") + " " + tr("version") + " " +
+    header = tr("StarChain-Qt") + " " + tr("version") + " " +
         QString::fromStdString(FormatFullVersion()) + "\n\n" +
         tr("Usage:") + "\n" +
-        "  Starchain-qt [" + tr("command-line options") + "]                     " + "\n";
+        "  StarChain-qt [" + tr("command-line options") + "]                     " + "\n";
 
     coreOptions = QString::fromStdString(HelpMessage(HMM_BITCOIN_QT));
 
@@ -454,7 +454,7 @@ HelpMessageBox::HelpMessageBox(QWidget *parent) :
         "  -min                   " + tr("Start minimized") + "\n" +
         "  -splash                " + tr("Show splash screen on startup (default: 1)") + "\n";
 
-    setWindowTitle(tr("Starchain-Qt"));
+    setWindowTitle(tr("StarChain-Qt"));
     setTextFormat(Qt::PlainText);
     // setMinimumWidth is ignored for QMessageBox so put in non-breaking spaces to make it wider.
     setText(header + QString(QChar(0x2003)).repeated(50));

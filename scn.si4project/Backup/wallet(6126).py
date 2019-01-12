@@ -1,12 +1,12 @@
 #!/usr/bin/env python3
-# Copyright (c) 2014-2017 The Starchain Core developers
+# Copyright (c) 2014-2017 The StarChain Core developers
 # Distributed under the MIT software license, see the accompanying
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
 """Test the wallet."""
-from test_framework.test_framework import StarchainTestFramework
+from test_framework.test_framework import StarChainTestFramework
 from test_framework.util import *
 
-class WalletTest(StarchainTestFramework):
+class WalletTest(StarChainTestFramework):
     def set_test_params(self):
         self.num_nodes = 4
         self.setup_clean_chain = True
@@ -368,7 +368,7 @@ class WalletTest(StarchainTestFramework):
             '-reindex',
             '-zapwallettxes=1',
             '-zapwallettxes=2',
-            # disabled until issue is fixed: https://github.com/Starchain/Starchain/issues/7463
+            # disabled until issue is fixed: https://github.com/StarChain/StarChain/issues/7463
             # '-salvagewallet',
         ]
         chainlimit = 6

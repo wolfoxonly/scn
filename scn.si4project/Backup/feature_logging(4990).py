@@ -1,14 +1,14 @@
 #!/usr/bin/env python3
-# Copyright (c) 2017 The Starchain Core developers
+# Copyright (c) 2017 The StarChain Core developers
 # Distributed under the MIT software license, see the accompanying
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
 """Test debug logging."""
 
 import os
 
-from test_framework.test_framework import StarchainTestFramework
+from test_framework.test_framework import StarChainTestFramework
 
-class LoggingTest(StarchainTestFramework):
+class LoggingTest(StarChainTestFramework):
     def set_test_params(self):
         self.num_nodes = 1
         self.setup_clean_chain = True

@@ -6,17 +6,17 @@
     <name>AboutDialog</name>
     <message>
         <location filename="../forms/aboutdialog.ui" line="+14"/>
-        <source>About Starchain</source>
-        <translation>About Starchain</translation>
+        <source>About StarChain</source>
+        <translation>About StarChain</translation>
     </message>
     <message>
         <location line="+39"/>
-        <source>&lt;b&gt;Starchain&lt;/b&gt; version</source>
-        <translation>&lt;b&gt;Starchain&lt;/b&gt; version</translation>
+        <source>&lt;b&gt;StarChain&lt;/b&gt; version</source>
+        <translation>&lt;b&gt;StarChain&lt;/b&gt; version</translation>
     </message>
     <message>
         <location line="+41"/>
-        <source>Copyright &amp;copy; 2011-YYYY Starchain Developers</source>
+        <source>Copyright &amp;copy; 2011-YYYY StarChain Developers</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -41,7 +41,7 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+0"/>
-        <source>Starchain Developers</source>
+        <source>StarChain Developers</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -74,8 +74,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location filename="../addressbookpage.cpp" line="+63"/>
-        <source>These are your Starchain addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
-        <translation>These are your Starchain addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</translation>
+        <source>These are your StarChain addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
+        <translation>These are your StarChain addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</translation>
     </message>
     <message>
         <location filename="../forms/addressbookpage.ui" line="+14"/>
@@ -89,8 +89,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+11"/>
-        <source>Sign a message to prove you own a Starchain address</source>
-        <translation>Sign a message to prove you own a Starchain address</translation>
+        <source>Sign a message to prove you own a StarChain address</source>
+        <translation>Sign a message to prove you own a StarChain address</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -114,8 +114,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="-44"/>
-        <source>Verify a message to ensure it was signed with a specified Starchain address</source>
-        <translation>Verify a message to ensure it was signed with a specified Starchain address</translation>
+        <source>Verify a message to ensure it was signed with a specified StarChain address</source>
+        <translation>Verify a message to ensure it was signed with a specified StarChain address</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -129,8 +129,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location filename="../addressbookpage.cpp" line="-5"/>
-        <source>These are your Starchain addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>These are your Starchain addresses for sending payments. Always check the amount and the receiving address before sending coins.</translation>
+        <source>These are your StarChain addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>These are your StarChain addresses for sending payments. Always check the amount and the receiving address before sending coins.</translation>
     </message>
     <message>
         <location line="+13"/>
@@ -282,8 +282,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="-56"/>
-        <source>Starchain will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your Starchains from being stolen by malware infecting your computer.</source>
-        <translation>Starchain will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your Starchains from being stolen by malware infecting your computer.</translation>
+        <source>StarChain will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your StarChains from being stolen by malware infecting your computer.</source>
+        <translation>StarChain will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your StarChains from being stolen by malware infecting your computer.</translation>
     </message>
     <message>
         <location line="+13"/>
@@ -328,9 +328,9 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
 </context>
 <context>
-    <name>StarchainGUI</name>
+    <name>StarChainGUI</name>
     <message>
-        <location filename="../Starchaingui.cpp" line="+258"/>
+        <location filename="../StarChaingui.cpp" line="+258"/>
         <source>Sign &amp;message...</source>
         <translation>Sign &amp;message...</translation>
     </message>
@@ -381,8 +381,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+4"/>
-        <source>Show information about Starchain</source>
-        <translation>Show information about Starchain</translation>
+        <source>Show information about StarChain</source>
+        <translation>Show information about StarChain</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -426,13 +426,13 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="-392"/>
-        <source>Send coins to a Starchain address</source>
-        <translation>Send coins to a Starchain address</translation>
+        <source>Send coins to a StarChain address</source>
+        <translation>Send coins to a StarChain address</translation>
     </message>
     <message>
         <location line="+58"/>
-        <source>Modify configuration options for Starchain</source>
-        <translation>Modify configuration options for Starchain</translation>
+        <source>Modify configuration options for StarChain</source>
+        <translation>Modify configuration options for StarChain</translation>
     </message>
     <message>
         <location line="+12"/>
@@ -462,8 +462,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     <message>
         <location line="-184"/>
         <location line="+582"/>
-        <source>Starchain</source>
-        <translation>Starchain</translation>
+        <source>StarChain</source>
+        <translation>StarChain</translation>
     </message>
     <message>
         <location line="-582"/>
@@ -497,8 +497,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+24"/>
-        <source>&amp;About Starchain</source>
-        <translation>&amp;About Starchain</translation>
+        <source>&amp;About StarChain</source>
+        <translation>&amp;About StarChain</translation>
     </message>
     <message>
         <location line="+9"/>
@@ -527,13 +527,13 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+7"/>
-        <source>Sign messages with your Starchain addresses to prove you own them</source>
-        <translation>Sign messages with your Starchain addresses to prove you own them</translation>
+        <source>Sign messages with your StarChain addresses to prove you own them</source>
+        <translation>Sign messages with your StarChain addresses to prove you own them</translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>Verify messages to ensure they were signed with specified Starchain addresses</source>
-        <translation>Verify messages to ensure they were signed with specified Starchain addresses</translation>
+        <source>Verify messages to ensure they were signed with specified StarChain addresses</source>
+        <translation>Verify messages to ensure they were signed with specified StarChain addresses</translation>
     </message>
     <message>
         <location line="+5"/>
@@ -542,7 +542,7 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+1"/>
-        <source>Open https://Starchain.chat in a web browser.</source>
+        <source>Open https://StarChain.chat in a web browser.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -552,7 +552,7 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+1"/>
-        <source>Open https://talk.Starchain.net in a web browser.</source>
+        <source>Open https://talk.StarChain.net in a web browser.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -583,15 +583,15 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+49"/>
-        <source>Starchain client</source>
-        <translation>Starchain client</translation>
+        <source>StarChain client</source>
+        <translation>StarChain client</translation>
     </message>
     <message numerus="yes">
         <location line="+154"/>
-        <source>%n active connection(s) to Starchain network</source>
+        <source>%n active connection(s) to StarChain network</source>
         <translation>
-            <numerusform>%n active connection to Starchain network</numerusform>
-            <numerusform>%n active connections to Starchain network</numerusform>
+            <numerusform>%n active connection to StarChain network</numerusform>
+            <numerusform>%n active connections to StarChain network</numerusform>
         </translation>
     </message>
     <message>
@@ -715,8 +715,8 @@ Address: %4
     <message>
         <location line="-23"/>
         <location line="+23"/>
-        <source>URI can not be parsed! This can be caused by an invalid Starchain address or malformed URI parameters.</source>
-        <translation>URI can not be parsed! This can be caused by an invalid Starchain address or malformed URI parameters.</translation>
+        <source>URI can not be parsed! This can be caused by an invalid StarChain address or malformed URI parameters.</source>
+        <translation>URI can not be parsed! This can be caused by an invalid StarChain address or malformed URI parameters.</translation>
     </message>
     <message>
         <location line="+19"/>
@@ -734,9 +734,9 @@ Address: %4
         <translation>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;locked&lt;/b&gt;</translation>
     </message>
     <message>
-        <location filename="../Starchain.cpp" line="+114"/>
-        <source>A fatal error occurred. Starchain can no longer continue safely and will quit.</source>
-        <translation>A fatal error occurred. Starchain can no longer continue safely and will quit.</translation>
+        <location filename="../StarChain.cpp" line="+114"/>
+        <source>A fatal error occurred. StarChain can no longer continue safely and will quit.</source>
+        <translation>A fatal error occurred. StarChain can no longer continue safely and will quit.</translation>
     </message>
 </context>
 <context>
@@ -1062,8 +1062,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.</sourc
     </message>
     <message>
         <location line="-5"/>
-        <source>The entered address &quot;%1&quot; is not a valid Starchain address.</source>
-        <translation>The entered address &quot;%1&quot; is not a valid Starchain address.</translation>
+        <source>The entered address &quot;%1&quot; is not a valid StarChain address.</source>
+        <translation>The entered address &quot;%1&quot; is not a valid StarChain address.</translation>
     </message>
     <message>
         <location line="+10"/>
@@ -1081,8 +1081,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.</sourc
     <message>
         <location filename="../guiutil.cpp" line="+445"/>
         <location line="+12"/>
-        <source>Starchain-Qt</source>
-        <translation>Starchain-Qt</translation>
+        <source>StarChain-Qt</source>
+        <translation>StarChain-Qt</translation>
     </message>
     <message>
         <location line="-12"/>
@@ -1320,8 +1320,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.</sourc
     </message>
     <message>
         <location line="+6"/>
-        <source>Automatically start Starchain after logging in to the system.</source>
-        <translation>Automatically start Starchain after logging in to the system.</translation>
+        <source>Automatically start StarChain after logging in to the system.</source>
+        <translation>Automatically start StarChain after logging in to the system.</translation>
     </message>
     <message>
         <location line="+46"/>
@@ -1330,8 +1330,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.</sourc
     </message>
     <message>
         <location line="+3"/>
-        <source>&amp;Start Starchain on system login</source>
-        <translation>&amp;Start Starchain on system login</translation>
+        <source>&amp;Start StarChain on system login</source>
+        <translation>&amp;Start StarChain on system login</translation>
     </message>
     <message>
         <location line="+7"/>
@@ -1355,8 +1355,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.</sourc
     </message>
     <message>
         <location line="+6"/>
-        <source>Automatically open the Starchain client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Automatically open the Starchain client port on the router. This only works when your router supports UPnP and it is enabled.</translation>
+        <source>Automatically open the StarChain client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Automatically open the StarChain client port on the router. This only works when your router supports UPnP and it is enabled.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1365,8 +1365,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.</sourc
     </message>
     <message>
         <location line="+7"/>
-        <source>Connect to the Starchain network through a SOCKS proxy (e.g. when connecting through Tor).</source>
-        <translation>Connect to the Starchain network through a SOCKS proxy (e.g. when connecting through Tor).</translation>
+        <source>Connect to the StarChain network through a SOCKS proxy (e.g. when connecting through Tor).</source>
+        <translation>Connect to the StarChain network through a SOCKS proxy (e.g. when connecting through Tor).</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1440,8 +1440,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.</sourc
     </message>
     <message>
         <location line="+13"/>
-        <source>The user interface language can be set here. This setting will take effect after restarting Starchain.</source>
-        <translation>The user interface language can be set here. This setting will take effect after restarting Starchain.</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting StarChain.</source>
+        <translation>The user interface language can be set here. This setting will take effect after restarting StarChain.</translation>
     </message>
     <message>
         <location line="+11"/>
@@ -1455,8 +1455,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.</sourc
     </message>
     <message>
         <location line="+9"/>
-        <source>Whether to show Starchain addresses in the transaction list or not.</source>
-        <translation>Whether to show Starchain addresses in the transaction list or not.</translation>
+        <source>Whether to show StarChain addresses in the transaction list or not.</source>
+        <translation>Whether to show StarChain addresses in the transaction list or not.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1517,8 +1517,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.</sourc
     <message>
         <location line="-9"/>
         <location line="+9"/>
-        <source>This setting will take effect after restarting Starchain.</source>
-        <translation>This setting will take effect after restarting Starchain.</translation>
+        <source>This setting will take effect after restarting StarChain.</source>
+        <translation>This setting will take effect after restarting StarChain.</translation>
     </message>
     <message>
         <location line="+20"/>
@@ -1541,8 +1541,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.</sourc
     <message>
         <location line="+7"/>
         <location line="+245"/>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Starchain network after a connection is established, but this process has not completed yet.</source>
-        <translation>The displayed information may be out of date. Your wallet automatically synchronizes with the Starchain network after a connection is established, but this process has not completed yet.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the StarChain network after a connection is established, but this process has not completed yet.</source>
+        <translation>The displayed information may be out of date. Your wallet automatically synchronizes with the StarChain network after a connection is established, but this process has not completed yet.</translation>
     </message>
     <message>
         <location line="-199"/>
@@ -1600,8 +1600,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.</sourc
     <name>PaymentServer</name>
     <message>
         <location filename="../paymentserver.cpp" line="+107"/>
-        <source>Cannot start Starchain: click-to-pay handler</source>
-        <translation>Cannot start Starchain: click-to-pay handler</translation>
+        <source>Cannot start StarChain: click-to-pay handler</source>
+        <translation>Cannot start StarChain: click-to-pay handler</translation>
     </message>
 </context>
 <context>
@@ -1750,8 +1750,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.</sourc
     </message>
     <message>
         <location line="+7"/>
-        <source>Show the Starchain-Qt help message to get a list with possible Starchain command-line options.</source>
-        <translation>Show the Starchain-Qt help message to get a list with possible Starchain command-line options.</translation>
+        <source>Show the StarChain-Qt help message to get a list with possible StarChain command-line options.</source>
+        <translation>Show the StarChain-Qt help message to get a list with possible StarChain command-line options.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1770,13 +1770,13 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.</sourc
     </message>
     <message>
         <location line="-104"/>
-        <source>Starchain - Debug window</source>
-        <translation>Starchain - Debug window</translation>
+        <source>StarChain - Debug window</source>
+        <translation>StarChain - Debug window</translation>
     </message>
     <message>
         <location line="+25"/>
-        <source>Starchain Core</source>
-        <translation>Starchain Core</translation>
+        <source>StarChain Core</source>
+        <translation>StarChain Core</translation>
     </message>
     <message>
         <location line="+279"/>
@@ -1785,8 +1785,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.</sourc
     </message>
     <message>
         <location line="+7"/>
-        <source>Open the Starchain debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>Open the Starchain debug log file from the current data directory. This can take a few seconds for large log files.</translation>
+        <source>Open the StarChain debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <translation>Open the StarChain debug log file from the current data directory. This can take a few seconds for large log files.</translation>
     </message>
     <message>
         <location line="+102"/>
@@ -1795,8 +1795,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.</sourc
     </message>
     <message>
         <location filename="../rpcconsole.cpp" line="-30"/>
-        <source>Welcome to the Starchain RPC console.</source>
-        <translation>Welcome to the Starchain RPC console.</translation>
+        <source>Welcome to the StarChain RPC console.</source>
+        <translation>Welcome to the StarChain RPC console.</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -2030,7 +2030,7 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.</sourc
     </message>
     <message>
         <location line="+303"/>
-        <source>Warning: Invalid Starchain address.
+        <source>Warning: Invalid StarChain address.
 A standard change address will be used instead.</source>
         <translation type="unfinished"></translation>
     </message>
@@ -2131,8 +2131,8 @@ A standard change address will be used instead.</source>
     </message>
     <message>
         <location filename="../sendcoinsentry.cpp" line="+1"/>
-        <source>Enter a Starchain address</source>
-        <translation>Enter a Starchain address</translation>
+        <source>Enter a StarChain address</source>
+        <translation>Enter a StarChain address</translation>
     </message>
 </context>
 <context>
@@ -2196,8 +2196,8 @@ A standard change address will be used instead.</source>
     </message>
     <message>
         <location line="+21"/>
-        <source>Sign the message to prove you own this Starchain address</source>
-        <translation>Sign the message to prove you own this Starchain address</translation>
+        <source>Sign the message to prove you own this StarChain address</source>
+        <translation>Sign the message to prove you own this StarChain address</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -2232,8 +2232,8 @@ A standard change address will be used instead.</source>
     </message>
     <message>
         <location line="+40"/>
-        <source>Verify the message to ensure it was signed with the specified Starchain address</source>
-        <translation>Verify the message to ensure it was signed with the specified Starchain address</translation>
+        <source>Verify the message to ensure it was signed with the specified StarChain address</source>
+        <translation>Verify the message to ensure it was signed with the specified StarChain address</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -2248,8 +2248,8 @@ A standard change address will be used instead.</source>
     <message>
         <location filename="../signverifymessagedialog.cpp" line="+27"/>
         <location line="+3"/>
-        <source>Enter a Starchain address</source>
-        <translation>Enter a Starchain address</translation>
+        <source>Enter a StarChain address</source>
+        <translation>Enter a StarChain address</translation>
     </message>
     <message>
         <location line="-2"/>
@@ -2258,8 +2258,8 @@ A standard change address will be used instead.</source>
     </message>
     <message>
         <location line="+3"/>
-        <source>Enter Starchain signature</source>
-        <translation>Enter Starchain signature</translation>
+        <source>Enter StarChain signature</source>
+        <translation>Enter StarChain signature</translation>
     </message>
     <message>
         <location line="+82"/>
@@ -2889,19 +2889,19 @@ A standard change address will be used instead.</source>
     </message>
 </context>
 <context>
-    <name>Starchain-core</name>
+    <name>StarChain-core</name>
     <message>
-        <location filename="../Starchainstrings.cpp" line="+9"/>
+        <location filename="../StarChainstrings.cpp" line="+9"/>
         <source>%s, you must set a rpcpassword in the configuration file:
 %s
 It is recommended you use the following random password:
-rpcuser=Starchainrpc
+rpcuser=StarChainrpc
 rpcpassword=%s
 (you do not need to remember this password)
 The username and password MUST NOT be the same.
 If the file does not exist, create it with owner-readable-only file permissions.
 It is also recommended to set alertnotify so you are notified of problems;
-for example: alertnotify=echo %%s | mail -s &quot;Starchain Alert&quot; admin@foo.com
+for example: alertnotify=echo %%s | mail -s &quot;StarChain Alert&quot; admin@foo.com
 </source>
         <translation type="unfinished"></translation>
     </message>
@@ -2927,8 +2927,8 @@ for example: alertnotify=echo %%s | mail -s &quot;Starchain Alert&quot; admin@fo
     </message>
     <message>
         <location line="+3"/>
-        <source>Cannot obtain a lock on data directory %s. Starchain is probably already running.</source>
-        <translation type="unfinished">Cannot obtain a lock on data directory %s. Starchain is probably already running.</translation>
+        <source>Cannot obtain a lock on data directory %s. StarChain is probably already running.</source>
+        <translation type="unfinished">Cannot obtain a lock on data directory %s. StarChain is probably already running.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -2982,8 +2982,8 @@ for example: alertnotify=echo %%s | mail -s &quot;Starchain Alert&quot; admin@fo
     </message>
     <message>
         <location line="+3"/>
-        <source>Unable to bind to %s on this computer. Starchain is probably already running.</source>
-        <translation type="unfinished">Unable to bind to %s on this computer. Starchain is probably already running.</translation>
+        <source>Unable to bind to %s on this computer. StarChain is probably already running.</source>
+        <translation type="unfinished">Unable to bind to %s on this computer. StarChain is probably already running.</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -2992,8 +2992,8 @@ for example: alertnotify=echo %%s | mail -s &quot;Starchain Alert&quot; admin@fo
     </message>
     <message>
         <location line="+3"/>
-        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong Starchain will not work properly.</source>
-        <translation type="unfinished">Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong Starchain will not work properly.</translation>
+        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong StarChain will not work properly.</source>
+        <translation type="unfinished">Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong StarChain will not work properly.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -3136,8 +3136,8 @@ If the file does not exist, create it with owner-readable-only file permissions.
     </message>
     <message>
         <location line="+1"/>
-        <source>Error loading wallet.dat: Wallet requires newer version of Starchain</source>
-        <translation type="unfinished">Error loading wallet.dat: Wallet requires newer version of Starchain</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of StarChain</source>
+        <translation type="unfinished">Error loading wallet.dat: Wallet requires newer version of StarChain</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -3386,8 +3386,8 @@ If the file does not exist, create it with owner-readable-only file permissions.
     </message>
     <message>
         <location line="+1"/>
-        <source>Starchain version</source>
-        <translation type="unfinished">Starchain version</translation>
+        <source>StarChain version</source>
+        <translation type="unfinished">StarChain version</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -3416,8 +3416,8 @@ If the file does not exist, create it with owner-readable-only file permissions.
     </message>
     <message>
         <location line="+1"/>
-        <source>SSL options: (see the Starchain Wiki for SSL setup instructions)</source>
-        <translation type="unfinished">SSL options: (see the Starchain Wiki for SSL setup instructions)</translation>
+        <source>SSL options: (see the StarChain Wiki for SSL setup instructions)</source>
+        <translation type="unfinished">SSL options: (see the StarChain Wiki for SSL setup instructions)</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -3426,8 +3426,8 @@ If the file does not exist, create it with owner-readable-only file permissions.
     </message>
     <message>
         <location line="+1"/>
-        <source>Send command to -server or Starchaind</source>
-        <translation type="unfinished">Send command to -server or Starchaind</translation>
+        <source>Send command to -server or StarChaind</source>
+        <translation type="unfinished">Send command to -server or StarChaind</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -3491,8 +3491,8 @@ If the file does not exist, create it with owner-readable-only file permissions.
     </message>
     <message>
         <location line="+1"/>
-        <source>Specify configuration file (default: Starchain.conf)</source>
-        <translation type="unfinished">Specify configuration file (default: Starchain.conf)</translation>
+        <source>Specify configuration file (default: StarChain.conf)</source>
+        <translation type="unfinished">Specify configuration file (default: StarChain.conf)</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -3506,8 +3506,8 @@ If the file does not exist, create it with owner-readable-only file permissions.
     </message>
     <message>
         <location line="+1"/>
-        <source>Specify pid file (default: Starchaind.pid)</source>
-        <translation type="unfinished">Specify pid file (default: Starchaind.pid)</translation>
+        <source>Specify pid file (default: StarChaind.pid)</source>
+        <translation type="unfinished">Specify pid file (default: StarChaind.pid)</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -3621,8 +3621,8 @@ If the file does not exist, create it with owner-readable-only file permissions.
     </message>
     <message>
         <location line="+1"/>
-        <source>Wallet needed to be rewritten: restart Starchain to complete</source>
-        <translation type="unfinished">Wallet needed to be rewritten: restart Starchain to complete</translation>
+        <source>Wallet needed to be rewritten: restart StarChain to complete</source>
+        <translation type="unfinished">Wallet needed to be rewritten: restart StarChain to complete</translation>
     </message>
     <message>
         <location line="+1"/>

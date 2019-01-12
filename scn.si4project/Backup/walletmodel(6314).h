@@ -31,7 +31,7 @@ public:
     qint64 amount;
 };
 
-/** Interface to Starchain wallet from Qt view code. */
+/** Interface to StarChain wallet from Qt view code. */
 class WalletModel : public QObject
 {
     Q_OBJECT

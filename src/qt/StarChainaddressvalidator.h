@@ -6,12 +6,12 @@
 /** Base58 entry widget validator.
    Corrects near-miss characters and refuses characters that are not part of base58.
  */
-class StarchainAddressValidator : public QValidator
+class StarChainAddressValidator : public QValidator
 {
     Q_OBJECT
 
 public:
-    explicit StarchainAddressValidator(QObject *parent = 0);
+    explicit StarChainAddressValidator(QObject *parent = 0);
 
     State validate(QString &input, int &pos) const;
 

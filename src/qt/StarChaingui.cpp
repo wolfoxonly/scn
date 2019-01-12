@@ -2,13 +2,13 @@
  * Qt4 ppcoin GUI.
  *
  * W.J. van der Laan 2011-2012
- * The Starchain developers 2011-2012
- * The Starchain developers 2011-2017
+ * The StarChain developers 2011-2012
+ * The StarChain developers 2011-2017
  */
 
 #include <QApplication>
 
-#include "Starchaingui.h"
+#include "StarChaingui.h"
 
 #include "transactiontablemodel.h"
 #include "optionsdialog.h"
@@ -18,7 +18,7 @@
 #include "walletframe.h"
 #include "optionsmodel.h"
 #include "transactiondescdialog.h"
-#include "Starchainunits.h"
+#include "StarChainunits.h"
 #include "guiconstants.h"
 #include "notificator.h"
 #include "guiutil.h"
@@ -58,9 +58,9 @@
 
 #include <iostream>
 
-const QString StarchainGUI::DEFAULT_WALLET = "~Default";
+const QString StarChainGUI::DEFAULT_WALLET = "~Default";
 
-StarchainGUI::StarchainGUI(QWidget *parent) :
+StarChainGUI::StarChainGUI(QWidget *parent) :
     QMainWindow(parent),
     clientModel(0),
     encryptWalletAction(0),
@@ -73,7 +73,7 @@ StarchainGUI::StarchainGUI(QWidget *parent) :
     prevBlocks(0)
 {
     restoreWindowGeometry();
-    setWindowTitle(tr("Starchain") + " - " + tr("Wallet"));
+    setWindowTitle(tr("StarChain") + " - " + tr("Wallet"));
     
     QFontDatabase::addApplicationFont(":/fonts/weblysleek");
     QFile styleFile(":/themes/default");
@@ -82,8 +82,8 @@ StarchainGUI::StarchainGUI(QWidget *parent) :
     this->setStyleSheet(styleSheet);
 
 #ifndef Q_OS_MAC
-    QApplication::setWindowIcon(QIcon(":icons/Starchain"));
-    setWindowIcon(QIcon(":icons/Starchain"));
+    QApplication::setWindowIcon(QIcon(":icons/StarChain"));
+    setWindowIcon(QIcon(":icons/StarChain"));
 #else
     setUnifiedTitleAndToolBarOnMac(true);
     QApplication::setAttribute(Qt::AA_DontShowIconsInMenus);
@@ -159,7 +159,7 @@ StarchainGUI::StarchainGUI(QWidget *parent) :
     this->installEventFilter(this);
 }
 
-StarchainGUI::~StarchainGUI()
+StarChainGUI::~StarChainGUI()
 {
     saveWindowGeometry();
     if(trayIcon) // Hide tray icon, as deleting will let it linger until quit (on Ubuntu)
@@ -170,7 +170,7 @@ StarchainGUI::~StarchainGUI()
 #endif
 }
 
-void StarchainGUI::createActions()
+void StarChainGUI::createActions()
 {
     QActionGroup *tabGroup = new QActionGroup(this);
 
@@ -182,7 +182,7 @@ void StarchainGUI::createActions()
     tabGroup->addAction(overviewAction);
 
     sendCoinsAction = new QAction(QIcon(":/icons/send"), tr("&Send"), this);
-    sendCoinsAction->setStatusTip(tr("Send coins to a Starchain address"));
+    sendCoinsAction->setStatusTip(tr("Send coins to a StarChain address"));
     sendCoinsAction->setToolTip(sendCoinsAction->statusTip());
     sendCoinsAction->setCheckable(true);
     sendCoinsAction->setShortcut(QKeySequence(Qt::ALT + Qt::Key_2));
@@ -233,16 +233,16 @@ void StarchainGUI::createActions()
     quitAction->setStatusTip(tr("Quit application"));
     quitAction->setShortcut(QKeySequence(Qt::CTRL + Qt::Key_Q));
     quitAction->setMenuRole(QAction::QuitRole);
-    aboutAction = new QAction(QIcon(":/icons/Starchain"), tr("&About Starchain"), this);
-    aboutAction->setStatusTip(tr("Show information about Starchain"));
+    aboutAction = new QAction(QIcon(":/icons/StarChain"), tr("&About StarChain"), this);
+    aboutAction->setStatusTip(tr("Show information about StarChain"));
     aboutAction->setMenuRole(QAction::AboutRole);
     aboutQtAction = new QAction(QIcon(":/trolltech/qmessagebox/images/qtlogo-64.png"), tr("About &Qt"), this);
     aboutQtAction->setStatusTip(tr("Show information about Qt"));
     aboutQtAction->setMenuRole(QAction::AboutQtRole);
     optionsAction = new QAction(QIcon(":/icons/options"), tr("&Options..."), this);
-    optionsAction->setStatusTip(tr("Modify configuration options for Starchain"));
+    optionsAction->setStatusTip(tr("Modify configuration options for StarChain"));
     optionsAction->setMenuRole(QAction::PreferencesRole);
-    toggleHideAction = new QAction(QIcon(":/icons/Starchain"), tr("&Show / Hide"), this);
+    toggleHideAction = new QAction(QIcon(":/icons/StarChain"), tr("&Show / Hide"), this);
     toggleHideAction->setStatusTip(tr("Show or hide the main Window"));
 
     encryptWalletAction = new QAction(QIcon(":/icons/lock_closed"), tr("&Encrypt Wallet..."), this);
@@ -256,18 +256,18 @@ void StarchainGUI::createActions()
     changePassphraseAction = new QAction(QIcon(":/icons/key"), tr("&Change Passphrase..."), this);
     changePassphraseAction->setStatusTip(tr("Change the passphrase used for wallet encryption"));
     signMessageAction = new QAction(QIcon(":/icons/sign"), tr("Sign &message..."), this);
-    signMessageAction->setStatusTip(tr("Sign messages with your Starchain addresses to prove you own them"));
+    signMessageAction->setStatusTip(tr("Sign messages with your StarChain addresses to prove you own them"));
     verifyMessageAction = new QAction(QIcon(":/icons/verify"), tr("&Verify message..."), this);
-    verifyMessageAction->setStatusTip(tr("Verify messages to ensure they were signed with specified Starchain addresses"));
+    verifyMessageAction->setStatusTip(tr("Verify messages to ensure they were signed with specified StarChain addresses"));
 
     openRPCConsoleAction = new QAction(QIcon(":/icons/debugwindow"), tr("&Debug window"), this);
     openRPCConsoleAction->setStatusTip(tr("Open debugging and diagnostic console"));
 
-    // openChatroomAction = new QAction(QIcon(":/icons/Starchain"), tr("&Chatroom"), this);
-    // openChatroomAction->setStatusTip(tr("Open https://Starchain.chat in a web browser."));
+    // openChatroomAction = new QAction(QIcon(":/icons/StarChain"), tr("&Chatroom"), this);
+    // openChatroomAction->setStatusTip(tr("Open https://StarChain.chat in a web browser."));
 
-    // openForumAction = new QAction(QIcon(":/icons/Starchain"), tr("&Forum"), this);
-    // openForumAction->setStatusTip(tr("Open https://talk.Starchain.net in a web browser."));
+    // openForumAction = new QAction(QIcon(":/icons/StarChain"), tr("&Forum"), this);
+    // openForumAction->setStatusTip(tr("Open https://talk.StarChain.net in a web browser."));
 
     connect(quitAction, SIGNAL(triggered()), qApp, SLOT(quit()));
     connect(aboutAction, SIGNAL(triggered()), this, SLOT(aboutClicked()));
@@ -284,7 +284,7 @@ void StarchainGUI::createActions()
     // connect(openForumAction, SIGNAL(triggered()), this, SLOT(openForum()));
 }
 
-void StarchainGUI::createMenuBar()
+void StarChainGUI::createMenuBar()
 {
 #ifdef Q_OS_MAC
     // Create a decoupled menu bar on Mac which stays even if the window is closed
@@ -318,7 +318,7 @@ void StarchainGUI::createMenuBar()
     help->addAction(aboutQtAction);
 }
 
-void StarchainGUI::createToolBars()
+void StarChainGUI::createToolBars()
 {
     QLabel *imageLogo = new QLabel;
     imageLogo->setPixmap(QPixmap(":/images/logo"));
@@ -335,7 +335,7 @@ void StarchainGUI::createToolBars()
     toolbar->addAction(addressBookAction);
 }
 
-void StarchainGUI::setClientModel(ClientModel *clientModel)
+void StarChainGUI::setClientModel(ClientModel *clientModel)
 {
     this->clientModel = clientModel;
     if(clientModel)
@@ -345,10 +345,10 @@ void StarchainGUI::setClientModel(ClientModel *clientModel)
         {
             setWindowTitle(windowTitle() + QString(" ") + tr("[testnet]"));
 #ifndef Q_OS_MAC
-            QApplication::setWindowIcon(QIcon(":icons/Starchain_testnet"));
-            setWindowIcon(QIcon(":icons/Starchain_testnet"));
+            QApplication::setWindowIcon(QIcon(":icons/StarChain_testnet"));
+            setWindowIcon(QIcon(":icons/StarChain_testnet"));
 #else
-            MacDockIconHandler::instance()->setIcon(QIcon(":icons/Starchain_testnet"));
+            MacDockIconHandler::instance()->setIcon(QIcon(":icons/StarChain_testnet"));
 #endif
             if(trayIcon)
             {
@@ -382,27 +382,27 @@ void StarchainGUI::setClientModel(ClientModel *clientModel)
     }
 }
 
-bool StarchainGUI::addWallet(const QString& name, WalletModel *walletModel)
+bool StarChainGUI::addWallet(const QString& name, WalletModel *walletModel)
 {
     return walletFrame->addWallet(name, walletModel);
 }
 
-bool StarchainGUI::setCurrentWallet(const QString& name)
+bool StarChainGUI::setCurrentWallet(const QString& name)
 {
     return walletFrame->setCurrentWallet(name);
 }
 
-void StarchainGUI::removeAllWallets()
+void StarChainGUI::removeAllWallets()
 {
     walletFrame->removeAllWallets();
 }
 
-void StarchainGUI::createTrayIcon()
+void StarChainGUI::createTrayIcon()
 {
 #ifndef Q_OS_MAC
     trayIcon = new QSystemTrayIcon(this);
 
-    trayIcon->setToolTip(tr("Starchain client"));
+    trayIcon->setToolTip(tr("StarChain client"));
     trayIcon->setIcon(QIcon(":/icons/toolbar"));
     trayIcon->show();
 #endif
@@ -410,7 +410,7 @@ void StarchainGUI::createTrayIcon()
     notificator = new Notificator(QApplication::applicationName(), trayIcon);
 }
 
-void StarchainGUI::createTrayIconMenu()
+void StarChainGUI::createTrayIconMenu()
 {
     QMenu *trayIconMenu;
 #ifndef Q_OS_MAC
@@ -448,7 +448,7 @@ void StarchainGUI::createTrayIconMenu()
 }
 
 #ifndef Q_OS_MAC
-void StarchainGUI::trayIconActivated(QSystemTrayIcon::ActivationReason reason)
+void StarChainGUI::trayIconActivated(QSystemTrayIcon::ActivationReason reason)
 {
     if(reason == QSystemTrayIcon::Trigger)
     {
@@ -458,14 +458,14 @@ void StarchainGUI::trayIconActivated(QSystemTrayIcon::ActivationReason reason)
 }
 #endif
 
-void StarchainGUI::saveWindowGeometry()
+void StarChainGUI::saveWindowGeometry()
 {
     QSettings settings;
     settings.setValue("nWindowPos", pos());
     settings.setValue("nWindowSize", size());
 }
 
-void StarchainGUI::restoreWindowGeometry()
+void StarChainGUI::restoreWindowGeometry()
 {
     QSettings settings;
     QPoint pos = settings.value("nWindowPos").toPoint();
@@ -480,7 +480,7 @@ void StarchainGUI::restoreWindowGeometry()
     move(pos);
 }
 
-void StarchainGUI::optionsClicked()
+void StarChainGUI::optionsClicked()
 {
     if(!clientModel || !clientModel->getOptionsModel())
         return;
@@ -489,62 +489,62 @@ void StarchainGUI::optionsClicked()
     dlg.exec();
 }
 
-void StarchainGUI::aboutClicked()
+void StarChainGUI::aboutClicked()
 {
     AboutDialog dlg(this);
     dlg.setModel(clientModel);
     dlg.exec();
 }
 
-void StarchainGUI::gotoOverviewPage()
+void StarChainGUI::gotoOverviewPage()
 {
     if (walletFrame) walletFrame->gotoOverviewPage();
 }
 
-void StarchainGUI::gotoHistoryPage()
+void StarChainGUI::gotoHistoryPage()
 {
     if (walletFrame) walletFrame->gotoHistoryPage();
 }
 
-void StarchainGUI::gotoMintingPage()
+void StarChainGUI::gotoMintingPage()
 {
     if (walletFrame) walletFrame->gotoMintingPage();
 }
 
-void StarchainGUI::gotoAddressBookPage()
+void StarChainGUI::gotoAddressBookPage()
 {
     if (walletFrame) walletFrame->gotoAddressBookPage();
 }
 
-void StarchainGUI::gotoReceiveCoinsPage()
+void StarChainGUI::gotoReceiveCoinsPage()
 {
     if (walletFrame) walletFrame->gotoReceiveCoinsPage();
 }
 
-void StarchainGUI::gotoSendCoinsPage(QString addr)
+void StarChainGUI::gotoSendCoinsPage(QString addr)
 {
     if (walletFrame) walletFrame->gotoSendCoinsPage(addr);
 }
 
-void StarchainGUI::gotoSignMessageTab(QString addr)
+void StarChainGUI::gotoSignMessageTab(QString addr)
 {
     if (walletFrame) walletFrame->gotoSignMessageTab(addr);
 }
 
-void StarchainGUI::gotoVerifyMessageTab(QString addr)
+void StarChainGUI::gotoVerifyMessageTab(QString addr)
 {
     if (walletFrame) walletFrame->gotoVerifyMessageTab(addr);
 }
 
-void StarchainGUI::openChatroom() {
-    QDesktopServices::openUrl(QUrl("https://Starchain.chat"));
+void StarChainGUI::openChatroom() {
+    QDesktopServices::openUrl(QUrl("https://StarChain.chat"));
 }
 
-void StarchainGUI::openForum() {
-    QDesktopServices::openUrl(QUrl("https://talk.Starchain.net"));
+void StarChainGUI::openForum() {
+    QDesktopServices::openUrl(QUrl("https://talk.StarChain.net"));
 }
 
-void StarchainGUI::setNumConnections(int count)
+void StarChainGUI::setNumConnections(int count)
 {
     QString icon;
     switch(count)
@@ -556,10 +556,10 @@ void StarchainGUI::setNumConnections(int count)
     default: icon = ":/icons/connect_4"; break;
     }
     labelConnectionsIcon->setPixmap(QIcon(icon).pixmap(STATUSBAR_ICONSIZE,STATUSBAR_ICONSIZE));
-    labelConnectionsIcon->setToolTip(tr("%n active connection(s) to Starchain network", "", count));
+    labelConnectionsIcon->setToolTip(tr("%n active connection(s) to StarChain network", "", count));
 }
 
-void StarchainGUI::setNumBlocks(int count, int nTotalBlocks)
+void StarChainGUI::setNumBlocks(int count, int nTotalBlocks)
 {
     // Prevent orphan statusbar messages (e.g. hover Quit in main menu, wait until chain-sync starts -> garbelled text)
     statusBar()->clearMessage();
@@ -653,9 +653,9 @@ void StarchainGUI::setNumBlocks(int count, int nTotalBlocks)
     progressBar->setToolTip(tooltip);
 }
 
-void StarchainGUI::message(const QString &title, const QString &message, unsigned int style, bool *ret)
+void StarChainGUI::message(const QString &title, const QString &message, unsigned int style, bool *ret)
 {
-    QString strTitle = tr("Starchain"); // default title
+    QString strTitle = tr("StarChain"); // default title
     // Default to information icon
     int nMBoxIcon = QMessageBox::Information;
     int nNotifyIcon = Notificator::Information;
@@ -704,7 +704,7 @@ void StarchainGUI::message(const QString &title, const QString &message, unsigne
         notificator->notify((Notificator::Class)nNotifyIcon, strTitle, message);
 }
 
-void StarchainGUI::changeEvent(QEvent *e)
+void StarChainGUI::changeEvent(QEvent *e)
 {
     QMainWindow::changeEvent(e);
 #ifndef Q_OS_MAC // Ignored on Mac
@@ -723,7 +723,7 @@ void StarchainGUI::changeEvent(QEvent *e)
 #endif
 }
 
-void StarchainGUI::closeEvent(QCloseEvent *event)
+void StarChainGUI::closeEvent(QCloseEvent *event)
 {
     if(clientModel)
     {
@@ -738,18 +738,18 @@ void StarchainGUI::closeEvent(QCloseEvent *event)
     QMainWindow::closeEvent(event);
 }
 
-void StarchainGUI::askFee(qint64 nFeeRequired, bool *payFee)
+void StarChainGUI::askFee(qint64 nFeeRequired, bool *payFee)
 {
     QString strMessage = tr("You can send this transaction for a fee of %1, "
         "which is burned and prevents spamming of the network. "
-        "Do you want to pay the fee?").arg(StarchainUnits::formatWithUnit(StarchainUnits::BTC, nFeeRequired));
+        "Do you want to pay the fee?").arg(StarChainUnits::formatWithUnit(StarChainUnits::BTC, nFeeRequired));
     QMessageBox::StandardButton retval = QMessageBox::question(
           this, tr("Confirm transaction fee"), strMessage,
           QMessageBox::Yes|QMessageBox::Cancel, QMessageBox::Yes);
     *payFee = (retval == QMessageBox::Yes);
 }
 
-void StarchainGUI::incomingTransaction(const QString& date, int unit, qint64 amount, const QString& type, const QString& address)
+void StarChainGUI::incomingTransaction(const QString& date, int unit, qint64 amount, const QString& type, const QString& address)
 {
     // On new transaction, make an info balloon
     message((amount)<0 ? tr("Sent transaction") : tr("Incoming transaction"),
@@ -758,19 +758,19 @@ void StarchainGUI::incomingTransaction(const QString& date, int unit, qint64 amo
                 "Type: %3\n"
                 "Address: %4\n")
                   .arg(date)
-                  .arg(StarchainUnits::formatWithUnit(unit, amount, true))
+                  .arg(StarChainUnits::formatWithUnit(unit, amount, true))
                   .arg(type)
                   .arg(address), CClientUIInterface::MSG_INFORMATION);
 }
 
-void StarchainGUI::dragEnterEvent(QDragEnterEvent *event)
+void StarChainGUI::dragEnterEvent(QDragEnterEvent *event)
 {
     // Accept only URIs
     if(event->mimeData()->hasUrls())
         event->acceptProposedAction();
 }
 
-void StarchainGUI::dropEvent(QDropEvent *event)
+void StarChainGUI::dropEvent(QDropEvent *event)
 {
     if(event->mimeData()->hasUrls())
     {
@@ -786,14 +786,14 @@ void StarchainGUI::dropEvent(QDropEvent *event)
         if (nValidUrisFound)
             walletFrame->gotoSendCoinsPage();
         else
-            message(tr("URI handling"), tr("URI can not be parsed! This can be caused by an invalid Starchain address or malformed URI parameters."),
+            message(tr("URI handling"), tr("URI can not be parsed! This can be caused by an invalid StarChain address or malformed URI parameters."),
                       CClientUIInterface::ICON_WARNING);
     }
 
     event->acceptProposedAction();
 }
 
-bool StarchainGUI::eventFilter(QObject *object, QEvent *event)
+bool StarChainGUI::eventFilter(QObject *object, QEvent *event)
 {
     // Catch status tip events
     if (event->type() == QEvent::StatusTip)
@@ -805,15 +805,15 @@ bool StarchainGUI::eventFilter(QObject *object, QEvent *event)
     return QMainWindow::eventFilter(object, event);
 }
 
-void StarchainGUI::handleURI(QString strURI)
+void StarChainGUI::handleURI(QString strURI)
 {
     // URI has to be valid
     if (!walletFrame->handleURI(strURI))
-        message(tr("URI handling"), tr("URI can not be parsed! This can be caused by an invalid Starchain address or malformed URI parameters."),
+        message(tr("URI handling"), tr("URI can not be parsed! This can be caused by an invalid StarChain address or malformed URI parameters."),
                   CClientUIInterface::ICON_WARNING);
 }
 
-void StarchainGUI::setEncryptionStatus(int status)
+void StarChainGUI::setEncryptionStatus(int status)
 {
     switch(status)
     {
@@ -848,7 +848,7 @@ void StarchainGUI::setEncryptionStatus(int status)
     }
 }
 
-void StarchainGUI::showNormalIfMinimized(bool fToggleHidden)
+void StarChainGUI::showNormalIfMinimized(bool fToggleHidden)
 {
     // activateWindow() (sometimes) helps with keyboard focus on Windows
     if (isHidden())
@@ -870,12 +870,12 @@ void StarchainGUI::showNormalIfMinimized(bool fToggleHidden)
         hide();
 }
 
-void StarchainGUI::toggleHidden()
+void StarChainGUI::toggleHidden()
 {
     showNormalIfMinimized(true);
 }
 
-void StarchainGUI::detectShutdown()
+void StarChainGUI::detectShutdown()
 {
     if (ShutdownRequested())
         QMetaObject::invokeMethod(QCoreApplication::instance(), "quit", Qt::QueuedConnection);
