@@ -1,75 +1,160 @@
----- CCC Matches (106 in 28 files) ----
-default.qss (src\qt\res\themes) line 361 :     border: 1px inset #cccccc;
-default.qss (src\qt\res\themes) line 365 :     border: 1px outset #cccccc;
-fanquake-key.pgp (contrib\gitian-keys) line 13 : QCCXhjcBmUKgXIHLFcbfmkR8pCcCToWXBD8CU441cBsootDD7SanPHbpcwZjt74x
-fix-xcb-include-order.patch (depends\patches\qt) line 21 :      LIBS += -lxcb -lxcb-image -lxcb-icccm -lxcb-sync -lxcb-xfixes -lxcb-shm -lxcb-randr -lxcb-shape -lxcb-keysyms -lxcb-xinerama
-inout(5912).svg (scn.si4project\Backup) line 66 :        sodipodi:nodetypes="cccccccccccccc" />
-inout(5912).svg (scn.si4project\Backup) line 78 :        sodipodi:nodetypes="cccccscccc" />
-inout(5912).svg (scn.si4project\Backup) line 90 :        sodipodi:nodetypes="cccccscccc" />
-inout(5912).svg (scn.si4project\Backup) line 102 :        sodipodi:nodetypes="cccccccccccccc" />
-inout(5912).svg (scn.si4project\Backup) line 104 :        sodipodi:nodetypes="cccccccccccccc"
-inout(5912).svg (scn.si4project\Backup) line 114 :        sodipodi:nodetypes="cccccc" />
-inout(5912).svg (scn.si4project\Backup) line 120 :        sodipodi:nodetypes="cccccc" />
-inout.svg (src\qt\res\src) line 66 :        sodipodi:nodetypes="cccccccccccccc" />
-inout.svg (src\qt\res\src) line 78 :        sodipodi:nodetypes="cccccscccc" />
-inout.svg (src\qt\res\src) line 90 :        sodipodi:nodetypes="cccccscccc" />
-inout.svg (src\qt\res\src) line 102 :        sodipodi:nodetypes="cccccccccccccc" />
-inout.svg (src\qt\res\src) line 104 :        sodipodi:nodetypes="cccccccccccccc"
-inout.svg (src\qt\res\src) line 114 :        sodipodi:nodetypes="cccccc" />
-inout.svg (src\qt\res\src) line 120 :        sodipodi:nodetypes="cccccc" />
-jonasschnelli-key.pgp (contrib\gitian-keys) line 46 : eGsnRIOmAMgN9+8NEs9wZnzrYpkvk/Vw1FwNcCCUYb0ZPYoRVRhP2UXYm7OxdKdk
-memenv_test.cc (src\leveldb\helpers\memenv) line 200 :   const Slice keys[] = {Slice("aaa"), Slice("bbb"), Slice("ccc")};
-native_cctools.mk (depends\packages) line 5 : $(package)_sha256_hash=a09c9ba4684670a0375e42d9d67e7f12c1f62581a27f28f7c825d6d7032ccc6a
-petertodd-key.pgp (contrib\gitian-keys) line 648 : 1kKBGEx+HSeNfx/c2d9AjscC5AMoIMcCCsCRZWfa8CeWJkxNCFQvtIkJdl0OYT82
-petertodd-key.pgp (contrib\gitian-keys) line 881 : 0j0/gfBEs0Qjvo5rmzcXv+N482Ys5zTRpzyMODhgiLN2F0cthVBMcCcWmgAmFst1
-petertodd-key.pgp (contrib\gitian-keys) line 1528 : bHpLNPKhqzmACCcXe1Uuz4JOMPP5GGqF3j7Phdi4mnr53dOmgsrSQcWt9skfX7IK
-release-notes-0.10.0(1423).md (scn.si4project\Backup) line 516 : - `ccca27a` Watch-only fixes
-release-notes-0.10.0.md (doc\release-notes) line 516 : - `ccca27a` Watch-only fixes
-release-notes-0.12.0(1673).md (scn.si4project\Backup) line 590 : - #6256 `8ccc07c` Use best header chain timestamps to detect partitioning (Gavin Andresen)
-release-notes-0.12.0.md (doc\release-notes) line 590 : - #6256 `8ccc07c` Use best header chain timestamps to detect partitioning (Gavin Andresen)
-StarChain256.xpm (share\pixmaps) line 167 : "I. c #CCC35D",
-StarChain_af_ZA.ts (src\qt\locale) line 1407 :         <translation>Die adres waarheen die betaling gestuur moet word (b.v. 1H7wyVL5HCNoVFyyBJSDojwyxcCChU7TPA)</translation>
-tt-delin1-out.hex (test\util\data) line 2 : ef23f4acfc19a5953a68b2074fae942ad3563ef28c33b0cac9a93adcffffffff50f179d5d16cd872f9a63c26c448464ae9bd95cd9421c0476113b5d314571b71010000006b483045022100f834ccc8b22ee72712a3e5e6ef4acb8b2fb791b5385b70e2cd4332674d6667f4022024fbda0a997e0c253503f217501f508a4d56edce2c813ecdd9ad796dbeba907401210234b9d9413f247bb78cd3293b7b65a2c38018ba5621ea9ee737f3a6a3523fb4cdffffffff551b865d1568ac0a305e5f9c5dae6c540982334efbe789074318e0efc5b564631b0000006b48304502203b2fd1e39ae0e469d7a15768f262661b0de41470daf0fe8c4fd0c26542a0870002210081c57e331f9a2d214457d953e3542904727ee412c63028113635d7224da3dccc012103f1575d6124ac78be398c25b31146d08313c6072d23a4d7df5ac6a9f87346c64cffffffff57503e5a016189d407a721791459280875264f908ca2c5d4862c01386e7fb50b470400006b48304502206947a9c54f0664ece4430fd4ae999891dc50bb6126bc36b6a15a3189f29d25e9022100a86cfc4e2fdd9e39a20e305cfd1b76509c67b3e313e0f118229105caa0e823c9012103f1575d6124ac78be398c25b31146d08313c6072d23a4d7df5ac6a9f87346c64cffffffff3f16c1fb9d3e1a26d872933e955df85ee7f3f817711062b00b54a2144827349b250000006b483045022100c7128fe10b2d38744ae8177776054c29fc8ec13f07207723e70766ab7164847402201d2cf09009b9596de74c0183d1ab832e5edddb7a9965880bb400097e850850f8012103f1575d6124ac78be398c25b31146d08313c6072d23a4d7df5ac6a9f87346c64cffffffff4142a69d85b8498af214f0dd427b6ab29c240a0b8577e2944d37a7d8c05c6bb8140000006b48304502203b89a71628a28cc3703d170ca3be77786cff6b867e38a18b719705f8a326578f022100b2a9879e1acf621faa6466c207746a7f3eb4c8514c1482969aba3f2a957f1321012103f1575d6124ac78be398c25b31146d08313c6072d23a4d7df5ac6a9f87346c64cffffffff36e2feecc0a4bff7480015d42c12121932db389025ed0ac1d344ecee53230a3df20000006c493046022100ef794a8ef7fd6752d2a183c18866ff6e8dc0f5bd889a63e2c21cf303a6302461022100c1b09662d9e92988c3f9fcf17d1bcc79b5403647095d7212b9f8a1278a532d68012103091137f3ef23f4acfc19a5953a68b2074fae942ad3563ef28c33b0cac9a93adcffffffff0260f73608000000001976a9148fd139bb39ced713f231c58a4d07bf6954d1c20188ac41420f00000000001976a9146c772e9cf96371bba3da8cb733da70a2fcf2007888ac00000000
-tt-delin1-out.json (test\util\data) line 139 :                 "asm": "3045022100f834ccc8b22ee72712a3e5e6ef4acb8b2fb791b5385b70e2cd4332674d6667f4022024fbda0a997e0c253503f217501f508a4d56edce2c813ecdd9ad796dbeba9074[ALL] 0234b9d9413f247bb78cd3293b7b65a2c38018ba5621ea9ee737f3a6a3523fb4cd",
-tt-delin1-out.json (test\util\data) line 140 :                 "hex": "483045022100f834ccc8b22ee72712a3e5e6ef4acb8b2fb791b5385b70e2cd4332674d6667f4022024fbda0a997e0c253503f217501f508a4d56edce2c813ecdd9ad796dbeba907401210234b9d9413f247bb78cd3293b7b65a2c38018ba5621ea9ee737f3a6a3523fb4cd"
-tt-delin1-out.json (test\util\data) line 148 :                 "asm": "304502203b2fd1e39ae0e469d7a15768f262661b0de41470daf0fe8c4fd0c26542a0870002210081c57e331f9a2d214457d953e3542904727ee412c63028113635d7224da3dccc[ALL] 03f1575d6124ac78be398c25b31146d08313c6072d23a4d7df5ac6a9f87346c64c",
-tt-delin1-out.json (test\util\data) line 149 :                 "hex": "48304502203b2fd1e39ae0e469d7a15768f262661b0de41470daf0fe8c4fd0c26542a0870002210081c57e331f9a2d214457d953e3542904727ee412c63028113635d7224da3dccc012103f1575d6124ac78be398c25b31146d08313c6072d23a4d7df5ac6a9f87346c64c"
-tt-delin1-out.json (test\util\data) line 219 : 2103091137f3ef23f4acfc19a5953a68b2074fae942ad3563ef28c33b0cac9a93adcffffffff50f179d5d16cd872f9a63c26c448464ae9bd95cd9421c0476113b5d314571b71010000006b483045022100f834ccc8b22ee72712a3e5e6ef4acb8b2fb791b5385b70e2cd4332674d6667f4022024fbda0a997e0c253503f217501f508a4d56edce2c813ecdd9ad796dbeba907401210234b9d9413f247bb78cd3293b7b65a2c38018ba5621ea9ee737f3a6a3523fb4cdffffffff551b865d1568ac0a305e5f9c5dae6c540982334efbe789074318e0efc5b564631b0000006b48304502203b2fd1e39ae0e469d7a15768f262661b0de41470daf0fe8c4fd0c26542a0870002210081c57e331f9a2d214457d953e3542904727ee412c63028113635d7224da3dccc012103f1575d6124ac78be398c25b31146d08313c6072d23a4d7df5ac6a9f87346c64cffffffff57503e5a016189d407a721791459280875264f908ca2c5d4862c01386e7fb50b470400006b48304502206947a9c54f0664ece4430fd4ae999891dc50bb6126bc36b6a15a3189f29d25e9022100a86cfc4e2fdd9e39a20e305cfd1b76509c67b3e313e0f118229105caa0e823c9012103f1575d6124ac78be398c25b31146d08313c6072d23a4d7df5ac6a9f87346c64cffffffff3f16c1fb9d3e1a26d872933e955df85ee7f3f817711062b00b54a2144827349b250000006b483045022100c7128fe10b2d38744ae8177776054c29fc8ec13f07207723e70766ab7164847402201d2cf09009b9596de74c0183d1ab832e5edddb7a9965880bb400097e850850f8012103f1575d6124ac78be398c25b31146d08313c6072d23a4d7df5ac6a9f87346c64cffffffff4142a69d85b8498af214f0dd427b6ab29c240a0b8577e2944d37a7d8c05c6bb8140000006b48304502203b89a71628a28cc3703d170ca3be77786cff6b867e38a18b719705f8a326578f022100b2a9879e1acf621faa6466c207746a7f3eb4c8514c1482969aba3f2a957f1321012103f1575d6124ac78be398c25b31146d08313c6072d23a4d7df5ac6a9f87346c64cffffffff36e2feecc0a4bff7480015d42c12121932db389025ed0ac1d344ecee53230a3df20000006c493046022100ef794a8ef7fd6752d2a183c18866ff6e8dc0f5bd889a63e2c21cf303a6302461022100c1b09662d9e92988c3f9fcf17d1bcc79b5403647095d7212b9f8a1278a532d68012103091137f3ef23f4acfc19a5953a68b2074fae942ad3563ef28c33b0cac9a93adcffffffff0260f73608000000001976a9148fd139bb39ced713f231c58a4d07bf6954d1c20188ac41420f00000000001976a9146c772e9cf96371bba3da8cb733da70a2fcf2007888ac00000000"
-tt-delout1-out.hex (test\util\data) line 2 : e8df971a6a04fafcb4f6babf75dc811c5cdaa0734cddbe9b942ce75b34ffffffff20d9a261ee27aa1bd92e7db2fdca935909a40b648e974cd24a10d63b68b94039dd0000006b483045022012b3138c591bf7154b6fef457f2c4a3c7162225003788ac0024a99355865ff13022100b71b125ae1ffb2e1d1571f580cd3ebc8cd049a2d7a8a41f138ba94aeb982106f012103091137f3ef23f4acfc19a5953a68b2074fae942ad3563ef28c33b0cac9a93adcffffffff50f179d5d16cd872f9a63c26c448464ae9bd95cd9421c0476113b5d314571b71010000006b483045022100f834ccc8b22ee72712a3e5e6ef4acb8b2fb791b5385b70e2cd4332674d6667f4022024fbda0a997e0c253503f217501f508a4d56edce2c813ecdd9ad796dbeba907401210234b9d9413f247bb78cd3293b7b65a2c38018ba5621ea9ee737f3a6a3523fb4cdffffffff551b865d1568ac0a305e5f9c5dae6c540982334efbe789074318e0efc5b564631b0000006b48304502203b2fd1e39ae0e469d7a15768f262661b0de41470daf0fe8c4fd0c26542a0870002210081c57e331f9a2d214457d953e3542904727ee412c63028113635d7224da3dccc012103f1575d6124ac78be398c25b31146d08313c6072d23a4d7df5ac6a9f87346c64cffffffff57503e5a016189d407a721791459280875264f908ca2c5d4862c01386e7fb50b470400006b48304502206947a9c54f0664ece4430fd4ae999891dc50bb6126bc36b6a15a3189f29d25e9022100a86cfc4e2fdd9e39a20e305cfd1b76509c67b3e313e0f118229105caa0e823c9012103f1575d6124ac78be398c25b31146d08313c6072d23a4d7df5ac6a9f87346c64cffffffff3f16c1fb9d3e1a26d872933e955df85ee7f3f817711062b00b54a2144827349b250000006b483045022100c7128fe10b2d38744ae8177776054c29fc8ec13f07207723e70766ab7164847402201d2cf09009b9596de74c0183d1ab832e5edddb7a9965880bb400097e850850f8012103f1575d6124ac78be398c25b31146d08313c6072d23a4d7df5ac6a9f87346c64cffffffff4142a69d85b8498af214f0dd427b6ab29c240a0b8577e2944d37a7d8c05c6bb8140000006b48304502203b89a71628a28cc3703d170ca3be77786cff6b867e38a18b719705f8a326578f022100b2a9879e1acf621faa6466c207746a7f3eb4c8514c1482969aba3f2a957f1321012103f1575d6124ac78be398c25b31146d08313c6072d23a4d7df5ac6a9f87346c64cffffffff36e2feecc0a4bff7480015d42c12121932db389025ed0ac1d344ecee53230a3df20000006c493046022100ef794a8ef7fd6752d2a183c18866ff6e8dc0f5bd889a63e2c21cf303a6302461022100c1b09662d9e92988c3f9fcf17d1bcc79b5403647095d7212b9f8a1278a532d68012103091137f3ef23f4acfc19a5953a68b2074fae942ad3563ef28c33b0cac9a93adcffffffff0160f73608000000001976a9148fd139bb39ced713f231c58a4d07bf6954d1c20188ac00000000
-tt-delout1-out.json (test\util\data) line 148 :                 "asm": "3045022100f834ccc8b22ee72712a3e5e6ef4acb8b2fb791b5385b70e2cd4332674d6667f4022024fbda0a997e0c253503f217501f508a4d56edce2c813ecdd9ad796dbeba9074[ALL] 0234b9d9413f247bb78cd3293b7b65a2c38018ba5621ea9ee737f3a6a3523fb4cd",
-tt-delout1-out.json (test\util\data) line 149 :                 "hex": "483045022100f834ccc8b22ee72712a3e5e6ef4acb8b2fb791b5385b70e2cd4332674d6667f4022024fbda0a997e0c253503f217501f508a4d56edce2c813ecdd9ad796dbeba907401210234b9d9413f247bb78cd3293b7b65a2c38018ba5621ea9ee737f3a6a3523fb4cd"
-tt-delout1-out.json (test\util\data) line 157 :                 "asm": "304502203b2fd1e39ae0e469d7a15768f262661b0de41470daf0fe8c4fd0c26542a0870002210081c57e331f9a2d214457d953e3542904727ee412c63028113635d7224da3dccc[ALL] 03f1575d6124ac78be398c25b31146d08313c6072d23a4d7df5ac6a9f87346c64c",
-tt-delout1-out.json (test\util\data) line 158 :                 "hex": "48304502203b2fd1e39ae0e469d7a15768f262661b0de41470daf0fe8c4fd0c26542a0870002210081c57e331f9a2d214457d953e3542904727ee412c63028113635d7224da3dccc012103f1575d6124ac78be398c25b31146d08313c6072d23a4d7df5ac6a9f87346c64c"
-tt-delout1-out.json (test\util\data) line 215 : 0121027a759be8df971a6a04fafcb4f6babf75dc811c5cdaa0734cddbe9b942ce75b34ffffffff20d9a261ee27aa1bd92e7db2fdca935909a40b648e974cd24a10d63b68b94039dd0000006b483045022012b3138c591bf7154b6fef457f2c4a3c7162225003788ac0024a99355865ff13022100b71b125ae1ffb2e1d1571f580cd3ebc8cd049a2d7a8a41f138ba94aeb982106f012103091137f3ef23f4acfc19a5953a68b2074fae942ad3563ef28c33b0cac9a93adcffffffff50f179d5d16cd872f9a63c26c448464ae9bd95cd9421c0476113b5d314571b71010000006b483045022100f834ccc8b22ee72712a3e5e6ef4acb8b2fb791b5385b70e2cd4332674d6667f4022024fbda0a997e0c253503f217501f508a4d56edce2c813ecdd9ad796dbeba907401210234b9d9413f247bb78cd3293b7b65a2c38018ba5621ea9ee737f3a6a3523fb4cdffffffff551b865d1568ac0a305e5f9c5dae6c540982334efbe789074318e0efc5b564631b0000006b48304502203b2fd1e39ae0e469d7a15768f262661b0de41470daf0fe8c4fd0c26542a0870002210081c57e331f9a2d214457d953e3542904727ee412c63028113635d7224da3dccc012103f1575d6124ac78be398c25b31146d08313c6072d23a4d7df5ac6a9f87346c64cffffffff57503e5a016189d407a721791459280875264f908ca2c5d4862c01386e7fb50b470400006b48304502206947a9c54f0664ece4430fd4ae999891dc50bb6126bc36b6a15a3189f29d25e9022100a86cfc4e2fdd9e39a20e305cfd1b76509c67b3e313e0f118229105caa0e823c9012103f1575d6124ac78be398c25b31146d08313c6072d23a4d7df5ac6a9f87346c64cffffffff3f16c1fb9d3e1a26d872933e955df85ee7f3f817711062b00b54a2144827349b250000006b483045022100c7128fe10b2d38744ae8177776054c29fc8ec13f07207723e70766ab7164847402201d2cf09009b9596de74c0183d1ab832e5edddb7a9965880bb400097e850850f8012103f1575d6124ac78be398c25b31146d08313c6072d23a4d7df5ac6a9f87346c64cffffffff4142a69d85b8498af214f0dd427b6ab29c240a0b8577e2944d37a7d8c05c6bb8140000006b48304502203b89a71628a28cc3703d170ca3be77786cff6b867e38a18b719705f8a326578f022100b2a9879e1acf621faa6466c207746a7f3eb4c8514c1482969aba3f2a957f1321012103f1575d6124ac78be398c25b31146d08313c6072d23a4d7df5ac6a9f87346c64cffffffff36e2feecc0a4bff7480015d42c12121932db389025ed0ac1d344ecee53230a3df20000006c493046022100ef794a8ef7fd6752d2a183c18866ff6e8dc0f5bd889a63e2c21cf303a6302461022100c1b09662d9e92988c3f9fcf17d1bcc79b5403647095d7212b9f8a1278a532d68012103091137f3ef23f4acfc19a5953a68b2074fae942ad3563ef28c33b0cac9a93adcffffffff0160f73608000000001976a9148fd139bb39ced713f231c58a4d07bf6954d1c20188ac00000000"
-tt-locktime317000-out.hex (test\util\data) line 2 : e8df971a6a04fafcb4f6babf75dc811c5cdaa0734cddbe9b942ce75b34ffffffff20d9a261ee27aa1bd92e7db2fdca935909a40b648e974cd24a10d63b68b94039dd0000006b483045022012b3138c591bf7154b6fef457f2c4a3c7162225003788ac0024a99355865ff13022100b71b125ae1ffb2e1d1571f580cd3ebc8cd049a2d7a8a41f138ba94aeb982106f012103091137f3ef23f4acfc19a5953a68b2074fae942ad3563ef28c33b0cac9a93adcffffffff50f179d5d16cd872f9a63c26c448464ae9bd95cd9421c0476113b5d314571b71010000006b483045022100f834ccc8b22ee72712a3e5e6ef4acb8b2fb791b5385b70e2cd4332674d6667f4022024fbda0a997e0c253503f217501f508a4d56edce2c813ecdd9ad796dbeba907401210234b9d9413f247bb78cd3293b7b65a2c38018ba5621ea9ee737f3a6a3523fb4cdffffffff551b865d1568ac0a305e5f9c5dae6c540982334efbe789074318e0efc5b564631b0000006b48304502203b2fd1e39ae0e469d7a15768f262661b0de41470daf0fe8c4fd0c26542a0870002210081c57e331f9a2d214457d953e3542904727ee412c63028113635d7224da3dccc012103f1575d6124ac78be398c25b31146d08313c6072d23a4d7df5ac6a9f87346c64cffffffff57503e5a016189d407a721791459280875264f908ca2c5d4862c01386e7fb50b470400006b48304502206947a9c54f0664ece4430fd4ae999891dc50bb6126bc36b6a15a3189f29d25e9022100a86cfc4e2fdd9e39a20e305cfd1b76509c67b3e313e0f118229105caa0e823c9012103f1575d6124ac78be398c25b31146d08313c6072d23a4d7df5ac6a9f87346c64cffffffff3f16c1fb9d3e1a26d872933e955df85ee7f3f817711062b00b54a2144827349b250000006b483045022100c7128fe10b2d38744ae8177776054c29fc8ec13f07207723e70766ab7164847402201d2cf09009b9596de74c0183d1ab832e5edddb7a9965880bb400097e850850f8012103f1575d6124ac78be398c25b31146d08313c6072d23a4d7df5ac6a9f87346c64cffffffff4142a69d85b8498af214f0dd427b6ab29c240a0b8577e2944d37a7d8c05c6bb8140000006b48304502203b89a71628a28cc3703d170ca3be77786cff6b867e38a18b719705f8a326578f022100b2a9879e1acf621faa6466c207746a7f3eb4c8514c1482969aba3f2a957f1321012103f1575d6124ac78be398c25b31146d08313c6072d23a4d7df5ac6a9f87346c64cffffffff36e2feecc0a4bff7480015d42c12121932db389025ed0ac1d344ecee53230a3df20000006c493046022100ef794a8ef7fd6752d2a183c18866ff6e8dc0f5bd889a63e2c21cf303a6302461022100c1b09662d9e92988c3f9fcf17d1bcc79b5403647095d7212b9f8a1278a532d68012103091137f3ef23f4acfc19a5953a68b2074fae942ad3563ef28c33b0cac9a93adcffffffff0260f73608000000001976a9148fd139bb39ced713f231c58a4d07bf6954d1c20188ac41420f00000000001976a9146c772e9cf96371bba3da8cb733da70a2fcf2007888ac48d60400
-tt-locktime317000-out.json (test\util\data) line 148 :                 "asm": "3045022100f834ccc8b22ee72712a3e5e6ef4acb8b2fb791b5385b70e2cd4332674d6667f4022024fbda0a997e0c253503f217501f508a4d56edce2c813ecdd9ad796dbeba9074[ALL] 0234b9d9413f247bb78cd3293b7b65a2c38018ba5621ea9ee737f3a6a3523fb4cd",
-tt-locktime317000-out.json (test\util\data) line 149 :                 "hex": "483045022100f834ccc8b22ee72712a3e5e6ef4acb8b2fb791b5385b70e2cd4332674d6667f4022024fbda0a997e0c253503f217501f508a4d56edce2c813ecdd9ad796dbeba907401210234b9d9413f247bb78cd3293b7b65a2c38018ba5621ea9ee737f3a6a3523fb4cd"
-tt-locktime317000-out.json (test\util\data) line 157 :                 "asm": "304502203b2fd1e39ae0e469d7a15768f262661b0de41470daf0fe8c4fd0c26542a0870002210081c57e331f9a2d214457d953e3542904727ee412c63028113635d7224da3dccc[ALL] 03f1575d6124ac78be398c25b31146d08313c6072d23a4d7df5ac6a9f87346c64c",
-tt-locktime317000-out.json (test\util\data) line 158 :                 "hex": "48304502203b2fd1e39ae0e469d7a15768f262661b0de41470daf0fe8c4fd0c26542a0870002210081c57e331f9a2d214457d953e3542904727ee412c63028113635d7224da3dccc012103f1575d6124ac78be398c25b31146d08313c6072d23a4d7df5ac6a9f87346c64c"
-tt-locktime317000-out.json (test\util\data) line 228 : 0121027a759be8df971a6a04fafcb4f6babf75dc811c5cdaa0734cddbe9b942ce75b34ffffffff20d9a261ee27aa1bd92e7db2fdca935909a40b648e974cd24a10d63b68b94039dd0000006b483045022012b3138c591bf7154b6fef457f2c4a3c7162225003788ac0024a99355865ff13022100b71b125ae1ffb2e1d1571f580cd3ebc8cd049a2d7a8a41f138ba94aeb982106f012103091137f3ef23f4acfc19a5953a68b2074fae942ad3563ef28c33b0cac9a93adcffffffff50f179d5d16cd872f9a63c26c448464ae9bd95cd9421c0476113b5d314571b71010000006b483045022100f834ccc8b22ee72712a3e5e6ef4acb8b2fb791b5385b70e2cd4332674d6667f4022024fbda0a997e0c253503f217501f508a4d56edce2c813ecdd9ad796dbeba907401210234b9d9413f247bb78cd3293b7b65a2c38018ba5621ea9ee737f3a6a3523fb4cdffffffff551b865d1568ac0a305e5f9c5dae6c540982334efbe789074318e0efc5b564631b0000006b48304502203b2fd1e39ae0e469d7a15768f262661b0de41470daf0fe8c4fd0c26542a0870002210081c57e331f9a2d214457d953e3542904727ee412c63028113635d7224da3dccc012103f1575d6124ac78be398c25b31146d08313c6072d23a4d7df5ac6a9f87346c64cffffffff57503e5a016189d407a721791459280875264f908ca2c5d4862c01386e7fb50b470400006b48304502206947a9c54f0664ece4430fd4ae999891dc50bb6126bc36b6a15a3189f29d25e9022100a86cfc4e2fdd9e39a20e305cfd1b76509c67b3e313e0f118229105caa0e823c9012103f1575d6124ac78be398c25b31146d08313c6072d23a4d7df5ac6a9f87346c64cffffffff3f16c1fb9d3e1a26d872933e955df85ee7f3f817711062b00b54a2144827349b250000006b483045022100c7128fe10b2d38744ae8177776054c29fc8ec13f07207723e70766ab7164847402201d2cf09009b9596de74c0183d1ab832e5edddb7a9965880bb400097e850850f8012103f1575d6124ac78be398c25b31146d08313c6072d23a4d7df5ac6a9f87346c64cffffffff4142a69d85b8498af214f0dd427b6ab29c240a0b8577e2944d37a7d8c05c6bb8140000006b48304502203b89a71628a28cc3703d170ca3be77786cff6b867e38a18b719705f8a326578f022100b2a9879e1acf621faa6466c207746a7f3eb4c8514c1482969aba3f2a957f1321012103f1575d6124ac78be398c25b31146d08313c6072d23a4d7df5ac6a9f87346c64cffffffff36e2feecc0a4bff7480015d42c12121932db389025ed0ac1d344ecee53230a3df20000006c493046022100ef794a8ef7fd6752d2a183c18866ff6e8dc0f5bd889a63e2c21cf303a6302461022100c1b09662d9e92988c3f9fcf17d1bcc79b5403647095d7212b9f8a1278a532d68012103091137f3ef23f4acfc19a5953a68b2074fae942ad3563ef28c33b0cac9a93adcffffffff0260f73608000000001976a9148fd139bb39ced713f231c58a4d07bf6954d1c20188ac41420f00000000001976a9146c772e9cf96371bba3da8cb733da70a2fcf2007888ac48d60400"
-tx394b54bb.hex (test\util\data) line 2 : e8df971a6a04fafcb4f6babf75dc811c5cdaa0734cddbe9b942ce75b34ffffffff20d9a261ee27aa1bd92e7db2fdca935909a40b648e974cd24a10d63b68b94039dd0000006b483045022012b3138c591bf7154b6fef457f2c4a3c7162225003788ac0024a99355865ff13022100b71b125ae1ffb2e1d1571f580cd3ebc8cd049a2d7a8a41f138ba94aeb982106f012103091137f3ef23f4acfc19a5953a68b2074fae942ad3563ef28c33b0cac9a93adcffffffff50f179d5d16cd872f9a63c26c448464ae9bd95cd9421c0476113b5d314571b71010000006b483045022100f834ccc8b22ee72712a3e5e6ef4acb8b2fb791b5385b70e2cd4332674d6667f4022024fbda0a997e0c253503f217501f508a4d56edce2c813ecdd9ad796dbeba907401210234b9d9413f247bb78cd3293b7b65a2c38018ba5621ea9ee737f3a6a3523fb4cdffffffff551b865d1568ac0a305e5f9c5dae6c540982334efbe789074318e0efc5b564631b0000006b48304502203b2fd1e39ae0e469d7a15768f262661b0de41470daf0fe8c4fd0c26542a0870002210081c57e331f9a2d214457d953e3542904727ee412c63028113635d7224da3dccc012103f1575d6124ac78be398c25b31146d08313c6072d23a4d7df5ac6a9f87346c64cffffffff57503e5a016189d407a721791459280875264f908ca2c5d4862c01386e7fb50b470400006b48304502206947a9c54f0664ece4430fd4ae999891dc50bb6126bc36b6a15a3189f29d25e9022100a86cfc4e2fdd9e39a20e305cfd1b76509c67b3e313e0f118229105caa0e823c9012103f1575d6124ac78be398c25b31146d08313c6072d23a4d7df5ac6a9f87346c64cffffffff3f16c1fb9d3e1a26d872933e955df85ee7f3f817711062b00b54a2144827349b250000006b483045022100c7128fe10b2d38744ae8177776054c29fc8ec13f07207723e70766ab7164847402201d2cf09009b9596de74c0183d1ab832e5edddb7a9965880bb400097e850850f8012103f1575d6124ac78be398c25b31146d08313c6072d23a4d7df5ac6a9f87346c64cffffffff4142a69d85b8498af214f0dd427b6ab29c240a0b8577e2944d37a7d8c05c6bb8140000006b48304502203b89a71628a28cc3703d170ca3be77786cff6b867e38a18b719705f8a326578f022100b2a9879e1acf621faa6466c207746a7f3eb4c8514c1482969aba3f2a957f1321012103f1575d6124ac78be398c25b31146d08313c6072d23a4d7df5ac6a9f87346c64cffffffff36e2feecc0a4bff7480015d42c12121932db389025ed0ac1d344ecee53230a3df20000006c493046022100ef794a8ef7fd6752d2a183c18866ff6e8dc0f5bd889a63e2c21cf303a6302461022100c1b09662d9e92988c3f9fcf17d1bcc79b5403647095d7212b9f8a1278a532d68012103091137f3ef23f4acfc19a5953a68b2074fae942ad3563ef28c33b0cac9a93adcffffffff0260f73608000000001976a9148fd139bb39ced713f231c58a4d07bf6954d1c20188ac41420f00000000001976a9146c772e9cf96371bba3da8cb733da70a2fcf2007888ac00000000
-txcreatemultisig3.json (test\util\data) line 2 :     "txid": "ccc552220b46a3b5140048b03395987ce4f0fa1ddf8c635bba1fa44e0f8c1d7f",
-txcreatemultisig3.json (test\util\data) line 3 :     "hash": "ccc552220b46a3b5140048b03395987ce4f0fa1ddf8c635bba1fa44e0f8c1d7f",
-tx_invalid.json (src\test\data) line 46 : "01000000010001000000000000000000000000000000000000000000000000000000000000000000006d483045022027deccc14aa6668e78a8c9da3484fbcd4f9dcc9bb7d1b85146314b21b9ae4d86022100d0b43dece8cfb07348de0ca8bc5b86276fa88f7f2138381128b7c36ab2e42264012321029bb13463ddd5d2cc05da6e84e37536cb9525703cfd8f43afdb414988987a92f6acffffffff020040075af075070001510001000000000000015100000000", true],
-tx_invalid.json (src\test\data) line 50 : "01000000020001000000000000000000000000000000000000000000000000000000000000000000006c47304402204bb1197053d0d7799bf1b30cd503c44b58d6240cccbdc85b6fe76d087980208f02204beeed78200178ffc6c74237bb74b3f276bbb4098b5605d814304fe128bf1431012321039e8815e15952a7c3fada1905f8cf55419837133bd7756c0ef14fc8dfe50c0deaacffffffff0001000000000000000000000000000000000000000000000000000000000000000000006c47304402202306489afef52a6f62e90bf750bbcdf40c06f5c6b138286e6b6b86176bb9341802200dba98486ea68380f47ebb19a7df173b99e6bc9c681d6ccf3bde31465d1f16b3012321039e8815e15952a7c3fada1905f8cf55419837133bd7756c0ef14fc8dfe50c0deaacffffffff010000000000000000015100000000", true],
-tx_valid.json (src\test\data) line 13 : [[["60a20bd93aa49ab4b28d514ec10b06e1829ce6818ec06cd3aabd013ebcdc4bb1", 0, "1 0x41 0x04cc71eb30d653c0c3163990c47b976f3fb3f37cccdcbedb169a1dfef58bbfbfaff7d8a473e7e2e6d317b87bafe8bde97e3cf8f065dec022b51d11fcdd0d348ac4 0x41 0x0461cbdcc5409fb4b4d42b51d33381354d80e550078cb532a34bfa2fcfdeb7d76519aecc62770f5b0e4ef8551946d8a540911abe3e7854a26f39f58b25c15342af 2 OP_CHECKMULTISIG"]],
-tx_valid.json (src\test\data) line 18 : [[["60a20bd93aa49ab4b28d514ec10b06e1829ce6818ec06cd3aabd013ebcdc4bb1", 0, "1 0x41 0x04cc71eb30d653c0c3163990c47b976f3fb3f37cccdcbedb169a1dfef58bbfbfaff7d8a473e7e2e6d317b87bafe8bde97e3cf8f065dec022b51d11fcdd0d348ac4 0x41 0x0461cbdcc5409fb4b4d42b51d33381354d80e550078cb532a34bfa2fcfdeb7d76519aecc62770f5b0e4ef8551946d8a540911abe3e7854a26f39f58b25c15342af 2 OP_CHECKMULTISIG"]],
-tx_valid.json (src\test\data) line 61 : "01000000010001000000000000000000000000000000000000000000000000000000000000000000006d483045022027deccc14aa6668e78a8c9da3484fbcd4f9dcc9bb7d1b85146314b21b9ae4d86022100d0b43dece8cfb07348de0ca8bc5b86276fa88f7f2138381128b7c36ab2e42264012321029bb13463ddd5d2cc05da6e84e37536cb9525703cfd8f43afdb414988987a92f6acffffffff020040075af075070001510000000000000000015100000000", true],
-util_tests(5783).cpp (scn.si4project\Backup) line 117 :     const char *argv_test[] = {"-ignored", "-a", "-b", "-ccc=argument", "-ccc=multiple", "f", "-d=e"};
-util_tests(5783).cpp (scn.si4project\Backup) line 127 :     // -a, -b and -ccc end up in map, -d ignored because it is after
-util_tests(5783).cpp (scn.si4project\Backup) line 130 :     BOOST_CHECK(mapArgs.count("-a") && mapArgs.count("-b") && mapArgs.count("-ccc") 
-util_tests(5783).cpp (scn.si4project\Backup) line 132 :     BOOST_CHECK(mapMultiArgs.count("-a") && mapMultiArgs.count("-b") && mapMultiArgs.count("-ccc") 
-util_tests(5783).cpp (scn.si4project\Backup) line 135 :     BOOST_CHECK(mapArgs["-a"] == "" && mapArgs["-ccc"] == "multiple");
-util_tests(5783).cpp (scn.si4project\Backup) line 136 :     BOOST_CHECK(mapMultiArgs["-ccc"].size() == 2);
-util_tests.cpp (src\test) line 117 :     const char *argv_test[] = {"-ignored", "-a", "-b", "-ccc=argument", "-ccc=multiple", "f", "-d=e"};
-util_tests.cpp (src\test) line 127 :     // -a, -b and -ccc end up in map, -d ignored because it is after
-util_tests.cpp (src\test) line 130 :     BOOST_CHECK(mapArgs.count("-a") && mapArgs.count("-b") && mapArgs.count("-ccc") 
-util_tests.cpp (src\test) line 132 :     BOOST_CHECK(mapMultiArgs.count("-a") && mapMultiArgs.count("-b") && mapMultiArgs.count("-ccc") 
-util_tests.cpp (src\test) line 135 :     BOOST_CHECK(mapArgs["-a"] == "" && mapArgs["-ccc"] == "multiple");
-util_tests.cpp (src\test) line 136 :     BOOST_CHECK(mapMultiArgs["-ccc"].size() == 2);
-xtrans.mk (depends\packages) line 5 : $(package)_sha256_hash=054d4ee3efd52508c753e9f7bc655ef185a29bd2850dd9e2fc2ccc33544f583a
----- CCC Search Errors Encountered (130) ----
-The following 130 files could not be processed:
+ ---- coingo Matches (154 in 27 files) ----
+addrman.cpp (src) line 306 :     printf("Moving %s to tried\n", addr.ToString().c_str());//coingo.vip,此处校验节点
+addrman.h (src) line 427 :     bool Add(const std::vector<CAddress> &vAddr, const CNetAddr& source, int64 nTimePenalty = 0)//coingo.vip决定是否加成功
+checkpoints(3396).cpp (scn.si4project\Backup) line 41 :        ( 0, hashGenesisBlockOfficial )//<coingo.vip>
+checkpoints.cpp (src) line 41 :        ( 0, hashGenesisBlockOfficial )//<coingo.vip>
+checkpointsync(3428).cpp (scn.si4project\Backup) line 72 : // const std::string CSyncCheckpoint::strMainPubKey = "04c0c707c28533fd5c9f79d2d3a2d80dff259ad8f915241cd14608fb9bc07c74830efe8438f2b272a866b4af5e0c2cc2a9909972aefbd976937e39f46bb38c277c";<coingo.vip>
+checkpointsync.cpp (src) line 72 : // const std::string CSyncCheckpoint::strMainPubKey = "04c0c707c28533fd5c9f79d2d3a2d80dff259ad8f915241cd14608fb9bc07c74830efe8438f2b272a866b4af5e0c2cc2a9909972aefbd976937e39f46bb38c277c";<coingo.vip>
+clientmodel.cpp (src\qt) line 58 :         return QDateTime::fromTime_t(1231006505); // Genesis block's time<coingo.vip>
+clientversion(3553).h (scn.si4project\Backup) line 31 : //coingo.vip
+clientversion.h (src) line 31 : //coingo.vip
+kernel(6193).cpp (scn.si4project\Backup) line 14 : unsigned int nProtocolV03SwitchTime     = 1545019186;// 1363800000;<coingo.vip>
+kernel(6193).cpp (scn.si4project\Backup) line 17 : unsigned int nProtocolV04SwitchTime     = 1546019186;//1399300000;<coingo.vip>
+kernel(6193).cpp (scn.si4project\Backup) line 20 : unsigned int nProtocolV05SwitchTime     = 1650504755;// 1461700000;<coingo.vip>
+kernel.cpp (src) line 14 : unsigned int nProtocolV03SwitchTime     = 1545019186;// 1363800000;<coingo.vip>
+kernel.cpp (src) line 17 : unsigned int nProtocolV04SwitchTime     = 1546019186;//1399300000;<coingo.vip>
+kernel.cpp (src) line 20 : unsigned int nProtocolV05SwitchTime     = 1650504755;// 1461700000;<coingo.vip>
+main(1091).cpp (scn.si4project\Backup) line 470 :     return ((nValue*1000.0)/(3*((int)GetSerializeSize(SER_DISK,0)+148)) < CTransaction::nMinRelayTxFee);//fixed coingo.vip
+main(1091).cpp (scn.si4project\Backup) line 1203 :     return   0.0001*COIN;//<coingo.vip>定义pow奖励
+main(1091).cpp (scn.si4project\Backup) line 1235 : int64 GetProofOfStakeReward(int64 nCoinAge,int64 balance)//<coingo.vip>
+main(1091).cpp (scn.si4project\Backup) line 1252 :     int year =  std::ceil(pindexBest->nHeight / (24 * 60 / 2 * 365));//coingo.vip利率衰减部分
+main(1091).cpp (scn.si4project\Backup) line 1255 :     float rate = 12*pow(0.8,year);//coingo.vip
+main(1091).cpp (scn.si4project\Backup) line 1257 :     int64 nSubsidy = ::ceill(( rate / 100.0 ) * nCoinAge / 365) * COIN;//coingo.vip
+main(1091).cpp (scn.si4project\Backup) line 2504 :     // Check coinbase reward coingo.vip
+main(1091).cpp (scn.si4project\Backup) line 3394 :         txNew.nTime = 1545019100;//<coingo.vip>
+main(1091).cpp (scn.si4project\Backup) line 3404 :         block.nTime    = 1545019100;// <coingo.vip>
+main(1091).cpp (scn.si4project\Backup) line 3407 :         block.nNonce = ByteReverse(13550653);//<coingo.vip>校验
+main(1091).cpp (scn.si4project\Backup) line 3444 :          while(true)//<coingo.vip>校验
+main(1091).cpp (scn.si4project\Backup) line 3461 :                       printf("nNonceFound 11111111 coingo.vip:%d \n" ,nNonceFound);
+main(1091).cpp (scn.si4project\Backup) line 3464 :                       printf("GetHash 222222222 coingo.vip:%s\n" ,block.GetHash().ToString().c_str());
+main(1091).cpp (scn.si4project\Backup) line 3476 :         printf("block.nBits 2222222222222222222 coingo.vip:%d \n" ,block.nBits);
+main(1091).cpp (scn.si4project\Backup) line 3477 :         assert(block.hashMerkleRoot == uint256("0xcfdb867b287ada503837c15b1a4da12e0965ca58fa6c8c07b9abc86b76d93580"));//<coingo.vip>校验
+main(1091).cpp (scn.si4project\Backup) line 3480 :      //   assert(hash == hashGenesisBlock);//<coingo.vip>
+main(1091).cpp (scn.si4project\Backup) line 3484 :             assert(block.CheckBlock(state));//<coingo.vip>
+main(1091).cpp (scn.si4project\Backup) line 5188 :                 pblock->vtx[0].vout[0].nValue = 500000000 * COIN;//首块产量<coingo.vip>
+main(1091).cpp (scn.si4project\Backup) line 5194 :         //     pblock->vtx[0].vout[0].nValue = reward * pow(0.6,year);//<coingo.vip>
+main(1091).cpp (scn.si4project\Backup) line 5195 :         pblock->vtx[0].vout[0].nValue = reward//<coingo.vip>
+main(1091).cpp (scn.si4project\Backup) line 5413 :         {//大于1000000000不让用pow了<coingo.vip>
+main(1122).h (scn.si4project\Backup) line 62 : // static const int64 MAX_MONEY = 2000000000 * COIN;<coingo.vip>
+main(1122).h (scn.si4project\Backup) line 63 : static const int64 MAX_MONEY = 1000000000 * COIN;//<coingo.vip>
+main(1122).h (scn.si4project\Backup) line 65 : static const int64 MIN_TX_FEE = 0 *COIN;//<coingo.vip>改最小转账限制
+main(1122).h (scn.si4project\Backup) line 66 : static const int64 MAX_TX_FEE = 100 *COIN;//<coingo.vip>改最小转账限制
+main(1122).h (scn.si4project\Backup) line 67 : static const int64 MIN_RELAY_TX_FEE = 0 *COIN;//<coingo.vip>改最小限制
+main(1122).h (scn.si4project\Backup) line 68 : static const int64 MAX_MINT_PROOF_OF_WORK = 1200000000 * COIN;//<coingo.vip>最大挖到的利息值
+main(1122).h (scn.si4project\Backup) line 69 : static const int64 MIN_TXOUT_AMOUNT = 0 *COIN;//<coingo.vip>改最小限制
+main(1122).h (scn.si4project\Backup) line 74 : static const int STAKE_MIN_AGE = 60 * 60 * 24 * 14; // minimum age for coin age<coingo.vip>
+main(1122).h (scn.si4project\Backup) line 76 : static const int STAKE_MAX_AGE = 60 * 60 * 24 * 365 * 4; // stake age of full weight 4年 <coingo.vip>
+main(1122).h (scn.si4project\Backup) line 86 : static const uint256 hashGenesisBlockOfficial("0x000000d80ec5afd2f398a352b8293093760acf14884a164be5b3b0a9995181ab");//<coingo.vip>校验
+main(7504).cpp (scn.si4project\Backup) line 470 :     return ((nValue*1000.0)/(3*((int)GetSerializeSize(SER_DISK,0)+148)) < CTransaction::nMinRelayTxFee);//fixed coingo.vip
+main(7504).cpp (scn.si4project\Backup) line 1203 :     return   0.0001*COIN;//<coingo.vip>定义pow奖励
+main(7504).cpp (scn.si4project\Backup) line 1235 : int64 GetProofOfStakeReward(int64 nCoinAge,int64 balance)//<coingo.vip>
+main(7504).cpp (scn.si4project\Backup) line 1252 :     int year =  std::ceil(pindexBest->nHeight / (24 * 60 / 2 * 365));//coingo.vip利率衰减部分
+main(7504).cpp (scn.si4project\Backup) line 1255 :     float rate = 12*pow(0.8,year);//coingo.vip
+main(7504).cpp (scn.si4project\Backup) line 1257 :     int64 nSubsidy = ::ceill(( rate / 100.0 ) * nCoinAge / 365) * COIN;//coingo.vip
+main(7504).cpp (scn.si4project\Backup) line 2504 :     // Check coinbase reward coingo.vip
+main(7504).cpp (scn.si4project\Backup) line 3394 :         txNew.nTime = 1545019100;//<coingo.vip>
+main(7504).cpp (scn.si4project\Backup) line 3404 :         block.nTime    = 1545019100;// <coingo.vip>
+main(7504).cpp (scn.si4project\Backup) line 3407 :         block.nNonce = ByteReverse(13550653);//<coingo.vip>校验
+main(7504).cpp (scn.si4project\Backup) line 3444 :          while(true)//<coingo.vip>校验
+main(7504).cpp (scn.si4project\Backup) line 3461 :                       printf("nNonceFound 11111111 coingo.vip:%d \n" ,nNonceFound);
+main(7504).cpp (scn.si4project\Backup) line 3464 :                       printf("GetHash 222222222 coingo.vip:%s\n" ,block.GetHash().ToString().c_str());
+main(7504).cpp (scn.si4project\Backup) line 3476 :         printf("block.nBits 2222222222222222222 coingo.vip:%d \n" ,block.nBits);
+main(7504).cpp (scn.si4project\Backup) line 3477 :         assert(block.hashMerkleRoot == uint256("0xcfdb867b287ada503837c15b1a4da12e0965ca58fa6c8c07b9abc86b76d93580"));//<coingo.vip>校验
+main(7504).cpp (scn.si4project\Backup) line 3480 :      //   assert(hash == hashGenesisBlock);//<coingo.vip>
+main(7504).cpp (scn.si4project\Backup) line 3484 :             assert(block.CheckBlock(state));//<coingo.vip>
+main(7504).cpp (scn.si4project\Backup) line 5188 :                 pblock->vtx[0].vout[0].nValue = 500000000 * COIN;//首块产量<coingo.vip>
+main(7504).cpp (scn.si4project\Backup) line 5194 :         //     pblock->vtx[0].vout[0].nValue = reward * pow(0.6,year);//<coingo.vip>
+main(7504).cpp (scn.si4project\Backup) line 5195 :         pblock->vtx[0].vout[0].nValue = reward//<coingo.vip>
+main(7504).cpp (scn.si4project\Backup) line 5413 :         {//大于1000000000不让用pow了<coingo.vip>
+main(7812).cpp (scn.si4project\Backup) line 470 :     return ((nValue*1000.0)/(3*((int)GetSerializeSize(SER_DISK,0)+148)) < CTransaction::nMinRelayTxFee);//fixed coingo.vip
+main(7812).cpp (scn.si4project\Backup) line 1203 :     return   0.0001*COIN;//<coingo.vip>定义pow奖励
+main(7812).cpp (scn.si4project\Backup) line 1235 : int64 GetProofOfStakeReward(int64 nCoinAge,int64 balance)//<coingo.vip>
+main(7812).cpp (scn.si4project\Backup) line 1252 :     int year =  std::ceil(pindexBest->nHeight / (24 * 60 / 2 * 365));//coingo.vip利率衰减部分
+main(7812).cpp (scn.si4project\Backup) line 1255 :     float rate = 12*pow(0.8,year);//coingo.vip
+main(7812).cpp (scn.si4project\Backup) line 1257 :     int64 nSubsidy = ::ceill(( rate / 100.0 ) * nCoinAge / 365) * COIN;//coingo.vip
+main(7812).cpp (scn.si4project\Backup) line 2504 :     // Check coinbase reward coingo.vip
+main(7812).cpp (scn.si4project\Backup) line 3394 :         txNew.nTime = 1545019100;//<coingo.vip>
+main(7812).cpp (scn.si4project\Backup) line 3404 :         block.nTime    = 1545019100;// <coingo.vip>
+main(7812).cpp (scn.si4project\Backup) line 3407 :         block.nNonce = ByteReverse(13550653);//<coingo.vip>校验
+main(7812).cpp (scn.si4project\Backup) line 3444 :          while(true)//<coingo.vip>校验
+main(7812).cpp (scn.si4project\Backup) line 3461 :                       printf("nNonceFound 11111111 coingo.vip:%d \n" ,nNonceFound);
+main(7812).cpp (scn.si4project\Backup) line 3464 :                       printf("GetHash 222222222 coingo.vip:%s\n" ,block.GetHash().ToString().c_str());
+main(7812).cpp (scn.si4project\Backup) line 3476 :         printf("block.nBits 2222222222222222222 coingo.vip:%d \n" ,block.nBits);
+main(7812).cpp (scn.si4project\Backup) line 3477 :         assert(block.hashMerkleRoot == uint256("0xcfdb867b287ada503837c15b1a4da12e0965ca58fa6c8c07b9abc86b76d93580"));//<coingo.vip>校验
+main(7812).cpp (scn.si4project\Backup) line 3480 :      //   assert(hash == hashGenesisBlock);//<coingo.vip>
+main(7812).cpp (scn.si4project\Backup) line 3484 :             assert(block.CheckBlock(state));//<coingo.vip>
+main(7812).cpp (scn.si4project\Backup) line 5188 :                 pblock->vtx[0].vout[0].nValue = 500000000 * COIN;//首块产量<coingo.vip>
+main(7812).cpp (scn.si4project\Backup) line 5194 :         //     pblock->vtx[0].vout[0].nValue = reward * pow(0.6,year);//<coingo.vip>
+main(7812).cpp (scn.si4project\Backup) line 5195 :         pblock->vtx[0].vout[0].nValue = reward;//<coingo.vip>
+main(7812).cpp (scn.si4project\Backup) line 5413 :         {//大于1000000000不让用pow了<coingo.vip>
+main(7843).h (scn.si4project\Backup) line 62 : // static const int64 MAX_MONEY = 2000000000 * COIN;<coingo.vip>
+main(7843).h (scn.si4project\Backup) line 63 : static const int64 MAX_MONEY = 1000000000 * COIN;//<coingo.vip>
+main(7843).h (scn.si4project\Backup) line 65 : static const int64 MIN_TX_FEE = 0 *COIN;//<coingo.vip>改最小转账限制
+main(7843).h (scn.si4project\Backup) line 66 : static const int64 MAX_TX_FEE = 100 *COIN;//<coingo.vip>改最小转账限制
+main(7843).h (scn.si4project\Backup) line 67 : static const int64 MIN_RELAY_TX_FEE = 0 *COIN;//<coingo.vip>改最小限制
+main(7843).h (scn.si4project\Backup) line 68 : static const int64 MAX_MINT_PROOF_OF_WORK = 1200000000 * COIN;//<coingo.vip>最大挖到的利息值
+main(7843).h (scn.si4project\Backup) line 69 : static const int64 MIN_TXOUT_AMOUNT = 0 *COIN;//<coingo.vip>改最小限制
+main(7843).h (scn.si4project\Backup) line 74 : static const int STAKE_MIN_AGE = 60 * 60 * 24 * 14; // minimum age for coin age<coingo.vip>
+main(7843).h (scn.si4project\Backup) line 76 : static const int STAKE_MAX_AGE = 60 * 60 * 24 * 365 * 4; // stake age of full weight 4年 <coingo.vip>
+main(7843).h (scn.si4project\Backup) line 86 : static const uint256 hashGenesisBlockOfficial("0x000000d80ec5afd2f398a352b8293093760acf14884a164be5b3b0a9995181ab");//<coingo.vip>校验
+main.cpp (src) line 470 :     return ((nValue*1000.0)/(3*((int)GetSerializeSize(SER_DISK,0)+148)) < CTransaction::nMinRelayTxFee);//fixed coingo.vip
+main.cpp (src) line 1203 :     return   0.0001*COIN;//<coingo.vip>定义pow奖励
+main.cpp (src) line 1235 : int64 GetProofOfStakeReward(int64 nCoinAge,int64 balance)//<coingo.vip>
+main.cpp (src) line 1252 :     int year =  std::ceil(pindexBest->nHeight / (24 * 60 / 2 * 365));//coingo.vip利率衰减部分
+main.cpp (src) line 1255 :     float rate = 12*pow(0.8,year);//coingo.vip
+main.cpp (src) line 1257 :     int64 nSubsidy = ::ceill(( rate / 100.0 ) * nCoinAge / 365) * COIN;//coingo.vip
+main.cpp (src) line 2504 :     // Check coinbase reward coingo.vip
+main.cpp (src) line 3394 :         txNew.nTime = 1545019100;//<coingo.vip>
+main.cpp (src) line 3404 :         block.nTime    = 1545019100;// <coingo.vip>
+main.cpp (src) line 3407 :         block.nNonce = ByteReverse(15145134);//<coingo.vip>校验
+main.cpp (src) line 3444 :          while(true)//<coingo.vip>校验
+main.cpp (src) line 3461 :                       printf("nNonceFound 11111111 coingo.vip:%d \n" ,nNonceFound);
+main.cpp (src) line 3464 :                       printf("GetHash 222222222 coingo.vip:%s\n" ,block.GetHash().ToString().c_str());
+main.cpp (src) line 3476 :         printf("block.nBits 2222222222222222222 coingo.vip:%d \n" ,block.nBits);
+main.cpp (src) line 3477 :         assert(block.hashMerkleRoot == uint256("0xda9bcbcfdada5b3f1f2d8bebdba3c56c62640540fa364728115914560ba1089e"));//<coingo.vip>校验
+main.cpp (src) line 3480 :      //   assert(hash == hashGenesisBlock);//<coingo.vip>
+main.cpp (src) line 3484 :             assert(block.CheckBlock(state));//<coingo.vip>
+main.cpp (src) line 5188 :                 pblock->vtx[0].vout[0].nValue = 500000000 * COIN;//首块产量<coingo.vip>
+main.cpp (src) line 5194 :         //     pblock->vtx[0].vout[0].nValue = reward * pow(0.6,year);//<coingo.vip>
+main.cpp (src) line 5195 :         pblock->vtx[0].vout[0].nValue = reward;//<coingo.vip>
+main.cpp (src) line 5413 :         {//大于1000000000不让用pow了<coingo.vip>
+main.h (src) line 62 : // static const int64 MAX_MONEY = 2000000000 * COIN;<coingo.vip>
+main.h (src) line 63 : static const int64 MAX_MONEY = 1000000000 * COIN;//<coingo.vip>
+main.h (src) line 65 : static const int64 MIN_TX_FEE = 0 *COIN;//<coingo.vip>改最小转账限制
+main.h (src) line 66 : static const int64 MAX_TX_FEE = 100 *COIN;//<coingo.vip>改最小转账限制
+main.h (src) line 67 : static const int64 MIN_RELAY_TX_FEE = 0 *COIN;//<coingo.vip>改最小限制
+main.h (src) line 68 : static const int64 MAX_MINT_PROOF_OF_WORK = 1200000000 * COIN;//<coingo.vip>最大挖到的利息值
+main.h (src) line 69 : static const int64 MIN_TXOUT_AMOUNT = 0 *COIN;//<coingo.vip>改最小限制
+main.h (src) line 74 : static const int STAKE_MIN_AGE = 60 * 60 * 24 * 14; // minimum age for coin age<coingo.vip>
+main.h (src) line 76 : static const int STAKE_MAX_AGE = 60 * 60 * 24 * 365 * 4; // stake age of full weight 4年 <coingo.vip>
+main.h (src) line 86 : static const uint256 hashGenesisBlockOfficial("0x0000008efb3ff435d6afad3bdfe4b3a629fba87557a6db1eeec7203c2a4f3e70");//<coingo.vip>校验
+net(7709).cpp (scn.si4project\Backup) line 352 : bool GetMyExternalIP(CNetAddr& ipRet)//<coingo.vip>
+net(7709).cpp (scn.si4project\Backup) line 440 :         pszDest ? pszDest : addrConnect.ToString().c_str());//coingo.vip,ljn校验节点
+net(7709).cpp (scn.si4project\Backup) line 444 : 			printf("IsLocal(addrConnect) judge fail");//coingo.vip,ljn
+net(7709).cpp (scn.si4project\Backup) line 459 :     printf("trying connection %s lastseen=%.1fhrs\n",//coingo.vip,ljn校验节点
+net(7709).cpp (scn.si4project\Backup) line 1184 : //<coingo.vip>默认节点
+net.cpp (src) line 352 : bool GetMyExternalIP(CNetAddr& ipRet)//<coingo.vip>
+net.cpp (src) line 440 :         pszDest ? pszDest : addrConnect.ToString().c_str());//coingo.vip,ljn校验节点
+net.cpp (src) line 444 : 			printf("IsLocal(addrConnect) judge fail");//coingo.vip,ljn
+net.cpp (src) line 459 :     printf("trying connection %s lastseen=%.1fhrs\n",//coingo.vip,ljn校验节点
+net.cpp (src) line 1184 : //<coingo.vip>默认节点
+protocol(626).h (scn.si4project\Backup) line 18 : #define PPCOIN_PORT  9966//<coingo.vip>端口号
+protocol.h (src) line 18 : #define PPCOIN_PORT  9966//<coingo.vip>端口号
+StarChainunits.cpp (src\qt) line 37 :     case BTC: return QString("SCN");//coingo.vip定义名字
+util(1216).cpp (scn.si4project\Backup) line 247 : int OutputDebugStringF(const char* pszFormat, ...)//<coingo.vip>
+util(1216).cpp (scn.si4project\Backup) line 322 : ///delete logo<coingo.vip>
+util(1216).cpp (scn.si4project\Backup) line 1173 :               ///coingo.vip add below      
+util(1216).cpp (scn.si4project\Backup) line 1189 :                     ///coingo.vip add above
+util.cpp (src) line 247 : int OutputDebugStringF(const char* pszFormat, ...)//<coingo.vip>
+util.cpp (src) line 322 : ///delete logo<coingo.vip>
+util.cpp (src) line 1173 :               ///coingo.vip add below      
+util.cpp (src) line 1189 :                     ///coingo.vip add above
+wallet(6048).cpp (scn.si4project\Backup) line 1288 :                 // StarChain: sub-cent change is moved to fee <coingo.vip>
+wallet(6048).cpp (scn.si4project\Backup) line 1323 :                     // add the dust to the fee.<coingo.vip>
+wallet.cpp (src) line 1288 :                 // StarChain: sub-cent change is moved to fee <coingo.vip>
+wallet.cpp (src) line 1323 :                     // add the dust to the fee.<coingo.vip>
+---- coingo Search Errors Encountered (140) ----
+The following 140 files could not be processed:
 D:\SI\scn\logo\images\about.png : File could not be opened.
 D:\SI\scn\src\qt\res\images\about.png : File could not be opened.
 D:\SI\scn\logo\icons\add.png : File could not be opened.
@@ -146,140 +231,6 @@ D:\SI\scn\scn.si4project\scn.siproj : File could not be opened.
 D:\SI\scn\scn.si4project\scn.sip_sym : File could not be opened.
 D:\SI\scn\scn.si4project\scn.sip_xab : File could not be opened.
 D:\SI\scn\scn.si4project\scn.sip_xad : File could not be opened.
-D:\SI\scn\scn.si4project\scn.sip_xm : File could not be opened.
-D:\SI\scn\scn.si4project\scn.sip_xsb : File could not be opened.
-D:\SI\scn\scn.si4project\scn.sip_xsd : File could not be opened.
-D:\SI\scn\logo\images\controls\scroll-down.png : File could not be opened.
-D:\SI\scn\src\qt\res\images\controls\scroll-down.png : File could not be opened.
-D:\SI\scn\logo\images\controls\scroll-up.png : File could not be opened.
-D:\SI\scn\src\qt\res\images\controls\scroll-up.png : File could not be opened.
-D:\SI\scn\logo\icons\send.png : File could not be opened.
-D:\SI\scn\src\qt\res\icons\send.png : File could not be opened.
-D:\SI\scn\logo\icons\sign.png : File could not be opened.
-D:\SI\scn\src\qt\res\icons\sign.png : File could not be opened.
-D:\SI\scn\logo\images\splash.png : File could not be opened.
-D:\SI\scn\src\qt\res\images\splash.png : File could not be opened.
-D:\SI\scn\logo\images\splash_testnet.png : File could not be opened.
-D:\SI\scn\src\qt\res\images\splash_testnet.png : File could not be opened.
-D:\SI\scn\logo\icons\StarChain.png : File could not be opened.
-D:\SI\scn\share\pixmaps\StarChain.png : File could not be opened.
-D:\SI\scn\src\qt\res\icons\StarChain.png : File could not be opened.
-D:\SI\scn\logo\pixmaps\StarChain128.png : File could not be opened.
-D:\SI\scn\share\pixmaps\StarChain128.png : File could not be opened.
-D:\SI\scn\logo\pixmaps\StarChain16.png : File could not be opened.
-D:\SI\scn\share\pixmaps\StarChain16.png : File could not be opened.
-D:\SI\scn\logo\pixmaps\StarChain256.png : File could not be opened.
-D:\SI\scn\share\pixmaps\StarChain256.png : File could not be opened.
-D:\SI\scn\logo\pixmaps\StarChain32.png : File could not be opened.
-D:\SI\scn\share\pixmaps\StarChain32.png : File could not be opened.
-D:\SI\scn\logo\pixmaps\StarChain64.png : File could not be opened.
-D:\SI\scn\share\pixmaps\StarChain64.png : File could not be opened.
-D:\SI\scn\doc\StarChain_logo_doxygen.png : File could not be opened.
-D:\SI\scn\logo\doc\StarChain_logo_doxygen.png : File could not be opened.
-D:\SI\scn\logo\icons\StarChain_testnet.png : File could not be opened.
-D:\SI\scn\src\qt\res\icons\StarChain_testnet.png : File could not be opened.
-D:\SI\scn\logo\icons\synced.png : File could not be opened.
-D:\SI\scn\src\qt\res\icons\synced.png : File could not be opened.
-D:\SI\scn\logo\icons\toolbar.png : File could not be opened.
-D:\SI\scn\src\qt\res\icons\toolbar.png : File could not be opened.
-D:\SI\scn\logo\icons\toolbar_testnet.png : File could not be opened.
-D:\SI\scn\src\qt\res\icons\toolbar_testnet.png : File could not be opened.
-D:\SI\scn\logo\icons\transaction0.png : File could not be opened.
-D:\SI\scn\src\qt\res\icons\transaction0.png : File could not be opened.
-D:\SI\scn\logo\icons\transaction2.png : File could not be opened.
-D:\SI\scn\src\qt\res\icons\transaction2.png : File could not be opened.
-D:\SI\scn\logo\images\transparent-background.png : File could not be opened.
-D:\SI\scn\src\qt\res\images\transparent-background.png : File could not be opened.
-D:\SI\scn\logo\icons\tx_inout.png : File could not be opened.
-D:\SI\scn\src\qt\res\icons\tx_inout.png : File could not be opened.
-D:\SI\scn\logo\icons\tx_input.png : File could not be opened.
-D:\SI\scn\src\qt\res\icons\tx_input.png : File could not be opened.
-D:\SI\scn\logo\icons\tx_mined.png : File could not be opened.
-D:\SI\scn\src\qt\res\icons\tx_mined.png : File could not be opened.
-D:\SI\scn\logo\icons\tx_output.png : File could not be opened.
-D:\SI\scn\src\qt\res\icons\tx_output.png : File could not be opened.
-D:\SI\scn\logo\icons\verify.png : File could not be opened.
-D:\SI\scn\src\qt\res\icons\verify.png : File could not be opened.
----- Starchain Search Errors Encountered (142) ----
-The following 142 files could not be processed:
-D:\SI\scn\logo\images\about.png : File could not be opened.
-D:\SI\scn\src\qt\res\images\about.png : File could not be opened.
-D:\SI\scn\logo\icons\add.png : File could not be opened.
-D:\SI\scn\src\qt\res\icons\add.png : File could not be opened.
-D:\SI\scn\logo\icons\address-book.png : File could not be opened.
-D:\SI\scn\src\qt\res\icons\address-book.png : File could not be opened.
-D:\SI\scn\logo\images\controls\caret-down.png : File could not be opened.
-D:\SI\scn\src\qt\res\images\controls\caret-down.png : File could not be opened.
-D:\SI\scn\logo\images\controls\caret-up.png : File could not be opened.
-D:\SI\scn\src\qt\res\images\controls\caret-up.png : File could not be opened.
-D:\SI\scn\logo\icons\clock1.png : File could not be opened.
-D:\SI\scn\src\qt\res\icons\clock1.png : File could not be opened.
-D:\SI\scn\logo\icons\clock2.png : File could not be opened.
-D:\SI\scn\src\qt\res\icons\clock2.png : File could not be opened.
-D:\SI\scn\logo\icons\clock3.png : File could not be opened.
-D:\SI\scn\src\qt\res\icons\clock3.png : File could not be opened.
-D:\SI\scn\logo\icons\clock4.png : File could not be opened.
-D:\SI\scn\src\qt\res\icons\clock4.png : File could not be opened.
-D:\SI\scn\logo\icons\clock5.png : File could not be opened.
-D:\SI\scn\src\qt\res\icons\clock5.png : File could not be opened.
-D:\SI\scn\logo\icons\configure.png : File could not be opened.
-D:\SI\scn\src\qt\res\icons\configure.png : File could not be opened.
-D:\SI\scn\logo\icons\connect0_16.png : File could not be opened.
-D:\SI\scn\src\qt\res\icons\connect0_16.png : File could not be opened.
-D:\SI\scn\logo\icons\connect1_16.png : File could not be opened.
-D:\SI\scn\src\qt\res\icons\connect1_16.png : File could not be opened.
-D:\SI\scn\logo\icons\connect2_16.png : File could not be opened.
-D:\SI\scn\src\qt\res\icons\connect2_16.png : File could not be opened.
-D:\SI\scn\logo\icons\connect3_16.png : File could not be opened.
-D:\SI\scn\src\qt\res\icons\connect3_16.png : File could not be opened.
-D:\SI\scn\logo\icons\connect4_16.png : File could not be opened.
-D:\SI\scn\src\qt\res\icons\connect4_16.png : File could not be opened.
-D:\SI\scn\logo\icons\debugwindow.png : File could not be opened.
-D:\SI\scn\src\qt\res\icons\debugwindow.png : File could not be opened.
-D:\SI\scn\logo\icons\edit.png : File could not be opened.
-D:\SI\scn\src\qt\res\icons\edit.png : File could not be opened.
-D:\SI\scn\logo\icons\editcopy.png : File could not be opened.
-D:\SI\scn\src\qt\res\icons\editcopy.png : File could not be opened.
-D:\SI\scn\logo\icons\editpaste.png : File could not be opened.
-D:\SI\scn\src\qt\res\icons\editpaste.png : File could not be opened.
-D:\SI\scn\logo\icons\export.png : File could not be opened.
-D:\SI\scn\src\qt\res\icons\export.png : File could not be opened.
-D:\SI\scn\logo\icons\filesave.png : File could not be opened.
-D:\SI\scn\src\qt\res\icons\filesave.png : File could not be opened.
-D:\SI\scn\logo\icons\history.png : File could not be opened.
-D:\SI\scn\src\qt\res\icons\history.png : File could not be opened.
-D:\SI\scn\logo\icons\key.png : File could not be opened.
-D:\SI\scn\src\qt\res\icons\key.png : File could not be opened.
-D:\SI\scn\logo\icons\lock_closed.png : File could not be opened.
-D:\SI\scn\src\qt\res\icons\lock_closed.png : File could not be opened.
-D:\SI\scn\logo\icons\lock_open.png : File could not be opened.
-D:\SI\scn\src\qt\res\icons\lock_open.png : File could not be opened.
-D:\SI\scn\logo\images\logo.png : File could not be opened.
-D:\SI\scn\src\qt\res\images\logo.png : File could not be opened.
-D:\SI\scn\logo\images\logomask.png : File could not be opened.
-D:\SI\scn\src\qt\res\images\logomask.png : File could not be opened.
-D:\SI\scn\logo\icons\notsynced.png : File could not be opened.
-D:\SI\scn\src\qt\res\icons\notsynced.png : File could not be opened.
-D:\SI\scn\logo\pixmaps\nsis-header.bmp : File could not be opened.
-D:\SI\scn\share\pixmaps\nsis-header.bmp : File could not be opened.
-D:\SI\scn\logo\pixmaps\nsis-wizard.bmp : File could not be opened.
-D:\SI\scn\share\pixmaps\nsis-wizard.bmp : File could not be opened.
-D:\SI\scn\logo\icons\overview.png : File could not be opened.
-D:\SI\scn\src\qt\res\icons\overview.png : File could not be opened.
-D:\SI\scn\logo\icons\qrcode.png : File could not be opened.
-D:\SI\scn\src\qt\res\icons\qrcode.png : File could not be opened.
-D:\SI\scn\logo\icons\quit.png : File could not be opened.
-D:\SI\scn\src\qt\res\icons\quit.png : File could not be opened.
-D:\SI\scn\logo\icons\receive.png : File could not be opened.
-D:\SI\scn\src\qt\res\icons\receive.png : File could not be opened.
-D:\SI\scn\logo\icons\remove.png : File could not be opened.
-D:\SI\scn\src\qt\res\icons\remove.png : File could not be opened.
-D:\SI\scn\scn.si4project\scn.siproj : File could not be opened.
-D:\SI\scn\scn.si4project\scn.sip_sym : File could not be opened.
-D:\SI\scn\scn.si4project\scn.sip_xab : File could not be opened.
-D:\SI\scn\scn.si4project\scn.sip_xad : File could not be opened.
-D:\SI\scn\scn.si4project\scn.sip_xc : File could not be opened.
-D:\SI\scn\scn.si4project\scn.sip_xf : File could not be opened.
 D:\SI\scn\scn.si4project\scn.sip_xm : File could not be opened.
 D:\SI\scn\scn.si4project\scn.sip_xsb : File could not be opened.
 D:\SI\scn\scn.si4project\scn.sip_xsd : File could not be opened.
