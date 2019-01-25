@@ -60,7 +60,7 @@ static const unsigned int UNDOFILE_CHUNK_SIZE = 0x100000; // 1 MiB
 static const unsigned int MEMPOOL_HEIGHT = 0x7FFFFFFF;
 /** No amount larger than this (in satoshi) is valid */
 // static const int64 MAX_MONEY = 2000000000 * COIN;<coingo.vip>
-static const int64 MAX_MONEY = 1000000000 * COIN;//<coingo.vip>
+static const int64 MAX_MONEY = 1500000000 * COIN;//<coingo.vip>
 inline bool MoneyRange(int64 nValue) { return (nValue >= 0 && nValue <= MAX_MONEY); }
 static const int64 MIN_TX_FEE = 0 *COIN;//<coingo.vip>改最小转账限制
 static const int64 MAX_TX_FEE = 100 *COIN;//<coingo.vip>改最小转账限制
