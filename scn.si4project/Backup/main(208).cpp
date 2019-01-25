@@ -79,7 +79,7 @@ map<uint256, set<uint256> > mapOrphanTransactionsByPrev;
 // Constant stuff for coinbase transactions we create:
 CScript COINBASE_FLAGS;
 
-const string strMessageMagic = "StarChain3.0 Signed Message:\n";
+const string strMessageMagic = "StarChain2.0 Signed Message:\n";
 
 double dHashesPerSec = 0.0;
 int64 nHPSTimerStart = 0;
@@ -5189,7 +5189,7 @@ CBlockTemplate* CreateNewBlock(CReserveKey& reservekey, CWallet* pwallet, bool f
            }
            else
            {
-			int year =  std::ceil(pindexBest->nHeight / (24 * 60 / 2 * 365));//pow产量衰减部分,262800
+		//int year =  std::ceil(pindexBest->nHeight / (24 * 60 / 2 * 365));//pow产量衰减部分,262800
 
              pblock->vtx[0].vout[0].nValue = reward * pow(0.5,year);//<coingo.vip>
         //pblock->vtx[0].vout[0].nValue = reward;//<coingo.vip>

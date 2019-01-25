@@ -5189,7 +5189,7 @@ CBlockTemplate* CreateNewBlock(CReserveKey& reservekey, CWallet* pwallet, bool f
            }
            else
            {
-			int year =  std::ceil(pindexBest->nHeight / (24 * 60 / 2 * 365));//pow产量衰减部分,262800
+		//int year =  std::ceil(pindexBest->nHeight / (24 * 60 / 2 * 365));//pow产量衰减部分,262800
 
              pblock->vtx[0].vout[0].nValue = reward * pow(0.5,year);//<coingo.vip>
         //pblock->vtx[0].vout[0].nValue = reward;//<coingo.vip>
